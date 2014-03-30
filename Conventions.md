@@ -11,6 +11,24 @@ These denote the type of data held in a field.
   <thead>
     <tr><th>Type<th>Byte Size<th>Description
   <tbody>
+    <tr><td>null<td>0<td>Field with no data.
+    <tr><td>char<td>1<td>A single 8-bit character.
+    <tr><td>wchar<td>2<td>A single 16-bit character.
+    <tr><td>int8<td>1<td>Value stored as an 8-bit unsigned integer.
+    <tr><td>uint8<td>1<td>Value stored as an 8-bit signed integer.
+    <tr><td>int16<td>2<td>Value stored as a 16-bit unsigned integer.
+    <tr><td>uint16<td>2<td>Value stored as a 16-bit signed integer.
+    <tr><td>int32<td>4<td>
+    <tr><td>uint32<td>4<td>
+    <tr><td>int64<td>8<td>
+    <tr><td>uint64<td>8<td>
+    <tr><td>float32<td>4<td>
+    <tr><td>float64<td>8<td>
+    <tr><td>formid<td>4<td>A ulong used to identify a data object. May refer to a data object from a mod or new object created in-game.
+    <tr><td><td><td>
+    <tr><td><td><td>
+    <tr><td><td><td>
+    <tr><td><td><td>
     <tr><td><td><td>
 </table>
 
