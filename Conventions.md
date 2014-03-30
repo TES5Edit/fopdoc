@@ -41,7 +41,7 @@ These symbols are used to denote whether a record field is required or not, and 
 
 Symbol | Meaning
 -------|--------
-? | Unknown
+?? | Unknown
 + | Appears once or more times.
 * | Appears zero or more times.
-- | Optional
+- | Appears once or zero times.
