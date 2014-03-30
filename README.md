@@ -8,3 +8,5 @@ The model for this documentation is the file format documentation for Oblivion a
 The documentation will be written in Markdown, and be laid out in a style similar to that used by UESP.net, with each record type getting its own page containing its field tables, and using relative links between pages.
 
 I'm unfamiliar with Delphi, so could do with help reading the TES5Edit source, and I'll welcome anyone who wants to contribute. Just fork the repository, and feel free to open issues on its issue tracker if you want to discuss something.
+
+As for the name, it's frome FallOut Plugin DOCumentation. It's the only pronouncable thing I could come up with. :P
