@@ -23,6 +23,7 @@ uint64 | 8 |
 float32 | 4 | 
 float64 | 8 | 
 formid | 4 | A ulong used to identify a data object. May refer to a data object from a mod or new object created in-game.
+cstring | variable | Null terminated string.
 
 ## Field Counts
 
