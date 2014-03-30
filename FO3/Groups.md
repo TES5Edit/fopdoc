@@ -5,20 +5,17 @@ Groups are collections of records, and are used to improve scanning of files to 
 
 ## Group Format
 
-<table>
-    <thead>
-        <tr><th>Name<th>Type<th>Description
-    <tbody>
-        <tr><td>type<td>char[4]<td>Always "GRUP".
-        <tr><td>groupSize<td>uint32<td>Size of the group, *including* the 24 bytes before the data.
-        <tr><td>label<td>uint8<td>
-        <tr><td>groupType<td>int32<td>
-        <tr><td>stamp<td>uint16<td>
-        <tr><td>unknown<td>uint16<td>
-        <tr><td>version<td>uint16<td>
-        <tr><td>unknown<td>uint16<td>
-        <tr><td>data<td>uint8<td>
-</table>
+Name | Type | Description
+-----|------|------------
+type | char[4] | Always "GRUP".
+groupSize | uint32 | Size of the group, *including* the 24 bytes before the data.
+label | uint8 | 
+groupType | int32 | 
+stamp | uint16 | 
+unknown | uint16 |
+version | uint16 |
+unknown | uint16 |
+data | uint8[groupSize - 25] |
 
 ## Top Level Groups
 

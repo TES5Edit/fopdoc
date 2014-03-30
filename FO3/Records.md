@@ -3,12 +3,9 @@ Records
 
 ## Record Types
 
-<table>
-    <thead>
-        <tr><th>Type<th>Data Object
-    <tbody>
-        <tr><td>[TES4](Records/TES4.md]<td>Plugin info
-</table>
+Type | Data Object
+-----|------------
+[TES4](Records/TES4.md) | Plugin info
 
 ## Record Format
 
