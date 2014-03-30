@@ -15,7 +15,7 @@ stamp | uint16 |
 unknown | uint16 |
 version | uint16 |
 unknown | uint16 |
-data | uint8[groupSize - 25] |
+data | uint8[groupSize - 24] |
 
 ## Top Level Groups
 
