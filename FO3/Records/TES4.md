@@ -5,15 +5,15 @@ TES4 Record
 
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
- | HEDR | header | struct | 
- | OFST | unknown | |
- | DELE | unknown | |
- | CNAM | author | cstring | Maximum size is 512 bytes, including terminator.
- | SNAM | description | cstring | Maximum size is 512 bytes, including terminator.
- | MAST | master | cstring | Each MAST field is immediately followed by one DATA field. 
- | DATA | fileSize | uint64 | One DATA field appears directly after each MAST field present. Always `0`, probably vestigial. In TES3, the file size of the previous master was recorded here.
- | ONAM | formOverrides | formid[] | Overriden records. Number of records can be obtained by dividing the field size by the size of a FormID.
- | SCRN | screenshot | |
++ | HEDR | header | struct | Contains additional details about the plugin, see section below.
+- | OFST | unknown | null | ??
+- | DELE | unknown | null | ??
++ | CNAM | author | cstring | Maximum size is 512 bytes, including terminator.
+- | SNAM | description | cstring | Maximum size is 512 bytes, including terminator.
+-* | MAST | master | cstring | Each MAST field is immediately followed by one DATA field. 
+-* | DATA | fileSize | uint64 | One DATA field appears directly after each MAST field present. Always `0`, probably vestigial. In TES3, the file size of the previous master was recorded here.
+- | ONAM | formOverrides | formid[] | Overriden records. Number of records can be obtained by dividing the field size by the size of a FormID.
+- | SCRN | screenshot | null | ??
 
 ### HEDR
 
