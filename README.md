@@ -9,6 +9,6 @@ The documentation will be written in Markdown, and be laid out in a style simila
 
 I'm unfamiliar with Delphi, so could do with help reading the TES5Edit source, and I'll welcome anyone who wants to contribute. Just fork the repository, and feel free to open issues on its issue tracker if you want to discuss something. You don't even need to have Git installed, since it's all editable through your browser.
 
-Since FO3 and FNV plugins have a very similar format, it's probably best to complete the FO3 documentation first, and then refer to it for FNV pages where there are no differences.
+Since FO3 and FNV plugins have a very similar format, it's probably best to complete the FO3 documentation first, and then refer to it for FNV pages where there are no differences. The FO3 definitions in TES5Edit are found [here](https://code.google.com/p/skyrim-plugin-decoding-project/source/browse/TES5Edit/trunk/Delphi+XE/wbDefinitionsFO3.pas).
 
 As for the name, it's frome FallOut Plugin DOCumentation. It's the only pronouncable thing I could come up with. :P
