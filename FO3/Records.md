@@ -5,7 +5,7 @@ Records
 
 Type | Name
 -----|------------
-ACHR | Placed NPC
+[ACHR](Records/ACHR.md) | Placed NPC
 ACRE | Placed Creature
 ACTI | Activator
 ADDN | Addon Node
