@@ -34,6 +34,7 @@ Type | Byte Size | Description
 formid | 4 | Used to identify a data object. May refer to a data object from a mod or new object created in-game.
 cstring | variable | Null terminated string.
 struct | variable | Used for fields containing more than one data type. The field structure should be documented on the same page.
+rgba | 4 | The first three bytes are red, green and blue color values respectively. The fourth byte is unused.
 
 ## Field Counts
 
