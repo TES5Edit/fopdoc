@@ -17,8 +17,8 @@ Count | Field | Name | Type | Info
 
 ### HEDR
 
-Name | Type | Info
------|------|-----
-version | float32 | 0.94 in most files; 1.7 in recent versions of Update.esm.
-numRecords | uint32 | Number of records and groups (not including TES4 record itself).
-nextObjectId | uint32 | Next available object ID.
+Count | Name | Type | Info
+------|------|------|-----
++ | version | float32 | 0.94 in most files; 1.7 in recent versions of Update.esm.
++ | numRecords | uint32 | Number of records and groups (not including TES4 record itself).
++ | nextObjectId | uint32 | Next available object ID.
