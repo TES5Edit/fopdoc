@@ -92,7 +92,7 @@ TACT | Talking Activator
 TERM | Terminal
 [TES4](Records/TES4.md) | Plugin info
 TREE | Tree
-TXST | Texture Set
+[TXST](Records/TXST.md) | Texture Set
 VTYP | Voice Type
 WATR | Water
 WEAP | Weapon

@@ -1,4 +1,4 @@
-ACHR Record
+GMST Record
 ===========
 
 ## Format
