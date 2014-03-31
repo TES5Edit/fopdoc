@@ -6,44 +6,44 @@ TXST Record
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring | Editor ID
-+ | OBND | Object Bounds | struct | 
-+ | TX00 | texture00 | zstring | texture path, base Image / transparency
+- | OBND | Object Bounds | struct | 
+- | TX00 | texture00 | zstring | texture path, base Image / transparency
 - | TX01 | texture01 | zstring | texture path, normal map (tangent- or model-space)
 - | TX02 | texture02 | zstring | texture path, mask (environment or light)
 - | TX03 | texture03 | zstring | texture path, tone map (for skins) or glow map (for things)
 - | TX04 | texture04 | zstring | texture path, detail map (parallax, roughness, complexion, age)
 - | TX05 | texture05 | zstring | texture path, environment map (cubemaps mostly)
 - | DODT | Decal Data | struct | 
-+ | DNAM | Flags | uint16 | See Notes
+- | DNAM | Flags | uint16 | See Notes
 
 
 ### OBND
 
-Count | Name | Type | Info
-------|------|------|-----
-- | X | int16 | Corner #1 X position
-- | Y | int16 | Corner #1 Y position
-- | Z | int16 | Corner #1 Z position
-+ | X | int16 | Corner #2 X position
-+ | Y | int16 | Corner #2 Y position
-+ | Z | int16 | Corner #2 Z position
+Name | Type | Info
+------|------|-----
+X | int16 | Corner #1 X position
+Y | int16 | Corner #1 Y position
+Z | int16 | Corner #1 Z position
+X | int16 | Corner #2 X position
+Y | int16 | Corner #2 Y position
+Z | int16 | Corner #2 Z position
 
 ### DODT
 
-Count | Name | Type | Info
-------|------|------|-----
-- | Min Width | float32 | 
-- | Max Width | float32 | 
-- | Min Height | float32 | 
-- | Max Height | float32 | 
-- | Depth | float32 | 
-- | Shininess | float32 | 
-- | Parallax | struct | 
-- |  | float32 | Scale
-- |  | uint8 | Passes
-- | Flags | uint8 | See below
-- | Unused | uint16 |
-- | Color | rgba | 
+Name | Type | Info
+------|------|-----
+Min Width | float32 | 
+Max Width | float32 | 
+Min Height | float32 | 
+Max Height | float32 | 
+Depth | float32 | 
+Shininess | float32 | 
+Parallax | struct | 
+ | float32 | Scale
+ | uint8 | Passes
+Flags | uint8 | See below
+Unused | uint16 |
+Color | rgba | 
 
 Flag | Meaning
 -----|--------
