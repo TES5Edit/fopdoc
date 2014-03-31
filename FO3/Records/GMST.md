@@ -12,6 +12,4 @@ Count | Field | Name | Type | Info
 
 The type of value is determined by the first letter of the EDID
 
-i = Integer
-f = float
-s = string
+i = Integer, f = float, s = string
