@@ -10,7 +10,7 @@ Count | Field | Name | Type | Info
 + | EDID | Editor ID | cstring | Editor ID
 + | [OBND](Fields/OBND.md) | Object Bounds | struct |
 - | FULL | Name | cstring | Activator name
-- | MODL | Model Filename | struct | Model data
+- | MODL | Model Filename | cstring | Model data
 - | MODB | Unknown | uint8[4] | Model data
 - | MODT | Texture File Hashes | ?? | Model data
 - | MODS | Alternate Textures | struct | Model data
