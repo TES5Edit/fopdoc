@@ -9,7 +9,6 @@ Count | Field | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring | Editor ID
 + | OBND | Object Bounds | struct |
-+ | OBND | Object Bounds | struct |
 - | FULL | Name | cstring | Activator name
 - | MODL | Model Filename | struct | Model data
 - | MODB | Unknown | uint8[4] | Model data
@@ -27,9 +26,12 @@ Count | Field | Name | Type | Info
 
 Count | Name | Type | Info
 ------|------|------|-----
-- | X | int16 |
-- | Y | int16 |
-- | Z | int16 |
+- | X 1 | int16 |
+- | Y 1 | int16 |
+- | Z 1 | int16 |
+- | X 2 | int16 |
+- | Y 2 | int16 |
+- | Z 2 | int16 |
 
 ### MODS
 
