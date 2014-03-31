@@ -8,7 +8,7 @@ Activator
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring | Editor ID
-+ | OBND | Object Bounds | struct |
++ | [OBND](Fields/OBND.md) | Object Bounds | struct |
 - | FULL | Name | cstring | Activator name
 - | MODL | Model Filename | struct | Model data
 - | MODB | Unknown | uint8[4] | Model data
@@ -21,17 +21,6 @@ Count | Field | Name | Type | Info
 - | VNAM | Sound - Activation | formid | FormID of a SOUN record.
 - | RNAM | Radio Station | formid | FormID of a TACT record.
 - | WNAM | Water Type | formid | FormID of a WATR record.
-
-### OBND
-
-Count | Name | Type | Info
-------|------|------|-----
-- | X 1 | int16 |
-- | Y 1 | int16 |
-- | Z 1 | int16 |
-- | X 2 | int16 |
-- | Y 2 | int16 |
-- | Z 2 | int16 |
 
 ### MODS
 
