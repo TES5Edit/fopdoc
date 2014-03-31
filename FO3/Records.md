@@ -6,7 +6,7 @@ Records
 Type | Name
 -----|------------
 [ACHR](Records/ACHR.md) | Placed NPC
-ACRE | Placed Creature
+[ACRE](Records/ACRE.md) | Placed Creature
 ACTI | Activator
 ADDN | Addon Node
 ALCH | Ingestible
