@@ -8,7 +8,7 @@ The Oblivion, Skyrim, Fallout 3 and Fallout: New Vegas plugin file formats are a
 
 ### Format & Structure
 
-This documentation is written in GitHub Flavored Markdown and stored in a Git repository on GitHub because:
+This documentation is written in [GitHub Flavored Markdown](https://guides.github.com/overviews/mastering-markdown/) and stored in a Git repository on [GitHub](https://github.com/WrinklyNinja/fopdoc) because:
 
 * Revision control is good.
 * You can download the documentation for offline reading.
@@ -16,7 +16,12 @@ This documentation is written in GitHub Flavored Markdown and stored in a Git re
 * GitHub offers in-browser editing and HTML preview for Markdown.
 * GitHub makes it easier to make, share and integrate edits with others.
 
-The Fallout 3 documentation is stored in the [FO3](FO3) folder. Information about common data structures is stored there, and each record type gets its own file in the [FO3/Records](FO3/Records) folder.
+The structure is as follows:
+
+* Each game's documentation goes in a separate folder in the repository root, eg. the Fallout 3 documentation is stored in the [FO3](FO3) folder.
+* Information about common data structures is stored in the game's folder.
+* The specifics of a record type get documented in a separate file in `<game>/Records`, named using its 4-character type and with the `.md` file extension. Eg. Fallout 3's [TES4 record documentation](FO3/Records/TES4.md).
+* Fields of the `struct` type that are present in multiple records with the same structure and semantics are documented in separate files in `<game>/Fields`. The same can be done for collections of fields that always appear together.
 
 Fallout: New Vegas likely shares many of the same data structures, so to avoid repitition reference should be made back to the FO3 docs and only differences written out in full.
 
