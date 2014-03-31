@@ -9,15 +9,29 @@ Name | Type | Description
 -----|------|------------
 type | char[4] | Always "GRUP".
 groupSize | uint32 | Size of the group, *including* the 24 bytes before the data.
-label | uint8 | 
-groupType | int32 | 
-stamp | uint16 | 
-unknown | uint16 |
-version | uint16 |
-unknown | uint16 |
-data | uint8[groupSize - 24] |
+label | uint8[4] | Format depends on the group type.
+groupType | int32 | The group type. See the section below for details.
+stamp | uint16 | A date stamp. The first byte is the day of the month, and the second byte is the number of months since December 2002. For example, the 8th of March 2003 would be stored as `08 03`.
+unknown | uint8[6] | ??
+data | uint8[groupSize - 24] | The records and subgroups contained within the group.
 
-## Top Level Groups
+### Group Types
+
+Group Type | Label Type | Group Type Name | Label Info | Group Info
+-----------|------------|-----------------|------------|-----------
+0 | char[4] | Top Level | A record type. | Contains records of the given type.
+1 | formid | World Children | A WRLD record FormID. | Contains ROAD and/or CELL records that are children of the given WRLD record.
+2 | int32 | Interior Cell Block | A cell block number. | 
+3 | int32 | Interior Cell Sub-Block | A cell sub-block number. |
+4 | int16 | Exterior Cell Block | Cell block grid (Y, X) coordinates, stored as int8 values. |
+5 | int16 | Exterior Cell Sub-Block | Cell sub-block grid (Y, X) coordinates, stored as int8 values. |
+6 | formid | Cell Children | A CELL record FormID. | Contains only REFR, ACRE, PGRE, PMIS or ACHR records that are children of the given CELL record.
+7 | formid | Topic Children | A DIAL record FormID. | Contains INFO records that are children of the given DIAL record.
+8 | formid | Cell Persistent Children | A CELL record FormID. | The group must contain only REFR, ACRE, PGRE, PMIS or ACHR records that are children of the given CELL record.
+9 | formid | Cell Temporary Children | A CELL record FormID. | The group must contain only REFR, ACRE, PGRE, PMIS or ACHR records that are children of the given CELL record.
+10 | formid | Cell Visible Distant Children | A CELL record FormID. | The group must contain only REFR records that are children of the given CELL record.
+
+## Top-Level Groups
 
 The top level groups are stored in the following order in `Fallout3.esm`. It is unknown if this order is required, but it would be best to follow it just in case.
 
