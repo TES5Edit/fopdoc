@@ -6,68 +6,53 @@ ACHR Record
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring | Editor ID
-+ | NAME | Base | formid | 
-- | XEZN | Encounter Zone | formid |
-- | XRGD | Ragdoll Data | ?? | ??
-- | XRGB | Ragdoll Biped Data | ?? | ??
-+ | XPRD | Idle Time | float32 | Patrol data
-+ | XPPA | Patrol Script Marker | null | Patrol data
-+ | INAM | Idle | formid | Patrol data
-+ | TNAM | Topic | formid | Patrol data
-- | XLCM | Level Modifier | int32 | 
-- | XMRC | Merchant Container | formid |
-- | XCNT | Count | int32 |
-- | XRDS | Radius | float32 |
-- | XHLP | Health | float32 |
--* | XDCR | Decal | struct | Linked decals
-- | XLKR | Linked Reference | formid | 
-- | XCLP | Linked Reference Color | struct |
-- | XAPD | Flags | uint8 | Activate parents
--* | XAPR | Activate Parent Ref | struct | Activate parents
-- | XESP | Enable Parent | struct |
-- | XEMI | Emittance | formid |
-- | XMBR | MultiBound Reference | formid |
-- | XIBS | Ignored By Sandbox | null | Flag
-- | XSCL | Scale | float32 |
-+ | DATA | Position / Rotation | struct |
++ | OBND | Object Bounds | struct | 
++ | TX00 | texture00 | zstring | texture path, base Image / transparency
+- | TX01 | texture01 | zstring | texture path, normal map (tangent- or model-space)
+- | TX02 | texture02 | zstring | texture path, mask (environment or light)
+- | TX03 | texture03 | zstring | texture path, tone map (for skins) or glow map (for things)
+- | TX04 | texture04 | zstring | texture path, detail map (parallax, roughness, complexion, age)
+- | TX05 | texture05 | zstring | texture path, environment map (cubemaps mostly)
+- | DODT | Decal Data | struct | 
++ | DNAM | Flags | uint16 | See Notes
 
 
-### XDCR
+### OBND
 
 Count | Name | Type | Info
 ------|------|------|-----
-- | Reference | formid | 
-- | unknown | ?? | ??
+- | X | int16 | Corner #1 X position
+- | Y | int16 | Corner #1 Y position
+- | Z | int16 | Corner #1 Z position
++ | X | int16 | Corner #2 X position
++ | Y | int16 | Corner #2 Y position
++ | Z | int16 | Corner #2 Z position
 
-### XCLP
-
-Count | Name | Type | Info
-------|------|------|-----
-- | Link Start Color | rgba | 
-- | Link End Color | rgba |
-
-### XAPR
+### DODT
 
 Count | Name | Type | Info
 ------|------|------|-----
-- | Reference | formid | 
-- | Delay | float32 |
+- | Min Width | float32 | 
+- | Max Width | float32 | 
+- | Min Height | float32 | 
+- | Max Height | float32 | 
+- | Depth | float32 | 
+- | Shininess | float32 | 
+- | Parallax | struct | 
+- |  | float32 | Scale
+- |  | uint8 | Passes
+- | Flags | uint8 | See below
+- | Unused | uint16 |
+- | Color | rgba | 
 
-### XESP
+Flag | Meaning
+-----|--------
+0x00000001 | Parallax
+0x00000002 | Alpha - Blending
+0x00000004 | Alpha - Testing
 
-Count | Name | Type | Info
-------|------|------|-----
-- | Reference | formid | 
-- | Flags | uint8 |
-- | unknown | uint8[3] | ??
+### DNAM
 
-### DATA
-
-Count | Name | Type | Info
-------|------|------|-----
-- | X | float32 | X position
-- | Y | float32 | Y position
-- | Z | float32 | Z position
-+ | X | float32 | X rotation
-+ | Y | float32 | Y rotation
-+ | Z | float32 | Z rotation
+Flag | Meaning
+-----|--------
+0x00000001 | No Specular Map
