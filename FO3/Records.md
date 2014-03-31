@@ -3,6 +3,8 @@ Records
 
 ## Record Types
 
+Each record type's page documents its fields. The common record header structure is documented further down this page.
+
 Type | Name
 -----|------------
 [ACHR](Records/ACHR.md) | Placed NPC
