@@ -16,16 +16,16 @@ Type | Byte Size | Description
 null | 0 | Field with no data.
 char | 1 | A single 8-bit character
 wchar | 2 | A single 16-bit character.
-int8 | 1 | Value stored as an 8-bit unsigned integer.
-uint8 | 1 | Value stored as an 8-bit signed integer. Also used for byte arrays where the type of data varies according to some external factor.
-int16 | 2 | Value stored as a 16-bit unsigned integer.
-uint16 | 2 | Value stored as a 16-bit signed integer.
-int32 | 4 | 
-uint32 | 4 | 
-int64 | 8 | 
-uint64 | 8 | 
-float32 | 4 | 
-float64 | 8 | 
+int8 | 1 | Value stored as an 8-bit signed integer.
+uint8 | 1 | Value stored as an 8-bit unsigned integer. Also used for byte arrays where the type of data varies according to some external factor.
+int16 | 2 | Value stored as a 16-bit signed integer.
+uint16 | 2 | Value stored as a 16-bit unsigned integer.
+int32 | 4 | Value stored as a 32-bit signed integer.
+uint32 | 4 | Value stored as a 32-bit unsigned integer.
+int64 | 8 | Value stored as a 64-bit signed integer.
+uint64 | 8 | Value stored as a 64-bit unsigned integer.
+float32 | 4 | Value stored as a 32-bit floating point number.
+float64 | 8 | Value stored as a 64-bit floating point number.
 
 ### Semantic Types
 
