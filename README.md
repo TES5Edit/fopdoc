@@ -21,7 +21,7 @@ The structure is as follows:
 * Each game's documentation goes in a separate folder in the repository root, eg. the Fallout 3 documentation is stored in the [FO3](FO3) folder.
 * Information about common data structures is stored in the game's folder.
 * The specifics of a record type get documented in a separate file in `<game>/Records`, named using its 4-character type and with the `.md` file extension. Eg. Fallout 3's [TES4 record documentation](FO3/Records/TES4.md).
-* Fields of the `struct` type that are present in multiple records with the same structure and semantics are documented in separate files in `<game>/Fields`. The same can be done for collections of fields that always appear together.
+* Fields of the `struct` type that are present in multiple records with the same structure and semantics are documented in separate files in `<game>/Records/Fields`. The same can be done for collections of fields that always appear together.
 
 Fallout: New Vegas likely shares many of the same data structures, so to avoid repitition reference should be made back to the FO3 docs and only differences written out in full.
 
