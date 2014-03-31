@@ -40,7 +40,7 @@ FACT | Faction
 FLST | FormID List
 FURN | Furniture
 GLOB | Global
-GMST | Game Setting
+[GMST](Records/GMST.md) | Game Setting
 GRAS | Grass
 HAIR | Hair
 HDPT | Head Part
