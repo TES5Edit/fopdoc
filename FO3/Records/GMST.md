@@ -6,7 +6,7 @@ ACHR Record
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring | Editor ID
-+ | DATA | Value | struct |
++ | DATA | Value |  | See Notes
 
 ### DATA
 
