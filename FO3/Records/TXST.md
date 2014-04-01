@@ -6,7 +6,7 @@ TXST Record
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring | Editor ID
-- | OBND | Object Bounds | struct | 
+- | OBND](Fields/OBND.md) | Object Bounds | struct | 
 - | TX00 | texture00 | zstring | texture path, base Image / transparency
 - | TX01 | texture01 | zstring | texture path, normal map (tangent- or model-space)
 - | TX02 | texture02 | zstring | texture path, mask (environment or light)
@@ -15,18 +15,6 @@ Count | Field | Name | Type | Info
 - | TX05 | texture05 | zstring | texture path, environment map (cubemaps mostly)
 - | DODT | Decal Data | struct | 
 - | DNAM | Flags | uint16 | See Notes
-
-
-### OBND
-
-Name | Type | Info
-------|------|-----
-X | int16 | Corner #1 X position
-Y | int16 | Corner #1 Y position
-Z | int16 | Corner #1 Z position
-X | int16 | Corner #2 X position
-Y | int16 | Corner #2 Y position
-Z | int16 | Corner #2 Z position
 
 ### DODT
 
