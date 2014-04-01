@@ -1,7 +1,7 @@
 OBND Field
 ==========
 
-As used in the [ACTI](../ACTI.md) and [ADDN](../ADDN.md) record types.
+As used in the [ACTI](../ACTI.md), [ADDN](../ADDN.md), [TXST](../TXST.md) record types.
 
 ## Format
 
