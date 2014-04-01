@@ -22,7 +22,7 @@ Count | Field | Name | Type | Info
 -* | [XDCR](Fields/XDCR.md) | Decal | struct | Linked decals
 - | XLKR | Linked Reference | formid |
 - | [XCLP](Fields/XCLP.md) | Linked Reference Color | struct |
-- | XAPD | Flags | uint8 | Activate parents
+- | [XAPD](Fields/XAPD.md) | Flags | uint8 | Activate parents.
 -* | [XAPR](Fields/XAPR.md) | Activate Parent Ref | struct | Activate parents
 - | [XESP](Fields/XESP.md) | Enable Parent | struct |
 - | XEMI | Emittance | formid |

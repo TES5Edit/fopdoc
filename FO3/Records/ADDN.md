@@ -13,8 +13,8 @@ Count | Field | Name | Type | Info
 - | MODB | Unknown | uint8[4] | Model data
 - | MODT | Texture File Hashes | ?? | Model data
 - | MODS | Alternate Textures | struct | Model data
-- | MODD | FaceGen Model Flags | uint8 | Model data 
-+ | DATA | Node Index | int32 | 
+- | [MODD](Fields/MODD.md) | FaceGen Model Flags | uint8 | Model data
++ | DATA | Node Index | int32 |
 + | DNAM | Data | struct |
 
 ### DNAM
