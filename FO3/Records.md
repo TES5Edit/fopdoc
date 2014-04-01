@@ -22,7 +22,7 @@ BOOK | Book
 BPTD | Body Part Data
 CAMS | Camera Shot
 CELL | Cell
-CLAS | Class
+[CLAS](Records/CLAS.md) | Class
 CLMT | Climate
 COBJ | Constructable Object
 CONT | Container
