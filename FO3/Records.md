@@ -65,7 +65,7 @@ LVLI | Leveled Item
 LVLN | Leveled NPC
 MESG | Message
 MGEF | Base Effect
-MICN | Menu Icon
+[MICN](Records/MICN.md) | Menu Icon
 MISC | Misc. Item
 MSTT | Moveable Static
 MUSC | Music Type
