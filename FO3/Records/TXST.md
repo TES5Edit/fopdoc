@@ -6,7 +6,7 @@ TXST Record
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring | Editor ID
-- | OBND](Fields/OBND.md) | Object Bounds | struct | 
+- | [OBND](Fields/OBND.md) | Object Bounds | struct | 
 - | TX00 | texture00 | zstring | texture path, base Image / transparency
 - | TX01 | texture01 | zstring | texture path, normal map (tangent- or model-space)
 - | TX02 | texture02 | zstring | texture path, mask (environment or light)
