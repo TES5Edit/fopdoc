@@ -13,7 +13,7 @@ Count | Field | Name | Type | Info
 - | MODL | Model Filename | cstring | Model data
 - | MODB | Unknown | uint8[4] | Model data
 - | MODT | Texture File Hashes | ?? | Model data
-- | MODS | Alternate Textures | struct | Model data
+- | [MODS](Fields/MODS.md) | Alternate Textures | struct | Model data
 - | [MODD](Fields/MODD.md) | FaceGen Model Flags | uint8 | Model data
 - | SCRI | Script | formid | FormID of a SCPT record.
 - | | Destruction Data | | This is a complex arrangement of fields, see below for details
@@ -21,22 +21,6 @@ Count | Field | Name | Type | Info
 - | VNAM | Sound - Activation | formid | FormID of a SOUN record.
 - | RNAM | Radio Station | formid | FormID of a TACT record.
 - | WNAM | Water Type | formid | FormID of a WATR record.
-
-### MODS
-
-Count | Name | Type | Info
-------|------|------|-----
-+ | Count | uint32 | Number of alternate textures.
--* | Alternate Texture | struct | A sub-field structure detailed immediately below.
-
-#### Aternate Texture
-
-Count | Name | Type | Info
-------|------|------|-----
-- | Name Length | uint32 | Alternate texture data. Length of the following 3D name.
-- | 3D Name | char[Name Length] | Alternate texture data.
-- | New Texture | formid | Alternate texture data. FormID of a TXST record.
-- | 3D Index | int32 | Alternate texture data.
 
 ### Destruction Data
 
