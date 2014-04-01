@@ -41,7 +41,7 @@ EYES | Eyes
 FACT | Faction
 FLST | FormID List
 FURN | Furniture
-GLOB | Global
+[GLOB](Records/GLOB.md) | Global
 [GMST](Records/GMST.md) | Game Setting
 GRAS | Grass
 HAIR | Hair
