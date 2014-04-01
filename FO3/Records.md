@@ -10,7 +10,7 @@ Type | Name
 [ACHR](Records/ACHR.md) | Placed NPC
 [ACRE](Records/ACRE.md) | Placed Creature
 [ACTI](Records/ACTI.md) | Activator
-ADDN | Addon Node
+[ADDN](Records/ADDN.md) | Addon Node
 ALCH | Ingestible
 AMMO | Ammunition
 ANIO | Animated Object
