@@ -12,9 +12,9 @@ Count | Field | Name | Type | Info
 + | MODL | Model Filename | cstring | Model data
 - | MODB | Unknown | uint8[4] | Model data
 - | MODT | Texture File Hashes | ?? | Model data
-- | MODS | Alternate Textures | struct | Model data
-- | MODD | FaceGen Model Flags | uint8 | Model data 
-+ | DATA | Node Index | int32 | 
+- | [MODS](Fields/MODS.md) | Alternate Textures | struct | Model data
+- | [MODD](Fields/MODD.md) | FaceGen Model Flags | uint8 | Model data
++ | DATA | Node Index | int32 |
 + | DNAM | Data | struct |
 
 ### DNAM
