@@ -8,9 +8,7 @@ The DEST, DSTD, DMDL, DMDT and DSTF fields hold destruction data, and always app
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
 + | DEST | Header | struct |
--* | | Destruction Stage | |
-
-The stage fields form a repeated block, rather than the individual fields being repeated.
+-* | | Destruction Stage | | A field collection, see below for details.
 
 ### DEST
 
@@ -31,10 +29,10 @@ Flag | Meaning
 
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
-+ | DSTD | Stage Data | struct | Required for each stage.
++ | DSTD | Stage Data | struct |
 - | DMDL | Stage Model Filename | cstring |
 - | DMDT | Stage Model Texture Files Hashes | ?? | ??
-- | DSTF | Stage End Marker | null | Required for each stage.
+- | DSTF | Stage End Marker | null |
 
 
 #### DSTD
