@@ -11,7 +11,7 @@ Type | Name
 [ACRE](Records/ACRE.md) | Placed Creature
 [ACTI](Records/ACTI.md) | Activator
 [ADDN](Records/ADDN.md) | Addon Node
-ALCH | Ingestible
+[ALCH](Records/ADDN.md) | Ingestible
 AMMO | Ammunition
 ANIO | Animated Object
 ARMO | Armor
