@@ -30,7 +30,7 @@ Fallout: New Vegas likely shares many of the same data structures, so to avoid r
 
 The most complete open-source implementation of plugin parsers for these games is [TES5Edit](https://code.google.com/p/skyrim-plugin-decoding-project/), written in Delphi. The information on the file formats contained within its parsing code will be adapted into a reasonably generic format that programmers should be able to interpret regardless of their preferred language, similar to how it is presented by [UESP.net](http://www.uesp.net/wiki/Tes5Mod:Mod_File_Format).
 
-The FO3 definitions in TES5Edit are found [here](https://code.google.com/p/skyrim-plugin-decoding-project/source/browse/TES5Edit/trunk/Delphi+XE/wbDefinitionsFO3.pas). [This page](https://code.google.com/p/skyrim-plugin-decoding-project/wiki/DecodingRecords) may be useful in understanding the code. In practice though, searching [this source file](https://skyrim-plugin-decoding-project.googlecode.com/svn/TES5Edit/trunk/Delphi%20XE/wbInterface.pas) may be more useful.
+The FO3 definitions in TES5Edit are found [here](https://skyrim-plugin-decoding-project.googlecode.com/svn/TES5Edit/trunk/Delphi%20XE/wbDefinitionsFO3.pas). [This page](https://code.google.com/p/skyrim-plugin-decoding-project/wiki/DecodingRecords) may be useful in understanding the code. In practice though, searching [this source file](https://skyrim-plugin-decoding-project.googlecode.com/svn/TES5Edit/trunk/Delphi%20XE/wbInterface.pas) may be more useful.
 
 
 ### Contributing
