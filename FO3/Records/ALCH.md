@@ -50,7 +50,7 @@ Count | Name | Type | Info
  | Magnitude | uint32 | 
  | Area | uint32 |
  | Duration | uint32 |
- | Type | uint32 | Values of `1`, `2` and `3` correspond to types of `Self`, `Touch` and `Target` respectively.
+ | Type | uint32 | Values of `0`, `1` and `2` correspond to types of `Self`, `Touch` and `Target` respectively.
  | Actor Value | int32 | See below for values.
  
 #### Actor Values
@@ -148,8 +148,8 @@ Count | Name | Type | Info
 
 Value | Meaning
 ------|--------
-1 | Subject
-2 | Target
-3 | Reference
-4 | Combat Target
-5 | Linked Reference
+0 | Subject
+1 | Target
+2 | Reference
+3 | Combat Target
+4 | Linked Reference
