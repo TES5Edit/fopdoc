@@ -50,7 +50,7 @@ Count | Name | Type | Info
  | Magnitude | uint32 | 
  | Area | uint32 |
  | Duration | uint32 |
- | Type | uint32 | Values of `1`, `2` and `3` correspond to types of `Self`, `Touch` and `Target` respectively.
+ | Type | uint32 | Values of `0`, `1` and `2` correspond to types of `Self`, `Touch` and `Target` respectively.
  | Actor Value | int32 | See below for values.
  
 #### Actor Values
@@ -137,10 +137,10 @@ Count | Name | Type | Info
 ------|------|------|-----
  | Type | uint8 |
  | Unused | uint8[3] |
- | Comparison Value |  |
+ | Comparison Value | formid *or* float32 | If not a valid [GLOB](GLOB.md) record FormID, is interpreted as a float32.
  | Function | uint32 | 
- | Parameter #1 |  |
- | Parameter #2 |  |
+ | Parameter #1 | uint8[4] | 
+ | Parameter #2 | uint8[4] | 
  | Run On | uint32 | Values and what they correspond to are given below.
  | Reference |  |
  
@@ -148,8 +148,8 @@ Count | Name | Type | Info
 
 Value | Meaning
 ------|--------
-1 | Subject
-2 | Target
-3 | Reference
-4 | Combat Target
-5 | Linked Reference
+0 | Subject
+1 | Target
+2 | Reference
+3 | Combat Target
+4 | Linked Reference
