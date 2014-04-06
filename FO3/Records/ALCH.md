@@ -137,10 +137,10 @@ Count | Name | Type | Info
 ------|------|------|-----
  | Type | uint8 |
  | Unused | uint8[3] |
- | Comparison Value |  |
+ | Comparison Value | formid *or* float32 | If not a valid [GLOB](GLOB.md) record FormID, is interpreted as a float32.
  | Function | uint32 | 
- | Parameter #1 |  |
- | Parameter #2 |  |
+ | Parameter #1 | uint8[4] | 
+ | Parameter #2 | uint8[4] | 
  | Run On | uint32 | Values and what they correspond to are given below.
  | Reference |  |
  
