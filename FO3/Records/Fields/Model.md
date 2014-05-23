@@ -1,15 +1,15 @@
 Model Field Collection
 ======================
 
-The MODL, MODB, MODT, MODS and MODD fields hold model data, and always appear together. In cases where multiple collections are present in the same record, the field IDs are numbered, eg.
+The MODL, MODB, MODT, MODS and MODD fields hold model data, and always appear together. In cases where multiple collections are present in the same record, the field IDs are numbered:
 
 Original | Second Instance | Third Instance | Fourth Instance
 ---------|-----------------|----------------|----------------
 MODL | MOD2 | MOD3 | MOD4
-MODB | ?? | ?? | ??
+MODB | (always missing) | (always missing) | (always missing)
 MODT | MO2T | MO3T | MO4T
 MODS | MO2S | MO3S | MO4S
-MODD | ?? | MOSD | ??
+MODD | (always missing) | MOSD | (always missing)
 
 Whenever a model field collection is referenced in these docs, the instance number will be given, so substitute the appropriate field IDs below.
 
