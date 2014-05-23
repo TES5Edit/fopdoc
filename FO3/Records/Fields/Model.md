@@ -11,7 +11,7 @@ MODT | MO2T | MO3T | MO4T
 MODS | MO2S | MO3S | MO4S
 MODD | (always missing) | MOSD | (always missing)
 
-Whenever a model field collection is referenced in these docs, the instance number will be given, so substitute the appropriate field IDs below.
+Whenever a model field collection is referenced in these docs, assume it is the first instance unless a number is given. If so, substitute the appropriate field IDs below.
 
 ## Format
 
