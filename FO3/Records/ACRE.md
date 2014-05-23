@@ -8,18 +8,19 @@ Placed Creature
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring | Editor ID
-+ | NAME | Base | formid |
-- | XEZN | Encounter Zone | formid |
++ | NAME | Base | formid | FormID of a [CREA](CREA.md) record.
+- | XEZN | Encounter Zone | formid | FormID of a [ECZN](ECZN.md) record.
 - | XRGD | Ragdoll Data | ?? | ??
 - | XRGB | Ragdoll Biped Data | ?? | ??
 + | XPRD | Idle Time | float32 | Patrol data
 + | XPPA | Patrol Script Marker | null | Patrol data
-+ | INAM | Idle | formid | Patrol data
-+ | TNAM | Topic | formid | Patrol data
++ | INAM | Idle | formid | Patrol data. FormID of an [IDLE](IDLE.md) record, or null.
++ | | [Embedded Script](Fields/Embedded Script.md) | | A field collection.
++ | TNAM | Topic | formid | Patrol data. FormID of a [DIAL](DIAL.md) record, or null.
 - | XLCM | Level Modifier | int32 |
-- | XOWN | Owner | formid | Ownership data
-- | XRNK | Faction rank | int32 | Ownership data
-- | XMRC | Merchant Container | formid |
+- | XOWN | Owner | formid | Ownership data. FormID of a [FACT](FACT.md), [ACHR](ACHR.md) or [NPC_](NPC_.md) record.
+- | XRNK | Faction rank | int32 | Ownership data 
+- | XMRC | Merchant Container | formid | FormID of a [REFR](REFR.md) record.
 - | XCNT | Count | int32 |
 - | XRDS | Radius | float32 |
 - | XHLP | Health | float32 |
@@ -29,8 +30,8 @@ Count | Field | Name | Type | Info
 - | [XAPD](Fields/XAPD.md) | Flags | uint8 | Activate parents
 -* | [XAPR](Fields/XAPR.md) | Activate Parent Ref | struct | Activate parents
 - | [XESP](Fields/XESP.md) | Enable Parent | struct |
-- | XEMI | Emittance | formid |
-- | XMBR | MultiBound Reference | formid |
+- | XEMI | Emittance | formid | FormID of a [LIGH](LIGH.md) or [REGN](REGN.md) record.
+- | XMBR | MultiBound Reference | formid | FormID of a [REFR](REFR.md) record.
 - | XIBS | Ignored By Sandbox | null | Flag
 - | XSCL | Scale | float32 |
 + | [DATA](Fields/DATA (ACHR, ACRE).md) | Position / Rotation | struct |
