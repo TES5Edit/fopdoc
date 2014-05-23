@@ -15,5 +15,5 @@ Count | Name | Type | Info
 
 Value | Meaning
 ------|--------
-0x00000001 | Set Enable State to Opposite of Parent
-0x00000002 | Pop In
+0x01 | Set Enable State to Opposite of Parent
+0x02 | Pop In
