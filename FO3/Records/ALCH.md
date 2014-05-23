@@ -13,7 +13,7 @@ Count | Field | Name | Type | Info
  | | [Model Data](Fields/Model.md) | | This is a field collection.
  | ICON | Large Icon Filename | cstring | 
  | MICO | Small Icon FIlename | cstring |
- | SCRI | Script | formid | FormID of a SCPT record.
+ | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
  | | [Destruction Data](Fields/Destruction.md) | | This is a field collection.
  | YNAM | Sound - Pick Up | formid | FormID of a [SOUN](SOUN.md) record.
  | ZNAM | Sound - Drop | formid | FormID of a [SOUN](SOUN.md) record.
@@ -59,9 +59,9 @@ Count | Name | Type | Info
 
 Flag | Meaning
 -----|--------
-0x00000001 | No Auto-Calc (Unused)
-0x00000002 | Food Item
-0x00000004 | Medicine
+0x01 | No Auto-Calc (Unused)
+0x02 | Food Item
+0x04 | Medicine
 
 ### EFIT
 
@@ -85,6 +85,7 @@ Value | Meaning
 
 Value | Meaning
 ------|--------
+-1 | None
 0 | Aggression
 1 | Confidence
 2 | Energy
