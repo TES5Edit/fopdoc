@@ -7,5 +7,5 @@ As used in the [ACHR](../ACHR.md) and [ACRE](../ACRE.md) record types.
 
 Count | Name | Type | Info
 ------|------|------|-----
-- | Reference | formid |
+- | Reference | formid | FormID of a [REFR](REFR.md) record.
 - | unknown | ?? | ??
