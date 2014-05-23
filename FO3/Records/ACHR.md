@@ -15,7 +15,7 @@ Count | Field | Name | Type | Info
 + | XPRD | Idle Time | float32 | Patrol data
 + | XPPA | Patrol Script Marker | null | Patrol data
 + | INAM | Idle | formid | Patrol data. FormID of an [IDLE](IDLE.md) record, or null.
-+ | [SCHR](#SCHR) | Basic Script Data | struct | Patrol data, embedded script.
++ | [SCHR](#schr) | Basic Script Data | struct | Patrol data, embedded script.
 + | SCDA | Compiled Embedded Script Source | uint8[] | Patrol data, embedded script.
 + | SCTX | Embedded Script Source | char[] | Patrol data, embedded script.
 -* | | [Local Variables](#local-variables-field-collection) | | This is a field collection.
