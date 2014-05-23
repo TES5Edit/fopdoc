@@ -33,7 +33,7 @@ Count | Name | Type | Info
 
 Flag | Meaning
 -----|--------
-0x00000001 | Head
-0x00000002 | Torso
-0x00000004 | Right Hand
-0x00000008 | Left Hand
+0x01 | Head
+0x02 | Torso
+0x04 | Right Hand
+0x08 | Left Hand
