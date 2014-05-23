@@ -23,7 +23,7 @@ Count | Name | Type | Info
 
 Flag | Meaning
 -----|--------
-0x00000001 | VATS Targetable
+0x01 | VATS Targetable
 
 ### Destruction Stage
 
@@ -44,14 +44,14 @@ Count | Name | Type | Info
 + | Damage Stage | uint8 |
 + | Flags | uint8 | See below for values.
 + | Self Damage per Second | int32 |
-+ | Explosion | formid | FormID of a EXPL record or null.
-+ | Debris | formid | FormID of a DEBR record or null.
++ | Explosion | formid | FormID of a [EXPL](../EXPL.md) record or null.
++ | Debris | formid | FormID of a [DEBR](../DEBR.md) record or null.
 + | Debris Count | int32 |
 
 ##### DSTD Flag Values
 
 Flag | Meaning
 -----|--------
-0x00000001 | Cap Damage
-0x00000002 | Disable
-0x00000004 | Destroy
+0x01 | Cap Damage
+0x02 | Disable
+0x04 | Destroy
