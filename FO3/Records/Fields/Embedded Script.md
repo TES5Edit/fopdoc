@@ -21,7 +21,7 @@ Count | Name | Type | Info
  | Compiled Size | uint32 |
  | Variable Count | uint32 |
  | Type | uint16 | See below for values.
- | Flags | | See below for values.
+ | Flags | uint16 | See below for values.
  
 #### Type Enum Values
 
@@ -35,14 +35,14 @@ Value | Meaning
 
 Value | Meaning
 ------|--------
-0x00000001 | Enabled
+0x0001 | Enabled
 
 ### Local Variables
 
 
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
-+ | [SLSD](#SLSD) | Local Variable Data | struct | Patrol data, embedded script.
++ | [SLSD](#slsd) | Local Variable Data | struct | Patrol data, embedded script.
 + | SCVR | Local Variable Name | cstring | Patrol data, embedded script.
 
 #### SLSD
@@ -51,11 +51,11 @@ Count | Name | Type | Info
 ------|------|------|-----
  | Index | uint32 |
  | Unused | uint8[12] |
- | Flags | uint8 | 
+ | Flags | uint8 | See below for values.
  | Unused | uint8[7] |
  
 ##### Flag Values
 
 Value | Meaning
 ------|--------
-0x00000001 | IsLongOrShort
+0x01 | IsLongOrShort
