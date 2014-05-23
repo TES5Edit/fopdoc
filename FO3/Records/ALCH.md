@@ -17,32 +17,12 @@ Count | Field | Name | Type | Info
  | | [Destruction Data](Fields/Destruction.md) | | This is a field collection.
  | YNAM | Sound - Pick Up | formid | FormID of a [SOUN](SOUN.md) record.
  | ZNAM | Sound - Drop | formid | FormID of a [SOUN](SOUN.md) record.
-+ | [ETYP](#etyp-enum-values) | Equipment Type | int32 |
++ | [ETYP](Fields/ETYP.md) | Equipment Type | int32 |
 + | DATA | Weight | float32 |
 + | [ENIT](#enit) | Effect Data | struct |
 +* | EFID | Base Effect | formid | FormID of a [MGEF](MGEF.md) record.
 +* | [EFIT](#efit) | Effect Data | struct |
 +* | CTDA | Condition | struct |
- 
-### ETYP Enum Values
-
-Value | Meaning
-------|--------
--1 | None
-0 | Big Guns
-1 | Energy Weapons
-2 | Small Guns
-3 | Melee Weapons
-4 | Unarmed Weapon
-5 | Thrown Weapons
-6 | Mine
-7 | Body Wear
-8 | Head Wear
-9 | Hand Wear
-10 | Chems
-11 | Stimpack
-12 | Food
-13 | Alcohol
 
 ### ENIT
 
