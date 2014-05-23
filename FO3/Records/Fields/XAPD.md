@@ -13,4 +13,4 @@ Count | Name | Type | Info
 
 Flag | Meaning
 -----|--------
-0x00000001 | Parent Activate Only
+0x01 | Parent Activate Only
