@@ -249,7 +249,7 @@ Value | Meaning
 ### Sound Type Field Collection
 
 Count | Field | Name | Type | Info
-------|------|------|-----
+------|-------|------|------|-----
  | CSDT | Type | uint32 | Enum - see below for values.
 +* | CSDI | Sound | formid | FormID of a [SOUN](SOUN.md) record.
 +* | CSDC | Sound Chance | uint8 |
