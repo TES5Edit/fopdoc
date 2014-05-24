@@ -12,7 +12,7 @@ Count | Field | Name | Type | Info
  | FULL | Name | cstring |
 + | | [Male Biped Model Data](Fields/Model.md) | | This is a field collection.
  | ICON | Large icon filename | cstring | 
- | ICON | Small icon filename | cstring | 
+ | MICO | Small icon filename | cstring | 
  | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
 + | DESC | Description | cstring |
  | | [Destruction Data](Fields/Destruction.md) | | This is a field collection.
