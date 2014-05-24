@@ -29,9 +29,3 @@ Count | Field | Name | Type | Info
  | ZNAM | Sound - Drop | formid | FormID of a [SOUN](SOUN.md) record.
 + | [DATA](Fields/DATA (ARMO, ARMA).md) | Data | struct |
 + | [DNAM](Fields/DNAM (ARMO, ARMA).md) | | struct |
- 
-### DATA
-
-
-### DNAM
-
