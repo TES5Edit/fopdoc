@@ -22,7 +22,7 @@ Count | Name | Type | Info
 -* | Tag Skill | int32 | Enum - see below for values. There are 4 Tag Skill fields in this block.
  | Flags | uint32 | See below for values.
  | Buys/Sells and Services | uint32 | Flags. See below for values.
- | [Teaches]](Enums/Skills.md) | int8 | See the link for enum values.
+ | [Teaches](Enums/Skills.md) | int8 | See the link for enum values.
  | Maximum Training Level | uint8 | 
  | Unused | uint8[2] |
 
