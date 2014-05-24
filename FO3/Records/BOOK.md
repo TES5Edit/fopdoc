@@ -25,7 +25,7 @@ Count | Field | Name | Type | Info
 Count | Name | Type | Info
 ------|------|------|-----
  | Flags | uint8 |
- | [Skill](Enums/Skills.md) | int8 | See the link for enum values.
+ | [Skill](Values/Skills.md) | int8 | See the link for enum values.
  | Value | int32 |
  | Weight | float32 |
 
