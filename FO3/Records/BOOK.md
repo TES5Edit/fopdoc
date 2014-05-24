@@ -7,10 +7,10 @@ Book
 
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
-+ | EDID | Editor ID | cstring | Editor ID
++ | EDID | Editor ID | cstring |
 + | [OBND](Fields/OBND.md) | Object Bounds | struct |
  | FULL | Name | cstring |
-+ | | [Male Biped Model Data](Fields/Model.md) | | This is a field collection.
++ | | [Model Data](Fields/Model.md) | | This is a field collection.
  | ICON | Large icon filename | cstring | 
  | MICO | Small icon filename | cstring | 
  | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
