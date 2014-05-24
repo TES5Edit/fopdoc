@@ -12,9 +12,9 @@ Count | Field | Name | Type | Info
  | FULL | Name | cstring |
 + | | [Model Data](Fields/Model.md) | | This is a field collection.
  | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
--* | | Item | | This is a field collection. See below for details.
+-* | | [Item](#item-field-collection) | | This is a field collection. See below for details.
  | | [Destruction Data](Fields/Destruction.md) | | This is a field collection.
- | DATA | Data | struct
+ | [DATA](#data) | Data | struct | 
  | SNAM | Sound - Open | formid | FormID of a [SOUN](SOUN.md) record.
  | QNAM | Sound - Close | formid | FormID of a [SOUN](SOUN.md) record.
  
@@ -23,8 +23,8 @@ Count | Field | Name | Type | Info
 
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
- | CNTO | Item | struct | 
- | COED | Extra Data | struct |
+ | [CNTO](#cnto) | Item | struct | 
+ | [COED](#coed) | Extra Data | struct |
 
 #### CNTO
 
@@ -41,5 +41,17 @@ Count | Name | Type | Info
  | Global Variable / Required Rank | formid *or* uint32 | FormID of a [GLOB](GLOB.md) record, an integer representing the required rank, or null.
  | Item Condition | float32 |
  
+### DATA
+
+Count | Name | Type | Info
+------|------|------|-----
+ | Flags | uint8 | See below for values.
+ | Weight | float32 | 
  
+#### Flag Values
+
+Value | Meaning
+------|--------
+0x01 | ??
+0x02 | Respawns
  
