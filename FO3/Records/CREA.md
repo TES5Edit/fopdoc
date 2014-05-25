@@ -11,7 +11,7 @@ Count | Field | Name | Type | Info
 + | [OBND](Fields/OBND.md) | Object Bounds | struct |
 + | FULL | Name | cstring |
  | | [Model Data](Fields/Model.md) | | This is a field collection.
- | SPLO | | |
+-* | SPLO | Actor Effect | formid | FormID of a [SPEL](SPEL.md) record.
  | EITM | Unarmed Attack Effect | formid | FormID of a [ENCH](ENCH.md) or [SPEL](SPEL.md) record.
 + | EAMT | Unarmed Attack Animation | uint16 | 
 -* | NIFZ | Model | cstring |
