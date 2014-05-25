@@ -15,7 +15,7 @@ Count | Field | Name | Type | Info
 + | XPRD | Idle Time | float32 | Patrol data
 + | XPPA | Patrol Script Marker | null | Patrol data
 + | INAM | Idle | formid | Patrol data. FormID of an [IDLE](IDLE.md) record, or null.
-+ | | [Embedded Script](Fields/Embedded Script.md) | | A field collection.
++ | | [Embedded Script](Fields/Script.md) | | Patrol data. A field collection.
 + | TNAM | Topic | formid | Patrol data. FormID of a [DIAL](DIAL.md) record, or null.
 - | XLCM | Level Modifier | int32 |
 - | XMRC | Merchant Container | formid | FormID of a [REFR](REFR.md) record.
