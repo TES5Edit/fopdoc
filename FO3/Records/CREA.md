@@ -35,7 +35,7 @@ Count | Field | Name | Type | Info
 + | BNAM | Base Scale | float32 |
 + | WNAM | Foot Weight | float32 |
 + | NAM4 | Impact Material Type | uint32 | Enum - see below for values.
-+ | NAM5 | Sound Level | uint32 | Enum - see below for values.
++ | [NAM5](Values/Sound Levels.md) | Sound Level | uint32 | Enum - see link for values.
  | CSCR | Inherits Sounds from | formid | FormID of a [CREA](CREA.md) record.
 -* | | Sound Type | | This is a field collection. See below for details.
  | CNAM | Impact Dataset | formid | FormID of a [IPDS](IPDS.md) record.
@@ -237,14 +237,6 @@ Value | Meaning
 9 | Hollow Metal
 10 | Organic Bug
 11 | Organic Glow
-
-### NAM5 Enum Values
-
-Value | Meaning
-------|--------
-0 | Loud
-1 | Normal
-2 | Silent
 
 ### Sound Type Field Collection
 
