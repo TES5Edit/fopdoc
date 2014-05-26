@@ -4,7 +4,7 @@ Actor Values
 Value | Meaning
 ------|--------
 -1 | None
-00 | Aggresion
+00 | Aggression
 01 | Confidence
 02 | Energy
 03 | Responsibility
