@@ -13,6 +13,17 @@ Count | Field | Name | Type | Info
  | PNAM | Previous INFO | formid | FormID of an [INFO](INFO.md) record, or null.
 -* | NAME | Topic | formid | FormID of a [DIAL](DIAL.md) record.
 -* | | Response | | A field collection, see below for details.
+-* | [CTDA](Fields/CTDA.md) | Condition | struct |
+-* | TCLT | Choice | formid | FormID of a [DIAL](DIAL.md) record.
+-* | TCLF | Topic | formid | FormID of a [DIAL](DIAL.md) record.
++ | | [Embedded Script](Fields/Script.md) | | A field collection.
++ | NEXT | Marker | null |
++ | | [Embedded Script](Fields/Script.md) | | A field collection.
+ | SNDD | Unused | formid | FormID of a [SOUN](SOUN.md) record.
+ | RNAM | Prompt | cstring |
+ | ANAM | Speaker | formid | FormID of a [CREA](CREA.md) or [NPC_](NPC_.md) record.
+ | KNAM | Actor Value / Perk | formid | FormID of a [AVIF](AVIF.md) or [PERK](PERK.md) record.
+ | DNAM | Speech Challenge | uint32 | Enum - see below for values
 
 ### DATA
 
@@ -100,3 +111,14 @@ Value | Meaning
 Value | Meaning
 ------|--------
 0x01 | Use Emotion Animation
+
+### Speech Challenge Values
+
+Value | Meaning
+------|--------
+0 | ---
+1 | Very Easy
+2 | Easy
+3 | Average
+4 | Hard
+5 | Very Hard
