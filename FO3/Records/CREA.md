@@ -49,8 +49,7 @@ Count | Name | Type | Info
  | Flags | uint32 | See below for values.
  | Fatigue | uint16 | 
  | Barter Gold | uint16
- | Level | int16 | 
- | Level Mult | int16 | Value is divided by 1000 by game.
+ | Level / Level Mult | int16 | If the 0x00000080 flag is set, the value is divided by 1000 to give a multiplier.
  | Calc Min | uint16 | 
  | Calc Max | uint16 |
  | Speed Multiplier | uint16 |
