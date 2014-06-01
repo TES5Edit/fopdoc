@@ -20,41 +20,41 @@ Count | Name | Type | Info
  
 ### Flag Values
 
-Flag values for [CREA](../CREA.md) and [NPC_](../NPC_.md) records differ. The table below gives the CREA values and NPC_ values where they differ.
+Flag values for [CREA](../CREA.md) and [NPC_](../NPC_.md) records differ.
 
 Value | Meaning (CREA) | Meaning (NPC_)
-------|--------
+------|----------------|---------------
 0x00000001 | Biped | Female
-0x00000002 | Essential
+0x00000002 | Essential | Essential
 0x00000004 | Weapon & Shield | Is CharGen Face Preset
-0x00000008 | Respawn
+0x00000008 | Respawn | Respawn
 0x00000010 | Swims | Auto-calc stats
 0x00000020 | Flies | ??
 0x00000040 | Walks | ??
-0x00000080 | PC Level Mult
+0x00000080 | PC Level Mult | PC Level Mult
 0x00000100 | ?? | Use Template
-0x00000200 | No Low Level Processing
-0x00000400 | ??
-0x00000800 | No Blood Spray
-0x00001000 | No Blood Decal
-0x00002000 | ??
-0x00004000 | ??
+0x00000200 | No Low Level Processing | No Low Level Processing
+0x00000400 | ?? | ??
+0x00000800 | No Blood Spray | No Blood Spray
+0x00001000 | No Blood Decal | No Blood Decal
+0x00002000 | ?? | ??
+0x00004000 | ?? | ??
 0x00008000 | No Head | ??
 0x00010000 | No Right Arm | ??
 0x00020000 | No Left Arm | ??
 0x00040000 | No Combat in Water | ??
 0x00080000 | No Shadow | ??
-0x00100000 | No VATS Melee
+0x00100000 | No VATS Melee | No VATS Melee
 0x00200000 | Allow PC Dialogue | ??
 0x00400000 | Can't Open Doors | Can be all races
 0x00800000 | Immobile | ??
 0x01000000 | Tilt Front/Back | ??
 0x02000000 | Tilt Left/Right | ??
-0x03000000 | No Knockdowns
-0x08000000 | Not Pushable
+0x03000000 | No Knockdowns | No Knockdowns
+0x08000000 | Not Pushable | Not Pushable
 0x10000000 | Allow Pickpocket | ??
 0x20000000 | Is Ghost | ??
-0x40000000 | No Rotating To Head-track
+0x40000000 | No Rotating To Head-track | No Rotating To Head-track
 0x80000000 | Invulnerable | ??
 
 ### Template Flag Values
