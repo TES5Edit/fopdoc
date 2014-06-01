@@ -13,7 +13,7 @@ Count | Field | Name | Type | Info
  | | [Model Data](Fields/Model.md) | | This is a field collection.
 -* | SPLO | Actor Effect | formid | FormID of a [SPEL](SPEL.md) record.
  | EITM | Unarmed Attack Effect | formid | FormID of a [ENCH](ENCH.md) or [SPEL](SPEL.md) record.
-+ | EAMT | Unarmed Attack Animation | uint16 | 
++ | [EAMT](Values/Attack Animations.md) | Unarmed Attack Animation | uint16 |
 -* | NIFZ | Model | cstring |
  | NIFT | Texture File Hashes | uint8[] |
 + | [ACBS](Fields/ACBS.md) | Configuration | struct |
