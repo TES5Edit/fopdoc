@@ -34,7 +34,7 @@ Count | Field | Name | Type | Info
 + | TNAM | Turning Speed | float32 | 
 + | BNAM | Base Scale | float32 |
 + | WNAM | Foot Weight | float32 |
-+ | NAM4 | Impact Material Type | uint32 | Enum - see below for values.
++ | [NAM4](Values/Impact Material Types.md) | Impact Material Type | uint32 | 
 + | [NAM5](Values/Sound Levels.md) | Sound Level | uint32 | Enum - see link for values.
  | CSCR | Inherits Sounds from | formid | FormID of a [CREA](CREA.md) record.
 -* | | Sound Type | | This is a field collection. See below for details.
@@ -78,24 +78,6 @@ ATTR Field | Attribute
 5th | Intelligence
 6th | Agility
 7th | Luck
-
-
-### NAM4 Enum Values
-
-Value | Meaning
-------|--------
-0 | Stone
-1 | Dirt
-2 | Grass
-3 | Glass
-4 | Metal
-5 | Wood
-6 | Organic
-7 | Cloth
-8 | Water
-9 | Hollow Metal
-10 | Organic Bug
-11 | Organic Glow
 
 ### Sound Type Field Collection
 
