@@ -17,7 +17,7 @@ Count | Field | Name | Type | Info
 -* | NIFZ | Model | cstring |
  | NIFT | Texture File Hashes | uint8[] |
 + | [ACBS](Fields/ACBS.md) | Configuration | struct |
--* | SNAM | Faction | struct |
+-* | [SNAM](Fields/SNAM (CREA, NPC_).md) | Faction | struct |
  | INAM | Death Item | formid | FormID of a [LVLI](LVLI.md) record.
  | VTCK | Voice | formid | FormID of a [VTYP](VTYP.md) record.
  | TPLT | Template | formid | FormID of a [CREA](CREA.md) or [LVLC](LVLC.md) record.
@@ -41,13 +41,6 @@ Count | Field | Name | Type | Info
  | CNAM | Impact Dataset | formid | FormID of a [IPDS](IPDS.md) record.
  | LNAM | Melee Weapon List | formid | FormID of a [FLST](FLST.md) record.
 
-### SNAM
-
-Count | Name | Type | Info
-------|------|------|-----
- | Faction | formid | FormID of a [FACT](FACT.md) record.
- | Rank | uint8 | 
- | Unused | uint8[3] |
  
 ### AIDT
 
