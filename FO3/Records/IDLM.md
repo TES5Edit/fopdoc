@@ -12,7 +12,7 @@ Count | Field | Name | Type | Info
 + | IDLF | Flags | uint8 | See below for values.
 + | IDLC | | struct | 
 + | IDLT | Idle Timer Setting | float32 |
-+* | IDLA | Animation | float32 | FormID of a [IDLE](IDLE.md) record, or null.
++* | IDLA | Animation | formid | FormID of a [IDLE](IDLE.md) record, or null.
 
 ### IDLF Flag Values
 
