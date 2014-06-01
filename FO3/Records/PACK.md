@@ -9,7 +9,23 @@ Count | Field | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
 + | PKDT | General | struct |
+-* | | Location | | A field collection, see below for details.
++ | PSDT | Schedule | struct |
+ | PTDT | Target 1 | struct |
+-* | [CTDA](Fields/CTDA.md) | Condition | struct |
++ | IDLF | Idle Animation Flags | uint8 | See below for values.
++ | IDLC | Idle Animation Count | struct |
++ | IDLT | Idle Timer Setting | float32 |
++* | IDLA | Idle Animations | formid | FormID of an [IDLE](IDLE.md) record.
+ | IDLB | Unused | uint8[4] |
+ | CNAM | Combat Style | formid | FormID of a [CSTY](CSTY.md) record.
+ | PKED | Eat Marker | null |
+ | PKE2 | Escort Distance | uint32 |
+ | PKFD | Follow - Start Location - Trigger Radius | float32 |
+ | PKPT | Patrol Flags | uint16 |
+ | PKW3 | Use Weapon Data | struct |
  
+
 ### PKDT
 
 Count | Name | Type | Info
@@ -101,13 +117,148 @@ The `Follow`, `Sleep`, `Travel`, `Accompany`, `Flee Not Combat`, `??`, `Patrol`,
 Value | Meaning (Find / Escort / Eat) | Meaning (Wander / Sandbox) | Meaning (Use Item At) | Meaning (Ambush) | Meaning (Guard)
 ------|-------------------------------|------------------|-----------------------|------------------|---------------
 0x0001 | ?? | No Eating | | Hide While Ambushing | 
-0x0002 | ?? | No Sleeping | Sit Down | 
-0x0004 | ?? | No Conversation | | Remain Near Reference to Guard
-0x0008 | ?? | No Idle Markers | | 
-0x0010 | ?? | No Furniture | | 
-0x0020 | ?? | No Wandering | | 
-0x0040 | ?? | | | 
-0x0080 | ?? | | | 
+0x0002 | ?? | No Sleeping | Sit Down | |
+0x0004 | ?? | No Conversation | | | Remain Near Reference to Guard
+0x0008 | ?? | No Idle Markers | | |
+0x0010 | ?? | No Furniture | | |
+0x0020 | ?? | No Wandering | | |
+0x0040 | ?? | | | |
+0x0080 | ?? | | | |
 0x0100 | Allow Buying | | Allow Buying | 
 0x0200 | Allow Killing | | Allow Killing | 
 0x0400 | Allow Stealing | | Allow Stealing | 
+
+### Location Field Collection
+
+Count | Field | Name | Type | Info
+------|-------|------|------|-----
+ | PLDT | Location 1 | struct |
+ | PLD2 | Location 2 | struct |
+ 
+#### PLDT / PLD2
+
+Count | Name | Type | Info
+------|------|------|-----
+ | Type | uint32 | Enum - see below for values.
+ | Location | formid *or* uint32 *or* uint8[] | See below for data type info.
+ | Radius | int32 |
+ 
+##### Type Values & Location Data Types
+
+Type Value | Meaning | Location Data Type Info
+-----------|---------|------------------------
+0 | Near Reference | FormID of a [REFR](REFR.md), [PGRE](PGRE.md), [PMIS](PMIS.md), [ACHR](ACHR.md), [ACRE](ACRE.md) or [PLYR](PLYR.md) record.
+1 | In Cell | FormID of a [CELL](CELL.md) record.
+2 | Near Current Location | ??
+3 | Near Editor Location | ??
+4 | Object ID | FormID of a [ACTI](ACTI.md), [DOOR](DOOR.md), [STAT](STAT.md), [FURN](FURN.md), [CREA](CREA.md), [SPEL](SPEL.md), [NPC_](NPC_.md), [CONT](CONT.md), [ARMO](ARMO.md), [AMMO](AMMO.md), [MISC](MISC.md), [WEAP](WEAP.md), [BOOK](BOOK.md), [KEYM](KEYM.md), [ALCH](ALCH.md) or [LIGH](LIGH.md) record.
+5 | Object Type | Enum - see below for values.
+6 | Near Linked Reference | ??
+7 | At Package Location | ??
+
+### PSDT
+
+Count | Name | Type | Info
+------|------|------|-----
+ | Month | int8 |
+ | Day of Week | int8 | Enum - see below for values.
+ | Date | uint8 |
+ | Time | int8 |
+ | Duration | int32 |
+
+#### Day of Week Values
+
+Value | Meaning
+------|--------
+-1 | Any
+0 | Sunday
+1 | Monday
+2 | Tuesday
+3 | Wednesday
+4 | Thursday
+5 | Friday
+6 | Saturday
+7 | Weekdays
+8 | Weekends
+9 | Monday, Wednesday, Friday
+10 | Tuesday, Thursday
+
+### PTDT
+
+Count | Name | Type | Info
+------|------|------|-----
+ | Type | int32 | Enum - see below for values.
+ | Target | formid *or* uint32 *or* uint8[] |
+ | Count / Distance | int32 |
+ | Unknown | float32 |
+
+#### Type Values & Target Data Types
+
+Type Value | Meaning | Target Data Type Info
+-----------|---------|----------------------
+0 | Specific Reference | FormID of a [REFR](REFR.md), [PGRE](PGRE.md), [PMIS](PMIS.md), [ACHR](ACHR.md), [ACRE](ACRE.md) or [PLYR](PLYR.md) record.
+1 | Object ID | FormID of a [ACTI](ACTI.md), [DOOR](DOOR.md), [STAT](STAT.md), [FURN](FURN.md), [CREA](CREA.md), [SPEL](SPEL.md), [NPC_](NPC_.md), [LVLN](LVLN.md), [LVLC](LVLC.md), [CONT](CONT.md), [ARMO](ARMO.md), [AMMO](AMMO.md), [MISC](MISC.md), [WEAP](WEAP.md), [BOOK](BOOK.md), [KEYM](KEYM.md), [ALCH](ALCH.md), [LIGH](LIGH.md), [FACT](FACT.md) or [FLST](FLST.md) record.
+2 | Object Type | Enum - see below for values.
+3 | Linked Reference | ??
+
+### Object Type Values
+
+Value | Meaning
+------|--------
+0 | None
+1 | Activators
+2 | Armor
+3 | Books
+4 | Clothing
+5 | Containers
+6 | Doors
+7 | Ingredients
+8 | Lights
+9 | Misc
+10 | Flora
+11 | Furniture
+12 | Weapons: Any
+13 | Ammo
+14 | NPCs
+15 | Creatures
+16 | Keys
+17 | Alchemy
+18 | Food
+19 | All: Combat Wearable
+20 | All: Wearable
+21 | Weapons: Ranged
+22 | Weapons: Melee
+23 | Weapons: NONE
+24 | Actor Effects: Any
+25 | Actor Effects: Range Target
+26 | Actor Effects: Range Touch
+27 | Actor Effects: Range Self
+28 | ??
+29 | Actors: Any
+
+### Idle Animation Flag Values
+
+Value | Meaning
+------|--------
+0x01 | Run In Sequence
+0x02 | ??
+0x04 | Do Once
+
+### IDLC
+
+Count | Name | Type | Info
+------|------|------|-----
+ | Animation Count | uint8 |
+ | Unused | uint8[3] |
+
+### PKPT
+
+Count | Name | Type | Info
+------|------|------|-----
+ | Repeatable | uint8 | A value of `0` means `Not Repeatable`, and a value of `1` means `Repeatable`.
+ | Unused | uint8 |
+ 
+### PKW3
+
+Count | Name | Type | Info
+------|------|------|-----
