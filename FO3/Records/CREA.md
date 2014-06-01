@@ -24,7 +24,7 @@ Count | Field | Name | Type | Info
  | | [Destruction Data](Fields/Destruction.md) | | This is a field collection.
  | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
 -* | | [Item](Fields/Item.md) | | This is a field collection.
- | AIDT | AI Data | struct |
+ | [AIDT](Fields/AIDT.md) | AI Data | struct |
 -* | PKID | Package | formid | FormID of a [PACK](PACK.md) record.
 -* | KFFZ | Animation | cstring |
 + | DATA | Data | struct |
@@ -40,71 +40,6 @@ Count | Field | Name | Type | Info
 -* | | Sound Type | | This is a field collection. See below for details.
  | CNAM | Impact Dataset | formid | FormID of a [IPDS](IPDS.md) record.
  | LNAM | Melee Weapon List | formid | FormID of a [FLST](FLST.md) record.
-
- 
-### AIDT
-
-Count | Name | Type | Info
-------|------|------|-----
- | Aggression | uint8 | Enum - see below for values.
- | Confidence | uint8 | Enum - see below for values.
- | Energy Level | uint8 |
- | Responsibility | uint8 |
- | Mood | uint8 | Enum - see below for values.
- | Unused | uint8[3] |
- | [Buys/Sells and Services](Values/Services.md) | uint32 | Flags - see link for values.
- | [Teaches](Values/Skills.md) | int8 | Enum - see link for values.
- | Maximum Training Level | uint8 | 
- | Assistance | int8 | Enum - see below for values.
- | Aggro Radius Behaviour | uint8 | Flags - see below for values.
- | Aggro Radius | int32 |
- 
- 
-#### Aggression Enum Values
-
-Value | Meaning
-------|--------
-0 | Unaggressive
-1 | Aggressive
-2 | Very Aggressive
-3 | Frenzied
- 
-#### Confidence Enum Values
-
-Value | Meaning
-------|--------
-0 | Cowardly
-1 | Cautious
-2 | Average
-3 | Brave
-4 | Foolhardy
-
-#### Mood Enum Values
-
-Value | Meaning
-------|--------
-0 | Neutral 
-1 | Afraid
-2 | Annoyed
-3 | Cocky
-4 | Drugged
-5 | Pleasant
-6 | Angry
-7 | Sad
-
-#### Assistance Enum Values
-
-Value | Meaning
-------|--------
-0 | Helps Nobody
-1 | Helps Allies
-2 | Helps Friends and Allies
-
-#### Aggro Radius Behavior Flag Values
-
-Value | Meaning
-------|--------
-0x01 | Aggro Radius Behavior
 
 ### DATA
 
