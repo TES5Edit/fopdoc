@@ -28,6 +28,19 @@ Count | Field | Name | Type | Info
  | PUID | Use Item Marker | null |
  | PKAM | Ambush Marker | null |
  | PKDD | Dialog Data | struct |
+ | PLD2 | Location 2 (repeated??) | struct |
++ | POBA | OnBegin Marker | null |
++ | INAM | OnBegin Idle | formid | FormID of an [IDLE](IDLE.md) record, or null.
++ | | [OnBegin Embedded Script](Fields/Script.md) | | A field collection.
++ | TNAM | OnBegin Topic | formid | FormID of a [DIAL](DIAL.md) record, or null.
++ | POBA | OnEnd Marker | null |
++ | INAM | OnEnd Idle | formid | FormID of an [IDLE](IDLE.md) record, or null.
++ | | [OnEnd Embedded Script](Fields/Script.md) | | A field collection.
++ | TNAM | OnEnd Topic | formid | FormID of a [DIAL](DIAL.md) record, or null.
++ | POBA | OnChange Marker | null |
++ | INAM | OnChange Idle | formid | FormID of an [IDLE](IDLE.md) record, or null.
++ | | [OnChange Embedded Script](Fields/Script.md) | | A field collection.
++ | TNAM | OnChange Topic | formid | FormID of a [DIAL](DIAL.md) record, or null.
  
 
 ### PKDT
