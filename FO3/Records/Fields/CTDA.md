@@ -315,11 +315,11 @@ Both | Base Effect | formid | FormID of a [MGEF](../MGEF.md) record.
 Both | Worldspace | formid | FormID of a [WRLD](../WRLD.md) record.
 1 | VATS Value Function | uint32 | Enum - see values below.
 2 | VATS Value Param | uint32 | 
-Creature Type | uint32 | Enum - see values below.
-Menu Mode | uint32 | Enum - see values below.
-Player Action | uint32 | Enum - see values below.
-Body Location | int32 | Enum - see values below.
-Referenceable Object | formid | FormID of a [CREA](../CREA.md), [NPC_](../NPC_.md), [PROJ](../PROJ.md), [TREE](../TREE.md), [SOUN](../SOUN.md), [ACTI](../ACTI.md), [DOOR](../DOOR.md), [STAT](../STAT.md), [FURN](../FURN.md), [CONT](../CONT.md), [ARMO](../ARMO.md), [AMMO](../AMMO.md), [MISC](../MISC.md), [WEAP](../WEAP.md), [BOOK](../BOOK.md), [KEYM](../KEYM.md), [ALCH](../ALCH.md), [LIGH](../LIGH.md), [GRAS](../GRAS.md), [ASPC](../ASPC.md), [IDLM](../IDLM.md), [ARMA](../ARMA.md), [MSTT](../MSTT.md), [NOTE](../NOTE.md), [PWAT](../PWAT.md), [SCOL](../SCOL.md), [TACT](../TACT.md), [TERM](../TERM.md), [FLST](../FLST.md), [CHIP](../CHIP.md), [CMNY](../CMNY.md), [CCRD](../CCRD.md) or [IMOD](../IMOD.md) record.
+Both | Creature Type | uint32 | Enum - see values below.
+Both | Menu Mode | uint32 | Enum - see values below.
+Both | Player Action | uint32 | Enum - see values below.
+Both | Body Location | int32 | Enum - see values below.
+Both | Referenceable Object | formid | FormID of a [CREA](../CREA.md), [NPC_](../NPC_.md), [PROJ](../PROJ.md), [TREE](../TREE.md), [SOUN](../SOUN.md), [ACTI](../ACTI.md), [DOOR](../DOOR.md), [STAT](../STAT.md), [FURN](../FURN.md), [CONT](../CONT.md), [ARMO](../ARMO.md), [AMMO](../AMMO.md), [MISC](../MISC.md), [WEAP](../WEAP.md), [BOOK](../BOOK.md), [KEYM](../KEYM.md), [ALCH](../ALCH.md), [LIGH](../LIGH.md), [GRAS](../GRAS.md), [ASPC](../ASPC.md), [IDLM](../IDLM.md), [ARMA](../ARMA.md), [MSTT](../MSTT.md), [NOTE](../NOTE.md), [PWAT](../PWAT.md), [SCOL](../SCOL.md), [TACT](../TACT.md), [TERM](../TERM.md), [FLST](../FLST.md), [CHIP](../CHIP.md), [CMNY](../CMNY.md), [CCRD](../CCRD.md) or [IMOD](../IMOD.md) record.
 2 | Quest Objective | int32 | 
 Both | Reputation | formid | FormID of a [REPU](../REPU.md) record.
 Both | Region | formid | FormID of a [REGN](../REGN.md) record.
