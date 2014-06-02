@@ -24,6 +24,10 @@ Count | Field | Name | Type | Info
  | PKFD | Follow - Start Location - Trigger Radius | float32 |
  | PKPT | Patrol Flags | uint16 |
  | PKW3 | Use Weapon Data | struct |
+ | PTD2 | Target 2 | struct |
+ | PUID | Use Item Marker | null |
+ | PKAM | Ambush Marker | null |
+ | PKDD | Dialog Data | struct |
  
 
 ### PKDT
@@ -183,7 +187,7 @@ Value | Meaning
 9 | Monday, Wednesday, Friday
 10 | Tuesday, Thursday
 
-### PTDT
+### PTDT / PTD2
 
 Count | Name | Type | Info
 ------|------|------|-----
@@ -262,3 +266,89 @@ Count | Name | Type | Info
 
 Count | Name | Type | Info
 ------|------|------|-----
+ | Flags | uint32 | See below for values.
+ | Fire Rate | uint8 | Enum - see below for values.
+ | Fire Count | uint8 | Enum - see below for values.
+ | Number of Bursts | uint16 |
+ | Shots Per Volley (Min) | uint16 |
+ | Shots Per Volley (Max) | uint16 |
+ | Pause Between Volleys (Min) | float32 |
+ | Pause Between Volleys (Max) | float32 |
+ | Unused | uint8[4] |
+ 
+#### Flag Values
+
+Value | Meaning
+------|--------
+0x00000001 | Al
+ways Hit
+0x00000002 | ??
+0x00000004 | ??
+0x00000008 | ??
+0x00000010 | ??
+0x00000020 | ??
+0x00000040 | ??
+0x00000080 | ??
+0x00000100 | Do No Damage
+0x00000200 | ??
+0x00000400 | ??
+0x00000800 | ??
+0x00001000 | ??
+0x00002000 | ??
+0x00004000 | ??
+0x00008000 | ??
+0x00010000 | Crouch To Reload
+0x00020000 | ??
+0x00040000 | ??
+0x00080000 | ??
+0x00100000 | ??
+0x00200000 | ??
+0x00400000 | ??
+0x00800000 | ??
+0x01000000 | Hold Fire When Blocked
+
+#### Fire Rate Values
+
+Value | Meaning
+------|--------
+0 | Auto Fire
+1 | Volley Fire
+
+#### Fire Count Values
+
+Value | Meaning
+------|--------
+0 | Number of Bursts
+1 | Repeat Fire
+
+### PKDD
+
+Count | Name | Type | Info
+------|------|------|-----
+ | FOV | float32 |
+ | Topic | formid | FormID of a [DIAL](DIAL.md) record, or null.
+ | Flags | uint32 | See below for values.
+ | Unused | uint8[4] |
+ | Dialog Type | uint32 | Enum - see below for values.
+ 
+#### Flag Values
+
+------|--------
+0x00000001 | No Headtracking
+0x00000002 | ??
+0x00000004 | ??
+0x00000008 | ??
+0x00000010 | ??
+0x00000020 | ??
+0x00000040 | ??
+0x00000080 | ??
+0x00000100 | Don't Control Target Movement
+
+#### Dialog Type Values
+
+Value | Meaning
+------|--------
+0 | Say Tosation
+1 | Say To
+
+
