@@ -280,8 +280,7 @@ Count | Name | Type | Info
 
 Value | Meaning
 ------|--------
-0x00000001 | Al
-ways Hit
+0x00000001 | Always Hit
 0x00000002 | ??
 0x00000004 | ??
 0x00000008 | ??
@@ -333,6 +332,7 @@ Count | Name | Type | Info
  
 #### Flag Values
 
+Value | Meaning
 ------|--------
 0x00000001 | No Headtracking
 0x00000002 | ??
