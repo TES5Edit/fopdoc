@@ -22,7 +22,7 @@ Count | Field | Name | Type | Info
  | XCNT | Count | int32 |
  | XRDS | Radius | float32 |
  | XHLP | Health | float32 |
--* | XPWR | Water Reflection / Refraction | struct |
+-* | [XPWR](Fields/XPWR.md) | Water Reflection / Refraction | struct |
 -* | [XDCR](Fields/XDCR.md) | Decal | struct | Linked decals
  | XLKR | Linked Reference | formid | FormID of a [REFR](REFR.md), [ACRE](ACRE.md), [ACHR](ACHR.md), [PGRE](PGRE.md) or [PMIS](PMIS.md) record.
  | [XCLP](Fields/XCLP.md) | Linked Reference Color | struct |
@@ -34,19 +34,3 @@ Count | Field | Name | Type | Info
  | XIBS | Ignored By Sandbox | null | Flag
  | XSCL | Scale | float32 |
 + | [DATA](Fields/DATA (ACHR, ACRE).md) | Position / Rotation | struct |
- 
-### XPWR
-
-Count | Name | Type | Info
-------|------|------|-----
- | Reference | formid | FormID of a [REFR](REFR.md) record.
- | Type | uint32 | Flags - see below for values.
- 
-#### Type Flag Values
-
-Value | Meaning
-------|--------
-0x00000001 | Reflection
-0x00000002 | Refraction
-
-
