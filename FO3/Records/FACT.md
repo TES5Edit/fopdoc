@@ -9,28 +9,10 @@ Count | Field | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
  | FULL | Name | cstring |
--* | XNAM | Relation | struct |
+-* | [XNAM](Fields/XNAM (FACT, RACE).md) | Relation | struct |
  | DATA | Data | struct |
  | CNAM | Unused | float32 |
 -* | | Rank | | This is a field collection, see below for details.
-
-
-### XNAM
-
-Count | Name | Type | Info
-------|------|------|-----
- | Faction | formid | FormID of a [FACT](FACT.md) or [RACE](RACE.md) record.
- | Modifier | int32 |
- | Group Combat Reaction | uint32 | Enum - see values below.
- 
-#### Group Combat Reaction Enum Values
-
-Value | Meaning
-------|--------
-0 | Neutral
-1 | Enemy
-2 | Ally
-3 | Friend
 
 ### DATA
 
