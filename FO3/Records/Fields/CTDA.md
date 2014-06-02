@@ -269,73 +269,73 @@ Index | Function
 557 | GetActorsInHigh
 558 | HasLoaded3D
 
-### Parameter #1
+### Parameters
 
-The parameter can be any of the following.
+The parameters can be any of the following.
 
-Name | Type | Info
------|------|-----
-Unknown | uint8[4] |
-None | uint8[4] |
-Integer | int32 |
-Variable Name | int32 | Invalid
-Sex | uint32 | Enum - see values below.
-[Actor Value](../Values/Actor Values.md) | int32 |
-Crime Type | uint32 | Enum - see values below.
-Axis | uint32 | Enum - see values below.
-Quest Stage | int32 | Invalid
-Misc Stat | uint32 | Enum - see values below.
-Alignment | uint32 | Enum - see values below.
-Equipment Type | uint32 | Enum - see [ETYP](ETYP.md) for values.
-Form Type | uint32 | Enum - see values below.
-Critical Stage | uint32 | Enum - see values below.
-Object Reference | formid | FormID of a [PLYR](../PLYR.md), [REFR](../REFR.md), [ACHR](../ACHR.md), [ACRE](../ACRE.md), [PGRE](../PGRE.md), [PMIS](../PMIS.md) or [TRGT](../TRGT.md) record.
-Inventory Object | formid | FormID of a [ARMO](../ARMO.md), [BOOK](../BOOK.md), [MISC](../MISC.md), [WEAP](../WEAP.md), [AMMO](../AMMO.md), [KEYM](../KEYM.md), [ALCH](../ALCH.md), [NOTE](../NOTE.md), [FLST](../FLST.md), [CHIP](../CHIP.md), [CMNY](../CMNY.md) or [IMOD](../IMOD.md) record.
-Actor | formid | FormID of a [PLYR](../PLYR.md), [ACHR](../ACHR.md), [ACRE](../ACRE.md) or [TRGT](../TRGT.md) record.
-Voice Type | formid | FormID of a [VTYP](../VTYP.md) record.
-Idle | formid | FormID of a [IDLE](../IDLE.md) record.
-Form List | formid | FormID of a [FLST](../FLST.md) record.
-Note | formid | FormID of a [NOTE](../NOTE.md) record.
-Quest | formid | FormID of a [QUST](../QUST.md) record.
-Faction | formid | FormID of a [FACT](../FACT.md) record.
-Weapon | formid | FormID of a [WEAP](../WEAP.md) record.
-Cell | formid | FormID of a [CELL](../CELL.md) record.
-Class | formid | FormID of a [CLAS](../CLAS.md) record.
-Race | formid | FormID of a [RACE](../RACE.md) record.
-Actor Base | formid | FormID of a [NPC_](../NPC_.md), [CREA](../CREA.md), [ACTI](../ACTI.md) or [TACT](../TACT.md) record.
-Global | formid | FormID of a [GLOB](../GLOB.md) record.
-Weather | formid | FormID of a [WTHR](../WTHR.md) record.
-Package | formid | FormID of a [PACK](../PACK.md) record.
-Encounter Zone | formid | FormID of a [ECZN](../ECZN.md) record.
-Perk | formid | FormID of a [PERK](../PERK.md) record.
-Owner | formid | FormID of a [FACT](../FACT.md) or [NPC_](../NPC_.md) record.
-Furniture | formid | FormID of a [FURN](../FURN.md) or [FLST](../FLST.md) record.
-Effect Item | formid | FormID of a [SPEL](../SPEL.md), [ENCH](../ENCH.md), [ALCH](../ALCH.md) or [INGR](../INGR.md) record.
-Base Effect | formid | FormID of a [MGEF](../MGEF.md) record.
-Worldspace | formid | FormID of a [WRLD](../WRLD.md) record.
-VATS Value Function | uint32 | Enum - see values below.
-VATS Value Param | uint32 | Invalid
+Valid For Parameter | Name | Type | Info
+--------------------|------|------|-----
+Both | Unknown | uint8[4] |
+Both | None | uint8[4] |
+Both | Integer | int32 |
+2 | Variable Name | int32 | 
+Both | Sex | uint32 | Enum - see values below.
+Both | [Actor Value](../Values/Actor Values.md) | int32 |
+Both | Crime Type | uint32 | Enum - see values below.
+Both | Axis | uint32 | Enum - see values below.
+2 | Quest Stage | int32 | 
+Both | Misc Stat | uint32 | Enum - see values below.
+Both | Alignment | uint32 | Enum - see values below.
+Both | Equipment Type | uint32 | Enum - see [ETYP](ETYP.md) for values.
+Both | Form Type | uint32 | Enum - see values below.
+Both | Critical Stage | uint32 | Enum - see values below.
+Both | Object Reference | formid | FormID of a [PLYR](../PLYR.md), [REFR](../REFR.md), [ACHR](../ACHR.md), [ACRE](../ACRE.md), [PGRE](../PGRE.md), [PMIS](../PMIS.md) or [TRGT](../TRGT.md) record.
+Both | Inventory Object | formid | FormID of a [ARMO](../ARMO.md), [BOOK](../BOOK.md), [MISC](../MISC.md), [WEAP](../WEAP.md), [AMMO](../AMMO.md), [KEYM](../KEYM.md), [ALCH](../ALCH.md), [NOTE](../NOTE.md), [FLST](../FLST.md), [CHIP](../CHIP.md), [CMNY](../CMNY.md) or [IMOD](../IMOD.md) record.
+Both | Actor | formid | FormID of a [PLYR](../PLYR.md), [ACHR](../ACHR.md), [ACRE](../ACRE.md) or [TRGT](../TRGT.md) record.
+Both | Voice Type | formid | FormID of a [VTYP](../VTYP.md) record.
+Both | Idle | formid | FormID of a [IDLE](../IDLE.md) record.
+Both | Form List | formid | FormID of a [FLST](../FLST.md) record.
+Both | Note | formid | FormID of a [NOTE](../NOTE.md) record.
+Both | Quest | formid | FormID of a [QUST](../QUST.md) record.
+Both | Faction | formid | FormID of a [FACT](../FACT.md) record.
+Both | Weapon | formid | FormID of a [WEAP](../WEAP.md) record.
+Both | Cell | formid | FormID of a [CELL](../CELL.md) record.
+Both | Class | formid | FormID of a [CLAS](../CLAS.md) record.
+Both | Race | formid | FormID of a [RACE](../RACE.md) record.
+Both | Actor Base | formid | FormID of a [NPC_](../NPC_.md), [CREA](../CREA.md), [ACTI](../ACTI.md) or [TACT](../TACT.md) record.
+Both | Global | formid | FormID of a [GLOB](../GLOB.md) record.
+Both | Weather | formid | FormID of a [WTHR](../WTHR.md) record.
+Both | Package | formid | FormID of a [PACK](../PACK.md) record.
+Both | Encounter Zone | formid | FormID of a [ECZN](../ECZN.md) record.
+Both | Perk | formid | FormID of a [PERK](../PERK.md) record.
+Both | Owner | formid | FormID of a [FACT](../FACT.md) or [NPC_](../NPC_.md) record.
+Both | Furniture | formid | FormID of a [FURN](../FURN.md) or [FLST](../FLST.md) record.
+Both | Effect Item | formid | FormID of a [SPEL](../SPEL.md), [ENCH](../ENCH.md), [ALCH](../ALCH.md) or [INGR](../INGR.md) record.
+Both | Base Effect | formid | FormID of a [MGEF](../MGEF.md) record.
+Both | Worldspace | formid | FormID of a [WRLD](../WRLD.md) record.
+1 | VATS Value Function | uint32 | Enum - see values below.
+2 | VATS Value Param | uint32 | 
 Creature Type | uint32 | Enum - see values below.
 Menu Mode | uint32 | Enum - see values below.
 Player Action | uint32 | Enum - see values below.
 Body Location | int32 | Enum - see values below.
 Referenceable Object | formid | FormID of a [CREA](../CREA.md), [NPC_](../NPC_.md), [PROJ](../PROJ.md), [TREE](../TREE.md), [SOUN](../SOUN.md), [ACTI](../ACTI.md), [DOOR](../DOOR.md), [STAT](../STAT.md), [FURN](../FURN.md), [CONT](../CONT.md), [ARMO](../ARMO.md), [AMMO](../AMMO.md), [MISC](../MISC.md), [WEAP](../WEAP.md), [BOOK](../BOOK.md), [KEYM](../KEYM.md), [ALCH](../ALCH.md), [LIGH](../LIGH.md), [GRAS](../GRAS.md), [ASPC](../ASPC.md), [IDLM](../IDLM.md), [ARMA](../ARMA.md), [MSTT](../MSTT.md), [NOTE](../NOTE.md), [PWAT](../PWAT.md), [SCOL](../SCOL.md), [TACT](../TACT.md), [TERM](../TERM.md), [FLST](../FLST.md), [CHIP](../CHIP.md), [CMNY](../CMNY.md), [CCRD](../CCRD.md) or [IMOD](../IMOD.md) record.
-Quest Objective | int32 | Invalid
-Reputation | formid | FormID of a [REPU](../REPU.md) record.
-Region | formid | FormID of a [REGN](../REGN.md) record.
-Challenge | formid | FormID of a [CHAL](../CHAL.md) record.
-Casino | formid | FormID of a [CSNO](../CSNO.md) record.
+2 | Quest Objective | int32 | 
+Both | Reputation | formid | FormID of a [REPU](../REPU.md) record.
+Both | Region | formid | FormID of a [REGN](../REGN.md) record.
+Both | Challenge | formid | FormID of a [CHAL](../CHAL.md) record.
+Both | Casino | formid | FormID of a [CSNO](../CSNO.md) record.
 
-### Parameter #2
+#### Parameter Values
 
-### Sex Values
+##### Sex Values
 
 Value | Meaning
 ------|--------
 0 | Male
 1 | Female
 
-### Crime Type Values
+##### Crime Type Values
 
 Value | Meaning
 ------|--------
@@ -346,7 +346,7 @@ Value | Meaning
 3 | Attack
 4 | Murder
 
-### Axis Values
+##### Axis Values
 
 Value | Meaning
 ------|--------
@@ -354,7 +354,7 @@ Value | Meaning
 89 | Y
 90 | Z
 
-### Misc Stat Values
+##### Misc Stat Values
 
 Value | Meaning
 ------|--------
@@ -385,7 +385,7 @@ Value | Meaning
 24 | Corpses Eaten
 25 | Mysterious Stranger Visits
 
-### Alignment Values
+##### Alignment Values
 
 Value | Meaning
 ------|--------
@@ -395,7 +395,7 @@ Value | Meaning
 3 | Very Good
 4 | Very Evil
 
-### Form Type Values
+##### Form Type Values
 
 Value | Meaning
 ------|--------
@@ -493,7 +493,7 @@ Value | Meaning
 0x65 | Lighting Template
 0x66 | Music Type
 
-### Critical Stage Values
+##### Critical Stage Values
 
 Value | Meaning
 ------|--------
@@ -503,30 +503,55 @@ Value | Meaning
 3 | Disintegrate Start
 4 | Disintegrate End
 
-### VATS Value Function Values
+##### VATS Value Function & Param Values
+
+Function Value | Function Meaning | Param Type | Param Info
+---------------|------------------|------------|-----------
+0 | Weapon Is | formid | FormID of a [WEAP](../WEAP.md) record.
+1 | Weapon In List | formid | FormID of a [FLST](../FLST.md) record referencing [WEAP](../WEAP.md) records.
+2 | Target Is | formid | FormID of a [CREA](../CREA.md) or [NPC_](../NPC_.md) record.
+3 | Target In List | formid | FormID of a [FLST](../FLST.md) record referencing [CREA](../CREA.md) or [NPC_](../NPC_.md) records.
+4 | Target Distance | uint8[4] | Unused
+5 | Target Part | int32 | See [here](../Values/Actor Values.md) for values.
+6 | VATS Action | uint32 | See values below.
+7 | Is Success | uint8[4] | Unused
+8 | Is Critical | uint8[4] | Unused
+9 | Critical Effect Is | formid | FormID of a [SPEL](../SPEL.md) record.
+10 | Critical Effect In List | formid | FormID of a [FLST](../FLST.md) record referencing [SPEL](../SPEL.md) records.
+11 | Is Fatal | uint8[4] | Unused
+12 | Explode Part | uint8[4] | Unused
+13 | Dismember Part | uint8[4] | Unused
+14 | Cripple Part | uint8[4] | Unused
+15 | Weapon Type Is | uint32 | See [here](Values/Weapon Animation Types.md) for values.
+16 | Is Stranger | uint8[4] | Unused
+17 | Is Paralyzing Palm | uint8[4] | Unused
+
+###### VATS Action Param Values
 
 Value | Meaning
 ------|--------
-0 | Weapon Is
-1 | Weapon In List
-2 | Target Is
-3 | Target In List
-4 | Target Distance
-5 | Target Part
-6 | VATS Action
-7 | Is Success
-8 | Is Critical
-9 | Critical Effect Is
-10 | Critical Effect In List
-11 | Is Fatal
-12 | Explode Part
-13 | Dismember Part
-14 | Cripple Part
-15 | Weapon Type Is
-16 | Is Stranger
-17 | Is Paralyzing Palm
+0 | Unarmed Attack
+1 | One Hand Melee Attack
+2 | Two Hand Melee Attack
+3 | Fire Pistol
+4 | Fire Rifle
+5 | Fire Handle Weapon
+6 | Fire Launcher
+7 | Throw Grenade
+8 | Place Mine
+9 | Reload
+10 | Crouch
+11 | Stand
+12 | Switch Weapon
+13 | Toggle Weapon Drawn
+14 | Heal
+15 | Player Death
+16 | Special Weapon Attack
+17 | Special Unarmed Attack
+18 | Kill Camera Shot
+19 | Throw Weapon
 
-### Creature Type Values
+##### Creature Type Values
 
 Value | Meaning
 ------|--------
@@ -539,7 +564,7 @@ Value | Meaning
 6 | Robot
 7 | Giant
 
-### Menu Mode Values
+##### Menu Mode Values
 
 Value | Meaning
 ------|--------
@@ -572,7 +597,7 @@ Value | Meaning
 1059 | Specific: Tutorial
 1060 | Specific: You're SPECIAL book
 
-### Player Action Values
+##### Player Action Values
 
 Value | Meaning
 ------|--------
@@ -588,7 +613,7 @@ Value | Meaning
 9 | Iron Sights
 10 | Destroying Object
 
-### Body Location Values
+##### Body Location Values
 
 Value | Meaning
 ------|--------
