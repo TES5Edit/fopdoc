@@ -1,0 +1,37 @@
+TREE
+====
+
+Tree
+
+## Format
+
+Count | Field | Name | Type | Info
+------|-------|------|------|-----
++ | EDID | Editor ID | cstring | Editor ID
++ | [OBND](Fields/OBND.md) | Object Bounds | struct |
++ | | [Model Data](Fields/Model.md) | | This is a field collection.
++ | ICON | Large icon filename | cstring | 
++ | MICO | Small icon filename | cstring | 
++* | SNAM | SpeedTree Seed | uint32 |
++ | CNAM | Tree Data | struct |
++ | BNAM | Billboard Dimensions | struct |
+
+### CNAM
+
+Count | Name | Type | Info
+------|------|------|-----
+ | Leaf Curvature | float32 |
+ | Minimum Leaf Angle | float32 |
+ | Maximum Leaf Angle | float32 |
+ | Branch Dimming Value | float32 |
+ | Leaf Dimming Value | float32 |
+ | Shadow Radius | int32 |
+ | Rock Speed | float32 |
+ | Rustle Speed | float32 |
+
+### BNAM
+
+Count | Name | Type | Info
+------|------|------|-----
+ | Width | float32 |
+ | Height | float32 |
