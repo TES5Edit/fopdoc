@@ -5,7 +5,7 @@ CTDA Field
 
 Count | Name | Type | Info
 ------|------|------|-----
- | Type | uint8 |
+ | Type | uint8 | See values below.
  | Unused | uint8[3] |
  | Comparison Value | formid *or* float32 | If not a valid [GLOB](../GLOB.md) record FormID, is interpreted as a float32.
  | Function | uint32 | A function index. See below for a list of function indicies.
@@ -13,6 +13,20 @@ Count | Name | Type | Info
  | Parameter #2 | uint8[4] | Second parameter to pass to the function.
  | Run On | uint32 | Values and what they correspond to are given below.
  | Reference | formid | A FormID of a [PLYR](../PLYR.md), [ACHR](../ACHR.md), [ACRE](../ACRE.md), [REFR](../REFR.md), [PMIS](../PMIS.md) or [PGRE](../PGRE.md) reference on which to apply the function, or null.
+ 
+### Type Values
+
+Value | Meaning
+------|--------
+0x0001 | Combine conditions using OR (default is to use AND)
+0x0002 | Run On Target
+0x0004 | Use Global
+0x0000 | Equal To
+0x2000 | Not Equal To
+0x4000 | Greater Than
+0x6000 | Greater Than or Equal To
+0x8000 | Less Than
+0xA000 | Less Than or Equal To
  
 ### Function Indicies
 
@@ -254,8 +268,347 @@ Index | Function
 555 | GetSpellUsageNum
 557 | GetActorsInHigh
 558 | HasLoaded3D
+
+### Parameter #1
+
+The parameter can be any of the following.
+
+Name | Type | Info
+-----|------|-----
+Unknown | uint8[4] |
+None | uint8[4] |
+Integer | int32 |
+Variable Name | int32 | Invalid
+Sex | uint32 | Enum - see values below.
+[Actor Value](../Values/Actor Values.md) | int32 |
+Crime Type | uint32 | Enum - see values below.
+Axis | uint32 | Enum - see values below.
+Quest Stage | int32 | Invalid
+Misc Stat | uint32 | Enum - see values below.
+Alignment | uint32 | Enum - see values below.
+Equipment Type | uint32 | Enum - see [ETYP](ETYP.md) for values.
+Form Type | uint32 | Enum - see values below.
+Critical Stage | uint32 | Enum - see values below.
+Object Reference | formid | FormID of a [PLYR](../PLYR.md), [REFR](../REFR.md), [ACHR](../ACHR.md), [ACRE](../ACRE.md), [PGRE](../PGRE.md), [PMIS](../PMIS.md) or [TRGT](../TRGT.md) record.
+Inventory Object | formid | FormID of a [ARMO](../ARMO.md), [BOOK](../BOOK.md), [MISC](../MISC.md), [WEAP](../WEAP.md), [AMMO](../AMMO.md), [KEYM](../KEYM.md), [ALCH](../ALCH.md), [NOTE](../NOTE.md), [FLST](../FLST.md), [CHIP](../CHIP.md), [CMNY](../CMNY.md) or [IMOD](../IMOD.md) record.
+Actor | formid | FormID of a [PLYR](../PLYR.md), [ACHR](../ACHR.md), [ACRE](../ACRE.md) or [TRGT](../TRGT.md) record.
+Voice Type | formid | FormID of a [VTYP](../VTYP.md) record.
+Idle | formid | FormID of a [IDLE](../IDLE.md) record.
+Form List | formid | FormID of a [FLST](../FLST.md) record.
+Note | formid | FormID of a [NOTE](../NOTE.md) record.
+Quest | formid | FormID of a [QUST](../QUST.md) record.
+Faction | formid | FormID of a [FACT](../FACT.md) record.
+Weapon | formid | FormID of a [WEAP](../WEAP.md) record.
+Cell | formid | FormID of a [CELL](../CELL.md) record.
+Class | formid | FormID of a [CLAS](../CLAS.md) record.
+Race | formid | FormID of a [RACE](../RACE.md) record.
+Actor Base | formid | FormID of a [NPC_](../NPC_.md), [CREA](../CREA.md), [ACTI](../ACTI.md) or [TACT](../TACT.md) record.
+Global | formid | FormID of a [GLOB](../GLOB.md) record.
+Weather | formid | FormID of a [WTHR](../WTHR.md) record.
+Package | formid | FormID of a [PACK](../PACK.md) record.
+Encounter Zone | formid | FormID of a [ECZN](../ECZN.md) record.
+Perk | formid | FormID of a [PERK](../PERK.md) record.
+Owner | formid | FormID of a [FACT](../FACT.md) or [NPC_](../NPC_.md) record.
+Furniture | formid | FormID of a [FURN](../FURN.md) or [FLST](../FLST.md) record.
+Effect Item | formid | FormID of a [SPEL](../SPEL.md), [ENCH](../ENCH.md), [ALCH](../ALCH.md) or [INGR](../INGR.md) record.
+Base Effect | formid | FormID of a [MGEF](../MGEF.md) record.
+Worldspace | formid | FormID of a [WRLD](../WRLD.md) record.
+VATS Value Function | uint32 | Enum - see values below.
+VATS Value Param | uint32 | Invalid
+Creature Type | uint32 | Enum - see values below.
+Menu Mode | uint32 | Enum - see values below.
+Player Action | uint32 | Enum - see values below.
+Body Location | int32 | Enum - see values below.
+Referenceable Object | formid | FormID of a [CREA](../CREA.md), [NPC_](../NPC_.md), [PROJ](../PROJ.md), [TREE](../TREE.md), [SOUN](../SOUN.md), [ACTI](../ACTI.md), [DOOR](../DOOR.md), [STAT](../STAT.md), [FURN](../FURN.md), [CONT](../CONT.md), [ARMO](../ARMO.md), [AMMO](../AMMO.md), [MISC](../MISC.md), [WEAP](../WEAP.md), [BOOK](../BOOK.md), [KEYM](../KEYM.md), [ALCH](../ALCH.md), [LIGH](../LIGH.md), [GRAS](../GRAS.md), [ASPC](../ASPC.md), [IDLM](../IDLM.md), [ARMA](../ARMA.md), [MSTT](../MSTT.md), [NOTE](../NOTE.md), [PWAT](../PWAT.md), [SCOL](../SCOL.md), [TACT](../TACT.md), [TERM](../TERM.md), [FLST](../FLST.md), [CHIP](../CHIP.md), [CMNY](../CMNY.md), [CCRD](../CCRD.md) or [IMOD](../IMOD.md) record.
+Quest Objective | int32 | Invalid
+Reputation | formid | FormID of a [REPU](../REPU.md) record.
+Region | formid | FormID of a [REGN](../REGN.md) record.
+Challenge | formid | FormID of a [CHAL](../CHAL.md) record.
+Casino | formid | FormID of a [CSNO](../CSNO.md) record.
+
+### Parameter #2
+
+### Sex Values
+
+Value | Meaning
+------|--------
+0 | Male
+1 | Female
+
+### Crime Type Values
+
+Value | Meaning
+------|--------
+-1 | None
+0 | Steal
+1 | Pickpocket
+2 | Trespass
+3 | Attack
+4 | Murder
+
+### Axis Values
+
+Value | Meaning
+------|--------
+88 | X
+89 | Y
+90 | Z
+
+### Misc Stat Values
+
+Value | Meaning
+------|--------
+0 | Quests Completed
+1 | Locations Discovered
+2 | People Killed
+3 | Creatures Killed
+4 | Locks Picked
+5 | Computers Hacked
+6 | Stimpaks Taken
+7 | Rad-X Taken
+8 | RadAway Taken
+9 | Chems Taken
+10 | Times Addicted
+11 | Mines Disarmed
+12 | Speech Successes
+13 | Pockets Picked
+14 | Pants Exploded
+15 | Books Read
+16 | Bobbleheads Found
+17 | Weapons Created
+18 | People Mezzed
+19 | Captives Rescued
+20 | Sandman Kills
+21 | Paralyzing Punches
+22 | Robots Disabled
+23 | Contracts Completed
+24 | Corpses Eaten
+25 | Mysterious Stranger Visits
+
+### Alignment Values
+
+Value | Meaning
+------|--------
+0 | Good
+1 | Neutral
+2 | Evil
+3 | Very Good
+4 | Very Evil
+
+### Form Type Values
+
+Value | Meaning
+------|--------
+0x04 | Texture Set
+0x05 | Menu Icon
+0x06 | Global
+0x07 | Class
+0x08 | Faction
+0x09 | Head Part
+0x0A | Hair
+0x0B | Eyes
+0x0C | Race
+0x0D | Sound
+0x0E | Acoustic Space
+0x0F | Skill
+0x10 | Base Effect
+0x11 | Script
+0x12 | Landscape Texture
+0x13 | Object Effect
+0x14 | Actor Effect
+0x15 | Activator
+0x16 | Talking Activator
+0x17 | Terminal
+0x18 | Armor
+0x19 | Book
+0x1A | Clothing
+0x1B | Container
+0x1C | Door
+0x1D | Ingredient
+0x1E | Light
+0x1F | Misc
+0x20 | Static
+0x21 | Static Collection
+0x22 | Movable Static
+0x23 | Placeable Water
+0x24 | Grass
+0x25 | Tree
+0x26 | Flora
+0x27 | Furniture
+0x28 | Weapon
+0x29 | Ammo
+0x2A | NPC
+0x2B | Creature
+0x2C | Leveled Creature
+0x2D | Leveled NPC
+0x2E | Key
+0x2F | Ingestible
+0x30 | Idle Marker
+0x31 | Note
+0x32 | Constructible Object
+0x33 | Projectile
+0x34 | Leveled Item
+0x35 | Weather
+0x36 | Climate
+0x37 | Region
+0x39 | Cell
+0x3A | Placed Object
+0x3B | Placed Character
+0x3C | Placed Creature
+0x3E | Placed Grenade
+0x41 | Worldspace
+0x42 | Landscape
+0x43 | Navigation Mesh
+0x45 | Dialog Topic
+0x46 | Dialog Response
+0x47 | Quest
+0x48 | Idle Animation
+0x49 | Package
+0x4A | Combat Style
+0x4B | Load Screen
+0x4C | Leveled Spell
+0x4D | Animated Object
+0x4E | Water
+0x4F | Effect Shader
+0x51 | Explosion
+0x52 | Debris
+0x53 | Image Space
+0x54 | Image Space Modifier
+0x55 | FormID List
+0x56 | Perk
+0x57 | Body Part Data
+0x58 | Addon Node
+0x59 | Actor Value Info
+0x5A | Radiation Stage
+0x5B | Camera Shot
+0x5C | Camera Path
+0x5D | Voice Type
+0x5E | Impact Data
+0x5F | Impact DataSet
+0x60 | Armor Addon
+0x61 | Encounter Zone
+0x62 | Message
+0x63 | Ragdoll
+0x64 | Default Object Manager
+0x65 | Lighting Template
+0x66 | Music Type
+
+### Critical Stage Values
+
+Value | Meaning
+------|--------
+0 | None
+1 | Goo Start
+2 | Goo End
+3 | Disintegrate Start
+4 | Disintegrate End
+
+### VATS Value Function Values
+
+Value | Meaning
+------|--------
+0 | Weapon Is
+1 | Weapon In List
+2 | Target Is
+3 | Target In List
+4 | Target Distance
+5 | Target Part
+6 | VATS Action
+7 | Is Success
+8 | Is Critical
+9 | Critical Effect Is
+10 | Critical Effect In List
+11 | Is Fatal
+12 | Explode Part
+13 | Dismember Part
+14 | Cripple Part
+15 | Weapon Type Is
+16 | Is Stranger
+17 | Is Paralyzing Palm
+
+### Creature Type Values
+
+Value | Meaning
+------|--------
+0 | Animal
+1 | Mutated Animal
+2 | Mutated Insect
+3 | Abomination
+4 | Super Mutant
+5 | Feral Ghoul
+6 | Robot
+7 | Giant
+
+### Menu Mode Values
+
+Value | Meaning
+------|--------
+1 | Type: Character Interface
+2 | Type: Other
+3 | Type: Console
+1001 | Specific: Message
+1002 | Specific: Inventory
+1003 | Specific: Stats
+1004 | Specific: HUDMainMenu
+1007 | Specific: Loading
+1008 | Specific: Container
+1009 | Specific: Dialog
+1012 | Specific: Sleep/Wait
+1013 | Specific: Pause
+1014 | Specific: LockPick
+1016 | Specific: Quantity
+1027 | Specific: Level Up
+1035 | Specific: Pipboy Repair
+1036 | Specific: Race / Sex
+1047 | Specific: Credits
+1048 | Specific: CharGen
+1051 | Specific: TextEdit
+1053 | Specific: Barter
+1054 | Specific: Surgery
+1055 | Specific: Hacking
+1056 | Specific: VATS
+1057 | Specific: Computers
+1058 | Specific: Vendor Repair
+1059 | Specific: Tutorial
+1060 | Specific: You're SPECIAL book
+
+### Player Action Values
+
+Value | Meaning
+------|--------
+0 | ??
+1 | Swinging Melee Weapon
+2 | Throwing Grenade
+3 | Fire Weapon
+4 | Lay Mine
+5 | Z Key Object
+6 | Jumping
+7 | Knocking Over Objectss
+8 | Stand on Table / Chair
+9 | Iron Sights
+10 | Destroying Object
+
+### Body Location Values
+
+Value | Meaning
+------|--------
+-1 | None
+0 | Torso
+1 | Head 1
+2 | Head 2
+3 | Left Arm 1
+4 | Left Arm 2
+5 | Right Arm 1
+6 | Right Arm 2
+7 | Left Leg 1
+8 | Left Leg 2
+9 | Left Leg 3
+10 | Right Leg 1
+11 | Right Leg 2
+12 | Right Leg 3
+14 | Brain
  
-#### Run On Values
+### Run On Values
 
 Value | Meaning
 ------|--------
