@@ -10,7 +10,7 @@ Count | Field | Name | Type | Info
 + | EDID | Editor ID | cstring |
  | FULL | Name | cstring |
 + | SPIT | | struct |
-+* | | [Effect](Fields/Effect.md) | | A field collection.
++* | | [Effect](Fields/Effect.md) | collection |
 
 ### SPIT
 

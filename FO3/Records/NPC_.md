@@ -10,7 +10,7 @@ Count | Field | Name | Type | Info
 + | EDID | Editor ID | cstring |
 + | [OBND](Fields/OBND.md) | Object Bounds | struct |
  | FULL | Name | cstring |
- | | [Model Data](Fields/Model.md) | | This is a field collection.
+ | | [Model Data](Fields/Model.md) | collection |
 + | [ACBS](Fields/ACBS.md) | Configuration | struct |
 -* | [SNAM](Fields/SNAM (CREA, NPC_).md) | Faction | struct |
  | INAM | Death Item | formid | FormID of a [LVLI](LVLI.md) record.
@@ -19,9 +19,9 @@ Count | Field | Name | Type | Info
 + | RNAM | Race | formid | FormID of a [RACE](RACE.md) record.
  | EITM | Unarmed Attack Effect | formid | FormID of an [ENCH](ENCH.md) or [SPEL](SPEL.md) record.
 + | [EAMT](Values/Attack Animations.md) | Unarmed Attack Animation | uint16 |
- | | [Destruction Data](Fields/Destruction.md) | | This is a field collection.
+ | | [Destruction Data](Fields/Destruction.md) | collection |
  | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
--* | | [Item](Fields/Item.md) | | This is a field collection.
+-* | | [Item](Fields/Item.md) | collection | 
  | [AIDT](Fields/AIDT.md) | AI Data | struct |
 -* | PKID | Package | formid | FormID of a [PACK](PACK.md) record.
 + | CNAM | Class | formid | FormID of a [CLAS](CLAS.md) record.

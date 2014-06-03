@@ -12,7 +12,7 @@ Count | Field | Name | Type | Info
 + | DESC | Description | cstring |
  | ICON | Large icon filename | cstring |
  | MICO | Small icon filename | cstring |
- | | [Model Data](Fields/Model.md) | | This is a field collection.
+ | | [Model Data](Fields/Model.md) | collection |
 + | DATA | Data | struct |
 
 ### DATA

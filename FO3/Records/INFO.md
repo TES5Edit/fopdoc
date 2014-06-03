@@ -12,13 +12,13 @@ Count | Field | Name | Type | Info
  | TPIC | Topic | formid | FormID of a [DIAL](DIAL.md) record.
  | PNAM | Previous INFO | formid | FormID of an [INFO](INFO.md) record, or null.
 -* | NAME | Topic | formid | FormID of a [DIAL](DIAL.md) record.
--* | | Response | | A field collection, see below for details.
+-* | | Response | collection | See below for details.
 -* | [CTDA](Fields/CTDA.md) | Condition | struct |
 -* | TCLT | Choice | formid | FormID of a [DIAL](DIAL.md) record.
 -* | TCLF | Topic | formid | FormID of a [DIAL](DIAL.md) record.
-+ | | [Embedded Script](Fields/Script.md) | | A field collection.
++ | | [Embedded Script](Fields/Script.md) | collection |
 + | NEXT | Marker | null |
-+ | | [Embedded Script](Fields/Script.md) | | A field collection.
++ | | [Embedded Script](Fields/Script.md) | collection |
  | SNDD | Unused | formid | FormID of a [SOUN](SOUN.md) record.
  | RNAM | Prompt | cstring |
  | ANAM | Speaker | formid | FormID of a [CREA](CREA.md) or [NPC_](NPC_.md) record.

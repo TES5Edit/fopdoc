@@ -9,8 +9,8 @@ Count | Field | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
 + | [OBND](Fields/OBND.md) | Object Bounds | struct |
-+ | | [Model Data](Fields/Model.md) | | This is a field collection.
-+* | | Part | | A field collection, see below for details.
++ | | [Model Data](Fields/Model.md) | collection |
++* | | Part | collection | See below for details.
 
 ### Part Field Collection
 

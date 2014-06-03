@@ -8,7 +8,7 @@ Impact
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
- | | [Model Data](Fields/Model.md) | | This is a field collection.
+ | | [Model Data](Fields/Model.md) | collection |
 + | DATA | | struct |
  | [DODT](Fields/DODT.md) | Decal Data | struct |
  | DNAM | Texture Set | formid | FormID of a [TXST](TXST.md) record.

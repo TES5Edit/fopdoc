@@ -14,7 +14,7 @@ Count | Field | Name | Type | Info
  | MICO | Small icon filename | cstring | 
 -* | [CTDA](Fields/CTDA.md) | Condition | struct |
 + | DATA | Data | struct |
--* | | Effect | | This is a field collection - see below for details.
+-* | | Effect | collection | See below for details.
 
 ### DATA (Data)
 
@@ -39,12 +39,12 @@ Count | Field | Name | Type | Info
 ------|-------|------|------|-----
  | PRKE | Header | struct |
 + | DATA | Effect Data | struct *or * formid |
--* | | Perk Conditions | | A field collection - see below for details.
+-* | | Perk Conditions | collection | See below for details.
  | EPFT | Entry Point Function Type | uint8 | Decides the data type of the EPFD record.
  | EPFD | Entry Point Function Data | uint8[] *or* float32 *or* formid *or* null |
  | EPF2 | Button Label | cstring |
  | EPF3 | Script Flags | uint16 | See below for values.
- | | [Embedded Script](Fields/Script.md) | | A field collection.
+ | | [Embedded Script](Fields/Script.md) | collection |
 + | PRKF | End Marker | null | Flag
 
  

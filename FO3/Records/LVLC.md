@@ -11,8 +11,8 @@ Count | Field | Name | Type | Info
 + | [OBND](Fields/OBND.md) | Object Bounds | struct |
 + | LVLD | Chance None | uint8 |
 + | LVLF | Flags | uint8 | See below for values.
-+* | | Leveled List Entry | | A field collection, see below for details.
- | | [Model Data](Fields/Model.md) | | This is a field collection.
++* | | Leveled List Entry | collection | See below for details.
+ | | [Model Data](Fields/Model.md) | collection |
 
 ### LVLF Flag Values
 

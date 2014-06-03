@@ -9,7 +9,7 @@ Count | Field | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring | Editor ID
 + | [OBND](Fields/OBND.md) | Object Bounds | struct |
- | | [Model Data](Fields/Model.md) | | This is a field collection.
+ | | [Model Data](Fields/Model.md) | collection |
  | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
  | FULL | Name | cstring |
  | ICON | Large Icon Filename | cstring | 

@@ -9,7 +9,7 @@ Count | Field | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
 + | PKDT | General | struct |
--* | | Location | | A field collection, see below for details.
+-* | | Location | collection | See below for details.
 + | PSDT | Schedule | struct |
  | PTDT | Target 1 | struct |
 -* | [CTDA](Fields/CTDA.md) | Condition | struct |
@@ -31,15 +31,15 @@ Count | Field | Name | Type | Info
  | PLD2 | Location 2 (repeated??) | struct |
 + | POBA | OnBegin Marker | null |
 + | INAM | OnBegin Idle | formid | FormID of an [IDLE](IDLE.md) record, or null.
-+ | | [OnBegin Embedded Script](Fields/Script.md) | | A field collection.
++ | | [OnBegin Embedded Script](Fields/Script.md) | collection | 
 + | TNAM | OnBegin Topic | formid | FormID of a [DIAL](DIAL.md) record, or null.
 + | POBA | OnEnd Marker | null |
 + | INAM | OnEnd Idle | formid | FormID of an [IDLE](IDLE.md) record, or null.
-+ | | [OnEnd Embedded Script](Fields/Script.md) | | A field collection.
++ | | [OnEnd Embedded Script](Fields/Script.md) | collection | 
 + | TNAM | OnEnd Topic | formid | FormID of a [DIAL](DIAL.md) record, or null.
 + | POBA | OnChange Marker | null |
 + | INAM | OnChange Idle | formid | FormID of an [IDLE](IDLE.md) record, or null.
-+ | | [OnChange Embedded Script](Fields/Script.md) | | A field collection.
++ | | [OnChange Embedded Script](Fields/Script.md) | collection | 
 + | TNAM | OnChange Topic | formid | FormID of a [DIAL](DIAL.md) record, or null.
  
 

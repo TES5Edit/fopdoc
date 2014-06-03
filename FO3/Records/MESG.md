@@ -22,7 +22,7 @@ Count | Field | Name | Type | Info
  | NAM9 | Unused | ?? |
 + | DNAM | Flags | uint32 | See below for values.
  | TNAM | Display Time | uint32 |
--* | | Menu Button | | A field collection - see below for details.
+-* | | Menu Button | collection | See below for details.
  
 ### DNAM Flag Values
 

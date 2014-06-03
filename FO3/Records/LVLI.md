@@ -12,8 +12,8 @@ Count | Field | Name | Type | Info
 + | LVLD | Chance None | uint8 |
 + | LVLF | Flags | uint8 | See below for values.
 + | LVLG | Global | formid | FormID of a [GLOB](GLOB.md) record.
-+* | | Leveled List Entry | | A field collection, see below for details.
- | | [Model Data](Fields/Model.md) | | This is a field collection.
++* | | Leveled List Entry | collection | See below for details.
+ | | [Model Data](Fields/Model.md) | collection |
 
 ### LVLF Flag Values
 

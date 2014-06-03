@@ -8,7 +8,7 @@ Idle Animation
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
  | EDID | Editor ID | cstring |
-+ | | [Model Data](Fields/Model.md) | | This is a field collection.
++ | | [Model Data](Fields/Model.md) | collection |
 -* | [CTDA](Fields/CTDA.md) | Condition | struct |
 +* | ANAM | Related Idle Animation | formid | FormID of an [IDLE](IDLE.md) record, or null. The first ANAM field is for the parent, the second for the previous sibling.
 + | DATA | | struct |
