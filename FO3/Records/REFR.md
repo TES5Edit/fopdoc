@@ -185,7 +185,7 @@ Value | Meaning
 Name | Type | Info
 -----|------|-----
 Type | uint8 | Enum - see below for values.
-Unused | uint8 |
+Unused | byte |
 
 #### Type Values
 

@@ -18,14 +18,14 @@ Count | Field | Name | Type | Info
  | XNAM | Water Noise Texture | cstring |
 *- | XCLR | Region | formid | FormID of a [REGN](REGN.md) record.
  | XCIM | Image Space | formid | FormID of an [IMGS](IMGS.md) record.
- | XCET | Unknown | uint8 |
+ | XCET | Unknown | byte |
  | XEZN | Encounter Zone | formid | FormID of an [ECZN](ECZN.md) record.
  | XCCM | Climate | formid | FormID of a [CLMT](CLMT.md) record.
  | XCWT | Water | formid | FormID of a [WATR](WATR.md) record.
  | XOWN | Owner | formid | Ownership data. FormID of a [FACT](FACT.md), [ACHR](ACHR.md) or [NPC_](NPC_.md) record.
  | XRNK | Faction rank | int32 | Ownership data
  | XCAS | Acoustic Space | formid | FormID of an [ASPC](ASPC.md) record.
- | XCMT | Unused | uint8 |
+ | XCMT | Unused | byte |
  | XCMO | Music Type | formid | FormID of a [MUSC](MUSC.md) record.
 
 

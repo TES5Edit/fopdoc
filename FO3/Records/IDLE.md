@@ -20,10 +20,10 @@ Name | Type | Info
 Animation Group Section | uint8 | See below for values.
 Looping Min | uint8 |
 Looping Max | uint8 |
-Unused | uint8 |
+Unused | byte |
 Replay Delay | int16 |
 Flags | uint8 | See below for values.
-Unused | uint8 |
+Unused | byte |
  
 #### Animation Group Section Values
 

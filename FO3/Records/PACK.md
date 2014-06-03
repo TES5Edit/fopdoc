@@ -49,7 +49,7 @@ Name | Type | Info
 -----|------|-----
 General Flags | uint32 | See below for values.
 Type | uint8 | Enum - see below for values.
-Unused | uint8 |
+Unused | byte |
 Fallout Behaviour Flags | uint16 | See below for values.
 Type-Specific Flags | null *or* uint16 | See below for values. The value of the Type field determines how flag values are interpreted.
 Unused | byte[2] |
@@ -273,7 +273,7 @@ Unused | byte[3] |
 Name | Type | Info
 -----|------|-----
 Repeatable | uint8 | A value of `0` means `Not Repeatable`, and a value of `1` means `Repeatable`.
-Unused | uint8 |
+Unused | byte |
  
 ### PKW3
 

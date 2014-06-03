@@ -19,7 +19,7 @@ Name | Type | Info
 Density | uint8 |
 Min Slope | uint8 |
 Max Slope | uint8 |
-Unused | uint8 |
+Unused | byte |
 Unit From Water Amount | uint16 |
 Unused | byte[2] |
 Unit From Water Type | uint32 | Enum - see below for values.

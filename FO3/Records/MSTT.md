@@ -12,6 +12,6 @@ Count | Field | Name | Type | Info
  | FULL | Name | cstring |
 + | | [Model Data](Fields/Model.md) | collection |
  | | [Destruction Data](Fields/Destruction.md) | collection |
-+ | DATA | Unknown | uint8 |
++ | DATA | Unknown | byte |
  | SNAM | Sound | formid | FormID of a [SOUN](SOUN.md) record.
 

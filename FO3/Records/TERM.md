@@ -26,7 +26,7 @@ Name | Type | Info
 Base Hacking Difficulty | uint8 | Enum - see below for values.
 Flags | uint8 | See below for values.
 Server Type | uint8 | Enum - see below for values.
-Unused | uint8 |
+Unused | byte |
 
 #### Base Hacking Difficulty Enum Values
 

@@ -37,7 +37,7 @@ Count | Field | Name | Type | Info
 Name | Type | Info
 -----|------|-----
 Flags | uint8 | See values below.
-Unknown | uint8 |
+Unknown | byte |
  
 #### Flag Values
 

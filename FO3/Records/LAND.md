@@ -48,7 +48,7 @@ Name | Type | Info
 -----|------|-----
 Texture | formid | FormID of a [LTEX](LTEX.md) record, or null.
 Quadrant | uint8 | Enum - see below for values.
-Unused | uint8 |
+Unused | byte |
 Layer | int16 |
 
 ###### Quadrant Enum Values

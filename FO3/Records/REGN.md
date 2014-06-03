@@ -48,7 +48,7 @@ Name | Type | Info
 -----|------|-----
 Type | uint32 | Enum - see below for values.
 Flags | uint8 | See below for values.
-Unused | uint8 |
+Unused | byte |
  
 ##### Type Values
 

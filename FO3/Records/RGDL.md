@@ -29,7 +29,7 @@ Foot IK Enabled | uint8 | Enum - see below for values.
 Look IK Enabled | uint8 | Enum - see below for values.
 Grab IK Enabled | uint8 | Enum - see below for values.
 Pose Matching | uint8 | Enum - see below for values.
-Unused | uint8 |
+Unused | byte |
  
 #### Enabled Enum Values
 
@@ -64,7 +64,7 @@ Count | Name | Type | Info
 ------|------|------|-----
 -* | Match Bone | uint16 | This field appears 3 times.
  | Flags | uint8 | See below for values.
- | Unused | uint8 |
+ | Unused | byte |
  | Motors Strength | float32 |
  | Pose Activation Delay Time | float32 |
  | Match Error Allowance | float32 |
