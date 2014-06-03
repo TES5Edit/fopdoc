@@ -5,7 +5,7 @@ Weather
 
 ## Format
 
-Some of the field IDs begin with unprintable or whitespace characters. Such characters are given below using their hex values. Eg. `IIAD` would be `0x49 IAD` below if `I` were unprintable.
+Some of the field codes begin with unprintable or whitespace characters. Such characters are given below using their hex values. Eg. `IIAD` would be `0x49 IAD` below if `I` were unprintable.
 
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
@@ -36,7 +36,7 @@ Sunrise | rgba |
 Day | rgba |
 Sunset | rgba |
 Night | rgba |
- 
+
 ### NAM0 Mapping
 
 NAM0 Index | Type
@@ -80,7 +80,7 @@ Thunder / Lightning - End Fade Out | uint8 |
 Thunder / Lightning - Frequency | uint8 |
 Weather Classification | uint8 | Enum - see values below.
 Lightning Color | rgb |
- 
+
 #### Weather Classification Values
 
 Value | Meaning
@@ -97,7 +97,7 @@ Name | Type | Info
 -----|------|-----
 Sound | formid | FormID of a [SOUN](SOUN.md) record.
 Type | uint32 | Enum - see values below.
- 
+
 #### Type Values
 
 Value | Meaning
