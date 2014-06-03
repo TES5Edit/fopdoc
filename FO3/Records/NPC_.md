@@ -21,7 +21,7 @@ Count | Field | Name | Type | Info
 + | [EAMT](Values/Attack Animations.md) | Unarmed Attack Animation | uint16 |
  | | [Destruction Data](Fields/Destruction.md) | collection |
  | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
--* | | [Item](Fields/Item.md) | collection | 
+-* | | [Item](Fields/Item.md) | collection |
  | [AIDT](Fields/AIDT.md) | AI Data | struct |
 -* | PKID | Package | formid | FormID of a [PACK](PACK.md) record.
 + | CNAM | Class | formid | FormID of a [CLAS](CLAS.md) record.
@@ -33,39 +33,57 @@ Count | Field | Name | Type | Info
  | ENAM | Eyes | formid | FormID of an [EYES](EYES.md) record.
 + | HCLR | Hair Color | rgba |
  | ZNAM | Combat Style | formid | FormID of a [CSTY](CSTY.md) record.
-+ | [NAM4](Values/Impact Material Types.md) | Impact Material Type | uint32 | 
++ | [NAM4](Values/Impact Material Types.md) | Impact Material Type | uint32 |
 + | FGGS | FaceGen Geometry-Symmetric | uint8[] |
 + | FGGA | FaceGen Geometry-Asymmetric | uint8[] |
 + | FGTS | FaceGen Texture-Symmetric | uint8[] |
 + | NAM5 | Unknown | uint16 |
 + | NAM6 | Height | float32 |
 + | NAM7 | Weight | float32 |
- 
+
 ### DATA
 
-Count | Name | Type | Info
-------|------|------|-----
- | Base Health | int32 |
--* | Attribute | uint8 | There are 7 attribute fields, one for each attribute. The mapping of fields to attributes is given below.
- | Unused | uint8[] | Only appears in older record versions.
-
-#### ATTR Map
-
-ATTR Field | Attribute
------------|----------
-1st | Strength
-2nd | Perception
-3rd | Endurance
-4th | Charisma
-5th | Intelligence
-6th | Agility
-7th | Luck
+Name | Type | Info
+-----|------|-----
+Base Health | int32 |
+Strength | uint8 |
+Perception | uint8 |
+Endurance | uint8 |
+Charisma | uint8 |
+Intelligence | uint8 |
+Agility | uint8 |
+Luck | uint8 |
+Unused | uint8[] | Only appears in older record versions.
 
 ### DNAM
 
-Count | Name | Type | Info
-------|------|------|-----
--* | Skill Value | uint8 |
--* | Skill Offset | uint8 | 
-
-There are 14 values and 14 offsets, with array indicies corresponding to different skills according to the values [here](Values/Skill Enum Values.md).
+Name | Type | Info
+-----|------|-----
+Skill Value - Barter | uint8 |
+Skill Value - Big Guns | uint8 |
+Skill Value - Energy Weapons | uint8 |
+Skill Value - Explosives | uint8 |
+Skill Value - Lockpick | uint8 |
+Skill Value - Medicine | uint8 |
+Skill Value - Melee Weapons | uint8 |
+Skill Value - Repair | uint8 |
+Skill Value - Science | uint8 |
+Skill Value - Small Guns | uint8 |
+Skill Value - Sneak | uint8 |
+Skill Value - Speech | uint8 |
+Skill Value - Throwing | uint8 | Unused
+Skill Value - Unarmed | uint8 |
+Skill Offset - Barter | uint8 |
+Skill Offset - Big Guns | uint8 |
+Skill Offset - Energy Weapons | uint8 |
+Skill Offset - Explosives | uint8 |
+Skill Offset - Lockpick | uint8 |
+Skill Offset - Medicine | uint8 |
+Skill Offset - Melee Weapons | uint8 |
+Skill Offset - Repair | uint8 |
+Skill Offset - Science | uint8 |
+Skill Offset - Small Guns | uint8 |
+Skill Offset - Sneak | uint8 |
+Skill Offset - Speech | uint8 |
+Skill Offset - Throwing | uint8 | Unused
+Skill Offset - Unarmed | uint8 |

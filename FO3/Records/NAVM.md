@@ -16,7 +16,7 @@ Count | Field | Name | Type | Info
 -* | NVDP | Door | struct |
  | NVGD | Unknown | uint8[] |
 -* | NVEX | External Connection | struct |
- 
+
 ### DATA
 
 Name | Type | Info
@@ -27,7 +27,7 @@ Triangle Count | uint32 |
 External Connections Count | uint32 |
 NVCA Count | uint32 |
 Doors Count | uint32 |
- 
+
 ### NVVX
 
 Name | Type | Info
@@ -40,8 +40,12 @@ Z | float32 |
 
 Count | Name | Type | Info
 ------|------|------|-----
--* | Vertex | int16 | There are 3 vertex fields.
--* | Triangle | int16 | 
+ | Vertex 1 | int16 |
+ | Vertex 2 | int16 |
+ | Vertex 3 | int16 |
+ | Edge - Vertices 1,2 | int16 |
+ | Edge - Vertices 2,3 | int16 |
+ | Edge - Vertices 3,1 | int16 |
  | Flags | uint32 | See below for values.
 
 #### Flag Values
@@ -88,7 +92,7 @@ Name | Type | Info
 Reference | formid | FormID of a [REFR](REFR.md) record.
 Unknown | uint16 |
 Unused | byte[2] |
- 
+
 ### NVEX
 
 Name | Type | Info

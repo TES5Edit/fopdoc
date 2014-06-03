@@ -17,14 +17,17 @@ Count | Field | Name | Type | Info
 
 ### DATA
 
-Count | Name | Type | Info
-------|------|------|-----
--* | [Tag Skill](Values/Actor Values.md) | int32 | Enum - see link for values. There are 4 Tag Skill fields in this block.
- | Flags | uint32 | See below for values.
- | [Buys/Sells and Services](Values/Services.md) | uint32 | Flags. See the link for values.
- | [Teaches](Values/Skills.md) | int8 | See the link for enum values.
- | Maximum Training Level | uint8 |
- | Unused | byte[2] |
+Name | Type | Info
+-----|------|-----
+[Tag Skill 1](Values/Actor Values.md) | int32 |
+[Tag Skill 2](Values/Actor Values.md) | int32 |
+[Tag Skill 3](Values/Actor Values.md) | int32 |
+[Tag Skill 4](Values/Actor Values.md) | int32 |
+Flags | uint32 | See below for values.
+[Buys/Sells and Services](Values/Services.md) | uint32 | Flags. See the link for values.
+[Teaches](Values/Skills.md) | int8 | See the link for enum values.
+Maximum Training Level | uint8 |
+Unused | byte[2] |
 
 #### Flag Values
 

@@ -47,15 +47,22 @@ Count | Field | Name | Type | Info
 
 ### DATA
 
-Count | Name | Type | Info
-------|------|------|-----
--* | Skill Boost | struct | There are 7 elements in the skill boost array.
- | Unused | byte[2] |
- | Male Height | float32 |
- | Female Height | float32 |
- | Male Weight | float32 |
- | Female Weight | float32 |
- | Flags | uint32 | See below for values.
+Name | Type | Info
+-----|------|-----
+Skill Boost 1 | struct |
+Skill Boost 2 | struct |
+Skill Boost 3 | struct |
+Skill Boost 4 | struct |
+Skill Boost 5 | struct |
+Skill Boost 6 | struct |
+Skill Boost 7 | struct |
+Unused | byte[2] |
+Male Height | float32 |
+Female Height | float32 |
+Male Weight | float32 |
+Female Weight | float32 |
+Flags | uint32 | See below for values.
+
 
 #### Skill Boost
 

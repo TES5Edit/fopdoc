@@ -16,7 +16,7 @@ Count | Field | Name | Type | Info
 
 Name | Type | Info
 -----|------|-----
-Unknown | byte[4] | 
+Unknown | byte[4] |
 Navigation Mesh | formid | FormID of a [NAVM](NAVM.md) record.
 Location | formid | FormID of a [CELL](CELL.md) or [WRLD](WRLD.md) record.
 Grid X | int16 |
@@ -30,4 +30,4 @@ Count | Name | Type | Info
  | Unknown | formid | FormID of a [NAVM](NAVM.md) record.
 -* | Unknown | formid | FormID of a [NAVM](NAVM.md) record.
 -* | Unknown | formid | FormID of a [NAVM](NAVM.md) record.
--* | Door | formid | FormID of a [DOOR](DOOR.md) record.
+-* | Door | formid | FormID of a [REFR](REFR.md) record.
