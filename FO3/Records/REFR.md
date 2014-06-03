@@ -70,23 +70,23 @@ Count | Field | Name | Type | Info
  
 ### RCLR
 
-Count | Name | Type | Info
-------|------|------|-----
- | Link Start Color | rgba |
- | Link End Color | rgba |
+Name | Type | Info
+-----|------|-----
+Link Start Color | rgba |
+Link End Color | rgba |
 
 ### XPRM
 
-Count | Name | Type | Info
-------|------|------|-----
-+ | X Bound | float32 |
-+ | Y Bound | float32 |
-+ | Z Bound | float32 |
- | Red | float32 |
- | Green | float32 |
- | Blue | float32 |
- | Unkonwn | uint8[4] |
- | Type | uint32 | Enum - see below for values.
+Name | Type | Info
+-----|------|-----
+X Bound | float32 |
+Y Bound | float32 |
+Z Bound | float32 |
+Red | float32 |
+Green | float32 |
+Blue | float32 |
+Unkonwn | uint8[4] |
+Type | uint32 | Enum - see below for values.
  
 #### Type Values
 
@@ -147,24 +147,24 @@ Value | Meaning
 
 ### XMBO
 
-Count | Name | Type | Info
-------|------|------|-----
- | X | float32 |
- | Y | float32 |
- | Z | float32 |
+Name | Type | Info
+-----|------|-----
+X | float32 |
+Y | float32 |
+Z | float32 |
 
 ### XTEL
 
-Count | Name | Type | Info
-------|------|------|-----
- | Door | formid | FormID of a [REFR](REFR.md) record.
- | X Position | float32 |
- | Y Position | float32 |
- | Z Position | float32 |
- | X Rotation | float32 |
- | Y Rotation | float32 |
- | Z Rotation | float32 |
- | Flags | uint32 | See below for values.
+Name | Type | Info
+-----|------|-----
+Door | formid | FormID of a [REFR](REFR.md) record.
+X Position | float32 |
+Y Position | float32 |
+Z Position | float32 |
+X Rotation | float32 |
+Y Rotation | float32 |
+Z Rotation | float32 |
+Flags | uint32 | See below for values.
  
 #### Flag Values
 
@@ -182,10 +182,10 @@ Value | Meaning
 
 ### TNAM
 
-Count | Name | Type | Info
-------|------|------|-----
- | Type | uint8 | Enum - see below for values.
- | Unused | uint8 |
+Name | Type | Info
+-----|------|-----
+Type | uint8 | Enum - see below for values.
+Unused | uint8 |
 
 #### Type Values
 
@@ -209,12 +209,12 @@ Value | Meaning
 
 ### XRDO
 
-Count | Name | Type | Info
-------|------|------|-----
- | Range Radius | float32 |
- | Broadcast Range Type | uint32 | Enum - see below for values.
- | Static Percentage | float32 |
- | Position Reference | FormID of a [REFR](REFR.md), [ACRE](ACRE.md), [ACHR](ACHR.md), [PGRE](PGRE.md) or [PMIS](PMIS.md) record, or null.
+Name | Type | Info
+-----|------|-----
+Range Radius | float32 |
+Broadcast Range Type | uint32 | Enum - see below for values.
+Static Percentage | float32 |
+Position Reference | FormID of a [REFR](REFR.md), [ACRE](ACRE.md), [ACHR](ACHR.md), [PGRE](PGRE.md) or [PMIS](PMIS.md) record, or null.
  
 #### Broadcast Range Type Values
 
@@ -228,13 +228,13 @@ Value | Meaning
 
 ### XLOC
 
-Count | Name | Type | Info
-------|------|------|-----
- | Level | uint8 |
- | Unused | uint8[3] |
- | Key | formid | FormID of a [KEYM](KEYM.md) record, or null.
- | Flags | uint8 | See below for values.
- | Unknown | uint8[11] |
+Name | Type | Info
+-----|------|-----
+Level | uint8 |
+Unused | uint8[3] |
+Key | formid | FormID of a [KEYM](KEYM.md) record, or null.
+Flags | uint8 | See below for values.
+Unknown | uint8[11] |
 
 ### XACT Values
 
@@ -247,31 +247,31 @@ Value | Meaning
 
 ### XNDP
 
-Count | Name | Type | Info
-------|------|------|-----
- | Navigation Mesh | formid | FormID of a [NAVM](NAVM.md) record.
- | Unknown | uint8[4] |
+Name | Type | Info
+-----|------|-----
+Navigation Mesh | formid | FormID of a [NAVM](NAVM.md) record.
+Unknown | uint8[4] |
  
 ### XPTL / XOCP
 
-Count | Name | Type | Info
-------|------|------|-----
- | Width | float32 |
- | Height | float32 |
- | X Position | float32 |
- | Y Position | float32 |
- | Z Position | float32 |
- | Quaternion 1 Rotation | float32 |
- | Quaternion 2 Rotation | float32 |
- | Quaternion 3 Rotation | float32 |
- | Quaternion 4 Rotation | float32 |
+Name | Type | Info
+-----|------|-----
+Width | float32 |
+Height | float32 |
+X Position | float32 |
+Y Position | float32 |
+Z Position | float32 |
+Quaternion 1 Rotation | float32 |
+Quaternion 2 Rotation | float32 |
+Quaternion 3 Rotation | float32 |
+Quaternion 4 Rotation | float32 |
 
 ### XRMR
 
-Count | Name | Type | Info
-------|------|------|-----
- | Linked Rooms Count | uint16 |
- | Unknown | uint8[2] |
+Name | Type | Info
+-----|------|-----
+Linked Rooms Count | uint16 |
+Unknown | uint8[2] |
  
 ### XORD Mapping
 

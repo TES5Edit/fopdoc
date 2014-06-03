@@ -5,11 +5,11 @@ As used in the [ARMO](../ARMO.md) and [ARMA](../ARMA.md) record types.
 
 ## Format
 
-Count | Name | Type | Info
-------|------|------|-----
- | Biped Flags | uint32 |
- | General Flags | uint8 |
- | Unused | uint8
+Name | Type | Info
+-----|------|-----
+Biped Flags | uint32 |
+General Flags | uint8 |
+Unused | uint8
  
 #### Biped Flag Values
 

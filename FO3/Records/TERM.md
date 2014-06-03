@@ -21,12 +21,12 @@ Count | Field | Name | Type | Info
 
 ### DNAM
 
-Count | Name | Type | Info
-------|------|------|-----
- | Base Hacking Difficulty | uint8 | Enum - see below for values.
- | Flags | uint8 | See below for values.
- | Server Type | uint8 | Enum - see below for values.
- | Unused | uint8 | 
+Name | Type | Info
+-----|------|-----
+Base Hacking Difficulty | uint8 | Enum - see below for values.
+Flags | uint8 | See below for values.
+Server Type | uint8 | Enum - see below for values.
+Unused | uint8 | 
  
 #### Base Hacking Difficulty Enum Values
 

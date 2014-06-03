@@ -21,8 +21,8 @@ Count | Field | Name | Type | Info
  
 ### DATA
 
-Count | Name | Type | Info
-------|------|------|-----
- | Value | int32 |
- | Weight | float32 |
+Name | Type | Info
+-----|------|-----
+Value | int32 |
+Weight | float32 |
  

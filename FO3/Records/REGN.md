@@ -24,10 +24,10 @@ Count | Field | Name | Type | Info
 
 #### RPLD
 
-Count | Name | Type | Info
-------|------|------|-----
- | X | float32 |
- | Y | float32 |
+Name | Type | Info
+-----|------|-----
+X | float32 |
+Y | float32 |
 
 ### Region Data Entry Field Collection
 
@@ -44,11 +44,11 @@ Count | Field | Name | Type | Info
 
 #### RDAT
 
-Count | Name | Type | Info
-------|------|------|-----
- | Type | uint32 | Enum - see below for values.
- | Flags | uint8 | See below for values.
- | Unused | uint8 |
+Name | Type | Info
+-----|------|-----
+Type | uint32 | Enum - see below for values.
+Flags | uint8 | See below for values.
+Unused | uint8 |
  
 ##### Type Values
 
@@ -73,27 +73,27 @@ Value | Meaning
 
 #### RDOT
 
-Count | Name | Type | Info
-------|------|------|-----
- | Object | formid | FormID of a [TREE](TREE.md), [STAT](STAT.md) or [LTEX](LTEX.md) record.
- | Parent Index | uint16 |
- | Unused | uint8[2] |
- | Density | float32 |
- | Clustering | uint8 |
- | Min Slope | uint8 |
- | Max Slope | uint8 |
- | Flags | uint8 | See below for values
- | Radius With Respect To Parent | uint16 |
- | Radius | uint16 |
- | Unknown | uint8[4] |
- | Max Height | float32 |
- | Sink | float32 |
- | Sink Variance | float32 |
- | Size Variance | float32 |
- | X Angle Variance | uint16 |
- | Y Angle Variance | uint16 |
- | Z Angle Variance | uint16 |
- | Unknown | uint8[6] |
+Name | Type | Info
+-----|------|-----
+Object | formid | FormID of a [TREE](TREE.md), [STAT](STAT.md) or [LTEX](LTEX.md) record.
+Parent Index | uint16 |
+Unused | uint8[2] |
+Density | float32 |
+Clustering | uint8 |
+Min Slope | uint8 |
+Max Slope | uint8 |
+Flags | uint8 | See below for values
+Radius With Respect To Parent | uint16 |
+Radius | uint16 |
+Unknown | uint8[4] |
+Max Height | float32 |
+Sink | float32 |
+Sink Variance | float32 |
+Size Variance | float32 |
+X Angle Variance | uint16 |
+Y Angle Variance | uint16 |
+Z Angle Variance | uint16 |
+Unknown | uint8[6] |
  
 ##### Flag Values
 
@@ -110,10 +110,10 @@ Value | Meaning
 
 #### RDGS
 
-Count | Name | Type | Info
-------|------|------|-----
- | Grass | formid | FormID of a [GRAS](GRAS.md) record.
- | Unknown | uint8[4] |
+Name | Type | Info
+-----|------|-----
+Grass | formid | FormID of a [GRAS](GRAS.md) record.
+Unknown | uint8[4] |
  
 #### RDMD Values
 
@@ -125,11 +125,11 @@ Value | Meaning
 
 #### RDSD
 
-Count | Name | Type | Info
-------|------|------|-----
- | Sound | formid | FormID of a [SOUN](SOUN.md) record.
- | Flags | uint32 | See below for values.
- | Chance | uint32 |
+Name | Type | Info
+-----|------|-----
+Sound | formid | FormID of a [SOUN](SOUN.md) record.
+Flags | uint32 | See below for values.
+Chance | uint32 |
  
 ##### Flag Values
 
@@ -142,8 +142,8 @@ Value | Meaning
 
 #### RDWT
 
-Count | Name | Type | Info
-------|------|------|-----
- | Weather | formid | FormID of a [WTHR](WTHR.md) record.
- | Chance | uint32 |
- | Global | formid | FormID of a [GLOB](GLOB.md) record, or null.
+Name | Type | Info
+-----|------|-----
+Weather | formid | FormID of a [WTHR](WTHR.md) record.
+Chance | uint32 |
+Global | formid | FormID of a [GLOB](GLOB.md) record, or null.

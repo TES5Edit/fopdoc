@@ -3,10 +3,10 @@ XPWR Field
 
 ## Format
 
-Count | Name | Type | Info
-------|------|------|-----
- | Reference | formid | FormID of a [REFR](../REFR.md) record.
- | Type | uint32 | Flags - see below for values.
+Name | Type | Info
+-----|------|-----
+Reference | formid | FormID of a [REFR](../REFR.md) record.
+Type | uint32 | Flags - see below for values.
  
 ### Type Flag Values
 

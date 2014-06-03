@@ -14,14 +14,14 @@ Count | Field | Name | Type | Info
 
 ### NVMI
 
-Count | Name | Type | Info
-------|------|------|-----
- | Unknown | uint8[4] | 
- | Navigation Mesh | formid | FormID of a [NAVM](NAVM.md) record.
- | Location | formid | FormID of a [CELL](CELL.md) or [WRLD](WRLD.md) record.
- | Grid X | int16 |
- | Grid Y | int16 |
- | Unknown | uint8[] |
+Name | Type | Info
+-----|------|-----
+Unknown | uint8[4] | 
+Navigation Mesh | formid | FormID of a [NAVM](NAVM.md) record.
+Location | formid | FormID of a [CELL](CELL.md) or [WRLD](WRLD.md) record.
+Grid X | int16 |
+Grid Y | int16 |
+Unknown | uint8[] |
 
 ### NVCI
 

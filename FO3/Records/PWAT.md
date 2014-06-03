@@ -14,10 +14,10 @@ Count | Field | Name | Type | Info
  
 ### DNAM
 
-Count | Name | Type | Info
-------|------|------|-----
- | Flags | uint32 | See below for values.
- | Water | formid | FormID of a [WATR](WATR.md) record.
+Name | Type | Info
+-----|------|-----
+Flags | uint32 | See below for values.
+Water | formid | FormID of a [WATR](WATR.md) record.
 
 #### Flag Values
 

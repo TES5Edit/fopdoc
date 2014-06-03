@@ -27,11 +27,11 @@ Count | Field | Name | Type | Info
 
 ### DATA
 
-Count | Name | Type | Info
-------|------|------|-----
- | Type | uint8 | Enum - see below for values.
- | Next Speaker | uint8 | Enum - see below for values.
- | Flags | uint16 | See below for details.
+Name | Type | Info
+-----|------|-----
+Type | uint8 | Enum - see below for values.
+Next Speaker | uint8 | Enum - see below for values.
+Flags | uint16 | See below for details.
  
 #### Type Values
 
@@ -82,16 +82,16 @@ Count | Field | Name | Type | Info
  
 #### TRDT
 
-Count | Name | Type | Info
-------|------|------|-----
- | Emotion Type | uint32 | Enum - see below for values.
- | Emotion Value | int32 |
- | Unused | uint8[4] |
- | Response Number | uint8 |
- | Unused | uint8[3] |
- | Sound | formid | FormID of a [SOUN](SOUN.md) record, or null.
- | Flags | uint8 | See below for values.
- | Unused | uint8[3] |
+Name | Type | Info
+-----|------|-----
+Emotion Type | uint32 | Enum - see below for values.
+Emotion Value | int32 |
+Unused | uint8[4] |
+Response Number | uint8 |
+Unused | uint8[3] |
+Sound | formid | FormID of a [SOUN](SOUN.md) record, or null.
+Flags | uint8 | See below for values.
+Unused | uint8[3] |
  
 ##### Emotion Type Values
 

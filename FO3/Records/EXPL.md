@@ -18,19 +18,19 @@ Count | Field | Name | Type | Info
  
 ### DATA
 
-Count | Name | Type | Info
-------|------|------|-----
- | Force | float32 |
- | Damage | float32 |
- | Radius | float32 |
- | Light | formid | FormID of a [LIGH](LIGH.md) record, or null.
- | Sound 1 | formid | FormID of a [SOUN](SOUN.md) record, or null.
- | Flags | uint32 | See below for values.
- | IS Radius | float32 |
- | Impact Dataset | formid | FormID of a [IPDS](IPDS.md) record, or null.
- | Sound 2 | formid | FormID of a [SOUN](SOUN.md) record, or null.
- | Radiation Level | float32 |
- | Radiation Dissipation Time | float32 |
- | Radiation Radius | float32 |
+Name | Type | Info
+-----|------|-----
+Force | float32 |
+Damage | float32 |
+Radius | float32 |
+Light | formid | FormID of a [LIGH](LIGH.md) record, or null.
+Sound 1 | formid | FormID of a [SOUN](SOUN.md) record, or null.
+Flags | uint32 | See below for values.
+IS Radius | float32 |
+Impact Dataset | formid | FormID of a [IPDS](IPDS.md) record, or null.
+Sound 2 | formid | FormID of a [SOUN](SOUN.md) record, or null.
+Radiation Level | float32 |
+Radiation Dissipation Time | float32 |
+Radiation Radius | float32 |
 + | [Sound Level](Values/Sound Levels.md) | uint32 | Enum - see link for values.
 

@@ -9,16 +9,15 @@ Count | Field | Name | Type | Info
 + | [EFIT](#efit) | Effect Data | struct |
  | [CTDA](CTDA.md) | Condition | struct |
 
-
 ### EFIT
 
-Count | Name | Type | Info
-------|------|------|-----
- | Magnitude | uint32 |
- | Area | uint32 |
- | Duration | uint32 |
- | Type | uint32 | See below for values.
- | Actor Value | int32 | See below for values.
+Name | Type | Info
+-----|------|-----
+Magnitude | uint32 |
+Area | uint32 |
+Duration | uint32 |
+Type | uint32 | See below for values.
+Actor Value | int32 | See below for values.
  
 #### Type Enum Values
 

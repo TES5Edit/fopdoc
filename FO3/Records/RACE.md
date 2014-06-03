@@ -59,10 +59,10 @@ Count | Name | Type | Info
  
 #### Skill Boost
 
-Count | Name | Type | Info
-------|------|------|-----
- | [Skill](Values/Actor Values.md) | int8 | 
- | Boost | int8 |
+Name | Type | Info
+-----|------|-----
+[Skill](Values/Actor Values.md) | int8 | 
+Boost | int8 |
 
 #### Flag Values
 

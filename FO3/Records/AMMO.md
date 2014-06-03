@@ -21,13 +21,13 @@ Count | Field | Name | Type | Info
  
 ### DATA
 
-Count | Name | Type | Info
-------|------|------|-----
- | Speed | float32 |
- | Flags | uint8 | See below for values
- | Unused | uint8[3] |
- | Value | int32 |
- | Clip Rounds | uint8 |
+Name | Type | Info
+-----|------|-----
+Speed | float32 |
+Flags | uint8 | See below for values
+Unused | uint8[3] |
+Value | int32 |
+Clip Rounds | uint8 |
  
 #### Flag Values
 

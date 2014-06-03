@@ -5,10 +5,10 @@ As used in the [ARMO](../ARMO.md) and [ARMA](../ARMA.md) record types.
 
 ## Format
 
-Count | Name | Type | Info
-------|------|------|-----
- | AR | int16 | Value is divided by 100 by game.
- | Flags | uint16 | See below for details.
+Name | Type | Info
+-----|------|-----
+AR | int16 | Value is divided by 100 by game.
+Flags | uint16 | See below for details.
  
 #### Flag Values
 

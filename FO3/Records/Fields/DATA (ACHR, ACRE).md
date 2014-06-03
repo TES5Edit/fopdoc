@@ -5,11 +5,11 @@ As used in the [ACHR](../ACHR.md) and [ACRE](../ACRE.md) record types.
 
 ## Format
 
-Count | Name | Type | Info
-------|------|------|-----
-- | X | float32 | X position
-- | Y | float32 | Y position
-- | Z | float32 | Z position
-+ | X | float32 | X rotation
-+ | Y | float32 | Y rotation
-+ | Z | float32 | Z rotation
+Name | Type | Info
+-----|------|-----
+X Position | float32 |
+Y Position | float32 |
+Z Position | float32 |
+X Rotation | float32 |
+Y Rotation | float32 |
+Z Rotation | float32 |

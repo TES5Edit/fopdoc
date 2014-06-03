@@ -19,11 +19,11 @@ Count | Field | Name | Type | Info
 
 #### DATA
 
-Count | Name | Type | Info
-------|------|------|-----
- | Percentage | uint8 |
- | Model Filename | cstring |
- | Flags | uint8 | See below for values.
+Name | Type | Info
+-----|------|-----
+Percentage | uint8 |
+Model Filename | cstring |
+Flags | uint8 | See below for values.
 
 ##### Flag Values
 

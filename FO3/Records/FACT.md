@@ -16,11 +16,11 @@ Count | Field | Name | Type | Info
 
 ### DATA
 
-Count | Name | Type | Info
-------|------|------|-----
- | Flags 1 | uint8 | See below for values.
- | Flags 2 | uint8 | See below for values.
- | Unushed | uint8[2] |
+Name | Type | Info
+-----|------|-----
+Flags 1 | uint8 | See below for values.
+Flags 2 | uint8 | See below for values.
+Unused | uint8[2] |
  
 #### Flags 1 Values
 

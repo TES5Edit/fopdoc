@@ -16,10 +16,10 @@ Count | Field | Name | Type | Info
 
 ### DATA
 
-Count | Name | Type | Info
-------|------|------|-----
- | Type | uint8 | Enum - see below for values.
- | Flags | uint8 | See below for values.
+Name | Type | Info
+-----|------|-----
+Type | uint8 | Enum - see below for values.
+Flags | uint8 | See below for values.
  
 #### Type Enum Values
 

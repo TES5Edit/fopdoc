@@ -24,8 +24,8 @@ Value | Meaning
 
 ### IDLC
 
-Count | Name | Type | Info
-------|------|------|-----
- | Animation Count | uint8 |
- | Unused | uint8[3] |
+Name | Type | Info
+-----|------|-----
+Animation Count | uint8 |
+Unused | uint8[3] |
  

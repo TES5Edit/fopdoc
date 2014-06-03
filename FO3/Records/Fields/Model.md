@@ -32,17 +32,17 @@ Count | Name | Type | Info
 
 #### Aternate Texture
 
-Count | Name | Type | Info
-------|------|------|-----
-- | Name Length | uint32 | Alternate texture data. Length of the following 3D name.
-- | 3D Name | char[Name Length] | Alternate texture data.
-- | New Texture | formid | Alternate texture data. FormID of a TXST record.
-- | 3D Index | int32 | Alternate texture data.
+Name | Type | Info
+-----|------|-----
+Name Length | uint32 | Alternate texture data. Length of the following 3D name.
+3D Name | char[Name Length] | Alternate texture data.
+New Texture | formid | Alternate texture data. FormID of a TXST record.
+3D Index | int32 | Alternate texture data.
 
 ### MODD Flag Values
 
-Flag | Meaning
------|--------
+Value | Meaning
+------|--------
 0x01 | Head
 0x02 | Torso
 0x04 | Right Hand

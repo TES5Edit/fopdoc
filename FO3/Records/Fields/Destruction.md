@@ -12,17 +12,17 @@ Count | Field | Name | Type | Info
 
 ### DEST
 
-Count | Name | Type | Info
-------|------|------|-----
-+ | Health | int32 |
-+ | Count | uint8 |
-+ | Flags | uint8 | See below for values.
-+ | unknown | uint8[2] | ??
+Name | Type | Info
+-----|------|-----
+Health | int32 |
+Count | uint8 |
+Flags | uint8 | See below for values.
+unknown | uint8[2] | ??
 
 #### DEST Flag Values
 
-Flag | Meaning
------|--------
+Value | Meaning
+------|--------
 0x01 | VATS Targetable
 
 ### Destruction Stage
@@ -37,21 +37,21 @@ Count | Field | Name | Type | Info
 
 #### DSTD
 
-Count | Name | Type | Info
-------|------|------|-----
-+ | Health Percentage | int32 |
-+ | Index | uint8 |
-+ | Damage Stage | uint8 |
-+ | Flags | uint8 | See below for values.
-+ | Self Damage per Second | int32 |
-+ | Explosion | formid | FormID of a [EXPL](../EXPL.md) record or null.
-+ | Debris | formid | FormID of a [DEBR](../DEBR.md) record or null.
-+ | Debris Count | int32 |
+Name | Type | Info
+-----|------|-----
+Health Percentage | int32 |
+Index | uint8 |
+Damage Stage | uint8 |
+Flags | uint8 | See below for values.
+Self Damage per Second | int32 |
+Explosion | formid | FormID of a [EXPL](../EXPL.md) record or null.
+Debris | formid | FormID of a [DEBR](../DEBR.md) record or null.
+Debris Count | int32 |
 
 ##### DSTD Flag Values
 
-Flag | Meaning
------|--------
+Value | Meaning
+------|--------
 0x01 | Cap Damage
 0x02 | Disable
 0x04 | Destroy

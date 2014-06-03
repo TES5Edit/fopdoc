@@ -20,16 +20,16 @@ Count | Field | Name | Type | Info
 
 ### DATA 
 
-Count | Name | Type | Info
-------|------|------|-----
- | Dynamic Bone Count | uint32 |
- | Unused | uint8[4] |
- | Feedback Enabled | uint8 | Enum - see below for values.
- | Foot IK Enabled | uint8 | Enum - see below for values.
- | Look IK Enabled | uint8 | Enum - see below for values.
- | Grab IK Enabled | uint8 | Enum - see below for values.
- | Pose Matching | uint8 | Enum - see below for values.
- | Unused | uint8 |
+Name | Type | Info
+-----|------|-----
+Dynamic Bone Count | uint32 |
+Unused | uint8[4] |
+Feedback Enabled | uint8 | Enum - see below for values.
+Foot IK Enabled | uint8 | Enum - see below for values.
+Look IK Enabled | uint8 | Enum - see below for values.
+Grab IK Enabled | uint8 | Enum - see below for values.
+Pose Matching | uint8 | Enum - see below for values.
+Unused | uint8 |
  
 #### Enabled Enum Values
 
@@ -40,23 +40,23 @@ Value | Meaning
 
 ### RAFD
 
-Count | Name | Type | Info
-------|------|------|-----
- | Dynamic / Keyframe Blend Amount | float32 |
- | Hierarchy Gain | float32 |
- | Position Gain | float32 |
- | Velocity Gain | float32 |
- | Acceleration Gain | float32 |
- | Snap Gain | float32 |
- | Velocity Damping | float32 |
- | Snap Max Linear Velocity | float32 |
- | Snap Max Angular Velocity | float32 |
- | Snap Max Linear Distance | float32 |
- | Snap Max Angular Distance | float32 |
- | Position Max Linear Velocity | float32 |
- | Position Max Angular Velocity | float32 |
- | Projectile Position Max Velocity | int32 | Value is divided by 1000.
- | Melee Position Max Velocity | uint32 | Value is divided by 1000.
+Name | Type | Info
+-----|------|-----
+Dynamic / Keyframe Blend Amount | float32 |
+Hierarchy Gain | float32 |
+Position Gain | float32 |
+Velocity Gain | float32 |
+Acceleration Gain | float32 |
+Snap Gain | float32 |
+Velocity Damping | float32 |
+Snap Max Linear Velocity | float32 |
+Snap Max Angular Velocity | float32 |
+Snap Max Linear Distance | float32 |
+Snap Max Angular Distance | float32 |
+Position Max Linear Velocity | float32 |
+Position Max Angular Velocity | float32 |
+Projectile Position Max Velocity | int32 | Value is divided by 1000.
+Melee Position Max Velocity | uint32 | Value is divided by 1000.
  
 ### RAPS
 

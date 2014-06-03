@@ -15,15 +15,15 @@ Count | Field | Name | Type | Info
 
 ### DATA
 
-Count | Name | Type | Info
-------|------|------|-----
- | Animation Group Section | uint8 | See below for values.
- | Looping Min | uint8 |
- | Looping Max | uint8 |
- | Unused | uint8 |
- | Replay Delay | int16 |
- | Flags | uint8 | See below for values.
- | Unused | uint8 |
+Name | Type | Info
+-----|------|-----
+Animation Group Section | uint8 | See below for values.
+Looping Min | uint8 |
+Looping Max | uint8 |
+Unused | uint8 |
+Replay Delay | int16 |
+Flags | uint8 | See below for values.
+Unused | uint8 |
  
 #### Animation Group Section Values
 

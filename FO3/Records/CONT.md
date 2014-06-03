@@ -21,10 +21,10 @@ Count | Field | Name | Type | Info
 
 ### DATA
 
-Count | Name | Type | Info
-------|------|------|-----
- | Flags | uint8 | See below for values.
- | Weight | float32 | 
+Name | Type | Info
+-----|------|-----
+Flags | uint8 | See below for values.
+Weight | float32 | 
  
 #### Flag Values
 

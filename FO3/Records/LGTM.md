@@ -12,15 +12,15 @@ Count | Field | Name | Type | Info
 
 ### DATA
 
-Count | Name | Type | Info
-------|------|------|-----
- | Ambient Color | rgba |
- | Directional Color | rgba |
- | Fog Color | rgba |
- | Fog Near | float32 |
- | Fog Far | float32 |
- | Directional Rotation XY | int32 |
- | Directional Rotation Z | int32 |
- | Directional Fade | float32 |
- | Fog Clip Distance | float32 |
- | Fog Power | float32 |
+Name | Type | Info
+-----|------|-----
+Ambient Color | rgba |
+Directional Color | rgba |
+Fog Color | rgba |
+Fog Near | float32 |
+Fog Far | float32 |
+Directional Rotation XY | int32 |
+Directional Rotation Z | int32 |
+Directional Fade | float32 |
+Fog Clip Distance | float32 |
+Fog Power | float32 |

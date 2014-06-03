@@ -5,11 +5,11 @@ As used in the [ACHR](../ACHR.md) and [ACRE](../ACRE.md) record types.
 
 ## Format
 
-Count | Name | Type | Info
-------|------|------|-----
-- | Reference | formid | FormID of a [PLYR](../PLYR.md), [REFR](../REFR.md), [ACRE](../ACRE.md), [ACHR](../ACHR.md), [PGRE](../PGRE.md) or [PMIS](../PMIS.md) record.
-- | Flags | uint8 | See below for details.
-- | unknown | uint8[3] | ??
+Name | Type | Info
+-----|------|-----
+Reference | formid | FormID of a [PLYR](../PLYR.md), [REFR](../REFR.md), [ACRE](../ACRE.md), [ACHR](../ACHR.md), [PGRE](../PGRE.md) or [PMIS](../PMIS.md) record.
+Flags | uint8 | See below for details.
+Unknown | uint8[3] |
 
 ### Flag Values
 

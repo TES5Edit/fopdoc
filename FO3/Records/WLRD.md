@@ -34,10 +34,10 @@ Count | Field | Name | Type | Info
 
 ### PNAM
 
-Count | Name | Type | Info
-------|------|------|-----
- | Flags | uint8 | See values below.
- | Unknown | uint8 |
+Name | Type | Info
+-----|------|-----
+Flags | uint8 | See values below.
+Unknown | uint8 |
  
 #### Flag Values
 
@@ -54,29 +54,29 @@ Value | Meaning
 
 ### DNAM
 
-Count | Name | Type | Info
-------|------|------|-----
- | Default Land Height | float32 |
- | Default Water Height | float32 |
+Name | Type | Info
+-----|------|-----
+Default Land Height | float32 |
+Default Water Height | float32 |
  
 ### MNAM
 
-Count | Name | Type | Info
-------|------|------|-----
- | Useable X Size | int32 |
- | Useable Y Size | int32 |
- | NW Cell X Coordinate | int16 |
- | NW Cell Y Coordinate | int16 |
- | SE Cell X Coordinate | int16 |
- | SE Cell Y Coordinate | int16 |
+Name | Type | Info
+-----|------|-----
+Useable X Size | int32 |
+Useable Y Size | int32 |
+NW Cell X Coordinate | int16 |
+NW Cell Y Coordinate | int16 |
+SE Cell X Coordinate | int16 |
+SE Cell Y Coordinate | int16 |
  
 ### ONAM
 
-Count | Name | Type | Info
-------|------|------|-----
- | World Map Scale | float32 |
- | Cell X Offset | float32 |
- | Cell Y Offset | float32 |
+Name | Type | Info
+-----|------|-----
+World Map Scale | float32 |
+Cell X Offset | float32 |
+Cell Y Offset | float32 |
  
 ### DATA Values
 
@@ -93,18 +93,18 @@ Value | Meaning
 
 ### NAM0 / NAM9
 
-Count | Name | Type | Info
-------|------|------|-----
- | X | float32 | Value is divided by 4096.
- | Y | float32 | Value is divided by 4096.
+Name | Type | Info
+-----|------|-----
+X | float32 | Value is divided by 4096.
+Y | float32 | Value is divided by 4096.
 
 ### IMPS
 
-Count | Name | Type | Info
-------|------|------|-----
- | [Material Type](Values/Impact Material Types.md) | uint32 |
- | Old | formid | FormID of an [IPCT](IPCT.md) record.
- | New | formid | FormID of an [IPCT](IPCT.md) record, or null.
+Name | Type | Info
+-----|------|-----
+[Material Type](Values/Impact Material Types.md) | uint32 |
+Old | formid | FormID of an [IPCT](IPCT.md) record.
+New | formid | FormID of an [IPCT](IPCT.md) record, or null.
 
 ### IMPF Map
 

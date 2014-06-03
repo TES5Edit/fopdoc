@@ -21,11 +21,11 @@ Count | Field | Name | Type | Info
 
 ### ENIT
 
-Count | Name | Type | Info
-------|------|------|-----
- | Value | int32 |
- | Flags | uint8 | See below for values.
- | Unused | uint8[3] |
+Name | Type | Info
+-----|------|-----
+Value | int32 |
+Flags | uint8 | See below for values.
+Unused | uint8[3] |
  
 #### Flag Values
 

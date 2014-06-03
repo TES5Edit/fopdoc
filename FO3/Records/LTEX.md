@@ -17,11 +17,11 @@ Count | Field | Name | Type | Info
 
 ### HNAM
 
-Count | Name | Type | Info
-------|------|------|-----
- | Material Type | uint8 | Enum - see below for values.
- | Friction | uint8 |
- | Restitution | uint8 |
+Name | Type | Info
+-----|------|-----
+Material Type | uint8 | Enum - see below for values.
+Friction | uint8 |
+Restitution | uint8 |
  
 #### Material Type Enum Values
 

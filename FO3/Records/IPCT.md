@@ -17,14 +17,14 @@ Count | Field | Name | Type | Info
 
 ### DATA
 
-Count | Name | Type | Info
-------|------|------|-----
- | Effect - Duration | float32 |
- | Effect - Orientation | uint32 | Enum - see below for values.
- | Angle Threshold | float32 |
- | Placement Radius | float32 |
- | [Sound Level](Values/Sound Levels.md) | uint32 |
- | Flags | uint32 | See below for values.
+Name | Type | Info
+-----|------|-----
+Effect - Duration | float32 |
+Effect - Orientation | uint32 | Enum - see below for values.
+Angle Threshold | float32 |
+Placement Radius | float32 |
+[Sound Level](Values/Sound Levels.md) | uint32 |
+Flags | uint32 | See below for values.
  
 #### Effect Orientation Enum Values
 

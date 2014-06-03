@@ -3,16 +3,16 @@ CTDA Field
 
 ## Format
 
-Count | Name | Type | Info
-------|------|------|-----
- | Type | uint8 | See values below.
- | Unused | uint8[3] |
- | Comparison Value | formid *or* float32 | If not a valid [GLOB](../GLOB.md) record FormID, is interpreted as a float32.
- | Function | uint32 | A function index. See below for a list of function indicies.
- | Parameter #1 | uint8[4] | First parameter to pass to the function. 
- | Parameter #2 | uint8[4] | Second parameter to pass to the function.
- | Run On | uint32 | Values and what they correspond to are given below.
- | Reference | formid | A FormID of a [PLYR](../PLYR.md), [ACHR](../ACHR.md), [ACRE](../ACRE.md), [REFR](../REFR.md), [PMIS](../PMIS.md) or [PGRE](../PGRE.md) reference on which to apply the function, or null.
+Name | Type | Info
+-----|------|-----
+Type | uint8 | See values below.
+Unused | uint8[3] |
+Comparison Value | formid *or* float32 | If not a valid [GLOB](../GLOB.md) record FormID, is interpreted as a float32.
+Function | uint32 | A function index. See below for a list of function indicies.
+Parameter #1 | uint8[4] | First parameter to pass to the function. 
+Parameter #2 | uint8[4] | Second parameter to pass to the function.
+Run On | uint32 | Values and what they correspond to are given below.
+Reference | formid | A FormID of a [PLYR](../PLYR.md), [ACHR](../ACHR.md), [ACRE](../ACRE.md), [REFR](../REFR.md), [PMIS](../PMIS.md) or [PGRE](../PGRE.md) reference on which to apply the function, or null.
  
 ### Type Values
 

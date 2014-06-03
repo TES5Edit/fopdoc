@@ -30,12 +30,12 @@ Count | Field | Name | Type | Info
 
 ### PNAM / NAM0
 
-Count | Name | Type | Info
-------|------|------|-----
- | Sunrise | rgba |
- | Day | rgba |
- | Sunset | rgba |
- | Night | rgba |
+Name | Type | Info
+-----|------|-----
+Sunrise | rgba |
+Day | rgba |
+Sunset | rgba |
+Night | rgba |
  
 ### NAM0 Mapping
 
@@ -54,32 +54,32 @@ NAM0 Index | Type
 
 ### FNAM
 
-Count | Name | Type | Info
-------|------|------|-----
- | Day - Near | float32 |
- | Day - Far | float32 |
- | Night - Near | float32 |
- | Night - Far | float32 |
- | Day - Power | float32 |
- | Night - Power | float32 |
+Name | Type | Info
+-----|------|-----
+Day - Near | float32 |
+Day - Far | float32 |
+Night - Near | float32 |
+Night - Far | float32 |
+Day - Power | float32 |
+Night - Power | float32 |
 
 ### DATA
 
-Count | Name | Type | Info
-------|------|------|-----
- | Wind Speed | uint8 |
- | Cloud Speed (Lower) | uint8 |
- | Cloud Speed (Upper) | uint8 |
- | Transition Delta | uint8 |
- | Sun Glare | uint8 |
- | Sun Damage | uint8 |
- | Precipitation - Begin Fade In | uint8 |
- | Precipitation - End Fade Out | uint8 |
- | Thunder / Lightning - Begin Fade In | uint8 |
- | Thunder / Lightning - End Fade Out | uint8 |
- | Thunder / Lightning - Frequency | uint8 |
- | Weather Classification | uint8 | Enum - see values below.
- | Lightning Color | rgb |
+Name | Type | Info
+-----|------|-----
+Wind Speed | uint8 |
+Cloud Speed (Lower) | uint8 |
+Cloud Speed (Upper) | uint8 |
+Transition Delta | uint8 |
+Sun Glare | uint8 |
+Sun Damage | uint8 |
+Precipitation - Begin Fade In | uint8 |
+Precipitation - End Fade Out | uint8 |
+Thunder / Lightning - Begin Fade In | uint8 |
+Thunder / Lightning - End Fade Out | uint8 |
+Thunder / Lightning - Frequency | uint8 |
+Weather Classification | uint8 | Enum - see values below.
+Lightning Color | rgb |
  
 #### Weather Classification Values
 
@@ -93,10 +93,10 @@ Value | Meaning
 
 ### SNAM
 
-Count | Name | Type | Info
-------|------|------|-----
- | Sound | formid | FormID of a [SOUN](SOUN.md) record.
- | Type | uint32 | Enum - see values below.
+Name | Type | Info
+-----|------|-----
+Sound | formid | FormID of a [SOUN](SOUN.md) record.
+Type | uint32 | Enum - see values below.
  
 #### Type Values
 

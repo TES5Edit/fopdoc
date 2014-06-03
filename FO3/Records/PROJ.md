@@ -19,26 +19,26 @@ Count | Field | Name | Type | Info
  
 ### DATA
 
-Count | Name | Type | Info
-------|------|------|-----
- | Flags | uint16 | See below for values.
- | Type | uint16 | Enum - see below for values.
- | Gravity | float32 |
- | Speed | float32 |
- | Range | float32 |
- | Light | formid | FormID of a [LIGH](LIGH.md) record, or null.
- | Muzzle Flash - Light | formid | FormID of a [LIGH](LIGH.md) record, or null.
- | Tracer Chance | float32 |
- | Explosion - Alt. Trigger - Proximity | float32 |
- | Explosion - Alt. Trigger - Timer | float32 |
- | Explosion | formid | FormID of an [EXPL](EXPL.md) record, or null.
- | Sound | formid | FormID of a [SOUN](SOUN.md) record, or null.
- | Muzzle Flash - Duration | float32 |
- | Fade Duration | float32 |
- | Impact Force | float32 |
- | Sound - Countdown | formid | FormID of a [SOUN](SOUN.md) record, or null.
- | Sound - Disable | formid | FormID of a [SOUN](SOUN.md) record, or null.
- | Default Weapon Source | formid | FormID of a [WEAP](WEAP.md) record, or null.
+Name | Type | Info
+-----|------|-----
+Flags | uint16 | See below for values.
+Type | uint16 | Enum - see below for values.
+Gravity | float32 |
+Speed | float32 |
+Range | float32 |
+Light | formid | FormID of a [LIGH](LIGH.md) record, or null.
+Muzzle Flash - Light | formid | FormID of a [LIGH](LIGH.md) record, or null.
+Tracer Chance | float32 |
+Explosion - Alt. Trigger - Proximity | float32 |
+Explosion - Alt. Trigger - Timer | float32 |
+Explosion | formid | FormID of an [EXPL](EXPL.md) record, or null.
+Sound | formid | FormID of a [SOUN](SOUN.md) record, or null.
+Muzzle Flash - Duration | float32 |
+Fade Duration | float32 |
+Impact Force | float32 |
+Sound - Countdown | formid | FormID of a [SOUN](SOUN.md) record, or null.
+Sound - Disable | formid | FormID of a [SOUN](SOUN.md) record, or null.
+Default Weapon Source | formid | FormID of a [WEAP](WEAP.md) record, or null.
  
 #### Flag Values
 

@@ -30,10 +30,10 @@ Count | Field | Name | Type | Info
  
 #### LVLO
 
-Count | Name | Type | Info
-------|------|------|-----
- | Level | int16 |
- | Unused | uint8[2] |
- | Reference | formid | FormID of a [NPC_](NPC_.md) or [LVLN](LVLN.md) record.
- | Count | int16 |
- | Unused | uint8[2] |
+Name | Type | Info
+-----|------|-----
+Level | int16 |
+Unused | uint8[2] |
+Reference | formid | FormID of a [NPC_](NPC_.md) or [LVLN](LVLN.md) record.
+Count | int16 |
+Unused | uint8[2] |

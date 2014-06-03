@@ -21,12 +21,12 @@ Count | Field | Name | Type | Info
 
 #### DATA
 
-Count | Name | Type | Info
-------|------|------|-----
- | X Position | float32 |
- | Y Position | float32 |
- | Z Position | float32 |
- | X Rotation | float32 |
- | Y Rotation | float32 |
- | Z Rotation | float32 |
- | Scale | float32 |
+Name | Type | Info
+-----|------|-----
+X Position | float32 |
+Y Position | float32 |
+Z Position | float32 |
+X Rotation | float32 |
+Y Rotation | float32 |
+Z Rotation | float32 |
+Scale | float32 |

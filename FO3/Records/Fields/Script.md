@@ -20,12 +20,12 @@ Count | Field | Name | Type | Info
 
 #### SLSD
 
-Count | Name | Type | Info
-------|------|------|-----
- | Index | uint32 |
- | Unused | uint8[12] |
- | Flags | uint8 | See below for values.
- | Unused | uint8[7] |
+Name | Type | Info
+-----|------|-----
+Index | uint32 |
+Unused | uint8[12] |
+Flags | uint8 | See below for values.
+Unused | uint8[7] |
  
 ##### Flag Values
 

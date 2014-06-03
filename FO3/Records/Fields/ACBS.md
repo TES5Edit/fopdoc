@@ -5,18 +5,18 @@ As used by the [CREA](../CREA.md) and [NPC_](../NPC_.md) record types.
 
 ## Format
 
-Count | Name | Type | Info
-------|------|------|-----
- | Flags | uint32 | See below for values.
- | Fatigue | uint16 | 
- | Barter Gold | uint16
- | Level / Level Mult | int16 | If the 0x00000080 flag is set, the value is divided by 1000 to give a multiplier.
- | Calc Min | uint16 | 
- | Calc Max | uint16 |
- | Speed Multiplier | uint16 |
- | Karma (Alignment) | float32 |
- | Disposition Base | int16 |
- | Template Flags | uint16 | See below for values.
+Name | Type | Info
+-----|------|-----
+Flags | uint32 | See below for values.
+Fatigue | uint16 | 
+Barter Gold | uint16
+Level / Level Mult | int16 | If the 0x00000080 flag is set, the value is divided by 1000 to give a multiplier.
+Calc Min | uint16 | 
+Calc Max | uint16 |
+Speed Multiplier | uint16 |
+Karma (Alignment) | float32 |
+Disposition Base | int16 |
+Template Flags | uint16 | See below for values.
  
 ### Flag Values
 

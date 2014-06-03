@@ -45,58 +45,58 @@ Count | Field | Name | Type | Info
  
 ### DATA
 
-Count | Name | Type | Info
-------|------|------|-----
- | Value | int32 |
- | Health | int32 |
- | Weight | float32 |
- | Base Damage | int16 |
- | Clip Size | uint8 |
+Name | Type | Info
+-----|------|-----
+Value | int32 |
+Health | int32 |
+Weight | float32 |
+Base Damage | int16 |
+Clip Size | uint8 |
  
 ### DNAM
 
-Count | Name | Type | Info
-------|------|------|-----
- | [Animation Type](Values/Weapon Animation Types.md) | uint32 | Enum
- | Animation Multiplier | float32 |
- | Reach | float32 |
- | Flags 1 | uint8 | See values below.
- | Grip Animation | uint8 | Enum - see values below.
- | Ammo Use | uint8 |
- | Reload Animation | uint8 | Enum - see values below.
- | Min Spread | float32 |
- | Spread | float32 |
- | Unknown | uint8[4] |
- | Sight FOV | float32 |
- | Unused | uint8[4] |
- | Projectile | formid | FormID of a [PROJ](PROJ.md) record, or null.
- | Base VATS To-Hit Chance | uint8 |
- | Attack Animation | uint8 | Enum - see values below.
- | Projectile Cound | uint8 |
- | Embedded Weapon - Actor Value | uint8 | Enum - see values below.
- | Min Range | float32 |
- | Max Range | float32 |
- | On Hit | uint32 | Enum - see values below.
- | Flags 2 | uint32 | See values below.
- | Animation Attack Multiplier | float32 |
- | Fire Rate | float32 |
- | Override - Action Points | float32 |
- | Rumble - Left Motor Strength | float32 |
- | Rumble - Right Motor Strength | float32 |
- | Rumble - Duration | float32 |
- | Override - Damage To Weapon Mult | float32 |
- | Attack Shots/Sec | float32 |
- | Reload Time | float32 |
- | Jam Time | float32 |
- | Aim Arc | float32 |
- | [Skill](Values/Actor Values.md) | int32 | Enum
- | Rumble - Pattern | uint32 | Enum - see below for values.
- | Rumble - Wavelength | float32 |
- | Limb Damage Multiplier | float32 |
- | [Resistance Type](Values/Actor Values.md) | int32 | Enum
- | Sight Usage | float32 |
- | Semi-Automatic Fire Delay Min | float32 |
- | Semi-Automatic Fire Delay Max | float32 |
+Name | Type | Info
+-----|------|-----
+[Animation Type](Values/Weapon Animation Types.md) | uint32 | Enum
+Animation Multiplier | float32 |
+Reach | float32 |
+Flags 1 | uint8 | See values below.
+Grip Animation | uint8 | Enum - see values below.
+Ammo Use | uint8 |
+Reload Animation | uint8 | Enum - see values below.
+Min Spread | float32 |
+Spread | float32 |
+Unknown | uint8[4] |
+Sight FOV | float32 |
+Unused | uint8[4] |
+Projectile | formid | FormID of a [PROJ](PROJ.md) record, or null.
+Base VATS To-Hit Chance | uint8 |
+Attack Animation | uint8 | Enum - see values below.
+Projectile Cound | uint8 |
+Embedded Weapon - Actor Value | uint8 | Enum - see values below.
+Min Range | float32 |
+Max Range | float32 |
+On Hit | uint32 | Enum - see values below.
+Flags 2 | uint32 | See values below.
+Animation Attack Multiplier | float32 |
+Fire Rate | float32 |
+Override - Action Points | float32 |
+Rumble - Left Motor Strength | float32 |
+Rumble - Right Motor Strength | float32 |
+Rumble - Duration | float32 |
+Override - Damage To Weapon Mult | float32 |
+Attack Shots/Sec | float32 |
+Reload Time | float32 |
+Jam Time | float32 |
+Aim Arc | float32 |
+[Skill](Values/Actor Values.md) | int32 | Enum
+Rumble - Pattern | uint32 | Enum - see below for values.
+Rumble - Wavelength | float32 |
+Limb Damage Multiplier | float32 |
+[Resistance Type](Values/Actor Values.md) | int32 | Enum
+Sight Usage | float32 |
+Semi-Automatic Fire Delay Min | float32 |
+Semi-Automatic Fire Delay Max | float32 |
 
 #### Flags 1 Values
 
@@ -209,14 +209,14 @@ Value | Meaning
 
 ### CRDT
 
-Count | Name | Type | Info
-------|------|------|-----
- | Critical Damage | uint16 |
- | Unused | uint8[2] |
- | Critical % Multiplier | float32 |
- | Flags | uint8 | See below for values.
- | Unused | uint8[3] |
- | Effect | formid | FormID of a [SPEL](SPEL.md) record, or null.
+Name | Type | Info
+-----|------|-----
+Critical Damage | uint16 |
+Unused | uint8[2] |
+Critical % Multiplier | float32 |
+Flags | uint8 | See below for values.
+Unused | uint8[3] |
+Effect | formid | FormID of a [SPEL](SPEL.md) record, or null.
  
 #### Flag Values
 

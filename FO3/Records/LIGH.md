@@ -20,16 +20,16 @@ Count | Field | Name | Type | Info
  
 ### DATA
 
-Count | Name | Type | Info
+Name | Type | Info
 ------|------|------|-----
- | Time | int32 |
- | Radius | uint32 |
- | Color | rbga |
- | Flags | uint32 | See below for values.
- | Falloff Exponent | float32 |
- | FOV | float32 |
- | Value | uint32 |
- | Weight | float32 |
+Time | int32 |
+Radius | uint32 |
+Color | rbga |
+Flags | uint32 | See below for values.
+Falloff Exponent | float32 |
+FOV | float32 |
+Value | uint32 |
+Weight | float32 |
  
 #### Flag Values
 

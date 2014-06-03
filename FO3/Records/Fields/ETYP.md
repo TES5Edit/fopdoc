@@ -5,9 +5,9 @@ Equipment Type
 
 ## Format
 
-Count | Name | Type | Info
-------|------|------|-----
- | Equipment Type | int32 | Enum - see below for values.
+Name | Type | Info
+-----|------|-----
+Equipment Type | int32 | Enum - see below for values.
  
 ### ETYP Enum Values
 

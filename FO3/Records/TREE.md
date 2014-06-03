@@ -18,20 +18,20 @@ Count | Field | Name | Type | Info
 
 ### CNAM
 
-Count | Name | Type | Info
-------|------|------|-----
- | Leaf Curvature | float32 |
- | Minimum Leaf Angle | float32 |
- | Maximum Leaf Angle | float32 |
- | Branch Dimming Value | float32 |
- | Leaf Dimming Value | float32 |
- | Shadow Radius | int32 |
- | Rock Speed | float32 |
- | Rustle Speed | float32 |
+Name | Type | Info
+-----|------|-----
+Leaf Curvature | float32 |
+Minimum Leaf Angle | float32 |
+Maximum Leaf Angle | float32 |
+Branch Dimming Value | float32 |
+Leaf Dimming Value | float32 |
+Shadow Radius | int32 |
+Rock Speed | float32 |
+Rustle Speed | float32 |
 
 ### BNAM
 
-Count | Name | Type | Info
-------|------|------|-----
- | Width | float32 |
- | Height | float32 |
+Name | Type | Info
+-----|------|-----
+Width | float32 |
+Height | float32 |

@@ -15,7 +15,7 @@ Count | Field | Name | Type | Info
 
 ### DNAM
 
-Count | Name | Type | Info
-------|------|------|-----
-- | Master Particle System Cap | uint16 |
-- | unknown | uint8[2] |
+Name | Type | Info
+-----|------|-----
+Master Particle System Cap | uint16 |
+Unknown | uint8[2] |

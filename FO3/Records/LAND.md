@@ -18,11 +18,11 @@ Count | Field | Name | Type | Info
 
 Each VNML / VCLR structure contains 33 repeats of the following structure, so that the array of VNML / VCLR structs forms a 33x33 grid where each VNML / VCLR is a row, and each instance of the structure below is a column.
 
-Count | Name | Type | Info
-------|------|------|-----
- | X | uint8 |
- | Y | uint8 |
- | Z | uint8 |
+Name | Type | Info
+-----|------|-----
+X | uint8 |
+Y | uint8 |
+Z | uint8 |
 
 ### VHGT
 
@@ -44,12 +44,12 @@ Count | Field | Name | Type | Info
  
 ##### BTXT / ATXT
 
-Count | Name | Type | Info
-------|------|------|-----
- | Texture | formid | FormID of a [LTEX](LTEX.md) record, or null.
- | Quadrant | uint8 | Enum - see below for values.
- | Unused | uint8 |
- | Layer | int16 |
+Name | Type | Info
+-----|------|-----
+Texture | formid | FormID of a [LTEX](LTEX.md) record, or null.
+Quadrant | uint8 | Enum - see below for values.
+Unused | uint8 |
+Layer | int16 |
  
 ###### Quadrant Enum Values
 
@@ -69,9 +69,9 @@ Count | Field | Name | Type | Info
 
 ##### VTXT
 
-Count | Name | Type | Info
-------|------|------|-----
- | Position | uint16 |
- | Unused | uint8[2] |
- | Opacity | float32 |
+Name | Type | Info
+-----|------|-----
+Position | uint16 |
+Unused | uint8[2] |
+Opacity | float32 |
 

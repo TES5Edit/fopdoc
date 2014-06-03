@@ -14,18 +14,18 @@ Count | Field | Name | Type | Info
 
 ### DATA
 
-Count | Name | Type | Info
-------|------|------|-----
- | Action | uint32 | Enum - see below for values.
- | Location | uint32 | Enum - see below for values.
- | Target | uint32 | Enum - see below for values.
- | Flags | uint32 | See below for values.
- | Player Time Multiplier | float32 |
- | Target Time Multiplier | float32 |
- | Global Time Multiplier | float32 |
- | Max Time | float32 |
- | Min Time | float32 |
- | Target % Between Actors | float32 |
+Name | Type | Info
+-----|------|-----
+Action | uint32 | Enum - see below for values.
+Location | uint32 | Enum - see below for values.
+Target | uint32 | Enum - see below for values.
+Flags | uint32 | See below for values.
+Player Time Multiplier | float32 |
+Target Time Multiplier | float32 |
+Global Time Multiplier | float32 |
+Max Time | float32 |
+Min Time | float32 |
+Target % Between Actors | float32 |
  
 #### Action Enum Values
 

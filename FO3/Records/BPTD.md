@@ -27,36 +27,36 @@ Count | Field | Name | Type | Info
 
 #### BPND
 
-Count | Name | Type | Info
-------|------|------|-----
- | Damage Multiplier | float32 |
- | Flags | uint8 | See below for values.
- | Part Type | uint8 | Enum - see below for values.
- | Health Percent | uint8 |
- | [Actor Value](Values/Actor Values.md) | int8 |
- | To Hit Chance | uint8 |
- | Explodable - Explosion Chance % | uint8 |
- | Explodable - Debris Count | uint16 |
- | Explodable - Debris | formid | FormID of a [DEBR](DEBR.md) record, or null.
- | Explodable - Explosion | FormID of a [EXPL](EXPL.md) record, or null.
- | Tracking Max Angle | float32 |
- | Explodable - Debris Scale | float32 |
- | Severable - Debris Count | int32 |
- | Severable - Debris | formid | FormID of a [DEBR](DEBR.md) record, or null.
- | Severable - Explosion | FormID of a [EXPL](EXPL.md) record, or null.
- | Severable - Debris Scale | float32 |
- | Gore Effects - Translate X | float32 |
- | Gore Effects - Translate Y | float32 |
- | Gore Effects - Translate Z | float32 |
- | Gore Effects - X Rotation | float32 | 
- | Gore Effects - Y Rotation | float32 |
- | Gore Effects - Z Rotation | float32 |
- | Severable - Impact Dataset | formid | FormID of a [IPDS](IPDS.md) record, or null.
- | Explodable - Impact Dataset | formid | FormID of a [IPDS](IPDS.md) record, or null.
- | Severable - Decal Count | uint8 |
- | Explodable - Decal Count | uint8 |
- | Unused | uint8[2] |
- | Limb Replacement Scale | float32 |
+Name | Type | Info
+-----|------|-----
+Damage Multiplier | float32 |
+Flags | uint8 | See below for values.
+Part Type | uint8 | Enum - see below for values.
+Health Percent | uint8 |
+[Actor Value](Values/Actor Values.md) | int8 |
+To Hit Chance | uint8 |
+Explodable - Explosion Chance % | uint8 |
+Explodable - Debris Count | uint16 |
+Explodable - Debris | formid | FormID of a [DEBR](DEBR.md) record, or null.
+Explodable - Explosion | FormID of a [EXPL](EXPL.md) record, or null.
+Tracking Max Angle | float32 |
+Explodable - Debris Scale | float32 |
+Severable - Debris Count | int32 |
+Severable - Debris | formid | FormID of a [DEBR](DEBR.md) record, or null.
+Severable - Explosion | FormID of a [EXPL](EXPL.md) record, or null.
+Severable - Debris Scale | float32 |
+Gore Effects - Translate X | float32 |
+Gore Effects - Translate Y | float32 |
+Gore Effects - Translate Z | float32 |
+Gore Effects - X Rotation | float32 | 
+Gore Effects - Y Rotation | float32 |
+Gore Effects - Z Rotation | float32 |
+Severable - Impact Dataset | formid | FormID of a [IPDS](IPDS.md) record, or null.
+Explodable - Impact Dataset | formid | FormID of a [IPDS](IPDS.md) record, or null.
+Severable - Decal Count | uint8 |
+Explodable - Decal Count | uint8 |
+Unused | uint8[2] |
+Limb Replacement Scale | float32 |
  
 ##### Flag Values
 

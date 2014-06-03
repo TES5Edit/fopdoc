@@ -18,13 +18,13 @@ Count | Field | Name | Type | Info
 
 ### DATA (Data)
 
-Count | Name | Type | Info
-------|------|------|-----
- | Trait | uint8 | Enum - see below for values.
- | Min Level | uint8 |
- | Ranks | uint8 |
- | Playable | uint8 | Enum -see below for values.
- | Hidden | uint8 | Enum -see below for values.
+Name | Type | Info
+-----|------|-----
+Trait | uint8 | Enum - see below for values.
+Min Level | uint8 |
+Ranks | uint8 |
+Playable | uint8 | Enum -see below for values.
+Hidden | uint8 | Enum -see below for values.
  
 #### Trait / Playable / Hidden Enum Values
 
@@ -50,11 +50,11 @@ Count | Field | Name | Type | Info
  
 #### PRKE
 
-Count | Name | Type | Info
-------|------|------|-----
- | Type | uint8 | Enum -see below for values.
- | Rank | uint8 |
- | Priority | uint8 |
+Name | Type | Info
+-----|------|-----
+Type | uint8 | Enum -see below for values.
+Rank | uint8 |
+Priority | uint8 |
  
 ##### Type Enum Values
 
@@ -70,25 +70,25 @@ There are three possible DATA formats, based on the value of the Type field in t
 
 ##### Quest + Stage
 
-Count | Name | Type | Info
-------|------|------|-----
- | Quest | formid | FormID of a [QUST](QUST.md) record.
- | Quest Stage | int8 |
- | Unused | uint8[3] |
+Name | Type | Info
+-----|------|-----
+Quest | formid | FormID of a [QUST](QUST.md) record.
+Quest Stage | int8 |
+Unused | uint8[3] |
  
 ##### Ability
 
-Count | Name | Type | Info
-------|------|------|-----
- | Ability | formid | FormID of a [SPEL](SPEL.md) record.
+Name | Type | Info
+-----|------|-----
+Ability | formid | FormID of a [SPEL](SPEL.md) record.
  
 ##### Entry Point
 
-Count | Name | Type | Info
-------|------|------|-----
- | Entry Point | uint8 | Enum - see below for values.
- | Function | uint8 | 
- | Perk Condition Tab Count | uint8 |
+Name | Type | Info
+-----|------|-----
+Entry Point | uint8 | Enum - see below for values.
+Function | uint8 | 
+Perk Condition Tab Count | uint8 |
  
 ###### Entry Point Enum Values
 

@@ -12,8 +12,8 @@ Count | Field | Name | Type | Info
 
 ### DATA
 
-Count | Name | Type | Info
-------|------|------|-----
- | Trigger Threshold | uint32 |
- | Actor Effect | formid | FormID of a [SPEL](SPEL.md) record.
+Name | Type | Info
+-----|------|-----
+Trigger Threshold | uint32 |
+Actor Effect | formid | FormID of a [SPEL](SPEL.md) record.
 

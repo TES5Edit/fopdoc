@@ -45,14 +45,14 @@ Count | Field | Name | Type | Info
 
 ### PKDT
 
-Count | Name | Type | Info
-------|------|------|-----
- | General Flags | uint32 | See below for values.
- | Type | uint8 | Enum - see below for values.
- | Unused | uint8 |
- | Fallout Behaviour Flags | uint16 | See below for values.
- | Type-Specific Flags | null *or* uint16 | See below for values. The value of the Type field determines how flag values are interpreted.
- | Unused | uint8[2] |
+Name | Type | Info
+-----|------|-----
+General Flags | uint32 | See below for values.
+Type | uint8 | Enum - see below for values.
+Unused | uint8 |
+Fallout Behaviour Flags | uint16 | See below for values.
+Type-Specific Flags | null *or* uint16 | See below for values. The value of the Type field determines how flag values are interpreted.
+Unused | uint8[2] |
 
 #### General Flag Values
 
@@ -154,11 +154,11 @@ Count | Field | Name | Type | Info
  
 #### PLDT / PLD2
 
-Count | Name | Type | Info
-------|------|------|-----
- | Type | uint32 | Enum - see below for values.
- | Location | formid *or* uint32 *or* uint8[] | See below for data type info.
- | Radius | int32 |
+Name | Type | Info
+-----|------|-----
+Type | uint32 | Enum - see below for values.
+Location | formid *or* uint32 *or* uint8[] | See below for data type info.
+Radius | int32 |
  
 ##### Type Values & Location Data Types
 
@@ -175,13 +175,13 @@ Type Value | Meaning | Location Data Type Info
 
 ### PSDT
 
-Count | Name | Type | Info
-------|------|------|-----
- | Month | int8 |
- | Day of Week | int8 | Enum - see below for values.
- | Date | uint8 |
- | Time | int8 |
- | Duration | int32 |
+Name | Type | Info
+-----|------|-----
+Month | int8 |
+Day of Week | int8 | Enum - see below for values.
+Date | uint8 |
+Time | int8 |
+Duration | int32 |
 
 #### Day of Week Values
 
@@ -202,12 +202,12 @@ Value | Meaning
 
 ### PTDT / PTD2
 
-Count | Name | Type | Info
-------|------|------|-----
- | Type | int32 | Enum - see below for values.
- | Target | formid *or* uint32 *or* uint8[] |
- | Count / Distance | int32 |
- | Unknown | float32 |
+Name | Type | Info
+-----|------|-----
+Type | int32 | Enum - see below for values.
+Target | formid *or* uint32 *or* uint8[] |
+Count / Distance | int32 |
+Unknown | float32 |
 
 #### Type Values & Target Data Types
 
@@ -263,31 +263,31 @@ Value | Meaning
 
 ### IDLC
 
-Count | Name | Type | Info
-------|------|------|-----
- | Animation Count | uint8 |
- | Unused | uint8[3] |
+Name | Type | Info
+-----|------|-----
+Animation Count | uint8 |
+Unused | uint8[3] |
 
 ### PKPT
 
-Count | Name | Type | Info
-------|------|------|-----
- | Repeatable | uint8 | A value of `0` means `Not Repeatable`, and a value of `1` means `Repeatable`.
- | Unused | uint8 |
+Name | Type | Info
+-----|------|-----
+Repeatable | uint8 | A value of `0` means `Not Repeatable`, and a value of `1` means `Repeatable`.
+Unused | uint8 |
  
 ### PKW3
 
-Count | Name | Type | Info
-------|------|------|-----
- | Flags | uint32 | See below for values.
- | Fire Rate | uint8 | Enum - see below for values.
- | Fire Count | uint8 | Enum - see below for values.
- | Number of Bursts | uint16 |
- | Shots Per Volley (Min) | uint16 |
- | Shots Per Volley (Max) | uint16 |
- | Pause Between Volleys (Min) | float32 |
- | Pause Between Volleys (Max) | float32 |
- | Unused | uint8[4] |
+Name | Type | Info
+-----|------|-----
+Flags | uint32 | See below for values.
+Fire Rate | uint8 | Enum - see below for values.
+Fire Count | uint8 | Enum - see below for values.
+Number of Bursts | uint16 |
+Shots Per Volley (Min) | uint16 |
+Shots Per Volley (Max) | uint16 |
+Pause Between Volleys (Min) | float32 |
+Pause Between Volleys (Max) | float32 |
+Unused | uint8[4] |
  
 #### Flag Values
 
@@ -335,13 +335,13 @@ Value | Meaning
 
 ### PKDD
 
-Count | Name | Type | Info
-------|------|------|-----
- | FOV | float32 |
- | Topic | formid | FormID of a [DIAL](DIAL.md) record, or null.
- | Flags | uint32 | See below for values.
- | Unused | uint8[4] |
- | Dialog Type | uint32 | Enum - see below for values.
+Name | Type | Info
+-----|------|-----
+FOV | float32 |
+Topic | formid | FormID of a [DIAL](DIAL.md) record, or null.
+Flags | uint32 | See below for values.
+Unused | uint8[4] |
+Dialog Type | uint32 | Enum - see below for values.
  
 #### Flag Values
 

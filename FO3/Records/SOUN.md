@@ -34,16 +34,16 @@ Count | Name | Type | Info
 
 ### SNDX
 
-Count | Name | Type | Info
-------|------|------|-----
- | Minimum Attenuation Distance | uint8 | Multiplied by 5.
- | Maximum Attenuation Distancce | uint8 | Multiplied by 100.
- | Frequency Adjustment Percentage | int8 |
- | Unused | uint8 |
- | Flags | uint32 | See below for values.
- | Static Attenuation cdB | int16 |
- | Stop Time | uint8 |
- | Start Time | uint8 |
+Name | Type | Info
+-----|------|-----
+Minimum Attenuation Distance | uint8 | Multiplied by 5.
+Maximum Attenuation Distancce | uint8 | Multiplied by 100.
+Frequency Adjustment Percentage | int8 |
+Unused | uint8 |
+Flags | uint32 | See below for values.
+Static Attenuation cdB | int16 |
+Stop Time | uint8 |
+Start Time | uint8 |
  
 ### SNDD / SNDX Flag Values
 
