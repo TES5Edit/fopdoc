@@ -31,10 +31,10 @@ Count | Field | Name | Type | Info
 + | RNAM | Attack Reach | uint8 |
  | ZNAM | Combat Style | formid | FormID of a [CSTY](CSTY.md) record.
 + | PNAM | Body Part Data | formid | FormID of a [BPTD](BPTD.md) record.
-+ | TNAM | Turning Speed | float32 | 
++ | TNAM | Turning Speed | float32 |
 + | BNAM | Base Scale | float32 |
 + | WNAM | Foot Weight | float32 |
-+ | [NAM4](Values/Impact Material Types.md) | Impact Material Type | uint32 | 
++ | [NAM4](Values/Impact Material Types.md) | Impact Material Type | uint32 |
 + | [NAM5](Values/Sound Levels.md) | Sound Level | uint32 | Enum - see link for values.
  | CSCR | Inherits Sounds from | formid | FormID of a [CREA](CREA.md) record.
 -* | | Sound Type | collection | See below for details.
@@ -50,9 +50,15 @@ Combat Skill | uint8 |
 Magic Skill | uint8 |
 Stealth Skill | uint8 |
 Health | int16 |
-Unused | byte[2] | 
+Unused | byte[2] |
 Damage | int16 |
-Attribute | uint8 | There are 7 attribute fields, one for each attribute. The mapping of fields to attributes is given below.There are 7 attribute fields, one for each attribute. The mapping of fields to attributes is given below.
+Strength | uint8 |
+Perception | uint8 |
+Endurance | uint8 |
+Charisma | uint8 |
+Intelligence | uint8 |
+Agility | uint8 |
+Luck | uint8 |
 
 #### Type Enum Values
 
@@ -66,18 +72,6 @@ Values | Meaning
 5 | Feral Ghoul
 6 | Robot
 7 | Giant
-
-#### ATTR Map
-
-ATTR Field | Attribute
------------|----------
-1st | Strength
-2nd | Perception
-3rd | Endurance
-4th | Charisma
-5th | Intelligence
-6th | Agility
-7th | Luck
 
 ### Sound Type Field Collection
 
@@ -105,4 +99,4 @@ Value | Meaning
 9 | Weapon
 10 | Movement
 11 | Conscious
- 
+
