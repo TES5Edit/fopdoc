@@ -10,15 +10,15 @@ Count | Field | Name | Type | Info
  | EDID | Editor ID | cstring |
 + | NAME | Base | formid | FormID of a [PROJ](PROJ.md) record.
  | XEZN | Encounter Zone | formid | FormID of an [ECZN](ECZN.md) record.
- | XRGD | Ragdoll Data | uint8[] | 
+ | XRGD | Ragdoll Data | uint8[] |
  | XRGB | Ragdoll Biped Data | uint8[] |
 + | XPRD | Idle Time | float32 | Patrol data
 + | XPPA | Patrol Script Marker | null | Patrol data
 + | INAM | Idle | formid | Patrol data. FormID of an [IDLE](IDLE.md) record, or null.
-+ | | [Embedded Script](Fields/Script.md) | | Patrol data. A field collection.
++ | | [Embedded Script](Fields/Script.md) | collection | Patrol data.
 + | TNAM | Topic | formid | Patrol data. FormID of a [DIAL](DIAL.md) record, or null.
  | XOWN | Owner | formid | Ownership data. FormID of a [FACT](FACT.md), [ACHR](ACHR.md) or [NPC_](NPC_.md) record.
- | XRNK | Faction rank | int32 | Ownership data 
+ | XRNK | Faction rank | int32 | Ownership data
  | XCNT | Count | int32 |
  | XRDS | Radius | float32 |
  | XHLP | Health | float32 |

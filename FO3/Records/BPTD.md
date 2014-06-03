@@ -8,8 +8,8 @@ Body Part Data
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring | Editor ID
-+ | | [Model Data](Fields/Model.md) | | This is a field collection.
-+* | | Body Part | | A field collection, see below for details.
++ | | [Model Data](Fields/Model.md) | collection |
++* | | Body Part | collection | See below for details.
  | RAGA | Ragdoll | formid | FormID of a [RGDL](RGDL.md) record.
 
 ### Body Part Field Collection
@@ -48,7 +48,7 @@ Severable - Debris Scale | float32 |
 Gore Effects - Translate X | float32 |
 Gore Effects - Translate Y | float32 |
 Gore Effects - Translate Z | float32 |
-Gore Effects - X Rotation | float32 | 
+Gore Effects - X Rotation | float32 |
 Gore Effects - Y Rotation | float32 |
 Gore Effects - Z Rotation | float32 |
 Severable - Impact Dataset | formid | FormID of a [IPDS](IPDS.md) record, or null.
@@ -57,7 +57,7 @@ Severable - Decal Count | uint8 |
 Explodable - Decal Count | uint8 |
 Unused | uint8[2] |
 Limb Replacement Scale | float32 |
- 
+
 ##### Flag Values
 
 Value | Meaning

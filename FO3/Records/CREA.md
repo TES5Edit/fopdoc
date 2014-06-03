@@ -10,7 +10,7 @@ Count | Field | Name | Type | Info
 + | EDID | Editor ID | cstring |
 + | [OBND](Fields/OBND.md) | Object Bounds | struct |
 + | FULL | Name | cstring |
- | | [Model Data](Fields/Model.md) | | This is a field collection.
+ | | [Model Data](Fields/Model.md) | collection |
 -* | SPLO | Actor Effect | formid | FormID of a [SPEL](SPEL.md) record.
  | EITM | Unarmed Attack Effect | formid | FormID of a [ENCH](ENCH.md) or [SPEL](SPEL.md) record.
 + | [EAMT](Values/Attack Animations.md) | Unarmed Attack Animation | uint16 |
@@ -21,9 +21,9 @@ Count | Field | Name | Type | Info
  | INAM | Death Item | formid | FormID of a [LVLI](LVLI.md) record.
  | VTCK | Voice | formid | FormID of a [VTYP](VTYP.md) record.
  | TPLT | Template | formid | FormID of a [CREA](CREA.md) or [LVLC](LVLC.md) record.
- | | [Destruction Data](Fields/Destruction.md) | | This is a field collection.
+ | | [Destruction Data](Fields/Destruction.md) | collection |
  | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
--* | | [Item](Fields/Item.md) | | This is a field collection.
+-* | | [Item](Fields/Item.md) | collection |
  | [AIDT](Fields/AIDT.md) | AI Data | struct |
 -* | PKID | Package | formid | FormID of a [PACK](PACK.md) record.
 -* | KFFZ | Animation | cstring |
@@ -37,7 +37,7 @@ Count | Field | Name | Type | Info
 + | [NAM4](Values/Impact Material Types.md) | Impact Material Type | uint32 | 
 + | [NAM5](Values/Sound Levels.md) | Sound Level | uint32 | Enum - see link for values.
  | CSCR | Inherits Sounds from | formid | FormID of a [CREA](CREA.md) record.
--* | | Sound Type | | This is a field collection. See below for details.
+-* | | Sound Type | collection | See below for details.
  | CNAM | Impact Dataset | formid | FormID of a [IPDS](IPDS.md) record.
  | LNAM | Melee Weapon List | formid | FormID of a [FLST](FLST.md) record.
 

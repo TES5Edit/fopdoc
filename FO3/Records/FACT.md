@@ -12,7 +12,7 @@ Count | Field | Name | Type | Info
 -* | [XNAM](Fields/XNAM (FACT, RACE).md) | Relation | struct |
  | DATA | Data | struct |
  | CNAM | Unused | float32 |
--* | | Rank | | This is a field collection, see below for details.
+-* | | Rank | collection | See below for details.
 
 ### DATA
 
@@ -21,7 +21,7 @@ Name | Type | Info
 Flags 1 | uint8 | See below for values.
 Flags 2 | uint8 | See below for values.
 Unused | uint8[2] |
- 
+
 #### Flags 1 Values
 
 Value | Meaning
@@ -29,7 +29,7 @@ Value | Meaning
 0x01 | Hidden From PC
 0x02 | Evil
 0x04 | Special Combat
- 
+
 #### Flags 2 Values
 
 Value | Meaning

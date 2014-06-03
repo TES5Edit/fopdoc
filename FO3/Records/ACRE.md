@@ -15,11 +15,11 @@ Count | Field | Name | Type | Info
 + | XPRD | Idle Time | float32 | Patrol data
 + | XPPA | Patrol Script Marker | null | Patrol data
 + | INAM | Idle | formid | Patrol data. FormID of an [IDLE](IDLE.md) record, or null.
-+ | | [Embedded Script](Fields/Script.md) | | Patrol data. A field collection.
++ | | [Embedded Script](Fields/Script.md) | collection | Patrol data.
 + | TNAM | Topic | formid | Patrol data. FormID of a [DIAL](DIAL.md) record, or null.
 - | XLCM | Level Modifier | int32 |
 - | XOWN | Owner | formid | Ownership data. FormID of a [FACT](FACT.md), [ACHR](ACHR.md) or [NPC_](NPC_.md) record.
-- | XRNK | Faction rank | int32 | Ownership data 
+- | XRNK | Faction rank | int32 | Ownership data
 - | XMRC | Merchant Container | formid | FormID of a [REFR](REFR.md) record.
 - | XCNT | Count | int32 |
 - | XRDS | Radius | float32 |

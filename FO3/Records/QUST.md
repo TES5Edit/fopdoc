@@ -10,13 +10,13 @@ Count | Field | Name | Type | Info
 + | EDID | Editor ID | cstring |
  | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
  | FULL | Name | cstring |
- | ICON | Large Icon Filename | cstring | 
+ | ICON | Large Icon Filename | cstring |
  | MICO | Small Icon FIlename | cstring |
 + | DATA | General | struct |
 -* | [CTDA](Fields/CTDA.md) | Condition | struct |
--* | | Stage | A field collection, see below for details.
--* | | Objective | A field collection, see below for details.
- 
+-* | | Stage | collection | See below for details.
+-* | | Objective | collection | See below for details.
+
 ### DATA
 
 Name | Type | Info
@@ -25,7 +25,7 @@ Flags | uint8 | See below for values.
 Priority | uint8 |
 Unused | uint8[2] |
 Quest Delay | float32 |
- 
+
 #### Flag Values
 
 Value | Meaning
@@ -41,7 +41,7 @@ Value | Meaning
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
  | INDX | Stage Index | int16 |
--* | | Log Entry | | A field collection, see below for details.
+-* | | Log Entry | collection | See below for details.
 
 #### Log Entry Field Collection
 
@@ -50,7 +50,7 @@ Count | Field | Name | Type | Info
  | Stage Flags | uint8 | See below for values.
 -* | [CTDA](Fields/CTDA.md) | Condition | struct |
  | CNAM | Log Entry | cstring |
-+ | | [Embedded Script](Fields/Script.md) | | A field collection.
++ | | [Embedded Script](Fields/Script.md) | collection |
  | NAM0 | Next Quest | formid | FormID of a [QUST](QUST.md) record.
 
 ##### Stage Flag Values
@@ -66,7 +66,7 @@ Count | Field | Name | Type | Info
 ------|-------|------|------|-----
  | QOBJ | Objective Index | int32 |
 + | NNAM | Description | cstring |
--* | | Target | | A field collection, see below for details.
+-* | | Target | collection | See below for details.
 
 #### Target Field Collection
 

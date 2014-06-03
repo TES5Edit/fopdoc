@@ -15,7 +15,6 @@ Type | Byte Size | Description
 -----|-----------|------------
 null | 0 | Field with no data.
 char | 1 | A single 8-bit character
-wchar | 2 | A single 16-bit character.
 int8 | 1 | Value stored as an 8-bit signed integer.
 uint8 | 1 | Value stored as an 8-bit unsigned integer. Also used for byte arrays where the type of data varies according to some external factor.
 int16 | 2 | Value stored as a 16-bit signed integer.
@@ -35,6 +34,7 @@ formid | 4 | Used to identify a data object. May refer to a data object from a m
 cstring | variable | Null terminated string.
 struct | variable | Used for fields containing more than one data type. The field structure should be documented on the same page.
 rgba | 4 | The first three bytes are red, green and blue color values respectively. The fourth byte is unused.
+collection | variable | Used for collections of fields that appear together.
 
 ## Field Counts
 

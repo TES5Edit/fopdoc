@@ -20,17 +20,17 @@ Count | Field | Name | Type | Info
 +* | DNAM | Default Hair Color | uint8 | Enum - see below for values. The first and second instances of this field are for male and female hairs respectively.
 + | PNAM | FaceGen - Main Clamp | float32 |
 + | UNAM | FaceGen - Face Clamp | float32 |
-+ | ATTR | Unknown | ?? | 
++ | ATTR | Unknown | ?? |
 + | NAM0 | Head Data Marker | null |
 + | MNAM | Male Head Data Marker | null |
-+* | | Male Head Part | | A field collection, see below for details.
++* | | Male Head Part | collection | See below for details.
 + | FNAM | Female Head Data Marker | null |
-+* | | Female Head Part | | A field collection, see below for details.
++* | | Female Head Part | collection | See below for details.
 + | NAM1 | Body Data Marker | null |
 + | MNAM | Male Body Data Marker | null |
-+* | | Male Body Part | | A field collection, see below for details.
++* | | Male Body Part | collection | See below for details.
 + | FNAM | Female Body Data Marker | null |
-+* | | Female Body Part | | A field collection, see below for details.
++* | | Female Body Part | collection | See below for details.
 +* | HNAM | Hair | formid | FormID of a [HAIR](HAIR.md) record.
 +* | ENAM | Eye | formid | FormID of an [EYES](EYES.md) record.
 + | MNAM | Male FaceGen Data Marker | null |
@@ -56,12 +56,12 @@ Count | Name | Type | Info
  | Male Weight | float32 |
  | Female Weight | float32 |
  | Flags | uint32 | See below for values.
- 
+
 #### Skill Boost
 
 Name | Type | Info
 -----|------|-----
-[Skill](Values/Actor Values.md) | int8 | 
+[Skill](Values/Actor Values.md) | int8 |
 Boost | int8 |
 
 #### Flag Values
@@ -98,9 +98,9 @@ Value | Meaning
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
  | INDX | Index | uint32 | See below for values.
-+ | | [Model Data](Fields/Model.md) | | This is a field collection.
- | ICON | Large icon filename | cstring | 
- | MICO | Small icon filename | cstring | 
++ | | [Model Data](Fields/Model.md) | collection |
+ | ICON | Large icon filename | cstring |
+ | MICO | Small icon filename | cstring |
 
 #### Head Part Index Values
 
@@ -120,9 +120,9 @@ Value | Meaning
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
  | INDX | Index | uint32 | See below for values.
- | ICON | Large icon filename | cstring | 
- | MICO | Small icon filename | cstring | 
-+ | | [Model Data](Fields/Model.md) | | This is a field collection.
+ | ICON | Large icon filename | cstring |
+ | MICO | Small icon filename | cstring |
++ | | [Model Data](Fields/Model.md) | collection |
 
 #### Body Part Index Values
 

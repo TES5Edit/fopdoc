@@ -7,11 +7,11 @@ Landscape
 
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
- | DATA | Unknown | uint8[] | 
+ | DATA | Unknown | uint8[] |
 -* | VNML | Vertex Normal | struct | There are 33 VNML structs.
  | VHGT | Vertex Height Map | struct |
 -* | VCLR | Vertex Color |
--* | | Layer Field Collection | | A field collection, see below for details.
+-* | | Layer Field Collection | collection | See below for details.
 -* | VTEX | Texture | formid | FormID of an [LTEX](LTEX.md) record, or null.
 
 ### VNML / VCLR
@@ -31,7 +31,7 @@ Count | Name | Type | Info
  | Offset | float32 |
 -* | Row | struct | There are 33 row structs. Each row struct contains 33 `uint8` fields, representing 33 columns.
  | Unused | uint8[3] |
- 
+
 ### Layer Field Collection
 
 Each layer can be a base layer or an alpha layer, which have different structures.
@@ -40,8 +40,8 @@ Each layer can be a base layer or an alpha layer, which have different structure
 
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
- | BTXT | Base Layer Header | struct | 
- 
+ | BTXT | Base Layer Header | struct |
+
 ##### BTXT / ATXT
 
 Name | Type | Info
@@ -50,7 +50,7 @@ Texture | formid | FormID of a [LTEX](LTEX.md) record, or null.
 Quadrant | uint8 | Enum - see below for values.
 Unused | uint8 |
 Layer | int16 |
- 
+
 ###### Quadrant Enum Values
 
 Value | Meaning
@@ -59,7 +59,7 @@ Value | Meaning
 1 | Bottom Right
 2 | Top Left
 3 | Top Right
- 
+
 #### Alpha Layer
 
 Count | Field | Name | Type | Info

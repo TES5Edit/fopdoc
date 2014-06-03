@@ -10,23 +10,23 @@ Count | Field | Name | Type | Info
 + | EDID | Editor ID | cstring |
 + | [OBND](Fields/OBND.md) | Object Bounds | struct |
  | FULL | Name | cstring |
-+ | | [Model Data](Fields/Model.md) | | This is a field collection.
- | ICON | Large icon filename | cstring | 
- | MICO | Small icon filename | cstring | 
++ | | [Model Data](Fields/Model.md) | collection |
+ | ICON | Large icon filename | cstring |
+ | MICO | Small icon filename | cstring |
  | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
  | EITM | Object Effect | formid | FormID of an [ENCH](ENCH.md) or [SPEL](SPEL.md) record.
  | EAMT | Enchantment Charge Amount | int16 |
  | NAM0 | Ammo | formid | FormID of an [AMMO](AMMO.md) or [FLST](FLST.md) record.
- | | [Destruction Data](Fields/Destruction.md) | | This is a field collection.
+ | | [Destruction Data](Fields/Destruction.md) | collection |
  | REPL | Repair List | formid | FormID of a [FLST](FLST.md) record.
 + | [ETYP](Fields/ETYP.md) | Equipment Type | int32 |
  | BIPL | Biped Model List | formid | FormID of a [FLST](FLST.md) record.
  | YNAM | Sound - Pick Up | formid | FormID of a [SOUN](SOUN.md) record.
  | ZNAM | Sound - Drop | formid | FormID of a [SOUN](SOUN.md) record.
- | | [Shell Casing Model Data](Fields/Model.md) | | This is a field collection (#2).
- | | [Scope Model Data](Fields/Model.md) | | This is a field collection (#3).
+ | | [Shell Casing Model Data](Fields/Model.md) | collection | #2
+ | | [Scope Model Data](Fields/Model.md) | collection | #3
  | EFSD | Scope Effect | formid | FormID of an [EFSH](EFSH.md) record.
- | | [Scope Effect Model Data](Fields/Model.md) | | This is a field collection (#4).
+ | | [Scope Effect Model Data](Fields/Model.md) | collection | #4
  | NNAM | Embedded Weapon Node | cstring |
  | INAM | Impact Dataset | formid | FormID of a [IPDS](IPDS.md) record.
  | WNAM | First Person Model | formid | FormID of a [STAT](STAT.md) record.
@@ -41,8 +41,8 @@ Count | Field | Name | Type | Info
 + | DATA | | struct |
 + | DNAM | | struct |
 + | CRDT | Critical Data | struct |
-+ | [VNAM](Values/Sound Levels.md) | Sound Level | uint32 | 
- 
++ | [VNAM](Values/Sound Levels.md) | Sound Level | uint32 |
+
 ### DATA
 
 Name | Type | Info
@@ -52,7 +52,7 @@ Health | int32 |
 Weight | float32 |
 Base Damage | int16 |
 Clip Size | uint8 |
- 
+
 ### DNAM
 
 Name | Type | Info
@@ -217,7 +217,7 @@ Critical % Multiplier | float32 |
 Flags | uint8 | See below for values.
 Unused | uint8[3] |
 Effect | formid | FormID of a [SPEL](SPEL.md) record, or null.
- 
+
 #### Flag Values
 
 Value | Meaning

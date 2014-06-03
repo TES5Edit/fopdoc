@@ -13,7 +13,7 @@ Count | Field | Name | Type | Info
  | XCLC | Grid | struct |
  | XCLL | Lighting | struct |
 -* | IMPF | Footstep Material | uint8[30] | The format of each IMPF field is unknown. There can be up to 10 IMPF fields, corresponding to different materials. The mapping is given below.
-+ | | Light Template | | A field collection, see below for details.
++ | | Light Template | collection | See below for details.
  | XCLW | Water Height | float32
  | XNAM | Water Noise Texture | cstring |
 *- | XCLR | Region | formid | FormID of a [REGN](REGN.md) record.
@@ -25,10 +25,10 @@ Count | Field | Name | Type | Info
  | XOWN | Owner | formid | Ownership data. FormID of a [FACT](FACT.md), [ACHR](ACHR.md) or [NPC_](NPC_.md) record.
  | XRNK | Faction rank | int32 | Ownership data
  | XCAS | Acoustic Space | formid | FormID of an [ASPC](ASPC.md) record.
- | XCMT | Unused | uint8 | 
+ | XCMT | Unused | uint8 |
  | XCMO | Music Type | formid | FormID of a [MUSC](MUSC.md) record.
 
- 
+
 ### DATA Flag Values
 
 Value | Meaning
@@ -65,7 +65,7 @@ Name | Type | Info
 X | int32 |
 Y | int32 |
 Force Hide Land | uint32 | Flags - see below for values.
- 
+
 #### Force Hide Land Flag Values
 
 Value | Meaning

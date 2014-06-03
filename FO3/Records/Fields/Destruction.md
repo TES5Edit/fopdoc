@@ -8,7 +8,7 @@ The DEST, DSTD, DMDL, DMDT and DSTF fields hold destruction data, and always app
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
 + | DEST | Header | struct |
--* | | Destruction Stage | | A field collection, see below for details.
+-* | | Destruction Stage | collection | See below for details.
 
 ### DEST
 

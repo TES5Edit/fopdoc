@@ -8,7 +8,7 @@ Camera Shot
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
- | | [Model Data](Fields/Model.md) | | This is a field collection.
+ | | [Model Data](Fields/Model.md) | collection |
 + | DATA | Data | struct |
  | MNAM | Image Space Modifier | formid | FormID of an [IMAD](IMAD.md) record.
 
@@ -26,7 +26,7 @@ Global Time Multiplier | float32 |
 Max Time | float32 |
 Min Time | float32 |
 Target % Between Actors | float32 |
- 
+
 #### Action Enum Values
 
 Value | Meaning
@@ -43,7 +43,7 @@ Value | Meaning
 0 | Attacker
 1 | Projectile
 2 | Target
- 
+
 #### Flag Values
 
 Value | Meaning

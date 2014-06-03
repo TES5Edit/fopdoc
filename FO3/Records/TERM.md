@@ -10,14 +10,14 @@ Count | Field | Name | Type | Info
 + | EDID | Editor ID | cstring |
 + | [OBND](Fields/OBND.md) | Object Bounds | struct |
  | FULL | Name | cstring |
- | | [Model Data](Fields/Model.md) | | This is a field collection.
+ | | [Model Data](Fields/Model.md) | collection |
  | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
- | | [Destruction Data](Fields/Destruction.md) | | This is a field collection.
+ | | [Destruction Data](Fields/Destruction.md) | collection |
 + | DESC | Description | cstring |
  | SNAM | Sound - Looping | formid | FormID of a [SOUN](SOUN.md) record.
  | PNAM | Password Note | formid | FormID of a [NOTE](NOTE.md) record.
 + | DNAM | | struct |
--* | | Menu Item | | This is a field collection, see below for details.
+-* | | Menu Item | collection | See below for details.
 
 ### DNAM
 
@@ -26,8 +26,8 @@ Name | Type | Info
 Base Hacking Difficulty | uint8 | Enum - see below for values.
 Flags | uint8 | See below for values.
 Server Type | uint8 | Enum - see below for values.
-Unused | uint8 | 
- 
+Unused | uint8 |
+
 #### Base Hacking Difficulty Enum Values
 
 Value | Meaning
@@ -72,9 +72,9 @@ Count | Field | Name | Type | Info
 + | ANAM | Flags | uint8 | See below for values.
  | INAM | Display Note | formid | FormID of a [NOTE](NOTE.md) record.
  | INAM | Sub Menu | formid | FormID of a [TERM](TERM.md) record.
-+ | | [Embedded Script](Fields/Script.md) | | A field collection.
++ | | [Embedded Script](Fields/Script.md) | collection |
 -* | [CTDA](Fields/CTDA.md) | Condition | struct |
- 
+
 #### AMAN Flag Values
 
 Value | Meaning

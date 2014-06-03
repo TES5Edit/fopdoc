@@ -8,7 +8,7 @@ Debris
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+* | | Debris Model | | This is a field collection, see beow for details.
++* | | Debris Model | collection | See below for details.
 
 ### Debris Model Field Collection
 

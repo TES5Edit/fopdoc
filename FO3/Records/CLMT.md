@@ -11,7 +11,7 @@ Count | Field | Name | Type | Info
 -* | WLST | Weather Type | struct | 
  | FNAM | Sun Texture | cstring |
  | GNAM | Sun Glare Texture | cstring |
-- | | [Model Data](Fields/Model.md) | | This is a field collection.
+- | | [Model Data](Fields/Model.md) | collection |
 + | TNAM | Timing | struct |
 
 
