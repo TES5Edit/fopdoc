@@ -7,7 +7,7 @@ Anything unknown is marked as such with a double question mark `??`. If a table 
 
 ## Data Types
 
-These denote the type of data held in a field. Type arrays are represented by `type[array length]`.
+These denote the type of data held in a field. Type arrays are represented by `type[array length]`. Variable-length arrays are represented by `type[]`.
 
 ### Basic Types
 
@@ -16,7 +16,7 @@ Type | Byte Size | Description
 null | 0 | Field with no data.
 char | 1 | A single 8-bit character
 int8 | 1 | Value stored as an 8-bit signed integer.
-uint8 | 1 | Value stored as an 8-bit unsigned integer. Also used for byte arrays where the type of data varies according to some external factor.
+uint8 | 1 | Value stored as an 8-bit unsigned integer.
 int16 | 2 | Value stored as a 16-bit signed integer.
 uint16 | 2 | Value stored as a 16-bit unsigned integer.
 int32 | 4 | Value stored as a 32-bit signed integer.
@@ -39,11 +39,10 @@ byte | 1 | Used when the data type of a field is unknown, or can be of many diff
 
 ## Field Counts
 
-These symbols are used to denote whether a record field is required or not, and how many times it may appear.
+These symbols are used to denote whether a record field is required or not, and how many times it may appear. A blank count table cell is equivalent to one containing a `-`.
 
 Symbol | Meaning
 -------|--------
-?? | Unknown
-+ | Required
-- | Optional
++ | Required. Such fields are always present in official plugins and plugins made with the GECK.
+- | Optional. Such fields are not always present in official plugins and plugins made with the GECK.
 * | Can appear more than once (stacks with `+` and `-`).
