@@ -522,7 +522,7 @@ Function Value | Function Meaning | Param Type | Param Info
 12 | Explode Part | uint8[4] | Unused
 13 | Dismember Part | uint8[4] | Unused
 14 | Cripple Part | uint8[4] | Unused
-15 | Weapon Type Is | uint32 | See [here](Values/Weapon Animation Types.md) for values.
+15 | Weapon Type Is | uint32 | See [here](../Values/Weapon Animation Types.md) for values.
 16 | Is Stranger | uint8[4] | Unused
 17 | Is Paralyzing Palm | uint8[4] | Unused
 

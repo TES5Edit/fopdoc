@@ -5,7 +5,7 @@ Effect Field Collection
 
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
- | EFID | Base Effect | formid | FormID of a [MGEF](MGEF.md) record.
+ | EFID | Base Effect | formid | FormID of a [MGEF](../MGEF.md) record.
 + | [EFIT](#efit) | Effect Data | struct |
  | [CTDA](CTDA.md) | Condition | struct |
 

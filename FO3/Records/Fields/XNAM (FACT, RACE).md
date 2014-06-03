@@ -5,7 +5,7 @@ As used in the [FACT](../FACT.md) and [RACE](../RACE.md) record types.
 
 Count | Name | Type | Info
 ------|------|------|-----
- | Faction | formid | FormID of a [FACT](FACT.md) or [RACE](RACE.md) record.
+ | Faction | formid | FormID of a [FACT](../FACT.md) or [RACE](../RACE.md) record.
  | Modifier | int32 |
  | Group Combat Reaction | uint32 | Enum - see values below.
  

@@ -13,8 +13,8 @@ Count | Name | Type | Info
  | Responsibility | uint8 |
  | Mood | uint8 | Enum - see below for values.
  | Unused | uint8[3] |
- | [Buys/Sells and Services](Values/Services.md) | uint32 | Flags - see link for values.
- | [Teaches](Values/Skills.md) | int8 | Enum - see link for values.
+ | [Buys/Sells and Services](../Values/Services.md) | uint32 | Flags - see link for values.
+ | [Teaches](../Values/Skills.md) | int8 | Enum - see link for values.
  | Maximum Training Level | uint8 | 
  | Assistance | int8 | Enum - see below for values.
  | Aggro Radius Behaviour | uint8 | Flags - see below for values.
