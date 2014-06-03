@@ -20,7 +20,7 @@ Type | uint32 | Enum - see below for values.
 Cost | uint32 | Unused
 Level | uint32 | Unused
 Flags | uint8 |
-Unused | uint8[3] |
+Unused | byte[3] |
 
 #### Type Values
 

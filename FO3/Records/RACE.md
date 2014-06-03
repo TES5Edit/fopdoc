@@ -50,7 +50,7 @@ Count | Field | Name | Type | Info
 Count | Name | Type | Info
 ------|------|------|-----
 -* | Skill Boost | struct | There are 7 elements in the skill boost array.
- | Unused | uint8[2] |
+ | Unused | byte[2] |
  | Male Height | float32 |
  | Female Height | float32 |
  | Male Weight | float32 |

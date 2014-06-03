@@ -87,12 +87,12 @@ Name | Type | Info
 -----|------|-----
 Reference | formid | FormID of a [REFR](REFR.md) record.
 Unknown | uint16 |
-Unused | uint8[2] |
+Unused | byte[2] |
  
 ### NVEX
 
 Name | Type | Info
 -----|------|-----
-Unknown | uint8[4] |
+Unknown | byte[4] |
 Navigation Mesh | formid | FormID of a [NAVM](NAVM.md) record.
 Triangle | uint16 |

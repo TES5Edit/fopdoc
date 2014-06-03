@@ -14,7 +14,7 @@ Shininess | float32 |
 Parallax Scale | float32 |
 Parallax Passes | uint8 |
 Flags | uint8 | See below for values.
-Unused | uint8[2] | 
+Unused | byte[2] | 
 Color | rgba |
  
 ### Flag Values

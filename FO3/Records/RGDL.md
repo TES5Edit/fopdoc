@@ -23,7 +23,7 @@ Count | Field | Name | Type | Info
 Name | Type | Info
 -----|------|-----
 Dynamic Bone Count | uint32 |
-Unused | uint8[4] |
+Unused | byte[4] |
 Feedback Enabled | uint8 | Enum - see below for values.
 Foot IK Enabled | uint8 | Enum - see below for values.
 Look IK Enabled | uint8 | Enum - see below for values.

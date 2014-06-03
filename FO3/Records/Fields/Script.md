@@ -23,9 +23,9 @@ Count | Field | Name | Type | Info
 Name | Type | Info
 -----|------|-----
 Index | uint32 |
-Unused | uint8[12] |
+Unused | byte[12] |
 Flags | uint8 | See below for values.
-Unused | uint8[7] |
+Unused | byte[7] |
 
 ##### Flag Values
 

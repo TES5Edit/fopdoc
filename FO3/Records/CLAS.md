@@ -24,7 +24,7 @@ Count | Name | Type | Info
  | [Buys/Sells and Services](Values/Services.md) | uint32 | Flags. See the link for values.
  | [Teaches](Values/Skills.md) | int8 | See the link for enum values.
  | Maximum Training Level | uint8 |
- | Unused | uint8[2] |
+ | Unused | byte[2] |
 
 #### Flag Values
 

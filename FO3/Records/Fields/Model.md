@@ -18,7 +18,7 @@ Whenever a model field collection is referenced in these docs, assume it is the 
 Count | Field | Name | Type | Info
 ------|-------|------|------|-----
 + | MODL | Model Filename | cstring |
-- | MODB | Unknown | uint8[4] |
+- | MODB | Unknown | byte[4] |
 - | MODT | Texture File Hashes | ?? |
 - | MODS | Alternate Textures | struct | See below for details.
 - | MODD | FaceGen Model Flags | uint8 | See below for flag values.

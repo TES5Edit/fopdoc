@@ -18,5 +18,5 @@ Count | Field | Name | Type | Info
 Name | Type | Info
 -----|------|-----
 Cell | formid | FormID of a [CELL](CELL.md) or [WRLD](WRLD.md) record.
-Unused | uint8[8] |
+Unused | byte[8] |
 

@@ -23,7 +23,7 @@ Name | Type | Info
 -----|------|-----
 Flags | uint8 | See below for values.
 Priority | uint8 |
-Unused | uint8[2] |
+Unused | byte[2] |
 Quest Delay | float32 |
 
 #### Flag Values
@@ -81,7 +81,7 @@ Name | Type | Info
 -----|------|-----
 Target | formid | FormID of a [REFR](REFR.md), [PGRE](PGRE.md), [PMIS](PMIS.md), [ACRE](ACRE.md) or [ACHR](ACHR.md) record.
 Flags | uint8 | See below for values.
-Unused | uint8[3] |
+Unused | byte[3] |
 
 ###### Flag Values
 

@@ -6,11 +6,11 @@ CTDA Field
 Name | Type | Info
 -----|------|-----
 Type | uint8 | See values below.
-Unused | uint8[3] |
+Unused | byte[3] |
 Comparison Value | formid *or* float32 | If not a valid [GLOB](../GLOB.md) record FormID, is interpreted as a float32.
 Function | uint32 | A function index. See below for a list of function indicies.
-Parameter #1 | uint8[4] | First parameter to pass to the function. 
-Parameter #2 | uint8[4] | Second parameter to pass to the function.
+Parameter #1 | byte[4] | First parameter to pass to the function. 
+Parameter #2 | byte[4] | Second parameter to pass to the function.
 Run On | uint32 | Values and what they correspond to are given below.
 Reference | formid | A FormID of a [PLYR](../PLYR.md), [ACHR](../ACHR.md), [ACRE](../ACRE.md), [REFR](../REFR.md), [PMIS](../PMIS.md) or [PGRE](../PGRE.md) reference on which to apply the function, or null.
  
@@ -275,8 +275,8 @@ The parameters can be any of the following.
 
 Valid For Parameter | Name | Type | Info
 --------------------|------|------|-----
-Both | Unknown | uint8[4] |
-Both | None | uint8[4] |
+Both | Unknown | byte[4] |
+Both | None | byte[4] |
 Both | Integer | int32 |
 2 | Variable Name | int32 | 
 Both | Sex | uint32 | Enum - see values below.
@@ -511,20 +511,20 @@ Function Value | Function Meaning | Param Type | Param Info
 1 | Weapon In List | formid | FormID of a [FLST](../FLST.md) record referencing [WEAP](../WEAP.md) records.
 2 | Target Is | formid | FormID of a [CREA](../CREA.md) or [NPC_](../NPC_.md) record.
 3 | Target In List | formid | FormID of a [FLST](../FLST.md) record referencing [CREA](../CREA.md) or [NPC_](../NPC_.md) records.
-4 | Target Distance | uint8[4] | Unused
+4 | Target Distance | byte[4] | Unused
 5 | Target Part | int32 | See [here](../Values/Actor Values.md) for values.
 6 | VATS Action | uint32 | See values below.
-7 | Is Success | uint8[4] | Unused
-8 | Is Critical | uint8[4] | Unused
+7 | Is Success | byte[4] | Unused
+8 | Is Critical | byte[4] | Unused
 9 | Critical Effect Is | formid | FormID of a [SPEL](../SPEL.md) record.
 10 | Critical Effect In List | formid | FormID of a [FLST](../FLST.md) record referencing [SPEL](../SPEL.md) records.
-11 | Is Fatal | uint8[4] | Unused
-12 | Explode Part | uint8[4] | Unused
-13 | Dismember Part | uint8[4] | Unused
-14 | Cripple Part | uint8[4] | Unused
+11 | Is Fatal | byte[4] | Unused
+12 | Explode Part | byte[4] | Unused
+13 | Dismember Part | byte[4] | Unused
+14 | Cripple Part | byte[4] | Unused
 15 | Weapon Type Is | uint32 | See [here](../Values/Weapon Animation Types.md) for values.
-16 | Is Stranger | uint8[4] | Unused
-17 | Is Paralyzing Palm | uint8[4] | Unused
+16 | Is Stranger | byte[4] | Unused
+17 | Is Paralyzing Palm | byte[4] | Unused
 
 ###### VATS Action Param Values
 

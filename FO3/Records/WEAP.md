@@ -66,9 +66,9 @@ Ammo Use | uint8 |
 Reload Animation | uint8 | Enum - see values below.
 Min Spread | float32 |
 Spread | float32 |
-Unknown | uint8[4] |
+Unknown | byte[4] |
 Sight FOV | float32 |
-Unused | uint8[4] |
+Unused | byte[4] |
 Projectile | formid | FormID of a [PROJ](PROJ.md) record, or null.
 Base VATS To-Hit Chance | uint8 |
 Attack Animation | uint8 | Enum - see values below.
@@ -212,10 +212,10 @@ Value | Meaning
 Name | Type | Info
 -----|------|-----
 Critical Damage | uint16 |
-Unused | uint8[2] |
+Unused | byte[2] |
 Critical % Multiplier | float32 |
 Flags | uint8 | See below for values.
-Unused | uint8[3] |
+Unused | byte[3] |
 Effect | formid | FormID of a [SPEL](SPEL.md) record, or null.
 
 #### Flag Values

@@ -25,7 +25,7 @@ Name | Type | Info
 -----|------|-----
 Value | int32 |
 Flags | uint8 | See below for values.
-Unused | uint8[3] |
+Unused | byte[3] |
  
 #### Flag Values
 

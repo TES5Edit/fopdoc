@@ -35,6 +35,7 @@ cstring | variable | Null terminated string.
 struct | variable | Used for fields containing more than one data type. The field structure should be documented on the same page.
 rgba | 4 | The first three bytes are red, green and blue color values respectively. The fourth byte is unused.
 collection | variable | Used for collections of fields that appear together.
+byte | 1 | Used when the data type of a field is unknown, or can be of many different types depending on some factor (which is detailed elsewhere).
 
 ## Field Counts
 

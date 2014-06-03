@@ -33,8 +33,8 @@ Count | Field | Name | Type | Info
 Name | Type | Info
 -----|------|-----
 Level | int16 |
-Unused | uint8[2] |
+Unused | byte[2] |
 Reference | formid | FormID of a [CREA](CREA.md) or [LVLC](LVLC.md) record.
 Count | int16 |
-Unused | uint8[2] |
+Unused | byte[2] |
 

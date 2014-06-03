@@ -30,7 +30,7 @@ Count | Name | Type | Info
 -* | Attenuation Point | int16 | The points together form an attenuation curve.
  | Reverb Attenuation Control | int16 |
  | Priority | int32 |
- | Unknown | uint8[8] |
+ | Unknown | byte[8] |
 
 ### SNDX
 

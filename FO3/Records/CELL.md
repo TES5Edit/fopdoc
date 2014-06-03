@@ -12,7 +12,7 @@ Count | Field | Name | Type | Info
 + | DATA | Flags | uint8 | See below for values.
  | XCLC | Grid | struct |
  | XCLL | Lighting | struct |
--* | IMPF | Footstep Material | uint8[30] | The format of each IMPF field is unknown. There can be up to 10 IMPF fields, corresponding to different materials. The mapping is given below.
+-* | IMPF | Footstep Material | byte[30] | The format of each IMPF field is unknown. There can be up to 10 IMPF fields, corresponding to different materials. The mapping is given below.
 + | | Light Template | collection | See below for details.
  | XCLW | Water Height | float32
  | XNAM | Water Noise Texture | cstring |

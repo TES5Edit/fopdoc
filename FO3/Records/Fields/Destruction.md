@@ -17,7 +17,7 @@ Name | Type | Info
 Health | int32 |
 Count | uint8 |
 Flags | uint8 | See below for values.
-unknown | uint8[2] | ??
+unknown | byte[2] | ??
 
 #### DEST Flag Values
 

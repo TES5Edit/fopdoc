@@ -17,7 +17,7 @@ Count | Field | Name | Type | Info
 + | IDLC | Idle Animation Count | struct |
 + | IDLT | Idle Timer Setting | float32 |
 +* | IDLA | Idle Animations | formid | FormID of an [IDLE](IDLE.md) record.
- | IDLB | Unused | uint8[4] |
+ | IDLB | Unused | byte[4] |
  | CNAM | Combat Style | formid | FormID of a [CSTY](CSTY.md) record.
  | PKED | Eat Marker | null |
  | PKE2 | Escort Distance | uint32 |
@@ -52,7 +52,7 @@ Type | uint8 | Enum - see below for values.
 Unused | uint8 |
 Fallout Behaviour Flags | uint16 | See below for values.
 Type-Specific Flags | null *or* uint16 | See below for values. The value of the Type field determines how flag values are interpreted.
-Unused | uint8[2] |
+Unused | byte[2] |
 
 #### General Flag Values
 
@@ -266,7 +266,7 @@ Value | Meaning
 Name | Type | Info
 -----|------|-----
 Animation Count | uint8 |
-Unused | uint8[3] |
+Unused | byte[3] |
 
 ### PKPT
 
@@ -287,7 +287,7 @@ Shots Per Volley (Min) | uint16 |
 Shots Per Volley (Max) | uint16 |
 Pause Between Volleys (Min) | float32 |
 Pause Between Volleys (Max) | float32 |
-Unused | uint8[4] |
+Unused | byte[4] |
  
 #### Flag Values
 
@@ -340,7 +340,7 @@ Name | Type | Info
 FOV | float32 |
 Topic | formid | FormID of a [DIAL](DIAL.md) record, or null.
 Flags | uint32 | See below for values.
-Unused | uint8[4] |
+Unused | byte[4] |
 Dialog Type | uint32 | Enum - see below for values.
  
 #### Flag Values

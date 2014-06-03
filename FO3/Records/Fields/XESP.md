@@ -9,7 +9,7 @@ Name | Type | Info
 -----|------|-----
 Reference | formid | FormID of a [PLYR](../PLYR.md), [REFR](../REFR.md), [ACRE](../ACRE.md), [ACHR](../ACHR.md), [PGRE](../PGRE.md) or [PMIS](../PMIS.md) record.
 Flags | uint8 | See below for details.
-Unknown | uint8[3] |
+Unknown | byte[3] |
 
 ### Flag Values
 

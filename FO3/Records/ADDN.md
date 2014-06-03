@@ -18,4 +18,4 @@ Count | Field | Name | Type | Info
 Name | Type | Info
 -----|------|-----
 Master Particle System Cap | uint16 |
-Unknown | uint8[2] |
+Unknown | byte[2] |

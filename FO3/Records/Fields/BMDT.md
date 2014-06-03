@@ -9,8 +9,8 @@ Name | Type | Info
 -----|------|-----
 Biped Flags | uint32 |
 General Flags | uint8 |
-Unused | uint8
- 
+Unused | byte
+
 #### Biped Flag Values
 
 Value | Meaning

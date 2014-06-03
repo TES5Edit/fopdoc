@@ -28,7 +28,7 @@ Name | Type | Info
 -----|------|-----
 Value | int32 |
 Flags | uint8 | See below for flags.
-Unused | uint8[3] | ??
+Unused | byte[3] |
 Withdrawal Effect | formid | FormID of a [SPEL](SPEL.md) record, or null.
 Addiction Chance | float32 |
 Sound - Consume | formid | FormID of a [SOUN](SOUN.md) record.

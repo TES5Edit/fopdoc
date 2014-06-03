@@ -7,7 +7,7 @@ As used in the [SCPT](../SCPT.md) record type and the [embedded script](Embedded
 
 Name | Type | Info
 -----|------|-----
-Unused | uint8[4] | 
+Unused | byte[4] | 
 Ref Count | uint32 |
 Compiled Size | uint32 |
 Variable Count | uint32 |

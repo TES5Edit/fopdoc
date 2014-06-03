@@ -18,7 +18,7 @@ Count | Field | Name | Type | Info
 Name | Type | Info
 -----|------|-----
 Flags | uint8 |
-Unused | uint8[3] |
+Unused | byte[3] |
 Membrane Shader - Source Blend Mode | uint32 | See below for blend mode values.
 Membrane Shader - Blend Operation | uint32 | See below for blend operation values.
 Membrane Shader - Z Test Function | uint32 | See below for Z test function values.

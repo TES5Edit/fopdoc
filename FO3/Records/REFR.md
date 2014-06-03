@@ -32,7 +32,7 @@ Count | Field | Name | Type | Info
 + | TNAM | Topic | formid | Patrol data. FormID of a [DIAL](DIAL.md) record, or null.
  | XRDO | Radio Data | struct |
  | XOWN | Owner | formid | Ownership data. FormID of a [FACT](FACT.md), [ACHR](ACHR.md) or [NPC_](NPC_.md) record.
- | XRNK | Faction Rank | int32 | Ownership data 
+ | XRNK | Faction Rank | int32 | Ownership data
  | XLOC | Lock Data | struct |
  | XCNT | Count | int32 |
  | XRDS | Radius | float32 |
@@ -62,12 +62,12 @@ Count | Field | Name | Type | Info
  | XLRM | Linked Room | formid | FormID of a [REFR](REFR.md) record.
  | XOCP | Occlusion Plane Data | struct |
 -* | XORD | Linked Occlusion Plane | formid | FormID of a [REFR](REFR.md) record, or null. Each XORD field corresponds to a different plane - the mapping is given below.
--* | XLOD | Distant LOD Data | uint8[4] |
+-* | XLOD | Distant LOD Data | byte[4] |
  | XSCL | Scale | float32 |
  | [DATA](Fields/DATA (ACHR, ACRE).md) | Position / Rotation | struct |
- 
 
- 
+
+
 ### RCLR
 
 Name | Type | Info
@@ -85,9 +85,9 @@ Z Bound | float32 |
 Red | float32 |
 Green | float32 |
 Blue | float32 |
-Unkonwn | uint8[4] |
+Unknown | byte[4] |
 Type | uint32 | Enum - see below for values.
- 
+
 #### Type Values
 
 Value | Meaning
@@ -165,7 +165,7 @@ X Rotation | float32 |
 Y Rotation | float32 |
 Z Rotation | float32 |
 Flags | uint32 | See below for values.
- 
+
 #### Flag Values
 
 Value | Meaning
@@ -215,7 +215,7 @@ Range Radius | float32 |
 Broadcast Range Type | uint32 | Enum - see below for values.
 Static Percentage | float32 |
 Position Reference | FormID of a [REFR](REFR.md), [ACRE](ACRE.md), [ACHR](ACHR.md), [PGRE](PGRE.md) or [PMIS](PMIS.md) record, or null.
- 
+
 #### Broadcast Range Type Values
 
 Value | Meaning
@@ -231,10 +231,10 @@ Value | Meaning
 Name | Type | Info
 -----|------|-----
 Level | uint8 |
-Unused | uint8[3] |
+Unused | byte[3] |
 Key | formid | FormID of a [KEYM](KEYM.md) record, or null.
 Flags | uint8 | See below for values.
-Unknown | uint8[11] |
+Unknown | byte[11] |
 
 ### XACT Values
 
@@ -250,8 +250,8 @@ Value | Meaning
 Name | Type | Info
 -----|------|-----
 Navigation Mesh | formid | FormID of a [NAVM](NAVM.md) record.
-Unknown | uint8[4] |
- 
+Unknown | byte[4] |
+
 ### XPTL / XOCP
 
 Name | Type | Info
@@ -271,8 +271,8 @@ Quaternion 4 Rotation | float32 |
 Name | Type | Info
 -----|------|-----
 Linked Rooms Count | uint16 |
-Unknown | uint8[2] |
- 
+Unknown | byte[2] |
+
 ### XORD Mapping
 
 Index | Occlusion Plane

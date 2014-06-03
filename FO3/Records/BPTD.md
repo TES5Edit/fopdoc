@@ -55,7 +55,7 @@ Severable - Impact Dataset | formid | FormID of a [IPDS](IPDS.md) record, or nul
 Explodable - Impact Dataset | formid | FormID of a [IPDS](IPDS.md) record, or null.
 Severable - Decal Count | uint8 |
 Explodable - Decal Count | uint8 |
-Unused | uint8[2] |
+Unused | byte[2] |
 Limb Replacement Scale | float32 |
 
 ##### Flag Values

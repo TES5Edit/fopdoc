@@ -9,11 +9,11 @@ Name | Type | Description
 -----|------|------------
 type | char[4] | Always "GRUP".
 groupSize | uint32 | Size of the group, *including* the 24 bytes before the data.
-label | uint8[4] | Format depends on the group type.
+label | byte[4] | Format depends on the group type.
 groupType | int32 | The group type. See the section below for details.
 stamp | uint16 | A date stamp. The first byte is the day of the month, and the second byte is the number of months since December 2002. For example, the 8th of March 2003 would be stored as `08 03`.
-unknown | uint8[6] | ??
-data | uint8[groupSize - 24] | The records and subgroups contained within the group.
+Unknown | byte[6] |
+data | byte[groupSize - 24] | The records and subgroups contained within the group.
 
 ### Group Types
 

@@ -19,12 +19,12 @@ Count | Field | Name | Type | Info
 + | ANAM | Cloud Textures - Layer 2 | cstring |
 + | BNAM | Cloud Textures - Layer 3 | cstring |
  | | [Model Data](Fields/Model.md) | collection |
-+ | LNAM | Unknown | uint8[4] |
++ | LNAM | Unknown | byte[4] |
 +* | ONAM | Cloud Layer Speed | uint8 | Value is divided by 2550. There are 4 ONAMs, each for a different cloud layer.
 -* | PNAM | Cloud Layer Color | struct | There are 4 PNAMs, each for a different cloud layer.
 +* | NAM0 | Colors by Time & Type | struct | There are 10 NAM0s. The mapping to types is given below.
 + | FNAM | Fog Distance | struct |
-+ | INAM | Unused | uint8[304] |
++ | INAM | Unused | byte[304] |
 + | DATA | | struct |
 -* | SNAM | Sound | struct |
 

@@ -12,7 +12,7 @@ Confidence | uint8 | Enum - see below for values.
 Energy Level | uint8 |
 Responsibility | uint8 |
 Mood | uint8 | Enum - see below for values.
-Unused | uint8[3] |
+Unused | byte[3] |
 [Buys/Sells and Services](../Values/Services.md) | uint32 | Flags - see link for values.
 [Teaches](../Values/Skills.md) | int8 | Enum - see link for values.
 Maximum Training Level | uint8 | 

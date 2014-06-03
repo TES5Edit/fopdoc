@@ -74,7 +74,7 @@ Name | Type | Info
 -----|------|-----
 Quest | formid | FormID of a [QUST](QUST.md) record.
 Quest Stage | int8 |
-Unused | uint8[3] |
+Unused | byte[3] |
  
 ##### Ability
 

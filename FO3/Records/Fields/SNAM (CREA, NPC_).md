@@ -9,4 +9,4 @@ Name | Type | Info
 -----|------|-----
 Faction | formid | FormID of a [FACT](../FACT.md) record.
 Rank | uint8 | 
-Unused | uint8[3] |
+Unused | byte[3] |

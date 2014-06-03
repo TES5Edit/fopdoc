@@ -33,7 +33,7 @@ Count | Field | Name | Type | Info
 Name | Type | Info
 -----|------|-----
 Level | int16 |
-Unused | uint8[2] |
+Unused | byte[2] |
 Reference | formid | FormID of a [NPC_](NPC_.md) or [LVLN](LVLN.md) record.
 Count | int16 |
-Unused | uint8[2] |
+Unused | byte[2] |

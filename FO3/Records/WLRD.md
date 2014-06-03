@@ -29,7 +29,7 @@ Count | Field | Name | Type | Info
 + | NNAM | Canopy Shadow | cstring |
 + | XNAM | Water Noise Texture | cstring |
 -* | IMPS | Swapped Impact | struct |
--* | IMPF | Footstep Material | uint8[30] | The format of each IMPF field is unknown. There can be up to 10 IMPF fields, corresponding to different materials. The mapping is given below.
+-* | IMPF | Footstep Material | byte[30] | The format of each IMPF field is unknown. There can be up to 10 IMPF fields, corresponding to different materials. The mapping is given below.
 -* | OFST | Offset | uint32 |
 
 ### PNAM

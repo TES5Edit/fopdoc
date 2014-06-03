@@ -50,7 +50,7 @@ Combat Skill | uint8 |
 Magic Skill | uint8 |
 Stealth Skill | uint8 |
 Health | int16 |
-Unused | uint8[2] | 
+Unused | byte[2] | 
 Damage | int16 |
 Attribute | uint8 | There are 7 attribute fields, one for each attribute. The mapping of fields to attributes is given below.There are 7 attribute fields, one for each attribute. The mapping of fields to attributes is given below.
 

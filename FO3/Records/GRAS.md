@@ -21,14 +21,14 @@ Min Slope | uint8 |
 Max Slope | uint8 |
 Unused | uint8 |
 Unit From Water Amount | uint16 |
-Unused | uint8[2] |
+Unused | byte[2] |
 Unit From Water Type | uint32 | Enum - see below for values.
 Position Range | float32 |
 Height Range | float32 |
 Color Range | float32 |
 Wave Period | float32 |
 Flags | uint8 | See below for values.
-Unused | uint8[3] |
+Unused | byte[3] |
  
 #### Unit From Water Type Enum Values
 

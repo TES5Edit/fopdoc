@@ -77,7 +77,7 @@ Name | Type | Info
 -----|------|-----
 Object | formid | FormID of a [TREE](TREE.md), [STAT](STAT.md) or [LTEX](LTEX.md) record.
 Parent Index | uint16 |
-Unused | uint8[2] |
+Unused | byte[2] |
 Density | float32 |
 Clustering | uint8 |
 Min Slope | uint8 |
@@ -85,7 +85,7 @@ Max Slope | uint8 |
 Flags | uint8 | See below for values
 Radius With Respect To Parent | uint16 |
 Radius | uint16 |
-Unknown | uint8[4] |
+Unknown | byte[4] |
 Max Height | float32 |
 Sink | float32 |
 Sink Variance | float32 |
@@ -93,7 +93,7 @@ Size Variance | float32 |
 X Angle Variance | uint16 |
 Y Angle Variance | uint16 |
 Z Angle Variance | uint16 |
-Unknown | uint8[6] |
+Unknown | byte[6] |
  
 ##### Flag Values
 
@@ -113,7 +113,7 @@ Value | Meaning
 Name | Type | Info
 -----|------|-----
 Grass | formid | FormID of a [GRAS](GRAS.md) record.
-Unknown | uint8[4] |
+Unknown | byte[4] |
  
 #### RDMD Values
 

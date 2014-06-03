@@ -42,9 +42,9 @@ Cinematic Contrast Avg Lum Value | float32 |
 Cinematic Contrast Value | float32 |
 Cinematic Brightness Tint Color | rgb |
 Cinmatic Brightness Tint Value | float32 |
-Unused | uint8[16] |
+Unused | byte[16] |
 Flags | uint8 | See below for values.
-Unused | uint8[3] |
+Unused | byte[3] |
  
 The `rgb` data types above are apparently float32 triplets, with the first being for red, the second for green and the third for blue.
  

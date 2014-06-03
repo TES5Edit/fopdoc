@@ -86,12 +86,12 @@ Name | Type | Info
 -----|------|-----
 Emotion Type | uint32 | Enum - see below for values.
 Emotion Value | int32 |
-Unused | uint8[4] |
+Unused | byte[4] |
 Response Number | uint8 |
-Unused | uint8[3] |
+Unused | byte[3] |
 Sound | formid | FormID of a [SOUN](SOUN.md) record, or null.
 Flags | uint8 | See below for values.
-Unused | uint8[3] |
+Unused | byte[3] |
  
 ##### Emotion Type Values
 

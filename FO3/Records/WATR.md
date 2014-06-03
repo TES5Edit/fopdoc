@@ -30,17 +30,17 @@ Value | Meaning
 
 Name | Type | Info
 -----|------|-----
-Unknown | uint8[16] |
+Unknown | byte[16] |
 Water Properties - Sun Power | float32 |
 Water Properties - Reflectivity Amount | float32 |
 Water Properties - Fresnel Amount | float32 |
-Unused | uint8[4] |
+Unused | byte[4] |
 Fog Properties - Above Water - Fog Near Plane Distance | float32 |
 Fog Properties - Above Water - Fog Far Plane Distance | float32 |
 Shallow Color | rgba |
 Deep Color | rgba |
 Reflection Color | rgba |
-Unused | uint8[4] |
+Unused | byte[4] |
 Rain Simulator - Force | float32 |
 Rain Simulator - Velocity | float32 |
 Rain Simulator - Falloff | float32 |
@@ -81,17 +81,17 @@ Noise Properties - Noise Layer Three - Amplitude Scale | float32 |
 
 Name | Type | Info
 -----|------|-----
-Unknown | uint8[16] |
+Unknown | byte[16] |
 Water Properties - Sun Power | float32 |
 Water Properties - Reflectivity Amount | float32 |
 Water Properties - Fresnel Amount | float32 |
-Unused | uint8[4] |
+Unused | byte[4] |
 Fog Properties - Above Water - Fog Near Plane Distance | float32 |
 Fog Properties - Above Water - Fog Far Plane Distance | float32 |
 Shallow Color | rgba |
 Deep Color | rgba |
 Reflection Color | rgba |
-Unused | uint8[4] |
+Unused | byte[4] |
 Rain Simulator - Force | float32 |
 Rain Simulator - Velocity | float32 |
 Rain Simulator - Falloff | float32 |

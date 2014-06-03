@@ -25,7 +25,7 @@ Associated Item | formid |
 Magic School | int32 | Unused. A value of `-1` means `None`.
 [Resistance Type](Values/Actor Values.md) | int32 |
 Unknown | uint16 |
-Unused | uint8[2] |
+Unused | byte[2] |
 Light | formid | FormID of a [LIGH](LIGH.md) record, or null.
 Projectile Speed | float32 |
 Effect Shader | formid | FormID of an [EFSH](EFSH.md) record, or null.
