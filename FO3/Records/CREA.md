@@ -5,7 +5,7 @@ Creature
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
 + | [OBND](Fields/OBND.md) | Object Bounds | struct |
@@ -73,9 +73,9 @@ Values | Meaning
 6 | Robot
 7 | Giant
 
-### Sound Type Field Collection
+### Sound Type Subrecord Collection
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | CSDT | Type | uint32 | Enum - see below for values.
 +* | CSDI | Sound | formid | FormID of a [SOUN](SOUN.md) record.

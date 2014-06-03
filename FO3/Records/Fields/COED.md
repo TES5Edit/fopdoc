@@ -1,4 +1,4 @@
-COED Field
+COED Subrecord
 ==========
 
 ## Format

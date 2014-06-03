@@ -5,14 +5,14 @@ Default Object Manager
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+* | DATA | Default Object | formid | Each DATA field is mapped to a different type of object. The mapping is given below.
++* | DATA | Default Object | formid | Each DATA subrecord is mapped to a different type of object. The mapping is given below.
 
 ### DATA Mapping
 
-DATA Field Index | Object Type
+DATA Subrecord Index | Object Type
 -----------------|------------
 0 | Stimpack
 1 | SuperStimpack

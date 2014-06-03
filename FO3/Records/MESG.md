@@ -5,7 +5,7 @@ Message
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
 + | DESC | Description | cstring |
@@ -31,9 +31,9 @@ Value | Meaning
 0x00000001 | Message Box
 0x00000002 | Auto Display
 
-### Menu Button Field Collection
+### Menu Button Subrecord Collection
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | ITXT | Button Text | cstring |
 -* | [CTDA](Fields/CTDA.md) | Condition | struct |

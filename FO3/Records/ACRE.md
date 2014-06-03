@@ -5,7 +5,7 @@ Placed Creature
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring | Editor ID
 + | NAME | Base | formid | FormID of a [CREA](CREA.md) record.

@@ -5,7 +5,7 @@ Armor
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring | Editor ID
 + | [OBND](Fields/OBND.md) | Object Bounds | struct |
@@ -13,7 +13,7 @@ Count | Field | Name | Type | Info
  | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
  | EITM | Object Effect | formid | FormID of a [ENCH](ENCH.md) or [SPEL](SPEL.md) record.
 + | [BMDT](Fields/BMDT.md) | Biped Data | struct |
-+ | | [Male Biped Model Data](Fields/Model.md) | collection | The `MODB` field is not present in this instance.
++ | | [Male Biped Model Data](Fields/Model.md) | collection | The `MODB` subrecord is not present in this instance.
 + | | [Male World Model Data](Fields/Model.md) | collection | #2
  | ICON | Male inventory icon filename | cstring |
  | MICO | Male message icon filename | cstring |

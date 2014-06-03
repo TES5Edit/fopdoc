@@ -1,9 +1,9 @@
-Item Field Collection
+Item Subrecord Collection
 =====================
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | [CNTO](#cnto) | Item | struct | 
  | [COED](COED.md) | Extra Data | struct |

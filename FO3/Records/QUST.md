@@ -5,7 +5,7 @@ Quest
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
  | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
@@ -36,16 +36,16 @@ Value | Meaning
 0x08 | Allow Repeated Stages
 0x10 | ??
 
-### Stage Field Collection
+### Stage Subrecord Collection
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | INDX | Stage Index | int16 |
 -* | | Log Entry | collection | See below for details.
 
-#### Log Entry Field Collection
+#### Log Entry Subrecord Collection
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | Stage Flags | uint8 | See below for values.
 -* | [CTDA](Fields/CTDA.md) | Condition | struct |
@@ -60,17 +60,17 @@ Value | Meaning
 0x01 | Complete Quest
 0x02 | Fail Quest
 
-### Objective Field Collection
+### Objective Subrecord Collection
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | QOBJ | Objective Index | int32 |
 + | NNAM | Description | cstring |
 -* | | Target | collection | See below for details.
 
-#### Target Field Collection
+#### Target Subrecord Collection
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | QSTA | Target | struct |
 -* | [CTDA](Fields/CTDA.md) | Condition | struct |

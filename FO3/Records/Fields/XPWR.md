@@ -1,4 +1,4 @@
-XPWR Field
+XPWR Subrecord
 ==========
 
 ## Format

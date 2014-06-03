@@ -5,7 +5,7 @@ Perk
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
  | FULL | Name | cstring |
@@ -33,9 +33,9 @@ Value | Meaning
 0 | No
 1 | Yes
 
-### Effect Field Collection
+### Effect Subrecord Collection
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | PRKE | Header | struct |
 + | DATA | Effect Data | struct *or * formid |
@@ -66,7 +66,7 @@ Value | Meaning
 
 #### DATA (Effect Data)
 
-There are three possible DATA formats, based on the value of the Type field in the preceding PRKE field.
+There are three possible DATA formats, based on the value of the Type field in the preceding PRKE subrecord.
 
 ##### Quest + Stage
 
@@ -132,16 +132,16 @@ Value | Meaning
 35 | Player Kill AP Reward
 36 | Modify Enemy Critical Hit Chance
 
-#### Perk Condition Field Collection
+#### Perk Condition Subrecord Collection
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | PRKC | Run On | int8 | 
 +* | [CTDA](Fields/CTDA.md) | Condition | struct |
 
 #### EPFD
 
-The field type is decided as described in the table below.
+The subrecord type is decided as described in the table below.
 
 EPFT Value | EPFD Type | Info
 -----------|-----------|-----

@@ -5,14 +5,14 @@ Cell
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
  | FULL | Name | cstring |
 + | DATA | Flags | uint8 | See below for values.
  | XCLC | Grid | struct |
  | XCLL | Lighting | struct |
--* | IMPF | Footstep Material | byte[30] | The format of each IMPF field is unknown. There can be up to 10 IMPF fields, corresponding to different materials. The mapping is given below.
+-* | IMPF | Footstep Material | byte[30] | The format of each IMPF subrecord is unknown. There can be up to 10 IMPF subrecords, corresponding to different materials. The mapping is given below.
 + | | Light Template | collection | See below for details.
  | XCLW | Water Height | float32
  | XNAM | Water Noise Texture | cstring |
@@ -44,7 +44,7 @@ Value | Meaning
 
 ### IMPF Map
 
-IMPF Field | Footstep Material
+IMPF Subrecord | Footstep Material
 -----------|------------------
 1st | ConcSolid
 2nd | ConcBroken
@@ -92,7 +92,7 @@ Fog Power | float32 |
 
 ### Light Template
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | LTMP | Template | formid | Light template. FormID of an [LGTM](LGTM.md) record, or null.
 + | LNAM | Inherit | uint32 | Light template flags. See below for values.

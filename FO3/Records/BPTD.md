@@ -5,16 +5,16 @@ Body Part Data
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring | Editor ID
 + | | [Model Data](Fields/Model.md) | collection |
 +* | | Body Part | collection | See below for details.
  | RAGA | Ragdoll | formid | FormID of a [RGDL](RGDL.md) record.
 
-### Body Part Field Collection
+### Body Part Subrecord Collection
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | BPTN | Part Name | cstring |
 + | BPNN | Part Node | cstring |

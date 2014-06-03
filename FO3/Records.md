@@ -3,7 +3,7 @@ Records
 
 ## Record Types
 
-Each record type's page documents its fields. The common record header structure is documented further down this page.
+Each record type's page documents its subrecords. The common record header structure is documented further down this page.
 
 Type | Name
 -----|------------
@@ -112,7 +112,7 @@ id | formid | The record FormID. TES4 records have a FormID of `0`.
 revision | uint32 | Used for revision control by the Creation Kit, if enabled.
 version | uint16 | ??
 unknown | uint16 | ??
-data | uint8[dataSize] | For uncompressed records, this is a sequence of fields. For compressed records, see the section below for details.
+data | uint8[dataSize] | For uncompressed records, this is a sequence of subrecords. For compressed records, see the section below for details.
 
 ### Flags
 
@@ -161,13 +161,13 @@ Compressed data has the following format.
 Name | Type | Info
 -----|------|-----
 decompSize | uint32 | Size of the decompressed data.
-compData | uint8[ dataSize - 4 ] | Collection of fields compressed using [zlib](http://zlib.net/).
+compData | uint8[ dataSize - 4 ] | Collection of subrecords compressed using [zlib](http://zlib.net/).
 
 
-## Field Format
+## Subrecord Format
 
 Name | Type | Info
 -----|------|-----
-type | char[4] | Field type.
-dataSize | uint16 | Size of the data, unless the preceding field has the type `XXXX`, in which case this will be `0` and the size of the data field will be given by the preceding field's data, interpreted as a 32-bit unsigned integer.
-data | uint8[dataSize] | The format of the data depends on the field type and the type of the record containing it.
+type | char[4] | Subrecord type.
+dataSize | uint16 | Size of the data, unless the preceding subrecord has the type `XXXX`, in which case this will be `0` and the size of the data field will be given by the preceding subrecord's data, interpreted as a 32-bit unsigned integer.
+data | uint8[dataSize] | The format of the data depends on the subrecord type and the type of the record containing it.

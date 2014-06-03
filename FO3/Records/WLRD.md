@@ -5,7 +5,7 @@ Worldspace
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
  | FULL | Name | cstring |
@@ -29,7 +29,7 @@ Count | Field | Name | Type | Info
 + | NNAM | Canopy Shadow | cstring |
 + | XNAM | Water Noise Texture | cstring |
 -* | IMPS | Swapped Impact | struct |
--* | IMPF | Footstep Material | byte[30] | The format of each IMPF field is unknown. There can be up to 10 IMPF fields, corresponding to different materials. The mapping is given below.
+-* | IMPF | Footstep Material | byte[30] | The format of each IMPF subrecord is unknown. There can be up to 10 IMPF subrecords, corresponding to different materials. The mapping is given below.
 -* | OFST | Offset | uint32 |
 
 ### PNAM
@@ -108,7 +108,7 @@ New | formid | FormID of an [IPCT](IPCT.md) record, or null.
 
 ### IMPF Map
 
-IMPF Field | Footstep Material
+IMPF Subrecord | Footstep Material
 -----------|------------------
 1st | ConcSolid
 2nd | ConcBroken

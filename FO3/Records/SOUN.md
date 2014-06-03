@@ -5,13 +5,13 @@ Sound
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
 + | [OBND](Fields/OBND.md) | Object Bounds | struct |
  | FNAM | Sound Filename | cstring |
 + | SNDD *or* SNDX | Sound Data | struct |
--* | ANAM | Attenuation Point | int16 | There are 5 ANAM fields, each for a separate point on an attenuation curve.
+-* | ANAM | Attenuation Point | int16 | There are 5 ANAM subrecords, each for a separate point on an attenuation curve.
  | GNAM | Reverb Attenuation Control | int16 |
  | HNAM | Priority | int32 |
 

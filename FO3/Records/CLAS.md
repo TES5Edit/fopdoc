@@ -5,7 +5,7 @@ Class
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
 + | FULL | Name | cstring |
@@ -13,7 +13,7 @@ Count | Field | Name | Type | Info
  | ICON | Large icon filename | cstring |
  | MICO | Small icon filename | cstring |
 + | DATA | Data | struct |
-+* | ATTR | Attribute | uint8 | There are 7 attribute fields, one for each attribute. The mapping of fields to attributes is given below.
++* | ATTR | Attribute | uint8 | There are 7 attribute subrecords, one for each attribute. The mapping of subrecords to attributes is given below.
 
 ### DATA
 
@@ -38,7 +38,7 @@ Value | Meaning
 
 ### ATTR Map
 
-ATTR Field | Attribute
+ATTR Subrecord | Attribute
 -----------|----------
 1st | Strength
 2nd | Perception

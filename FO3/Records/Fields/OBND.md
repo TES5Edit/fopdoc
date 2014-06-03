@@ -1,4 +1,4 @@
-OBND Field
+OBND Subrecord
 ==========
 
 As used in the [ACTI](../ACTI.md) and [ADDN](../ADDN.md) record types.

@@ -5,7 +5,7 @@ Effect Shader
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | EDID | Editor ID | cstring |
  | ICON | Fill Texture | cstring |

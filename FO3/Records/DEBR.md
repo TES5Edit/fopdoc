@@ -5,14 +5,14 @@ Debris
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
 +* | | Debris Model | collection | See below for details.
 
-### Debris Model Field Collection
+### Debris Model Subrecord Collection
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | DATA | Data | struct |
 + | MODT | Texture File Hashes | ?? |

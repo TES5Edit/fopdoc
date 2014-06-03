@@ -1,4 +1,4 @@
-ACBS Field
+ACBS Subrecord
 ==========
 
 As used by the [CREA](../CREA.md) and [NPC_](../NPC_.md) record types.

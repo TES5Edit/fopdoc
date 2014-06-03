@@ -1,4 +1,4 @@
-XNAM Field
+XNAM Subrecord
 ==========
 
 As used in the [FACT](../FACT.md) and [RACE](../RACE.md) record types.

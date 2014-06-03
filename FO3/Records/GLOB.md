@@ -5,7 +5,7 @@ Global Variable
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
 + | FNAM | Type | uint8 | Values of `s`, `l` and `f` denote `short`, `long` and `float` variable types respectively.

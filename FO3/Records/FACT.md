@@ -5,7 +5,7 @@ Faction
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
  | FULL | Name | cstring |
@@ -38,9 +38,9 @@ Value | Meaning
 0x02 | Allow Sell
 
 
-### Rank Field Collection
+### Rank Subrecord Collection
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | RNAM | Rank Number | int32 |
  | MNAM | Male | cstring |

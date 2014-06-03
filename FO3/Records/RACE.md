@@ -5,7 +5,7 @@ Race
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
  | FULL | Name | cstring |
@@ -15,9 +15,9 @@ Count | Field | Name | Type | Info
  | ONAM | Older | formid | FormID of a [RACE](RACE.md) record.
  | YNAM | Younger | formid | FormID of a [RACE](RACE.md) record.
 + | NAM2 | Unkonwin Marker | null |
-+* | VTCK | Voice | formid | FormID of a [VTYP](VTYP.md) record. The first and second instances of this field are for male and female voices respectively.
-+* | DNAM | Default Hair Style | formid | FormID of a [HAIR](HAIR.md) record. The first and second instances of this field are for male and female hairs respectively.
-+* | DNAM | Default Hair Color | uint8 | Enum - see below for values. The first and second instances of this field are for male and female hairs respectively.
++* | VTCK | Voice | formid | FormID of a [VTYP](VTYP.md) record. The first and second instances of this subrecord are for male and female voices respectively.
++* | DNAM | Default Hair Style | formid | FormID of a [HAIR](HAIR.md) record. The first and second instances of this subrecord are for male and female hairs respectively.
++* | DNAM | Default Hair Color | uint8 | Enum - see below for values. The first and second instances of this subrecord are for male and female hairs respectively.
 + | PNAM | FaceGen - Main Clamp | float32 |
 + | UNAM | FaceGen - Face Clamp | float32 |
 + | ATTR | Unknown | ?? |
@@ -102,7 +102,7 @@ Value | Meaning
 
 ### Male Head Part / Female Head Part
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | INDX | Index | uint32 | See below for values.
 + | | [Model Data](Fields/Model.md) | collection |
@@ -124,7 +124,7 @@ Value | Meaning
 
 ### Male Body Part / Female Body Part
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | INDX | Index | uint32 | See below for values.
  | ICON | Large icon filename | cstring |

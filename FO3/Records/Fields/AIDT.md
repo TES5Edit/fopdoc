@@ -1,4 +1,4 @@
-AIDT Field
+AIDT Subrecord
 ==========
 
 As used in the [CREA](../CREA.md) and [NPC_](../NPC_.md) record types.

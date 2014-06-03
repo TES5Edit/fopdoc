@@ -5,7 +5,7 @@ Package
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
 + | PKDT | General | struct |
@@ -145,9 +145,9 @@ Value | Meaning (Find / Escort / Eat) | Meaning (Wander / Sandbox) | Meaning (Us
 0x0200 | Allow Killing | | Allow Killing | 
 0x0400 | Allow Stealing | | Allow Stealing | 
 
-### Location Field Collection
+### Location Subrecord Collection
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | PLDT | Location 1 | struct |
  | PLD2 | Location 2 | struct |

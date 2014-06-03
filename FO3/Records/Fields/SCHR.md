@@ -1,7 +1,7 @@
-SCHR Field
+SCHR Subrecord
 ==========
 
-As used in the [SCPT](../SCPT.md) record type and the [embedded script](Embedded Script.md) field collection.
+As used in the [SCPT](../SCPT.md) record type and the [embedded script](Embedded Script.md) subrecord collection.
 
 ## Format
 

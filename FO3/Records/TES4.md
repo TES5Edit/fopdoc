@@ -3,7 +3,7 @@ TES4 Record
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | HEDR | header | struct | Contains additional details about the plugin, see section below.
 - | OFST | unknown | ?? | ??
@@ -11,7 +11,7 @@ Count | Field | Name | Type | Info
 + | CNAM | author | cstring | Maximum size is 512 bytes, including terminator.
 - | SNAM | description | cstring | Maximum size is 512 bytes, including terminator.
 -* | | Master Data | | Data on the plugin's master files, listed in the order they were present in when the plugin was written.
-- | ONAM | formOverrides | formid[] | Overriden records. Number of records can be obtained by dividing the field size by the size of a FormID.
+- | ONAM | formOverrides | formid[] | Overriden records. Number of records can be obtained by dividing the subrecord size by the size of a FormID.
 - | SCRN | screenshot | ?? | ??
 
 ### HEDR
@@ -24,7 +24,7 @@ nextObjectId | uint32 | Next available object ID.
 
 ### Master Data
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | MAST | master | cstring | The filename of a master plugin.
-+ | DATA | fileSize | uint64 | One DATA field appears directly after each MAST field present. Always `0`, probably vestigial. In TES3, the file size of the previous master was recorded here.
++ | DATA | fileSize | uint64 | Always `0`, probably vestigial. In TES3, the file size of the previous master was recorded here.

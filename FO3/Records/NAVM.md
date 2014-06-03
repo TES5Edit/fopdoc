@@ -5,7 +5,7 @@ Navigation Mesh
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | EDID | Editor ID | cstring |
  | NVER | Version | uint32 |

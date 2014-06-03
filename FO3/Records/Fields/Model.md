@@ -1,7 +1,7 @@
-Model Field Collection
+Model Subrecord Collection
 ======================
 
-The MODL, MODB, MODT, MODS and MODD fields hold model data, and always appear together. In cases where multiple collections are present in the same record, the field codes are numbered:
+The MODL, MODB, MODT, MODS and MODD subrecords hold model data, and always appear together. In cases where multiple collections are present in the same record, the subrecord codes are numbered:
 
 Original | Second Instance | Third Instance | Fourth Instance
 ---------|-----------------|----------------|----------------
@@ -11,11 +11,11 @@ MODT | MO2T | MO3T | MO4T
 MODS | MO2S | MO3S | MO4S
 MODD | (always missing) | MOSD | (always missing)
 
-Whenever a model field collection is referenced in these docs, assume it is the first instance unless a number is given. If so, substitute the appropriate field codes below.
+Whenever a model subrecord collection is referenced in these docs, assume it is the first instance unless a number is given. If so, substitute the appropriate subrecord codes below.
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | MODL | Model Filename | cstring |
 - | MODB | Unknown | byte[4] |
@@ -28,7 +28,7 @@ Count | Field | Name | Type | Info
 Count | Name | Type | Info
 ------|------|------|-----
 + | Count | uint32 | Number of alternate textures.
--* | Alternate Texture | struct | A sub-field structure detailed below.
+-* | Alternate Texture | struct | A sub-subrecord structure detailed below.
 
 #### Aternate Texture
 

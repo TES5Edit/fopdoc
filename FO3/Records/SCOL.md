@@ -5,16 +5,16 @@ Static Collection
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
 + | [OBND](Fields/OBND.md) | Object Bounds | struct |
 + | | [Model Data](Fields/Model.md) | collection |
 +* | | Part | collection | See below for details.
 
-### Part Field Collection
+### Part Subrecord Collection
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | ONAM | Static | formid | FormID of a [STAT](STAT.md) record.
 +* | DATA | Placement | struct |

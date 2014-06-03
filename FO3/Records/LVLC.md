@@ -5,7 +5,7 @@ Leveled Creature
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
 + | [OBND](Fields/OBND.md) | Object Bounds | struct |
@@ -21,9 +21,9 @@ Value | Meaning
 0x01 | Calculate From All Levels (player's level)
 0x02 | Calculate For Each Item In Count
 
-### Leveled List Entry Field Collection
+### Leveled List Entry Subrecord Collection
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | LVLO | Base Data | struct |
  | [COED](Fields/COED.md) | Extra Data | struct |

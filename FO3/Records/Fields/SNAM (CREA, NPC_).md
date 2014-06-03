@@ -1,4 +1,4 @@
-SNAM Field
+SNAM Subrecord
 ==========
 
 As used by [CREA](../CREA.md) and [NPC_](../NPC_.md) record types.

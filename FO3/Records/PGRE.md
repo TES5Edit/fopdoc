@@ -5,7 +5,7 @@ Placed Grenade
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | EDID | Editor ID | cstring |
 + | NAME | Base | formid | FormID of a [PROJ](PROJ.md) record.

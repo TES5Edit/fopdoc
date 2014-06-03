@@ -5,7 +5,7 @@ Dialog Topic
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
 -* | QSTI | Quest | formid | FormID of a [QUST](QUST.md) record.

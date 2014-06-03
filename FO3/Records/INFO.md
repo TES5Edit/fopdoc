@@ -5,7 +5,7 @@ Dialog Response
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | DATA | | struct |
 + | QSTI | Quest | formid | FormID of a [QUST](QUST.md) record.
@@ -69,9 +69,9 @@ Value | Meaning
 0x0100 | Say Once A Day
 0x0200 | Always Darken
 
-### Response Field Collection
+### Response Subrecord Collection
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | TRDT | Response Data | struct |
 + | NAM1 | Response Text | cstring |

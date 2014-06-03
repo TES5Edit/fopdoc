@@ -1,4 +1,4 @@
-CTDA Field
+CTDA Subrecord
 ==========
 
 ## Format

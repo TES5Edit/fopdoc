@@ -1,4 +1,4 @@
-XAPD Field
+XAPD Subrecord
 ==========
 
 As used in the [ACHR](../ACHR.md) and [ACRE](../ACRE.md) record types.

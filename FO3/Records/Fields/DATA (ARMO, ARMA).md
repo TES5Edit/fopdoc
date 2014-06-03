@@ -1,4 +1,4 @@
-DATA Field
+DATA Subrecord
 ==========
 
 As used in the [ARMO](../ARMO.md) and [ARMA](../ARMA.md) record types.

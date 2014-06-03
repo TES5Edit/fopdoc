@@ -5,7 +5,7 @@ Region
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | EDID | Editor ID | cstring |
  | ICON | Large icon filename | cstring |
@@ -15,9 +15,9 @@ Count | Field | Name | Type | Info
 -* | | Region Area | collection | See below for details.
 -* | Region Data Entry | collection | See below for details.
 
-### Region Area Field Collection
+### Region Area Subrecord Collection
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | RPLI | Edge Fall-Off | uint32 |
 -* | RPLD | Region Point List Data | struct |
@@ -29,9 +29,9 @@ Name | Type | Info
 X | float32 |
 Y | float32 |
 
-### Region Data Entry Field Collection
+### Region Data Entry Subrecord Collection
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | RDAT | Data Header | struct |
 -* | RDOT | Object | struct |

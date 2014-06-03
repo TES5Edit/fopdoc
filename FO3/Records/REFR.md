@@ -5,7 +5,7 @@ Placed Object
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | EDID | Editor ID | cstring |
  | RCLR | Linked Reference Color | struct |
@@ -61,7 +61,7 @@ Count | Field | Name | Type | Info
  | XRMR | Room Data Header | struct |
  | XLRM | Linked Room | formid | FormID of a [REFR](REFR.md) record.
  | XOCP | Occlusion Plane Data | struct |
--* | XORD | Linked Occlusion Plane | formid | FormID of a [REFR](REFR.md) record, or null. Each XORD field corresponds to a different plane - the mapping is given below.
+-* | XORD | Linked Occlusion Plane | formid | FormID of a [REFR](REFR.md) record, or null. Each XORD subrecord corresponds to a different plane - the mapping is given below.
 -* | XLOD | Distant LOD Data | byte[4] |
  | XSCL | Scale | float32 |
  | [DATA](Fields/DATA (ACHR, ACRE).md) | Position / Rotation | struct |

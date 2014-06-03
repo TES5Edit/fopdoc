@@ -1,9 +1,9 @@
-Effect Field Collection
+Effect Subrecord Collection
 =======================
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | EFID | Base Effect | formid | FormID of a [MGEF](../MGEF.md) record.
 + | [EFIT](#efit) | Effect Data | struct |

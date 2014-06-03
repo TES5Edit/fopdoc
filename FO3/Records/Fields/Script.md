@@ -1,8 +1,8 @@
-# Script Field Collection
+# Script Subrecord Collection
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | [SCHR](SCHR.md) | Basic Script Data | struct |
 + | SCDA | Compiled Script Source | uint8[] |
@@ -13,7 +13,7 @@ Count | Field | Name | Type | Info
 ### Local Variables
 
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | [SLSD](#slsd) | Local Variable Data | struct |
 + | SCVR | Local Variable Name | cstring |

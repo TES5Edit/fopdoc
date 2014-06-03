@@ -5,9 +5,9 @@ Image Space Modifier
 
 ## Format
 
-Some of the field codes begin with unprintable or whitespace characters. Such characters are given below using their hex values. Eg. `IIAD` would be `0x49 IAD` below if `I` were unprintable.
+Some of the subrecord codes begin with unprintable or whitespace characters. Such characters are given below using their hex values. Eg. `IIAD` would be `0x49 IAD` below if `I` were unprintable.
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | EDID | Editor ID | cstring |
  | DNAM | Unknown | ?? |

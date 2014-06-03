@@ -1,11 +1,11 @@
-Destruction Field Collection
+Destruction Subrecord Collection
 ============================
 
-The DEST, DSTD, DMDL, DMDT and DSTF fields hold destruction data, and always appear together.
+The DEST, DSTD, DMDL, DMDT and DSTF subrecords hold destruction data, and always appear together.
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | DEST | Header | struct |
 -* | | Destruction Stage | collection | See below for details.
@@ -27,7 +27,7 @@ Value | Meaning
 
 ### Destruction Stage
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | DSTD | Stage Data | struct |
 - | DMDL | Stage Model Filename | cstring |

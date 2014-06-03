@@ -1,4 +1,4 @@
-DODT Field
+DODT Subrecord
 ==========
 
 ## Format

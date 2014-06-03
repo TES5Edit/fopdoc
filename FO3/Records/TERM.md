@@ -5,7 +5,7 @@ Terminal
 
 ## Format
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
 + | [OBND](Fields/OBND.md) | Object Bounds | struct |
@@ -63,9 +63,9 @@ Value | Meaning
 8 | -Server 9-
 9 | -Server 10-
 
-### Menu Item Field Collection
+### Menu Item Subrecord Collection
 
-Count | Field | Name | Type | Info
+Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | ITXT | Item Text | cstring |
 + | RNAM | Result Text | cstring |
