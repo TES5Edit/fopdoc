@@ -10,7 +10,7 @@ Count | Subrecord | Name | Type | Info
 + | EDID | Editor ID | cstring |
 + | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
  | FULL | Name | cstring |
-+ | BMDT | Biped Data | struct | See below for details.
++ | [BMDT](Subrecords/BMDT.md) | Biped Data | struct |
 + | | [Male Biped Model Data](Subrecords/Model.md) | collection | The `MODB` subrecord is not present in this instance.
 + | | [Male World Model Data](Subrecords/Model.md) | collection | #2
  | ICON | Male inventory icon filename | cstring |
