@@ -9,7 +9,7 @@ Count | Subrecord | Name | Type | Info
 ------|-----------|------|------|-----
 + | EDID | Editor ID | cstring |
  | FULL | Name | cstring |
--* | [CTDA](Fields/CTDA.md) | Condition | struct |
+-* | [CTDA](Subrecords/CTDA.md) | Condition | struct |
  | DATA | Data | struct |
 -* | | Ingredient | collection | See below for details.
 -* | | Output | collection | See below for details.
