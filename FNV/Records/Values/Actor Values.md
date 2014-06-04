@@ -76,4 +76,8 @@ Value | Meaning
 79 | ??
 70 | ??
 71 | ??
-72 | Ignore Negative Effects
+72 | Ignore Crippled Limbs
+73 | Dehydration
+74 | Hunger
+75 | Sleep Deprivation
+76 | Damage
