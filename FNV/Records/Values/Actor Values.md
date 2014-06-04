@@ -45,17 +45,17 @@ Value | Meaning
 38 | Melee Weapons
 39 | Repair
 40 | Science
-41 | Small Guns
+41 | Guns
 42 | Sneak
 43 | Speech
-44 | Throwing (unused)
+44 | Survival
 45 | Unarmed
 46 | Inventory Weight
 47 | Paralysis
 48 | Invisibility
 49 | Chameleon
 50 | Night Eye
-51 | Detect Life Range
+51 | Turbo
 52 | Fire Resistance
 53 | Water Breathing
 54 | Rad Level
