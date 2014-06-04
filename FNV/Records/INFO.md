@@ -16,6 +16,7 @@ Count | Subrecord | Name | Type | Info
 -* | [CTDA](Subrecords/CTDA.md) | Condition | struct |
 -* | TCLT | Choice | formid | FormID of a [DIAL](DIAL.md) record.
 -* | TCLF | Link From Topic | formid | FormID of a [DIAL](DIAL.md) record.
+-* | TCFU | ?? | formid | FormID of an [INFO](INFO.md) record.
 + | | [Embedded Script (Begin)](Subrecords/Script.md) | collection |
 + | NEXT | Marker | null |
 + | | [Embedded Script (End)](Subrecords/Script.md) | collection |
@@ -68,6 +69,10 @@ Value | Meaning
 0x0080 | Speech Challenge
 0x0100 | Say Once A Day
 0x0200 | Always Darken
+0x0400 | ??
+0x0800 | ??
+0x1000 | Low Intelligence
+0x2000 | High Intelligence
 
 ### Response Subrecord Collection
 
