@@ -1,4 +1,5 @@
 Weapon Animation Types
+======================
 
 Value | Meaning
 ------|--------
