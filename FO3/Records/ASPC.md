@@ -8,7 +8,7 @@ Acoustic Space
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | [OBND](Fields/OBND.md) | Object Bounds | struct |
++ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
  | SNAM | Sound - Looping | formid | FormID of a [SOUN](SOUN.md) record.
  | RDAT | Use Sound from Region (Interiors Only) | formid | FormID of a [REGN](REGN.md) record.
 + | ANAM | Environment Type | uint32 | Enum - see below for values.

@@ -8,23 +8,23 @@ Creature
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | [OBND](Fields/OBND.md) | Object Bounds | struct |
++ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
 + | FULL | Name | cstring |
- | | [Model Data](Fields/Model.md) | collection |
+ | | [Model Data](Subrecords/Model.md) | collection |
 -* | SPLO | Actor Effect | formid | FormID of a [SPEL](SPEL.md) record.
  | EITM | Unarmed Attack Effect | formid | FormID of a [ENCH](ENCH.md) or [SPEL](SPEL.md) record.
 + | [EAMT](Values/Attack Animations.md) | Unarmed Attack Animation | uint16 |
 -* | NIFZ | Model | cstring |
  | NIFT | Texture File Hashes | uint8[] |
-+ | [ACBS](Fields/ACBS.md) | Configuration | struct |
--* | [SNAM](Fields/SNAM (CREA, NPC_).md) | Faction | struct |
++ | [ACBS](Subrecords/ACBS.md) | Configuration | struct |
+-* | [SNAM](Subrecords/SNAM (CREA, NPC_).md) | Faction | struct |
  | INAM | Death Item | formid | FormID of a [LVLI](LVLI.md) record.
  | VTCK | Voice | formid | FormID of a [VTYP](VTYP.md) record.
  | TPLT | Template | formid | FormID of a [CREA](CREA.md) or [LVLC](LVLC.md) record.
- | | [Destruction Data](Fields/Destruction.md) | collection |
+ | | [Destruction Data](Subrecords/Destruction.md) | collection |
  | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
--* | | [Item](Fields/Item.md) | collection |
- | [AIDT](Fields/AIDT.md) | AI Data | struct |
+-* | | [Item](Subrecords/Item.md) | collection |
+ | [AIDT](Subrecords/AIDT.md) | AI Data | struct |
 -* | PKID | Package | formid | FormID of a [PACK](PACK.md) record.
 -* | KFFZ | Animation | cstring |
 + | DATA | Data | struct |

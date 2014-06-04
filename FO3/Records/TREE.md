@@ -8,8 +8,8 @@ Tree
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring | Editor ID
-+ | [OBND](Fields/OBND.md) | Object Bounds | struct |
-+ | | [Model Data](Fields/Model.md) | collection |
++ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
++ | | [Model Data](Subrecords/Model.md) | collection |
 + | ICON | Large icon filename | cstring | 
 + | MICO | Small icon filename | cstring | 
 +* | SNAM | SpeedTree Seed | uint32 |

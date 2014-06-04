@@ -12,7 +12,7 @@ Count | Subrecord | Name | Type | Info
 + | DESC | Description | cstring |
  | ICON | Large icon filename | cstring |
  | MICO | Small icon filename | cstring |
- | | [Model Data](Fields/Model.md) | collection |
+ | | [Model Data](Subrecords/Model.md) | collection |
 + | DATA | Data | struct |
 
 ### DATA

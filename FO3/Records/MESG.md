@@ -36,4 +36,4 @@ Value | Meaning
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | ITXT | Button Text | cstring |
--* | [CTDA](Fields/CTDA.md) | Condition | struct |
+-* | [CTDA](Subrecords/CTDA.md) | Condition | struct |

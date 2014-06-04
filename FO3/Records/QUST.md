@@ -13,7 +13,7 @@ Count | Subrecord | Name | Type | Info
  | ICON | Large Icon Filename | cstring |
  | MICO | Small Icon FIlename | cstring |
 + | DATA | General | struct |
--* | [CTDA](Fields/CTDA.md) | Condition | struct |
+-* | [CTDA](Subrecords/CTDA.md) | Condition | struct |
 -* | | Stage | collection | See below for details.
 -* | | Objective | collection | See below for details.
 
@@ -48,9 +48,9 @@ Count | Subrecord | Name | Type | Info
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | Stage Flags | uint8 | See below for values.
--* | [CTDA](Fields/CTDA.md) | Condition | struct |
+-* | [CTDA](Subrecords/CTDA.md) | Condition | struct |
  | CNAM | Log Entry | cstring |
-+ | | [Embedded Script](Fields/Script.md) | collection |
++ | | [Embedded Script](Subrecords/Script.md) | collection |
  | NAM0 | Next Quest | formid | FormID of a [QUST](QUST.md) record.
 
 ##### Stage Flag Values
@@ -73,7 +73,7 @@ Count | Subrecord | Name | Type | Info
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | QSTA | Target | struct |
--* | [CTDA](Fields/CTDA.md) | Condition | struct |
+-* | [CTDA](Subrecords/CTDA.md) | Condition | struct |
 
 ##### QSTA
 

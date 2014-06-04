@@ -8,7 +8,7 @@ Idle Marker
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | [OBND](Fields/OBND.md) | Object Bounds | struct |
++ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
 + | IDLF | Flags | uint8 | See below for values.
 + | IDLC | | struct | 
 + | IDLT | Idle Timer Setting | float32 |

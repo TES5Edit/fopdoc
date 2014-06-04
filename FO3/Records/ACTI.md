@@ -8,11 +8,11 @@ Activator
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring | Editor ID
-+ | [OBND](Fields/OBND.md) | Object Bounds | struct |
++ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
 - | FULL | Name | cstring | Activator name
-- | | [Model Data](Fields/Model.md) | collection |
+- | | [Model Data](Subrecords/Model.md) | collection |
 - | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
-- | | [Destruction Data](Fields/Destruction.md) | collection |
+- | | [Destruction Data](Subrecords/Destruction.md) | collection |
 - | SNAM | Sound - Looping | formid | FormID of a [SOUN](SOUN.md) record.
 - | VNAM | Sound - Activation | formid | FormID of a [SOUN](SOUN.md) record.
 - | RNAM | Radio Station | formid | FormID of a [TACT](TACT.md) record.

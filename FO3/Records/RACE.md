@@ -10,7 +10,7 @@ Count | Subrecord | Name | Type | Info
 + | EDID | Editor ID | cstring |
  | FULL | Name | cstring |
 + | DESC | Description | cstring |
--* | [XNAM](Fields/XNAM (FACT, RACE).md) | Relation | struct |
+-* | [XNAM](Subrecords/XNAM (FACT, RACE).md) | Relation | struct |
 + | DATA | | struct |
  | ONAM | Older | formid | FormID of a [RACE](RACE.md) record.
  | YNAM | Younger | formid | FormID of a [RACE](RACE.md) record.
@@ -105,7 +105,7 @@ Value | Meaning
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | INDX | Index | uint32 | See below for values.
-+ | | [Model Data](Fields/Model.md) | collection |
++ | | [Model Data](Subrecords/Model.md) | collection |
  | ICON | Large icon filename | cstring |
  | MICO | Small icon filename | cstring |
 
@@ -129,7 +129,7 @@ Count | Subrecord | Name | Type | Info
  | INDX | Index | uint32 | See below for values.
  | ICON | Large icon filename | cstring |
  | MICO | Small icon filename | cstring |
-+ | | [Model Data](Fields/Model.md) | collection |
++ | | [Model Data](Subrecords/Model.md) | collection |
 
 #### Body Part Index Values
 

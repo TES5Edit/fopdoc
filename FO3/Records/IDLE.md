@@ -8,8 +8,8 @@ Idle Animation
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | EDID | Editor ID | cstring |
-+ | | [Model Data](Fields/Model.md) | collection |
--* | [CTDA](Fields/CTDA.md) | Condition | struct |
++ | | [Model Data](Subrecords/Model.md) | collection |
+-* | [CTDA](Subrecords/CTDA.md) | Condition | struct |
 +* | ANAM | Related Idle Animation | formid | FormID of an [IDLE](IDLE.md) record, or null. The first ANAM subrecord is for the parent, the second for the previous sibling.
 + | DATA | | struct |
 

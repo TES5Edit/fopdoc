@@ -8,8 +8,8 @@ Light
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring | Editor ID
-+ | [OBND](Fields/OBND.md) | Object Bounds | struct |
- | | [Model Data](Fields/Model.md) | collection |
++ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
+ | | [Model Data](Subrecords/Model.md) | collection |
  | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
  | FULL | Name | cstring |
  | ICON | Large Icon Filename | cstring | 

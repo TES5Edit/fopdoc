@@ -8,9 +8,9 @@ Impact
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
- | | [Model Data](Fields/Model.md) | collection |
+ | | [Model Data](Subrecords/Model.md) | collection |
 + | DATA | | struct |
- | [DODT](Fields/DODT.md) | Decal Data | struct |
+ | [DODT](Subrecords/DODT.md) | Decal Data | struct |
  | DNAM | Texture Set | formid | FormID of a [TXST](TXST.md) record.
  | SNAM | Sound 1 | formid | FormID of a [SOUN](SOUN.md) record.
  | NAM1 | Sound 2 | formid | FormID of a [SOUN](SOUN.md) record.

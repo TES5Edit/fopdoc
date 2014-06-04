@@ -11,7 +11,7 @@ Count | Subrecord | Name | Type | Info
 -* | WLST | Weather Type | struct | 
  | FNAM | Sun Texture | cstring |
  | GNAM | Sun Glare Texture | cstring |
-- | | [Model Data](Fields/Model.md) | collection |
+- | | [Model Data](Subrecords/Model.md) | collection |
 + | TNAM | Timing | struct |
 
 

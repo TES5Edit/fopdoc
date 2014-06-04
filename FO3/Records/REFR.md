@@ -28,7 +28,7 @@ Count | Subrecord | Name | Type | Info
 + | XPRD | Idle Time | float32 | Patrol data
 + | XPPA | Patrol Script Marker | null | Patrol data
 + | INAM | Idle | formid | Patrol data. FormID of an [IDLE](IDLE.md) record, or null.
-+ | | [Embedded Script](Fields/Script.md) | collection | Patrol data.
++ | | [Embedded Script](Subrecords/Script.md) | collection | Patrol data.
 + | TNAM | Topic | formid | Patrol data. FormID of a [DIAL](DIAL.md) record, or null.
  | XRDO | Radio Data | struct |
  | XOWN | Owner | formid | Ownership data. FormID of a [FACT](FACT.md), [ACHR](ACHR.md) or [NPC_](NPC_.md) record.
@@ -41,14 +41,14 @@ Count | Subrecord | Name | Type | Info
  | XCHG | Charge | float32 |
 + | XAMT | Ammo Type | formid | FormID of an [AMMO](AMMO.md) record, or null.
 + | XAMC | Ammo Count | int32 |
--* | [XPWR](Fields/XPWR.md) | Water Reflection / Refraction | struct |
+-* | [XPWR](Subrecords/XPWR.md) | Water Reflection / Refraction | struct |
 -* | XLTW | Lit Water | formid | FormID of a [REFR](REFR.md) record.
--* | [XDCR](Fields/XDCR.md) | Decal | struct | Linked decals
+-* | [XDCR](Subrecords/XDCR.md) | Decal | struct | Linked decals
  | XLKR | Linked Reference | formid | FormID of a [REFR](REFR.md), [ACRE](ACRE.md), [ACHR](ACHR.md), [PGRE](PGRE.md) or [PMIS](PMIS.md) record.
- | [XCLP](Fields/XCLP.md) | Linked Reference Color | struct |
- | [XAPD](Fields/XAPD.md) | Flags | uint8 | Activate parents.
--*| [XAPR](Fields/XAPR.md) | Activate Parent Ref | struct | Activate parents
- | [XESP](Fields/XESP.md) | Enable Parent | struct |
+ | [XCLP](Subrecords/XCLP.md) | Linked Reference Color | struct |
+ | [XAPD](Subrecords/XAPD.md) | Flags | uint8 | Activate parents.
+-*| [XAPR](Subrecords/XAPR.md) | Activate Parent Ref | struct | Activate parents
+ | [XESP](Subrecords/XESP.md) | Enable Parent | struct |
  | XEMI | Emittance | formid | FormID of a [LIGH](LIGH.md) or [REGN](REGN.md) record.
  | XMBR | MultiBound Reference | formid | FormID of a [REFR](REFR.md) record.
  | XACT | Action Flag | uint32 | See below for values.
@@ -64,7 +64,7 @@ Count | Subrecord | Name | Type | Info
 -* | XORD | Linked Occlusion Plane | formid | FormID of a [REFR](REFR.md) record, or null. Each XORD subrecord corresponds to a different plane - the mapping is given below.
 -* | XLOD | Distant LOD Data | byte[4] |
  | XSCL | Scale | float32 |
- | [DATA](Fields/DATA (ACHR, ACRE).md) | Position / Rotation | struct |
+ | [DATA](Subrecords/DATA (ACHR, ACRE).md) | Position / Rotation | struct |
 
 
 

@@ -8,9 +8,9 @@ Explosion
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | [OBND](Fields/OBND.md) | Object Bounds | struct |
++ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
  | FULL | Name | cstring |
- | | [Model Data](Fields/Model.md) | collection |
+ | | [Model Data](Subrecords/Model.md) | collection |
  | EITM | Object Effect | formid | FormID of an [ENCH](ENCH.md) or [SPEL](SPEL.md) record.
  | MNAM | Image Space Modifier | formid | FormID of an [IMAD](IMAD.md) record.
 + | DATA | Data | struct |

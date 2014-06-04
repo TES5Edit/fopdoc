@@ -8,7 +8,7 @@ Body Part Data
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring | Editor ID
-+ | | [Model Data](Fields/Model.md) | collection |
++ | | [Model Data](Subrecords/Model.md) | collection |
 +* | | Body Part | collection | See below for details.
  | RAGA | Ragdoll | formid | FormID of a [RGDL](RGDL.md) record.
 

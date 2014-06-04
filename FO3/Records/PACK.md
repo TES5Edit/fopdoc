@@ -12,7 +12,7 @@ Count | Subrecord | Name | Type | Info
 -* | | Location | collection | See below for details.
 + | PSDT | Schedule | struct |
  | PTDT | Target 1 | struct |
--* | [CTDA](Fields/CTDA.md) | Condition | struct |
+-* | [CTDA](Subrecords/CTDA.md) | Condition | struct |
 + | IDLF | Idle Animation Flags | uint8 | See below for values.
 + | IDLC | Idle Animation Count | struct |
 + | IDLT | Idle Timer Setting | float32 |
@@ -31,15 +31,15 @@ Count | Subrecord | Name | Type | Info
  | PLD2 | Location 2 (repeated??) | struct |
 + | POBA | OnBegin Marker | null |
 + | INAM | OnBegin Idle | formid | FormID of an [IDLE](IDLE.md) record, or null.
-+ | | [OnBegin Embedded Script](Fields/Script.md) | collection | 
++ | | [OnBegin Embedded Script](Subrecords/Script.md) | collection | 
 + | TNAM | OnBegin Topic | formid | FormID of a [DIAL](DIAL.md) record, or null.
 + | POBA | OnEnd Marker | null |
 + | INAM | OnEnd Idle | formid | FormID of an [IDLE](IDLE.md) record, or null.
-+ | | [OnEnd Embedded Script](Fields/Script.md) | collection | 
++ | | [OnEnd Embedded Script](Subrecords/Script.md) | collection | 
 + | TNAM | OnEnd Topic | formid | FormID of a [DIAL](DIAL.md) record, or null.
 + | POBA | OnChange Marker | null |
 + | INAM | OnChange Idle | formid | FormID of an [IDLE](IDLE.md) record, or null.
-+ | | [OnChange Embedded Script](Fields/Script.md) | collection | 
++ | | [OnChange Embedded Script](Subrecords/Script.md) | collection | 
 + | TNAM | OnChange Topic | formid | FormID of a [DIAL](DIAL.md) record, or null.
  
 

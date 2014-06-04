@@ -8,19 +8,19 @@ Ingestible
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring | Editor ID
-+ | [OBND](Fields/OBND.md) | Object Bounds | struct |
++ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
 + | FULL | Name | cstring |
- | | [Model Data](Fields/Model.md) | collection |
+ | | [Model Data](Subrecords/Model.md) | collection |
  | ICON | Large Icon Filename | cstring | 
  | MICO | Small Icon FIlename | cstring |
  | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
- | | [Destruction Data](Fields/Destruction.md) | collection |
+ | | [Destruction Data](Subrecords/Destruction.md) | collection |
  | YNAM | Sound - Pick Up | formid | FormID of a [SOUN](SOUN.md) record.
  | ZNAM | Sound - Drop | formid | FormID of a [SOUN](SOUN.md) record.
-+ | [ETYP](Fields/ETYP.md) | Equipment Type | int32 |
++ | [ETYP](Subrecords/ETYP.md) | Equipment Type | int32 |
 + | DATA | Weight | float32 |
 + | [ENIT](#enit) | Effect Data | struct |
-+* | | [Effect](Fields/Effect.md) | collection |
++* | | [Effect](Subrecords/Effect.md) | collection |
 
 ### ENIT
 

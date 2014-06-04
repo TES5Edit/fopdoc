@@ -9,7 +9,7 @@ Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
 + | FULL | Name | cstring |
-+ | | [Model Data](Fields/Model.md) | collection |
++ | | [Model Data](Subrecords/Model.md) | collection |
 + | ICON | Texture | cstring |
 + | DATA | Flags | uint8 | See below for values.
 

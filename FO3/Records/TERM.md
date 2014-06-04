@@ -8,11 +8,11 @@ Terminal
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | [OBND](Fields/OBND.md) | Object Bounds | struct |
++ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
  | FULL | Name | cstring |
- | | [Model Data](Fields/Model.md) | collection |
+ | | [Model Data](Subrecords/Model.md) | collection |
  | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
- | | [Destruction Data](Fields/Destruction.md) | collection |
+ | | [Destruction Data](Subrecords/Destruction.md) | collection |
 + | DESC | Description | cstring |
  | SNAM | Sound - Looping | formid | FormID of a [SOUN](SOUN.md) record.
  | PNAM | Password Note | formid | FormID of a [NOTE](NOTE.md) record.
@@ -72,8 +72,8 @@ Count | Subrecord | Name | Type | Info
 + | ANAM | Flags | uint8 | See below for values.
  | INAM | Display Note | formid | FormID of a [NOTE](NOTE.md) record.
  | INAM | Sub Menu | formid | FormID of a [TERM](TERM.md) record.
-+ | | [Embedded Script](Fields/Script.md) | collection |
--* | [CTDA](Fields/CTDA.md) | Condition | struct |
++ | | [Embedded Script](Subrecords/Script.md) | collection |
+-* | [CTDA](Subrecords/CTDA.md) | Condition | struct |
 
 #### AMAN Flag Values
 

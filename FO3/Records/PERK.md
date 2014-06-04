@@ -12,7 +12,7 @@ Count | Subrecord | Name | Type | Info
 + | DESC | Description | cstring |
  | ICON | Large icon filename | cstring | 
  | MICO | Small icon filename | cstring | 
--* | [CTDA](Fields/CTDA.md) | Condition | struct |
+-* | [CTDA](Subrecords/CTDA.md) | Condition | struct |
 + | DATA | Data | struct |
 -* | | Effect | collection | See below for details.
 
@@ -44,7 +44,7 @@ Count | Subrecord | Name | Type | Info
  | EPFD | Entry Point Function Data | uint8[] *or* float32 *or* formid *or* null |
  | EPF2 | Button Label | cstring |
  | EPF3 | Script Flags | uint16 | See below for values.
- | | [Embedded Script](Fields/Script.md) | collection |
+ | | [Embedded Script](Subrecords/Script.md) | collection |
 + | PRKF | End Marker | null | Flag
 
  
@@ -137,7 +137,7 @@ Value | Meaning
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | PRKC | Run On | int8 | 
-+* | [CTDA](Fields/CTDA.md) | Condition | struct |
++* | [CTDA](Subrecords/CTDA.md) | Condition | struct |
 
 #### EPFD
 

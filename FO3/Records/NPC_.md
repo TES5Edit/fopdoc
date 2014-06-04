@@ -8,21 +8,21 @@ Non-Player Character
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | [OBND](Fields/OBND.md) | Object Bounds | struct |
++ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
  | FULL | Name | cstring |
- | | [Model Data](Fields/Model.md) | collection |
-+ | [ACBS](Fields/ACBS.md) | Configuration | struct |
--* | [SNAM](Fields/SNAM (CREA, NPC_).md) | Faction | struct |
+ | | [Model Data](Subrecords/Model.md) | collection |
++ | [ACBS](Subrecords/ACBS.md) | Configuration | struct |
+-* | [SNAM](Subrecords/SNAM (CREA, NPC_).md) | Faction | struct |
  | INAM | Death Item | formid | FormID of a [LVLI](LVLI.md) record.
 + | VTCK | Voice | formid | FormID of a [VTYP](VTYP.md) record.
  | TPLT | Template | formid | FormID of a [NPC_](NPC_.md) or [LVLN](LVLN.md) record.
 + | RNAM | Race | formid | FormID of a [RACE](RACE.md) record.
  | EITM | Unarmed Attack Effect | formid | FormID of an [ENCH](ENCH.md) or [SPEL](SPEL.md) record.
 + | [EAMT](Values/Attack Animations.md) | Unarmed Attack Animation | uint16 |
- | | [Destruction Data](Fields/Destruction.md) | collection |
+ | | [Destruction Data](Subrecords/Destruction.md) | collection |
  | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
--* | | [Item](Fields/Item.md) | collection |
- | [AIDT](Fields/AIDT.md) | AI Data | struct |
+-* | | [Item](Subrecords/Item.md) | collection |
+ | [AIDT](Subrecords/AIDT.md) | AI Data | struct |
 -* | PKID | Package | formid | FormID of a [PACK](PACK.md) record.
 + | CNAM | Class | formid | FormID of a [CLAS](CLAS.md) record.
 + | DATA | | struct |

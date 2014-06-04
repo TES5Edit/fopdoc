@@ -8,7 +8,7 @@ Camera Shot
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
- | | [Model Data](Fields/Model.md) | collection |
+ | | [Model Data](Subrecords/Model.md) | collection |
 + | DATA | Data | struct |
  | MNAM | Image Space Modifier | formid | FormID of an [IMAD](IMAD.md) record.
 

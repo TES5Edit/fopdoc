@@ -18,7 +18,7 @@ Count | Subrecord | Name | Type | Info
 + | CNAM | Cloud Textures - Layer 1 | cstring |
 + | ANAM | Cloud Textures - Layer 2 | cstring |
 + | BNAM | Cloud Textures - Layer 3 | cstring |
- | | [Model Data](Fields/Model.md) | collection |
+ | | [Model Data](Subrecords/Model.md) | collection |
 + | LNAM | Unknown | byte[4] |
 +* | ONAM | Cloud Layer Speed | uint8 | Value is divided by 2550. There are 4 ONAMs, each for a different cloud layer.
 -* | PNAM | Cloud Layer Color | struct | There are 4 PNAMs, each for a different cloud layer.
