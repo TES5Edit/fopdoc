@@ -28,6 +28,7 @@ Count | Subrecord | Name | Type | Info
  | [XCLP](Subrecords/XCLP.md) | Linked Reference Color | struct |
  | [XAPD](Subrecords/XAPD.md) | Flags | uint8 | Activate parents.
 -*| [XAPR](Subrecords/XAPR.md) | Activate Parent Ref | struct | Activate parents
+ | XATO | Activation Prompt | cstring |
  | [XESP](Subrecords/XESP.md) | Enable Parent | struct |
  | XEMI | Emittance | formid | FormID of a [LIGH](LIGH.md) or [REGN](REGN.md) record.
  | XMBR | MultiBound Reference | formid | FormID of a [REFR](REFR.md) record.
