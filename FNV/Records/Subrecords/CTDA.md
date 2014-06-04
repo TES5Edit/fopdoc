@@ -87,6 +87,7 @@ Index | Function
  81 | GetArmorRating
  84 | GetDeadCount
  91 | GetIsAlerted
+ 98 | GetPlayerControlsDisabled
  99 | GetHeadingAngle
 101 | IsWeaponOut
 102 | IsTorchOut
@@ -221,6 +222,8 @@ Index | Function
 415 | Exists
 416 | GetGroupMemberCount
 417 | GetGroupTargetCount
+420 | GetObjectiveCompleted
+421 | GetObjectiveDisplayed
 427 | GetIsVoiceType
 428 | GetPlantedExplosive
 430 | IsActorTalkingThroughActivator
@@ -237,6 +240,7 @@ Index | Function
 455 | GetPlayerTeammateCount
 459 | GetActorCrimePlayerEnemy
 460 | GetActorFactionPlayerEnemy
+462 | IsPlayerTagSkill
 464 | IsPlayerGrabbedRef
 471 | GetDestructionStage
 474 | GetIsAlignment
@@ -268,6 +272,16 @@ Index | Function
 555 | GetSpellUsageNum
 557 | GetActorsInHigh
 558 | HasLoaded3D
+573 | GetReputation
+574 | GetReputationPct
+575 | GetReputationThreshold
+586 | IsHardcore
+601 | GetForceHitReaction
+607 | ChallengeLocked
+610 | GetCasinoWinningStage
+612 | PlayerInRegion
+614 | GetChallengeCompleted
+619 | IsAlwaysHardcore
 
 ### Parameters
 
@@ -290,7 +304,7 @@ Both | Equipment Type | uint32 | Enum - see [ETYP](ETYP.md) for values.
 Both | Form Type | uint32 | Enum - see values below.
 Both | Critical Stage | uint32 | Enum - see values below.
 Both | Object Reference | formid | FormID of a [PLYR](../PLYR.md), [REFR](../REFR.md), [ACHR](../ACHR.md), [ACRE](../ACRE.md), [PGRE](../PGRE.md), [PMIS](../PMIS.md) or [TRGT](../TRGT.md) record.
-Both | Inventory Object | formid | FormID of a [ARMO](../ARMO.md), [BOOK](../BOOK.md), [MISC](../MISC.md), [WEAP](../WEAP.md), [AMMO](../AMMO.md), [KEYM](../KEYM.md), [ALCH](../ALCH.md), [NOTE](../NOTE.md) or [FLST](../FLST.md) record.
+Both | Inventory Object | formid | FormID of a [ARMO](../ARMO.md), [BOOK](../BOOK.md), [MISC](../MISC.md), [WEAP](../WEAP.md), [AMMO](../AMMO.md), [KEYM](../KEYM.md), [ALCH](../ALCH.md), [NOTE](../NOTE.md), [FLST](../FLST.md), [CHIP](../CHIP.md), [CMNY](../CMNY.md) or [IMOD](../IMOD.md) record.
 Both | Actor | formid | FormID of a [PLYR](../PLYR.md), [ACHR](../ACHR.md), [ACRE](../ACRE.md) or [TRGT](../TRGT.md) record.
 Both | Voice Type | formid | FormID of a [VTYP](../VTYP.md) record.
 Both | Idle | formid | FormID of a [IDLE](../IDLE.md) record.
@@ -319,7 +333,12 @@ Both | Creature Type | uint32 | Enum - see values below.
 Both | Menu Mode | uint32 | Enum - see values below.
 Both | Player Action | uint32 | Enum - see values below.
 Both | Body Location | int32 | Enum - see values below.
-Both | Referenceable Object | formid | FormID of a [CREA](../CREA.md), [NPC_](../NPC_.md), [PROJ](../PROJ.md), [TREE](../TREE.md), [SOUN](../SOUN.md), [ACTI](../ACTI.md), [DOOR](../DOOR.md), [STAT](../STAT.md), [FURN](../FURN.md), [CONT](../CONT.md), [ARMO](../ARMO.md), [AMMO](../AMMO.md), [MISC](../MISC.md), [WEAP](../WEAP.md), [BOOK](../BOOK.md), [KEYM](../KEYM.md), [ALCH](../ALCH.md), [LIGH](../LIGH.md), [GRAS](../GRAS.md), [ASPC](../ASPC.md), [IDLM](../IDLM.md), [ARMA](../ARMA.md), [MSTT](../MSTT.md), [NOTE](../NOTE.md), [PWAT](../PWAT.md), [SCOL](../SCOL.md), [TACT](../TACT.md), [TERM](../TERM.md) or [FLST](../FLST.md) record.
+Both | Referenceable Object | formid | FormID of a [CREA](../CREA.md), [NPC_](../NPC_.md), [PROJ](../PROJ.md), [TREE](../TREE.md), [SOUN](../SOUN.md), [ACTI](../ACTI.md), [DOOR](../DOOR.md), [STAT](../STAT.md), [FURN](../FURN.md), [CONT](../CONT.md), [ARMO](../ARMO.md), [AMMO](../AMMO.md), [MISC](../MISC.md), [WEAP](../WEAP.md), [BOOK](../BOOK.md), [KEYM](../KEYM.md), [ALCH](../ALCH.md), [LIGH](../LIGH.md), [GRAS](../GRAS.md), [ASPC](../ASPC.md), [IDLM](../IDLM.md), [ARMA](../ARMA.md), [MSTT](../MSTT.md), [NOTE](../NOTE.md), [PWAT](../PWAT.md), [SCOL](../SCOL.md), [TACT](../TACT.md), [TERM](../TERM.md), [FLST](../FLST.md), [CHIP](../CHIP.md), [CMNY](../CMNY.md), [CCRD](../CCRD.md) or [IMOD](../IMOD.md) record.
+2 | Quest Objective | int32 |
+Both | Reputation | formid | FormID of a [REPU](../REPU.md) record.
+Both | Region | formid | FormID of a [REGN](../REGN.md) record.
+Both | Challenge | formid | FormID of a [CHAL](../CHAL.md) record.
+Both | Casino | formid | FormID of a [CSNO](../CSNO.md) record.
 
 #### Parameter Values
 
@@ -487,6 +506,24 @@ Value | Meaning
 0x64 | Default Object Manager
 0x65 | Lighting Template
 0x66 | Music Type
+0x67 | Item Mod
+0x68 | Reputation
+0x69 | PCBE ?
+0x6A | Recipe
+0x6B | Recipe Category
+0x6C | Casino Chip
+0x6D | Casino
+0x6E | Load Screen Type
+0x6F | Media Set
+0x70 | Media Location Controller
+0x71 | Challenge
+0x72 | Ammo Effect
+0x73 | Caravan Card
+0x74 | Caravan Money
+0x75 | Caravan Deck
+0x76 | Dehydration Stages
+0x77 | Hunger Stages
+0x78 | Sleep Deprivation Stages
 
 ##### Critical Stage Values
 
@@ -541,6 +578,10 @@ Value | Meaning
 13 | Toggle Weapon Drawn
 14 | Heal
 15 | Player Death
+16 | Special Weapon Attack
+17 | Special Unarmed Attack
+18 | Kill Camera Shot
+19 | Throw Weapon
 
 ##### Creature Type Values
 
