@@ -235,3 +235,25 @@ Effect | formid | FormID of a [SPEL](SPEL.md) record, or null.
 Value | Meaning
 ------|--------
 0x01 | On Death
+
+### Mod Effect Values
+
+Value | Meaning
+------|--------
+0 | None
+1 | Increase Weapon Damage
+2 | Imcrease Clip Capacity
+3 | Decrease Spread
+4 | Decrease Weight
+5 | Regenerate Ammo (Shots)
+6 | Regenerate Ammo (Seconds)
+7 | Decrease Equip Time
+8 | Increase Rate of Fire
+9 | Increase Projectile Speed
+10 | Increase Max. Condition
+11 | Silence
+12 | Split Beam
+13 | VATS Bonus
+14 | Increase Zoom
+15 | Decrease Equip Time
+16 | Suppressor
