@@ -9,7 +9,7 @@ Name | Type | Info
 -----|------|-----
 Biped Flags | uint32 |
 General Flags | uint8 |
-Unused | byte
+Unused | byte[3] |
 
 #### Biped Flag Values
 
