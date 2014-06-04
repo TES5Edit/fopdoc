@@ -10,7 +10,7 @@ Count | Subrecord | Name | Type | Info
  | EDID | Editor ID | cstring |
  | RCLR | Linked Reference Color | struct |
  | RCLR | ?? | ?? |
-+ | NAME | Base | formid | FormID of a [TREE](TREE.md), [SOUN](SOUN.md), [ACTI](ACTI.md), [DOOR](DOOR.md), [STAT](STAT.md), [FURN](FURN.md), [CONT](CONT.md), [ARMO](ARMO.md), [AMMO](AMMO.md), [LVLN](LVLN.md), [LVLC](LVLC.md), [MISC](MISC.md), [WEAP](WEAP.md), [BOOK](BOOK.md), [KEYM](KEYM.md), [ALCH](ALCH.md), [LIGH](LIGH.md), [GRAS](GRAS.md), [ASPC](ASPC.md), [IDLM](IDLM.md), [ARMA](ARMA.md), [MSTT](MSTT.md), [NOTE](NOTE.md), [PWAT](PWAT.md), [SCOL](SCOL.md), [TACT](TACT.md), [TERM](TERM.md) or [TXST](TXST.md) record.
++ | NAME | Base | formid | FormID of a [TREE](TREE.md), [SOUN](SOUN.md), [ACTI](ACTI.md), [DOOR](DOOR.md), [STAT](STAT.md), [FURN](FURN.md), [CONT](CONT.md), [ARMO](ARMO.md), [AMMO](AMMO.md), [LVLN](LVLN.md), [LVLC](LVLC.md), [MISC](MISC.md), [WEAP](WEAP.md), [BOOK](BOOK.md), [KEYM](KEYM.md), [ALCH](ALCH.md), [LIGH](LIGH.md), [GRAS](GRAS.md), [ASPC](ASPC.md), [IDLM](IDLM.md), [ARMA](ARMA.md), [MSTT](MSTT.md), [NOTE](NOTE.md), [PWAT](PWAT.md), [SCOL](SCOL.md), [TACT](TACT.md), [TERM](TERM.md), [TXST](TXST.md), [CCRD](CCRD.md), [IMOD](IMOD.md) or [CMNY](CMNY.md) record.
  | XEZN | Encounter Zone | formid | FormID of a [ECZN](ECZN.md) record.
  | XRGD | Ragdoll Data | ?? |
  | XRGB | Ragdoll Biped Data | ?? |
@@ -23,6 +23,15 @@ Count | Subrecord | Name | Type | Info
  | FNAM | Map Marker Flags | uint8 | See below for values.
 + | FULL | Map Marker Name | cstring |
 + | TNAM | Map Marker Data | struct |
+ | WMI1 | Map Marker Reputation | formid | FormID of a [REPU](REPU.md) record.
+ | MMRK | Audio Marker | null |
+ | FULL | ?? | ?? |
+ | CNAM | Audio Location | formid | FormID of an [ALOC](ALOC.md) record.
+ | BNAM | ?? | ?? |
+ | MNAM | ?? | float32 |
+ | NNAM | ?? | float32 |
+ | XSRF | ?? | ?? |
+ | XSRD | ?? | ?? |
  | XTRG | Target | formid | FormID of a [REFR](REFR.md), [ACRE](ACRE.md), [ACHR](ACHR.md), [PGRE](PGRE.md) or [PMIS](PMIS.md) record.
  | XLCM | Level Modifier | int32 |
 + | XPRD | Idle Time | float32 | Patrol data
@@ -48,6 +57,7 @@ Count | Subrecord | Name | Type | Info
  | [XCLP](Subrecords/XCLP.md) | Linked Reference Color | struct |
  | [XAPD](Subrecords/XAPD.md) | Flags | uint8 | Activate parents.
 -*| [XAPR](Subrecords/XAPR.md) | Activate Parent Ref | struct | Activate parents
+ | XATO | Activation Prompt | cstring |
  | [XESP](Subrecords/XESP.md) | Enable Parent | struct |
  | XEMI | Emittance | formid | FormID of a [LIGH](LIGH.md) or [REGN](REGN.md) record.
  | XMBR | MultiBound Reference | formid | FormID of a [REFR](REFR.md) record.

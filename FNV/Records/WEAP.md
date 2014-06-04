@@ -27,10 +27,29 @@ Count | Subrecord | Name | Type | Info
  | | [Scope Model Data](Subrecords/Model.md) | collection | #3
  | EFSD | Scope Effect | formid | FormID of an [EFSH](EFSH.md) record.
  | | [Scope Effect Model Data](Subrecords/Model.md) | collection | #4
+ | MWD1 | Model With Mod 1 | cstring |
+ | MWD2 | Model With Mod 2 | cstring |
+ | MWD3 | Model With Mods 1 and 2 | cstring |
+ | MWD4 | Model With Mod 3 | cstring |
+ | MWD5 | Model With Mods 1 and 3 | cstring |
+ | MWD6 | Model With Mods 2 and 3 | cstring |
+ | MWD7 | Model With Mods 1, 2 and 3 | cstring |
+ | VANM | VATS Attack Name | cstring |
  | NNAM | Embedded Weapon Node | cstring |
  | INAM | Impact Dataset | formid | FormID of a [IPDS](IPDS.md) record.
  | WNAM | First Person Model | formid | FormID of a [STAT](STAT.md) record.
+ | WNM1 | 1st Person Model With Mod 1 | formid | FormID of a [STAT](STAT.md) record.
+ | WNM2 | 1st Person Model With Mod 2 | formid | FormID of a [STAT](STAT.md) record.
+ | WNM3 | 1st Person Model With Mods 1 and 2 | formid | FormID of a [STAT](STAT.md) record.
+ | WNM4 | 1st Person Model With Mod 3 | formid | FormID of a [STAT](STAT.md) record.
+ | WNM5 | 1st Person Model With Mods 1 and 3 | formid | FormID of a [STAT](STAT.md) record.
+ | WNM6 | 1st Person Model With Mods 2 and 3 | formid | FormID of a [STAT](STAT.md) record.
+ | WNM7 | 1st Person Model With Mods 1, 2 and 3 | formid | FormID of a [STAT](STAT.md) record.
+ | WMI1 | Weapon Mod 1 | formid | FormID of an [IMOD](IMOD.md) record.
+ | WMI1 | Weapon Mod 2 | formid | FormID of an [IMOD](IMOD.md) record.
+ | WMI1 | Weapon Mod 3 | formid | FormID of an [IMOD](IMOD.md) record.
  | SNAM | Sound - Gun - Shoot 3D | formid | FormID of a [SOUN](SOUN.md) record.
+ | SNAM | Sound - Gun - Shoot Dist | formid | FormID of a [SOUN](SOUN.md) record.
  | XNAM | Sound - Gun - Shoot 2D | formid | FormID of a [SOUN](SOUN.md) record.
  | NAM7 | Sound - Gun - Shoot 3D Looping | formid | FormID of a [SOUN](SOUN.md) record.
  | TNAM | Sound - Melee - Swing / Gun - No Ammo | formid | FormID of a [SOUN](SOUN.md) record.
@@ -38,9 +57,13 @@ Count | Subrecord | Name | Type | Info
  | UNAM | Sound - Idle | formid | FormID of a [SOUN](SOUN.md) record.
  | NAM9 | Sound - Equip | formid | FormID of a [SOUN](SOUN.md) record.
  | NAM8 | Sound - Unequip | formid | FormID of a [SOUN](SOUN.md) record.
+ | WMS1 | Sound - Mod 1 - Shoot 3D | formid | FormID of a [SOUN](SOUN.md) record.
+ | WMS1 | Sound - Mod 1 - Shoot Dist | formid | FormID of a [SOUN](SOUN.md) record.
+ | WMS2 | Sound - Mod 1 - Shoot 2D | formid | FormID of a [SOUN](SOUN.md) record.
 + | DATA | | struct |
 + | DNAM | | struct |
 + | CRDT | Critical Data | struct |
+ | VATS | VATS | struct |
 + | [VNAM](Values/Sound Levels.md) | Sound Level | uint32 |
 
 ### DATA
@@ -68,7 +91,7 @@ Min Spread | float32 |
 Spread | float32 |
 Unknown | byte[4] |
 Sight FOV | float32 |
-Unused | byte[4] |
+?? | float32 |
 Projectile | formid | FormID of a [PROJ](PROJ.md) record, or null.
 Base VATS To-Hit Chance | uint8 |
 Attack Animation | uint8 | Enum - see values below.
@@ -97,6 +120,25 @@ Limb Damage Multiplier | float32 |
 Sight Usage | float32 |
 Semi-Automatic Fire Delay Min | float32 |
 Semi-Automatic Fire Delay Max | float32 |
+?? | float32 |
+Effect - Mod 1 | uint32 | Enum - see values below.
+Effect - Mod 2 | uint32 | Enum - see values below.
+Effect - Mod 3 | uint32 | Enum - see values below.
+Value A - Mod 1 | float32 |
+Value A - Mod 2 | float32 |
+Value A - Mod 3 | float32 |
+Power Attack Animation Override | uint32 | Enum - see values below.
+Strength Requirement | uint32 |
+?? | byte |
+Reload Animation - Mod | uint8 | Enum - see values below.
+?? | byte[2] |
+Regen Rate | float32 |
+Kill Impulse | float32 |
+Value B - Mod 1 | float32 |
+Value B - Mod 2 | float32 |
+Value B - Mod 3 | float32 |
+Impulse Dist | float32 |
+Skill Requirement | uint32 |
 
 #### Flags 1 Values
 
@@ -115,9 +157,12 @@ Value | Meaning
 
 Value | Meaning
 ------|--------
-171 | HandGrip1
-172 | HandGrip2
-173 | HandGrip3
+230 | HandGrip1
+231 | HandGrip2
+232 | HandGrip3
+233 | HandGrip4
+234 | HandGrip5
+235 | HandGrip6
 255 | Default
 
 #### Reload Animation Values
@@ -163,13 +208,17 @@ Value | Meaning
 74 | AttackLoop
 80 | AttackSpin
 86 | AttackSpin2
-97 | PlaceMine
-103 | PlaceMine2
-109 | AttackThrow
-115 | AttackThrow2
-121 | AttackThrow3
-127 | AttackThrow4
-133 | AttackThrow5
+102 | PlaceMine
+108 | PlaceMine2
+114 | AttackThrow
+120 | AttackThrow2
+126 | AttackThrow3
+132 | AttackThrow4
+138 | AttackThrow5
+144 | Attack9
+150 | AttackThrow6
+156 | AttackThrow7
+162 | AttackThrow8
 255 | Default
 
 #### Embedded Weapon Actor Values
@@ -209,6 +258,8 @@ Value | Meaning
 0x00000200 | Short Burst
 0x00000400 | Rumble Alternate
 0x00000800 | Long Burst
+0x00001000 | Scope Has Night Vision
+0x00002000 | Scope From Mod
 
 #### Rumble Pattern Values
 
@@ -219,24 +270,7 @@ Value | Meaning
 2 | Triangle
 3 | Sawtooth
 
-### CRDT
-
-Name | Type | Info
------|------|-----
-Critical Damage | uint16 |
-Unused | byte[2] |
-Critical % Multiplier | float32 |
-Flags | uint8 | See below for values.
-Unused | byte[3] |
-Effect | formid | FormID of a [SPEL](SPEL.md) record, or null.
-
-#### Flag Values
-
-Value | Meaning
-------|--------
-0x01 | On Death
-
-### Mod Effect Values
+#### Mod Effect Values
 
 Value | Meaning
 ------|--------
@@ -257,3 +291,51 @@ Value | Meaning
 14 | Increase Zoom
 15 | Decrease Equip Time
 16 | Suppressor
+
+#### Power Attack Animation Override Values
+
+Value | Meaning
+------|--------
+0 | ??
+97 | AttackCustom1Power
+98 | AttackCustom2Power
+99 | AttackCustom3Power
+100 | AttackCustom4Power
+101 | AttackCustom5Power
+255 | Default
+
+### CRDT
+
+Name | Type | Info
+-----|------|-----
+Critical Damage | uint16 |
+Unused | byte[2] |
+Critical % Multiplier | float32 |
+Flags | uint8 | See below for values.
+Unused | byte[3] |
+Effect | formid | FormID of a [SPEL](SPEL.md) record, or null.
+
+#### Flag Values
+
+Value | Meaning
+------|--------
+0x01 | On Death
+
+### VATS
+
+Name | Type | Info
+-----|------|-----
+Effect | formid | FormID of a [SPEL](SPEL.md), or null.
+Skill | float32 |
+Damage Multiplier | float32 |
+AP | float32 |
+Silent | uint8 | Enum - see values below.
+Mod Required | uint8 | Enum - see values below.
+Unused | byte[2] |
+
+#### Silent / Mod Required Values
+
+Value | Meaning
+------|--------
+0 | No
+1 | Yes
