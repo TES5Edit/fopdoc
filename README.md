@@ -9,9 +9,10 @@ The Oblivion, Skyrim, Fallout 3 and Fallout: New Vegas plugin file formats are a
 
 The conventions used by this documentation are given in [Conventions.md](Conventions.md). Data structure definitions are found in one of the following subfolders:
 
-* [Common](Common) contains record, subrecord and value definitions that are identical for Fallout 3 and Fallout: New Vegas.
 * [Fallout3](Fallout3) contains definitions specific to Fallout 3.
 * [FalloutNV](FalloutNV) contains definitions specific to Fallout: New Vegas.
+
+Each record type is documented in a separate file. Subrecords that share the same structure across multiple record types are documented in separate files, while those unique to a particular record are documented in that record's file.
 
 
 ### Format
