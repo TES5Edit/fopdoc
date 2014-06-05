@@ -12,6 +12,8 @@ Type | Name
 [ACTI](Records/ACTI.md) | Activator
 [ADDN](Records/ADDN.md) | Addon Node
 [ALCH](Records/ALCH.md) | Ingestible
+[ALOC](Records/ALOC.md) | Media Relation Controller
+[AMEF](Records/AMEF.md) | Ammo Effect
 [AMMO](Records/AMMO.md) | Ammunition
 [ANIO](Records/ANIO.md) | Animated Object
 [ARMO](Records/ARMO.md) | Armor
@@ -21,15 +23,22 @@ Type | Name
 [BOOK](Records/BOOK.md) | Book
 [BPTD](Records/BPTD.md) | Body Part Data
 [CAMS](Records/CAMS.md) | Camera Shot
+[CCRD](Records/CCRD.md) | Caravan Card
+[CDCK](Records/CDCK.md) | Caravan Deck
 [CELL](Records/CELL.md) | Cell
+[CHAL](Records/CHAL.md) | Challenge
+[CHIP](Records/CHIP.md) | Casino Chip
 [CLAS](Records/CLAS.md) | Class
 [CLMT](Records/CLMT.md) | Climate
+[CMNY](Records/CMNY.md) | Caravan Money
 [COBJ](Records/COBJ.md) | Constructable Object
 [CONT](Records/CONT.md) | Container
 [CPTH](Records/CPTH.md) | Camera Path
 [CREA](Records/CREA.md) | Creature
+[CSNO](Records/CSNO.md) | Casino
 [CSTY](Records/CSTY.md) | Combat Style
 [DEBR](Records/DEBR.md) | Debris
+[DEHY](Records/DEHY.md) | Dehydration Stage
 [DIAL](Records/DIAL.md) | Dialog Topic
 [DOBJ](Records/DOBJ.md) | Default Object Manager
 [DOOR](Records/DOOR.md) | Door
@@ -46,10 +55,12 @@ Type | Name
 [GRAS](Records/GRAS.md) | Grass
 [HAIR](Records/HAIR.md) | Hair
 [HDPT](Records/HDPT.md) | Head Part
+[HUNG](Records/HUNG.md) | Hunger Stage
 [IDLE](Records/IDLE.md) | Idle Animation
 [IDLM](Records/IDLM.md) | Idle Marker
 [IMGS](Records/IMGS.md) | Image Space
 [IMAD](Records/IMAD.md) | Image Space Modifier
+[IMOD](Records/IMOD.md) | Item Mod
 [INFO](Records/INFO.md) | Dialog Response
 [INGR](Records/INGR.md) | Ingredient
 [IPCT](Records/IPCT.md) | Impact
@@ -59,6 +70,7 @@ Type | Name
 [LGMT](Records/LGMT.md) | Lighting Template
 [LIGH](Records/LIGH.md) | Light
 [LSCR](Records/LSCR.md) | Load Screen
+[LSCT](Records/LSCT.md) | Load Screen Type
 [LTEX](Records/LTEX.md) | Landscape Texture
 [LVLC](Records/LVLC.md) | Leveled Creature
 [LVLI](Records/LVLI.md) | Leveled Item
@@ -67,6 +79,7 @@ Type | Name
 [MGEF](Records/MGEF.md) | Base Effect
 [MICN](Records/MICN.md) | Menu Icon
 [MISC](Records/MISC.md) | Misc. Item
+[MSET](Records/MSET.md) | Media Set
 [MSTT](Records/MSTT.md) | Moveable Static
 [MUSC](Records/MUSC.md) | Music Type
 [NAVI](Records/NAVI.md) | Navigation Mesh Info Map
@@ -82,11 +95,15 @@ Type | Name
 [QUST](Records/QUST.md) | Quest
 [RACE](Records/RACE.md) | Race
 [RADS](Records/RADS.md) | Radiation Stage
+[RCCT](Records/RCCT.md) | Recipe Category
+[RCPE](Records/RCPE.md) | Recipe
 [REFR](Records/REFR.md) | Placed Object
 [REGN](Records/REGN.md) | Region
+[REPU](Records/REPU.md) | Reputation
 [RGDL](Records/RGDL.md) | Ragdoll
 [SCOL](Records/SCOL.md) | Static Collection
 [SCPT](Records/SCPT.md) | Script
+[SLPD](Records/SLPD.md) | Sleep Deprivation Stage
 [SOUN](Records/SOUN.md) | Sound
 [SPEL](Records/SPEL.md) | Actor Effect
 [STAT](Records/STAT.md) | Static

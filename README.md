@@ -1,14 +1,17 @@
 FOPDoc
 ======
 
-Documentation for the Fallout 3 and Fallout: New Vegas plugin file formats. 
+Documentation for the Fallout 3 and Fallout: New Vegas plugin file formats.
 
 The Oblivion, Skyrim, Fallout 3 and Fallout: New Vegas plugin file formats are all very similar, but while there exists good documentation for [Oblivion](http://www.uesp.net/wiki/Tes4Mod:Mod_File_Format) and [Skyrim](http://www.uesp.net/wiki/Tes5Mod:Mod_File_Format), there is no equivalent for Fallout 3 and Fallout: New Vegas. The aim is for this repository to become that equivalent.
 
 ### Contents
 
-* The Fallout 3 plugin file format is documented in the [FO3](FO3) folder. The documentation matches the state of knowledge in TES5Edit as of 2 June 2014.
-* The Fallout: New Vegas plugin file format is documented in the [FNV](FNV) folder. The documentation matches the state of knowledge in TES5Edit as of 2 June 2014.
+The conventions used by this documentation are given in [Conventions.md](Conventions.md). Data structure definitions are found in one of the following subfolders:
+
+* [Common](Common) contains record, subrecord and value definitions that are identical for Fallout 3 and Fallout: New Vegas.
+* [Fallout3](Fallout3) contains definitions specific to Fallout 3.
+* [FalloutNV](FalloutNV) contains definitions specific to Fallout: New Vegas.
 
 
 ### Format
@@ -24,6 +27,8 @@ This documentation is written in [GitHub Flavored Markdown](https://guides.githu
 ### File Format Data Source
 
 The most complete open-source implementation of plugin parsers for these games is [TES5Edit](https://code.google.com/p/skyrim-plugin-decoding-project/), written in Delphi. The information on the file formats contained within its parsing code has been adapted into a reasonably generic format that programmers should be able to interpret regardless of their preferred language, similar to how it is presented by [UESP.net](http://www.uesp.net/wiki/Tes5Mod:Mod_File_Format).
+
+This documentation was written to reflect the TES5Edit source code on 2 June 2014.
 
 
 ### Contributing
