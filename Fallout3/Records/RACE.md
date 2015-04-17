@@ -17,7 +17,7 @@ Count | Subrecord | Name | Type | Info
 + | NAM2 | Unkonwin Marker | null |
 +* | VTCK | Voice | formid | FormID of a [VTYP](VTYP.md) record. The first and second instances of this subrecord are for male and female voices respectively.
 +* | DNAM | Default Hair Style | formid | FormID of a [HAIR](HAIR.md) record. The first and second instances of this subrecord are for male and female hairs respectively.
-+* | DNAM | Default Hair Color | uint8 | Enum - see below for values. The first and second instances of this subrecord are for male and female hairs respectively.
++* | CNAM | Default Hair Color | uint8 | Enum - see below for values. The first and second instances of this subrecord are for male and female hairs respectively.
 + | PNAM | FaceGen - Main Clamp | float32 |
 + | UNAM | FaceGen - Face Clamp | float32 |
 + | ATTR | Unknown | ?? |
