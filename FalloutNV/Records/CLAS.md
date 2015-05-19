@@ -13,7 +13,7 @@ Count | Subrecord | Name | Type | Info
  | ICON | Large icon filename | cstring |
  | MICO | Small icon filename | cstring |
 + | DATA | Data | struct |
-+* | ATTR | Attribute | uint8 | There are 7 attribute subrecords, one for each attribute. The mapping of subrecords to attributes is given below.
++* | ATTR | Attributes | struct | 
 
 ### DATA
 
@@ -36,14 +36,14 @@ Value | Meaning
 0x00000001 | Playable
 0x00000002 | Guard
 
-### ATTR Map
+### ATTR
 
-ATTR Subrecord | Attribute
------------|----------
-1st | Strength
-2nd | Perception
-3rd | Endurance
-4th | Charisma
-5th | Intelligence
-6th | Agility
-7th | Luck
+Name | Type | Info
+-----|------|-----
+Strength | uint8 |
+Perception | uint8 |
+Endurance | uint8 |
+Charisma | uint8 |
+Intelligence | uint8 |
+Agility | uint8 |
+Luck | uint8 |
