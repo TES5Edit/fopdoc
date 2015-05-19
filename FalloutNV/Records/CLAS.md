@@ -13,7 +13,7 @@ Count | Subrecord | Name | Type | Info
  | ICON | Large icon filename | cstring |
  | MICO | Small icon filename | cstring |
 + | DATA | Data | struct |
-+* | ATTR | Attributes | struct | 
++ | ATTR | Attributes | struct | 
 
 ### DATA
 
