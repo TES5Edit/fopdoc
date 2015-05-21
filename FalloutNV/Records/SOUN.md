@@ -12,7 +12,7 @@ Count | Subrecord | Name | Type | Info
  | FNAM | Sound Filename | cstring |
  | RNAM | Random Chance % | uint8 |
 + | SNDD *or* SNDX | Sound Data | struct |
--* | ANAM | Attenuation Point | int16 | There are 5 ANAM subrecords, each for a separate point on an attenuation curve.
+ | ANAM | Attenuation Points | int16[5] | Each int16 represents a separate point on an attenuation curve.
  | GNAM | Reverb Attenuation Control | int16 |
  | HNAM | Priority | int32 |
 
