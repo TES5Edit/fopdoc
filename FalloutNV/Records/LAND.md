@@ -8,15 +8,15 @@ Landscape
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | DATA | Unknown | uint8[] |
--* | VNML | Vertex Normal | struct | There are 33 VNML structs.
+ | VNML | Vertex Normals | struct |
  | VHGT | Vertex Height Map | struct |
--* | VCLR | Vertex Color |
+ | VCLR | Vertex Colors | struct |
 -* | | Layer Subrecord Collection | collection | See below for details.
--* | VTEX | Texture | formid | FormID of an [LTEX](LTEX.md) record, or null.
+ | VTEX | Textures | formid[] | An array of [LTEX](LTEX.md) record FormIDs, or null.
 
 ### VNML / VCLR
 
-Each VNML / VCLR structure contains 33 repeats of the following structure, so that the array of VNML / VCLR structs forms a 33x33 grid where each VNML / VCLR is a row, and each instance of the structure below is a column.
+Each VNML / VCLR structure contains 1089 repeats of the following structure. The 1089 repeats are divided into 33 rows, and subdivided into 33 columns, forming a 33x33 grid.
 
 Name | Type | Info
 -----|------|-----
@@ -65,13 +65,14 @@ Value | Meaning
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | ATXT | Alpha Layer Header | struct |
--* | VTXT | Alpha Layer Cell Data | struct |
+ | VTXT | Alpha Layer Cell Data | struct |
 
 ##### VTXT
+
+The VTXT subrecord consists of an array of objects with the following structure.
 
 Name | Type | Info
 -----|------|-----
 Position | uint16 |
 Unused | byte[2] |
 Opacity | float32 |
-
