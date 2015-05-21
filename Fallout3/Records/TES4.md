@@ -11,7 +11,7 @@ Count | Subrecord | Name | Type | Info
 + | CNAM | author | cstring | Maximum size is 512 bytes, including terminator.
 - | SNAM | description | cstring | Maximum size is 512 bytes, including terminator.
 -* | | Master Data | | Data on the plugin's master files, listed in the order they were present in when the plugin was written.
-- | ONAM | formOverrides | formid[] | Overriden records. Number of records can be obtained by dividing the subrecord size by the size of a FormID.
+- | ONAM | formOverrides | formid[] | Overridden records. An array of [REFR](REFR.md), [ACHR](ACHR.md), [ACRE](ACRE.md), [PMIS](PMIS.md), [PBEA](PBEA.md), [PGRE](PGRE.md), [LAND](LAND.md) and [NAVM](NAVM.md) records.
 - | SCRN | screenshot | ?? | ??
 
 ### HEDR
