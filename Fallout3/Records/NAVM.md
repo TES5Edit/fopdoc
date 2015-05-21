@@ -10,12 +10,12 @@ Count | Subrecord | Name | Type | Info
  | EDID | Editor ID | cstring |
  | NVER | Version | uint32 |
  | DATA | Data | struct |
--* | NVVX | Vertex | struct |
--* | NVTR | Triangle | struct |
--* | NVCA | Unknown | int16 |
--* | NVDP | Door | struct |
+ | NVVX | Vertices | struct |
+ | NVTR | Triangles | struct |
+ | NVCA | Unknown | int16[] | Unknown, may be triangle IDs.
+ | NVDP | Doors | struct |
  | NVGD | Unknown | uint8[] |
--* | NVEX | External Connection | struct |
+ | NVEX | External Connections | struct |
 
 ### DATA
 
@@ -30,6 +30,8 @@ Doors Count | uint32 |
 
 ### NVVX
 
+The NVVX subrecord consists of an array of objects with the following structure.
+
 Name | Type | Info
 -----|------|-----
 X | float32 |
@@ -37,6 +39,8 @@ Y | float32 |
 Z | float32 |
 
 ### NVTR
+
+The NVTR subrecord consists of an array of objects with the following structure.
 
 Count | Name | Type | Info
 ------|------|------|-----
@@ -87,6 +91,8 @@ Value | Meaning
 
 ### NVDP
 
+The NVDP subrecord consists of an array of objects with the following structure.
+
 Name | Type | Info
 -----|------|-----
 Reference | formid | FormID of a [REFR](REFR.md) record.
@@ -94,6 +100,8 @@ Unknown | uint16 |
 Unused | byte[2] |
 
 ### NVEX
+
+The NVEX subrecord consists of an array of objects with the following structure.
 
 Name | Type | Info
 -----|------|-----
