@@ -17,9 +17,11 @@ Count | Subrecord | Name | Type | Info
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | ONAM | Static | formid | FormID of a [STAT](STAT.md) record.
-+* | DATA | Placement | struct |
++ | DATA | Placements | struct |
 
 #### DATA
+
+The DATA subrecord consists of an array of objects with the following structure.
 
 Name | Type | Info
 -----|------|-----
