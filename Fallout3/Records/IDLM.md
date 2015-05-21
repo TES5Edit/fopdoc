@@ -10,9 +10,9 @@ Count | Subrecord | Name | Type | Info
 + | EDID | Editor ID | cstring |
 + | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
 + | IDLF | Flags | uint8 | See below for values.
-+ | IDLC | | struct | 
++ | IDLC | | struct |
 + | IDLT | Idle Timer Setting | float32 |
-+* | IDLA | Animation | formid | FormID of a [IDLE](IDLE.md) record, or null.
+ | [IDLA](Subrecords/IDLA.md) | Animations | struct |
 
 ### IDLF Flag Values
 
@@ -28,4 +28,3 @@ Name | Type | Info
 -----|------|-----
 Animation Count | uint8 |
 Unused | byte[3] |
- 
