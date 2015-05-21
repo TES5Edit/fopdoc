@@ -14,7 +14,7 @@ Count | Subrecord | Name | Type | Info
 -* | SPLO | Actor Effect | formid | FormID of a [SPEL](SPEL.md) record.
  | EITM | Unarmed Attack Effect | formid | FormID of a [ENCH](ENCH.md) or [SPEL](SPEL.md) record.
 + | [EAMT](Values/Attack Animations.md) | Unarmed Attack Animation | uint16 |
--* | NIFZ | Model | cstring |
+- | NIFZ | Model List | cstring[] | An array of models.
  | NIFT | Texture File Hashes | uint8[] |
 + | [ACBS](Subrecords/ACBS.md) | Configuration | struct |
 -* | [SNAM](Subrecords/SNAM (CREA, NPC_).md) | Faction | struct |
@@ -26,7 +26,7 @@ Count | Subrecord | Name | Type | Info
 -* | | [Item](Subrecords/Item.md) | collection |
  | [AIDT](Subrecords/AIDT.md) | AI Data | struct |
 -* | PKID | Package | formid | FormID of a [PACK](PACK.md) record.
--* | KFFZ | Animation | cstring |
+- | KFFZ | Animations | cstring[] | An array of animations.
 + | DATA | Data | struct |
 + | RNAM | Attack Reach | uint8 |
  | ZNAM | Combat Style | formid | FormID of a [CSTY](CSTY.md) record.
@@ -99,4 +99,3 @@ Value | Meaning
 9 | Weapon
 10 | Movement
 11 | Conscious
-
