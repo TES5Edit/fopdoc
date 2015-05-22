@@ -18,7 +18,7 @@ Reference | formid | A FormID of a [PLYR](../PLYR.md), [ACHR](../ACHR.md), [ACRE
 
 Value | Meaning
 ------|--------
-0x0001 | Combine conditions using OR (default is to use AND)
+0x0001 | Combine next condition using OR (default is to use AND)
 0x0002 | Run On Target
 0x0004 | Use Global
 0x0000 | Equal To
@@ -28,7 +28,7 @@ Value | Meaning
 0x8000 | Less Than
 0xA000 | Less Than or Equal To
 
-### Function Indicies
+### Function Indices
 
 Index | Function
 ------|---------
