@@ -13,7 +13,7 @@ Count | Subrecord | Name | Type | Info
 + | XNAM | Actor Base | formid | FormID of a CREA ([FO3](../../Fallout3/Records/CREA.md), [FNV](../../FalloutNV/Records/CREA.md)) or NPC_ ([FO3](../../Fallout3/Records/NPC_.md), [FNV](../../FalloutNV/Records/NPC_.md)) record.
 + | TNAM | Body Part Data | formid | FormID of a [BPTD](BPTD.md) BPTD ([FO3](../../Fallout3/Records/BPTD.md), [FNV](../../FalloutNV/Records/BPTD.md)) record.
  | RAFD | Feedback Data | struct |
--* | RAFB | Feedback Dynamic Bone | uint16 |
+ | RAFB | Feedback Dynamic Bones | uint16[] |
 + | RAPS | Pose Matching Data | struct |
  | ANAM | Death Pose | cstring |
 

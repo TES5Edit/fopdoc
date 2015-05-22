@@ -65,14 +65,14 @@ Count | Subrecord | Name | Type | Info
  | ONAM | Open By Default | null |
  | XIBS | Ignored By Sandbox | null |
  | XNDP | Navigation Door Link | struct |
--* | XPOD | Portal Room | formid | FormID of a [REFR](REFR.md) record, or null.
+ | XPOD | Portal Rooms | formid[] | Array of [REFR](REFR.md) record FormIDs, or null.
  | XPLT | Portal Data | struct |
  | XSED | SpeedTree Seed | uint8 |
  | XRMR | Room Data Header | struct |
  | XLRM | Linked Room | formid | FormID of a [REFR](REFR.md) record.
  | XOCP | Occlusion Plane Data | struct |
--* | XORD | Linked Occlusion Plane | formid | FormID of a [REFR](REFR.md) record, or null. Each XORD subrecord corresponds to a different plane - the mapping is given below.
--* | XLOD | Distant LOD Data | byte[4] |
+ | XORD | Linked Occlusion Planes | struct |
+ | XLOD | Distant LOD Data | byte[12] | Unknown
  | XSCL | Scale | float32 |
  | [DATA](Subrecords/DATA (ACHR, ACRE).md) | Position / Rotation | struct |
 
@@ -283,11 +283,11 @@ Name | Type | Info
 Linked Rooms Count | uint16 |
 Unknown | byte[2] |
 
-### XORD Mapping
+### XORD
 
-Index | Occlusion Plane
-------|----------------
-0 | Right
-1 | Left
-2 | Bottom
-3 | Top
+Name | Type | Info
+-----|------|-----
+Right | formid | FormID of a [REFR](REFR.md) record, or null.
+Left | formid | FormID of a [REFR](REFR.md) record, or null.
+Bottom | formid | FormID of a [REFR](REFR.md) record, or null.
+Top | formid | FormID of a [REFR](REFR.md) record, or null.

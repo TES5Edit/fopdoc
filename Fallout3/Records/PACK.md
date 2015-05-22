@@ -16,7 +16,7 @@ Count | Subrecord | Name | Type | Info
 + | IDLF | Idle Animation Flags | uint8 | See below for values.
 + | IDLC | Idle Animation Count | struct |
 + | IDLT | Idle Timer Setting | float32 |
-+* | IDLA | Idle Animations | formid | FormID of an [IDLE](IDLE.md) record.
+ | [IDLA](Subrecords/IDLA.md) | Animations | struct |
  | IDLB | Unused | byte[4] |
  | CNAM | Combat Style | formid | FormID of a [CSTY](CSTY.md) record.
  | PKED | Eat Marker | null |
@@ -31,17 +31,17 @@ Count | Subrecord | Name | Type | Info
  | PLD2 | Location 2 (repeated??) | struct |
 + | POBA | OnBegin Marker | null |
 + | INAM | OnBegin Idle | formid | FormID of an [IDLE](IDLE.md) record, or null.
-+ | | [OnBegin Embedded Script](Subrecords/Script.md) | collection | 
++ | | [OnBegin Embedded Script](Subrecords/Script.md) | collection |
 + | TNAM | OnBegin Topic | formid | FormID of a [DIAL](DIAL.md) record, or null.
 + | POBA | OnEnd Marker | null |
 + | INAM | OnEnd Idle | formid | FormID of an [IDLE](IDLE.md) record, or null.
-+ | | [OnEnd Embedded Script](Subrecords/Script.md) | collection | 
++ | | [OnEnd Embedded Script](Subrecords/Script.md) | collection |
 + | TNAM | OnEnd Topic | formid | FormID of a [DIAL](DIAL.md) record, or null.
 + | POBA | OnChange Marker | null |
 + | INAM | OnChange Idle | formid | FormID of an [IDLE](IDLE.md) record, or null.
-+ | | [OnChange Embedded Script](Subrecords/Script.md) | collection | 
++ | | [OnChange Embedded Script](Subrecords/Script.md) | collection |
 + | TNAM | OnChange Topic | formid | FormID of a [DIAL](DIAL.md) record, or null.
- 
+
 
 ### PKDT
 
@@ -133,7 +133,7 @@ The `Follow`, `Sleep`, `Travel`, `Accompany`, `Flee Not Combat`, `??`, `Patrol`,
 
 Value | Meaning (Find / Escort / Eat) | Meaning (Wander / Sandbox) | Meaning (Use Item At) | Meaning (Ambush) | Meaning (Guard)
 ------|-------------------------------|------------------|-----------------------|------------------|---------------
-0x0001 | ?? | No Eating | | Hide While Ambushing | 
+0x0001 | ?? | No Eating | | Hide While Ambushing |
 0x0002 | ?? | No Sleeping | Sit Down | |
 0x0004 | ?? | No Conversation | | | Remain Near Reference to Guard
 0x0008 | ?? | No Idle Markers | | |
@@ -141,9 +141,9 @@ Value | Meaning (Find / Escort / Eat) | Meaning (Wander / Sandbox) | Meaning (Us
 0x0020 | ?? | No Wandering | | |
 0x0040 | ?? | | | |
 0x0080 | ?? | | | |
-0x0100 | Allow Buying | | Allow Buying | 
-0x0200 | Allow Killing | | Allow Killing | 
-0x0400 | Allow Stealing | | Allow Stealing | 
+0x0100 | Allow Buying | | Allow Buying |
+0x0200 | Allow Killing | | Allow Killing |
+0x0400 | Allow Stealing | | Allow Stealing |
 
 ### Location Subrecord Collection
 
@@ -151,7 +151,7 @@ Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | PLDT | Location 1 | struct |
  | PLD2 | Location 2 | struct |
- 
+
 #### PLDT / PLD2
 
 Name | Type | Info
@@ -159,7 +159,7 @@ Name | Type | Info
 Type | uint32 | Enum - see below for values.
 Location | formid *or* uint32 *or* uint8[] | See below for data type info.
 Radius | int32 |
- 
+
 ##### Type Values & Location Data Types
 
 Type Value | Meaning | Location Data Type Info
@@ -274,7 +274,7 @@ Name | Type | Info
 -----|------|-----
 Repeatable | uint8 | A value of `0` means `Not Repeatable`, and a value of `1` means `Repeatable`.
 Unused | byte |
- 
+
 ### PKW3
 
 Name | Type | Info
@@ -288,7 +288,7 @@ Shots Per Volley (Max) | uint16 |
 Pause Between Volleys (Min) | float32 |
 Pause Between Volleys (Max) | float32 |
 Unused | byte[4] |
- 
+
 #### Flag Values
 
 Value | Meaning
@@ -342,7 +342,7 @@ Topic | formid | FormID of a [DIAL](DIAL.md) record, or null.
 Flags | uint32 | See below for values.
 Unused | byte[4] |
 Dialog Type | uint32 | Enum - see below for values.
- 
+
 #### Flag Values
 
 Value | Meaning
@@ -363,5 +363,3 @@ Value | Meaning
 ------|--------
 0 | Say Tosation
 1 | Say To
-
-

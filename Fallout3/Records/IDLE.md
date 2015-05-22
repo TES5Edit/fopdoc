@@ -10,8 +10,15 @@ Count | Subrecord | Name | Type | Info
  | EDID | Editor ID | cstring |
 + | | [Model Data](Subrecords/Model.md) | collection |
 -* | [CTDA](Subrecords/CTDA.md) | Condition | struct |
-+* | ANAM | Related Idle Animation | formid | FormID of an [IDLE](IDLE.md) record, or null. The first ANAM subrecord is for the parent, the second for the previous sibling.
+ | ANAM | Related Idle Animations | struct |
 + | DATA | | struct |
+
+### ANAM
+
+Name | Type | Info
+-----|------|-----
+Parent Idle Animation | formid | FormID of a [IDLE](IDLE.md) record, or null.
+Previous Sibling Idle Animation | formid | FormID of a [IDLE](IDLE.md) record, or null.
 
 ### DATA
 
@@ -24,7 +31,7 @@ Unused | byte |
 Replay Delay | int16 |
 Flags | uint8 | See below for values.
 Unused | byte |
- 
+
 #### Animation Group Section Values
 
 Value | Animation Group

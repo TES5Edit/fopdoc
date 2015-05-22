@@ -12,11 +12,11 @@ Count | Subrecord | Name | Type | Info
 + | DATA | Flags | uint8 | See below for values.
  | XCLC | Grid | struct |
  | XCLL | Lighting | struct |
--* | IMPF | Footstep Material | byte[30] | The format of each IMPF subrecord is unknown. There can be up to 10 IMPF subrecords, corresponding to different materials. The mapping is given below.
+ | [IMPF](Subrecords/IMPF.md) | Footstep Material | struct |
 + | | Light Template | collection | See below for details.
  | XCLW | Water Height | float32
  | XNAM | Water Noise Texture | cstring |
-*- | XCLR | Region | formid | FormID of a [REGN](REGN.md) record.
+ | XCLR | Regions | formid[] | Array of [REGN](REGN.md) record FormIDs.
  | XCIM | Image Space | formid | FormID of an [IMGS](IMGS.md) record.
  | XCET | Unknown | byte |
  | XEZN | Encounter Zone | formid | FormID of an [ECZN](ECZN.md) record.
@@ -41,22 +41,6 @@ Value | Meaning
 0x20 | Public Place
 0x40 | Hand Changed
 0x80 | Behave Like Exterior
-
-### IMPF Map
-
-IMPF Subrecord | Footstep Material
------------|------------------
-1st | ConcSolid
-2nd | ConcBroken
-3rd | MetalSolid
-4th | MetalHollow
-5th | MetalSheet
-6th | Wood
-7th | Sand
-8th | Dirt
-9th | Grass
-10th | Water
-
 
 ### XCLC
 
@@ -110,4 +94,3 @@ Value | Meaning
 0x00000040 | Directional Fade
 0x00000080 | Fog Clip Distance
 0x00000100 | Fog Power
-

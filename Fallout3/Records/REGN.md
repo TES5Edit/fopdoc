@@ -20,7 +20,7 @@ Count | Subrecord | Name | Type | Info
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | RPLI | Edge Fall-Off | uint32 |
--* | RPLD | Region Point List Data | struct |
+- | RPLD | Region Point List Data | struct |
 
 #### RPLD
 
@@ -34,13 +34,13 @@ Y | float32 |
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | RDAT | Data Header | struct |
--* | RDOT | Object | struct |
+- | RDOT | Objects | struct |
  | RDMP | Map Name | cstring |
--* | RDGS | Grass | struct |
+- | RDGS | Grasses | struct |
  | RDMD | Music Type | uint32 | Enum - see below for values.
  | RDMO | Music | formid | FormID of a [MUSC](MUSC.md) record.
--* | RDSD | Sound | struct |
--* | RDWT | Weather Type | struct |
+- | RDSD | Sound | struct |
+- | RDWT | Weather Type | struct |
 
 #### RDAT
 
@@ -49,7 +49,7 @@ Name | Type | Info
 Type | uint32 | Enum - see below for values.
 Flags | uint8 | See below for values.
 Unused | byte |
- 
+
 ##### Type Values
 
 Value | Meaning
@@ -73,6 +73,8 @@ Value | Meaning
 
 #### RDOT
 
+The RDOT subrecord consists of an array of objects with the following structure.
+
 Name | Type | Info
 -----|------|-----
 Object | formid | FormID of a [TREE](TREE.md), [STAT](STAT.md) or [LTEX](LTEX.md) record.
@@ -94,7 +96,7 @@ X Angle Variance | uint16 |
 Y Angle Variance | uint16 |
 Z Angle Variance | uint16 |
 Unknown | byte[6] |
- 
+
 ##### Flag Values
 
 Value | Meaning
@@ -110,11 +112,13 @@ Value | Meaning
 
 #### RDGS
 
+The RDGS subrecord consists of an array of objects with the following structure.
+
 Name | Type | Info
 -----|------|-----
 Grass | formid | FormID of a [GRAS](GRAS.md) record.
 Unknown | byte[4] |
- 
+
 #### RDMD Values
 
 Value | Meaning
@@ -125,12 +129,14 @@ Value | Meaning
 
 #### RDSD
 
+The RDSD subrecord consists of an array of objects with the following structure.
+
 Name | Type | Info
 -----|------|-----
 Sound | formid | FormID of a [SOUN](SOUN.md) record.
 Flags | uint32 | See below for values.
 Chance | uint32 |
- 
+
 ##### Flag Values
 
 Value | Meaning
@@ -141,6 +147,8 @@ Value | Meaning
 0x00000008 | Snowy
 
 #### RDWT
+
+The RDWT subrecord consists of an array of objects with the following structure.
 
 Name | Type | Info
 -----|------|-----

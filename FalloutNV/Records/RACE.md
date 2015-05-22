@@ -15,9 +15,9 @@ Count | Subrecord | Name | Type | Info
  | ONAM | Older | formid | FormID of a [RACE](RACE.md) record.
  | YNAM | Younger | formid | FormID of a [RACE](RACE.md) record.
 + | NAM2 | Unkonwin Marker | null |
-+* | VTCK | Voice | formid | FormID of a [VTYP](VTYP.md) record. The first and second instances of this subrecord are for male and female voices respectively.
-+* | DNAM | Default Hair Style | formid | FormID of a [HAIR](HAIR.md) record, or null. The first and second instances of this subrecord are for male and female hairs respectively.
-+* | DNAM | Default Hair Color | uint8 | Enum - see below for values. The first and second instances of this subrecord are for male and female hairs respectively.
++ | VTCK | Voices | struct |
++ | DNAM | Default Hair Styles | struct |
++ | CNAM | Default Hair Colors | struct |
 + | PNAM | FaceGen - Main Clamp | float32 |
 + | UNAM | FaceGen - Face Clamp | float32 |
 + | ATTR | Unknown | ?? |
@@ -31,8 +31,8 @@ Count | Subrecord | Name | Type | Info
 +* | | Male Body Part | collection | See below for details.
 + | FNAM | Female Body Data Marker | null |
 +* | | Female Body Part | collection | See below for details.
-+* | HNAM | Hair | formid | FormID of a [HAIR](HAIR.md) record.
-+* | ENAM | Eye | formid | FormID of an [EYES](EYES.md) record.
++ | HNAM | Hairs | formid[] | Array of [HAIR](HAIR.md) record FormIDs.
++ | ENAM | Eyes | formid[] | Array of [EYES](EYES.md) record FormIDs.
 + | MNAM | Male FaceGen Data Marker | null |
 + | FGGS | Male FaceGen Geometry-Symmetric | uint8[] |
 + | FGGA | Male FaceGen Geometry-Asymmetric | uint8[] |
@@ -79,7 +79,28 @@ Value | Meaning
 0x00000002 | ??
 0x00000004 | Child
 
-### Default Hair Color Values
+### VTCK
+
+Name | Type | Info
+-----|------|-----
+Male Voice | FormID of a [VTYP](VTYP.md) record.
+Female Voice | FormID of a [VTYP](VTYP.md) record.
+
+### DNAM
+
+Name | Type | Info
+-----|------|-----
+Male Default Hair Style | FormID of a [HAIR](HAIR.md) record, or null.
+Female Default Hair Style | FormID of a [HAIR](HAIR.md) record, or null.
+
+### CNAM
+
+Name | Type | Info
+-----|------|-----
+Male Default Hair Color | uint8 | Enum - see below for values.
+Female Default Hair Color | uint8 | Enum - see below for values.
+
+#### Default Hair Color Values
 
 Value | Meaning
 ------|--------

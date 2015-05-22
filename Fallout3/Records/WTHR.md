@@ -20,15 +20,15 @@ Count | Subrecord | Name | Type | Info
 + | BNAM | Cloud Textures - Layer 3 | cstring |
  | | [Model Data](Subrecords/Model.md) | collection |
 + | LNAM | Unknown | byte[4] |
-+* | ONAM | Cloud Layer Speed | uint8 | Value is divided by 2550. There are 4 ONAMs, each for a different cloud layer.
--* | PNAM | Cloud Layer Color | struct | There are 4 PNAMs, each for a different cloud layer.
-+* | NAM0 | Colors by Time & Type | struct | There are 10 NAM0s. The mapping to types is given below.
++ | ONAM | Cloud Layer Speed | uint8[4] | Value is divided by 2550. Each uint8 is for a different cloud layer.
+- | PNAM | Cloud Layer Color | struct[4] | Array of Time of Day Colors structures. Each structure is for a different cloud layer.
++ | NAM0 | Colors by Time & Type | struct |
 + | FNAM | Fog Distance | struct |
 + | INAM | Unused | byte[304] |
 + | DATA | | struct |
 -* | SNAM | Sound | struct |
 
-### PNAM / NAM0
+### Time of Day Colors Structure
 
 Name | Type | Info
 -----|------|-----
@@ -37,20 +37,20 @@ Day | rgba |
 Sunset | rgba |
 Night | rgba |
 
-### NAM0 Mapping
+### NAM0
 
-NAM0 Index | Type
------------|-----
-0 | Sky-Upper
-1 | Fog
-2 | Unused
-3 | Ambient
-4 | Sunlight
-5 | Sun
-6 | Stars
-7 | Sky-Lower
-8 | Horizon
-9 | Unused
+Name | Type | Info
+-----|------|-----
+Sky-Upper | struct | A Time of Day Colors structure.
+Fog | struct | A Time of Day Colors structure.
+Unused | struct | A Time of Day Colors structure.
+Ambient | struct | A Time of Day Colors structure.
+Sunlight | struct | A Time of Day Colors structure.
+Sun | struct | A Time of Day Colors structure.
+Stars | struct | A Time of Day Colors structure.
+Sky-Lower | struct | A Time of Day Colors structure.
+Horizon | struct | A Time of Day Colors structure.
+Unused | struct | A Time of Day Colors structure.
 
 ### FNAM
 

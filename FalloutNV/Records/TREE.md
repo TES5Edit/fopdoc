@@ -10,9 +10,9 @@ Count | Subrecord | Name | Type | Info
 + | EDID | Editor ID | cstring | Editor ID
 + | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
 + | | [Model Data](Subrecords/Model.md) | collection |
-+ | ICON | Large icon filename | cstring | 
-+ | MICO | Small icon filename | cstring | 
-+* | SNAM | SpeedTree Seed | uint32 |
++ | ICON | Large icon filename | cstring |
++ | MICO | Small icon filename | cstring |
++ | SNAM | SpeedTree Seeds | uint32[] |
 + | CNAM | Tree Data | struct |
 + | BNAM | Billboard Dimensions | struct |
 

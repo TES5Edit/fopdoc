@@ -20,9 +20,11 @@ Count | Subrecord | Name | Type | Info
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | RPLI | Edge Fall-Off | uint32 |
--* | RPLD | Region Point List Data | struct |
+- | RPLD | Region Point List Data | struct |
 
 #### RPLD
+
+The RPLD subrecord consists of an array of objects with the following structure.
 
 Name | Type | Info
 -----|------|-----
@@ -34,16 +36,16 @@ Y | float32 |
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | RDAT | Data Header | struct |
--* | RDOT | Object | struct |
+- | RDOT | Objects | struct |
  | RDMP | Map Name | cstring |
--* | RDGS | Grass | struct |
+- | RDGS | Grasses | struct |
  | RDMD | Music Type | uint32 | Enum - see below for values.
  | RDMO | Music | formid | FormID of a [MUSC](MUSC.md) record.
  | RDSI | Incidental MediaSet | formid | FormID of an [MSET](MSET.md) record.
 -* | RDSB | Battle MediaSet | formid | FormID of an [MSET](MSET.md) record.
--* | RDSD | Sound | struct |
--* | RDWT | Weather Type | struct |
--* | RDID | Imposter | formid | FormID of a [REFR](REFR.md) record.
+- | RDSD | Sounds | struct |
+- | RDWT | Weather Types | struct |
+- | RDID | Imposters | formid[] | An array of [REFR](REFR.md) record FormIDs.
 
 #### RDAT
 
@@ -75,6 +77,8 @@ Value | Meaning
 0x01 | Override
 
 #### RDOT
+
+The RDOT subrecord consists of an array of objects with the following structure.
 
 Name | Type | Info
 -----|------|-----
@@ -113,6 +117,8 @@ Value | Meaning
 
 #### RDGS
 
+The RDGS subrecord consists of an array of objects with the following structure.
+
 Name | Type | Info
 -----|------|-----
 Grass | formid | FormID of a [GRAS](GRAS.md) record.
@@ -127,6 +133,8 @@ Value | Meaning
 2 | Dungeon
 
 #### RDSD
+
+The RDSD subrecord consists of an array of objects with the following structure.
 
 Name | Type | Info
 -----|------|-----
@@ -144,6 +152,8 @@ Value | Meaning
 0x00000008 | Snowy
 
 #### RDWT
+
+The RDWT subrecord consists of an array of objects with the following structure.
 
 Name | Type | Info
 -----|------|-----

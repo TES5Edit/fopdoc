@@ -16,7 +16,7 @@ Count | Subrecord | Name | Type | Info
 + | IDLF | Idle Animation Flags | uint8 | See below for values.
 + | IDLC | Idle Animation Count | struct |
 + | IDLT | Idle Timer Setting | float32 |
-+* | IDLA | Idle Animations | formid | FormID of an [IDLE](IDLE.md) record.
+ | [IDLA](Subrecords/IDLA.md) | Animations | struct |
  | IDLB | Unused | byte[4] |
  | CNAM | Combat Style | formid | FormID of a [CSTY](CSTY.md) record.
  | PKED | Eat Marker | null |
@@ -363,5 +363,3 @@ Value | Meaning
 ------|--------
 0 | Say Tosation
 1 | Say To
-
-
