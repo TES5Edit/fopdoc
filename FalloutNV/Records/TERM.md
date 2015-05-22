@@ -71,7 +71,7 @@ Count | Subrecord | Name | Type | Info
 + | RNAM | Result Text | cstring |
 + | ANAM | Flags | uint8 | See below for values.
  | INAM | Display Note | formid | FormID of a [NOTE](NOTE.md) record.
- | INAM | Sub Menu | formid | FormID of a [TERM](TERM.md) record.
+ | TNAM | Sub Menu | formid | FormID of a [TERM](TERM.md) record.
 + | | [Embedded Script](Subrecords/Script.md) | collection |
 -* | [CTDA](Subrecords/CTDA.md) | Condition | struct |
 
@@ -81,4 +81,3 @@ Value | Meaning
 ------|--------
 0x01 | Add Note
 0x02 | Force Redraw
-
