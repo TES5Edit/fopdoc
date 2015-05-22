@@ -39,7 +39,7 @@ Count | Subrecord | Name | Type | Info
 
 Name | Type | Info
 -----|------|-----
-Health Percentage | int32 |
+Health Percentage | uint8 |
 Index | uint8 |
 Damage Stage | uint8 |
 Flags | uint8 | See below for values.
