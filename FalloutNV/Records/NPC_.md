@@ -17,6 +17,7 @@ Count | Subrecord | Name | Type | Info
 + | VTCK | Voice | formid | FormID of a [VTYP](VTYP.md) record.
  | TPLT | Template | formid | FormID of a [NPC_](NPC_.md) or [LVLN](LVLN.md) record.
 + | RNAM | Race | formid | FormID of a [RACE](RACE.md) record.
+-* | SPLO | Actor Effect | formid | FormID of a [SPEL](SPEL.md) record.
  | EITM | Unarmed Attack Effect | formid | FormID of an [ENCH](ENCH.md) or [SPEL](SPEL.md) record.
 + | [EAMT](Values/Attack Animations.md) | Unarmed Attack Animation | uint16 |
  | | [Destruction Data](Subrecords/Destruction.md) | collection |
