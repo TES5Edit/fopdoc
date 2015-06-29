@@ -14,8 +14,8 @@ Count | Subrecord | Name | Type | Info
  | 0x01 IAD | Day Image Space Modifier | formid | FormID of an [IMAD](IMAD.md) record.
  | 0x02 IAD | Sunset Image Space Modifier | formid | FormID of an [IMAD](IMAD.md) record.
  | 0x03 IAD | Night Image Space Modifier | formid | FormID of an [IMAD](IMAD.md) record.
- | 0x04 IAD | ?? | formid | FormID of an [IMAD](IMAD.md) record.
- | 0x05 IAD | ?? | formid | FormID of an [IMAD](IMAD.md) record.
+ | 0x04 IAD | High Noon Image Space Modifier | formid | FormID of an [IMAD](IMAD.md) record.
+ | 0x05 IAD | Midnight Image Space Modifier | formid | FormID of an [IMAD](IMAD.md) record.
 + | DNAM | Cloud Textures - Layer 0 | cstring |
 + | CNAM | Cloud Textures - Layer 1 | cstring |
 + | ANAM | Cloud Textures - Layer 2 | cstring |
