@@ -15,7 +15,7 @@ Count | Subrecord | Name | Type | Info
  | ICON | Large Icon Filename | cstring |
  | MICO | Small Icon FIlename | cstring |
 + | DATA | | struct |
-+ | FMAM | Fade Value | foat32 |
++ | FNAM | Fade Value | foat32 |
  | SNAM | Sound | formid | FormID of a SOUN ([FO3](../../Fallout3/Records/SOUN.md), [FNV](../../FalloutNV/Records/SOUN.md)) record.
 
 ### DATA
