@@ -24,6 +24,8 @@ Count | Subrecord | Name | Type | Info
 
 #### RPLD
 
+The RPLD subrecord consists of an array of objects with the following structure.
+
 Name | Type | Info
 -----|------|-----
 X | float32 |
@@ -48,7 +50,7 @@ Name | Type | Info
 -----|------|-----
 Type | uint32 | Enum - see below for values.
 Flags | uint8 | See below for values.
-Unused | byte |
+Unused | byte[3] |
 
 ##### Type Values
 
