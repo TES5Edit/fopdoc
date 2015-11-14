@@ -10,3 +10,4 @@ Type | Name
 [AACT](Records/AACT.md) | Action
 [GMST](Records/GMST.md) | Game Setting
 [KYWD](Records/KYWD.md) | Keyword
+[LCRT](Records/LCRT.md) | Location Reference Type
