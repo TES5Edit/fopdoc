@@ -12,4 +12,5 @@ Type | Name
 [KYWD](Records/KYWD.md) | Keyword
 [LCRT](Records/LCRT.md) | Location Reference Type
 [TRNS](Records/TRNS.md) | TRNS Record { New to Fallout 4 }
+[LVLI](Records/LVLI.md) | Leveled Item
 [LVLN](Records/LVLN.md) | Leveled NPC
