@@ -11,3 +11,4 @@ Type | Name
 [GMST](Records/GMST.md) | Game Setting
 [KYWD](Records/KYWD.md) | Keyword
 [LCRT](Records/LCRT.md) | Location Reference Type
+[TRNS](Records/TRNS.md) | TRNS Record { New to Fallout 4 }
