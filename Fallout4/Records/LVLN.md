@@ -12,6 +12,8 @@ Count | Subrecord | Name | Type | Info
 + | LVLD | Chance None | uint8 |
  | LVLM | | | Unknown at this time
 + | LVLF | Flags | uint8 | See below for values.
++ | LVLG | Global | formid | FormID of a [GLOB](GLOB.md) record.
++ | LLCT | Count | uint8 | Leveled List Count not to exceed 255
 +* | | Leveled List Entry | collection | See below for details.
  | LLKC | | | Unknown at this time
  | | [Model Data](Subrecords/Model.md) | collection |
