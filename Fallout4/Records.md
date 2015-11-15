@@ -8,6 +8,7 @@ Each record type's page documents its subrecords. The common record header struc
 Type | Name
 -----|------------
 [AACT](Records/AACT.md) | Action
+[CLAS](Records/CLAS.md) | Action
 [DMGT](Records/DMGT.md) | Damage Type { New to Fallout 4 }
 [GLOB](Records/GLOB.md) | Global Variable
 [GMST](Records/GMST.md) | Game Setting
