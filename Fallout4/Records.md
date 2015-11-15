@@ -8,8 +8,9 @@ Each record type's page documents its subrecords. The common record header struc
 Type | Name
 -----|------------
 [AACT](Records/AACT.md) | Action
-[CLAS](Records/CLAS.md) | Action
+[CLAS](Records/CLAS.md) | Class
 [DMGT](Records/DMGT.md) | Damage Type { New to Fallout 4 }
+[FACT](Records/FACT.md) | Faction
 [GLOB](Records/GLOB.md) | Global Variable
 [GMST](Records/GMST.md) | Game Setting
 [KYWD](Records/KYWD.md) | Keyword
@@ -18,4 +19,3 @@ Type | Name
 [LVLN](Records/LVLN.md) | Leveled NPC
 [TRNS](Records/TRNS.md) | TRNS Record { New to Fallout 4 }
 [TXST](Records/TXST.md) | Texture Set
-
