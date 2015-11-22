@@ -15,6 +15,7 @@ Type | Name
 [GMST](Records/GMST.md) | Game Setting
 [KYWD](Records/KYWD.md) | Keyword
 [LCRT](Records/LCRT.md) | Location Reference Type
+[LTEX](Records/LTEX.md) | Landscape Texture
 [LVLI](Records/LVLI.md) | Leveled Item
 [LVLN](Records/LVLN.md) | Leveled NPC
 [TRNS](Records/TRNS.md) | TRNS Record { New to Fallout 4 }
