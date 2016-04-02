@@ -8,6 +8,7 @@ Each record type's page documents its subrecords. The common record header struc
 Type | Name
 -----|------------
 [AACT](Records/AACT.md) | Action
+[BNDS](Records/BNDS.md) | Bendable Spline { New to Fallout 4 }
 [CLAS](Records/CLAS.md) | Class
 [DMGT](Records/DMGT.md) | Damage Type { New to Fallout 4 }
 [FACT](Records/FACT.md) | Faction
