@@ -127,7 +127,7 @@ dataSize | uint32 | Size of the data.
 flags | uint32 | Record flags. See the section below for details.
 id | formid | The record FormID. TES4 records have a FormID of `0`.
 revision | uint32 | Used for revision control by the Creation Kit, if enabled.
-version | uint16 | ??
+version | uint16 | Form Version
 unknown | uint16 | ??
 data | uint8[dataSize] | For uncompressed records, this is a sequence of subrecords. For compressed records, see the section below for details.
 
