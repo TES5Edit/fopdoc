@@ -5,7 +5,7 @@ Documentation for the Fallout 3 and Fallout: New Vegas plugin file formats.
 
 The Oblivion, Skyrim, Fallout 3 and Fallout: New Vegas plugin file formats are all very similar, but while there exists good documentation for [Oblivion](http://www.uesp.net/wiki/Tes4Mod:Mod_File_Format) and [Skyrim](http://www.uesp.net/wiki/Tes5Mod:Mod_File_Format), there is no equivalent for Fallout 3 and Fallout: New Vegas. The aim is for this repository to become that equivalent.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for information on how to contribute.
+See [Contributing.md](Contributing.md) for information on how to contribute.
 
 ### Contents
 
@@ -28,6 +28,6 @@ This documentation is written in [GitHub Flavored Markdown](https://guides.githu
 
 ### File Format Data Source
 
-The most complete open-source implementation of plugin parsers for these games is [TES5Edit](https://code.google.com/p/skyrim-plugin-decoding-project/), written in Delphi. The information on the file formats contained within its parsing code has been adapted into a reasonably generic format that programmers should be able to interpret regardless of their preferred language, similar to how it is presented by [UESP.net](http://www.uesp.net/wiki/Tes5Mod:Mod_File_Format).
+The most complete open-source implementation of plugin parsers for these games is [TES5Edit](https://github.com/TES5Edit/TES5Edit), written in Delphi. The information on the file formats contained within its parsing code has been adapted into a reasonably generic format that programmers should be able to interpret regardless of their preferred language, similar to how it is presented by [UESP.net](http://www.uesp.net/wiki/Tes5Mod:Mod_File_Format).
 
 This documentation was written to reflect the TES5Edit source code on 2 June 2014.
