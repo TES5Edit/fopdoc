@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: extra
 title: xEdit-Wiki
 ---
 ## Legal Information
