@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 BMDT Subrecord
 ==========
 

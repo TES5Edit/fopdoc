@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 Weapon Animation Types
 ======================
 

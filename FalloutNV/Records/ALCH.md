@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 ALCH Record
 ===========
 

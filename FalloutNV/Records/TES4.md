@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 TES4 Record
 ===========
 

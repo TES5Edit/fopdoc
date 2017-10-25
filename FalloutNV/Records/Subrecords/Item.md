@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 Item Subrecord Collection
 =====================
 
