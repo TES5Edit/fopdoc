@@ -1,3 +1,7 @@
+---
+layout: extra
+title: fopdoc
+---
 Contributing to FOPDoc
 ======================
 
