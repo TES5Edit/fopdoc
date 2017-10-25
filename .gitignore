@@ -1,0 +1,12 @@
+# IDE files
+.idea/
+# if a symlink
+.idea
+_site
+/_site
+_site/
+_site/*
+.sass-cache
+.sass-cache/
+.sass-cache/*
+
