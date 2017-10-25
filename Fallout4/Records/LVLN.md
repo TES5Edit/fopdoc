@@ -1,3 +1,7 @@
+---
+layout: fallout4rec
+title: fopdoc
+---
 LVLN
 ====
 
@@ -8,15 +12,15 @@ Leveled NPC
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
 + | LVLD | Chance None | uint8 |
  | LVLM | | | Unknown at this time
 + | LVLF | Flags | uint8 | See below for values.
-+ | LVLG | Global | formid | FormID of a [GLOB](GLOB.md) record.
++ | LVLG | Global | formid | FormID of a [GLOB](GLOB.html) record.
 + | LLCT | Count | uint8 | Leveled List Count not to exceed 255
 +* | | Leveled List Entry | collection | See below for details.
  | LLKC | | | Unknown at this time
- | | [Model Data](Subrecords/Model.md) | collection |
+ | | [Model Data](Subrecords/Model.html) | collection |
  
 ** Existing Data Below Subject to change Copied from previous Fallout **
 
@@ -32,7 +36,7 @@ Value | Meaning
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | LVLO | Base Data | struct |
- | [COED](Subrecords/COED.md) | Extra Data | struct |
+ | [COED](Subrecords/COED.html) | Extra Data | struct |
 
 #### LVLO
 
@@ -40,6 +44,6 @@ Name | Type | Info
 -----|------|-----
 Level | int16 |
 Unused | byte[2] |
-Reference | formid | FormID of a NPC_ ([FO3](../../Fallout3/Records/NPC_.md), [FNV](../../FalloutNV/Records/NPC_.md)) or [LVLN](LVLN.md) record.
+Reference | formid | FormID of a NPC_ ([FO3](../../Fallout3/Records/NPC_.html), [FNV](../../FalloutNV/Records/NPC_.html)) or [LVLN](LVLN.html) record.
 Count | int16 |
 Unused | byte[2] |

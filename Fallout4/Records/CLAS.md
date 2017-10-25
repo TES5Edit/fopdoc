@@ -1,3 +1,7 @@
+---
+layout: fallout4rec
+title: fopdoc
+---
 CLAS
 ====
 
@@ -21,13 +25,13 @@ Count | Subrecord | Name | Type | Info
 
 Name | Type | Info
 -----|------|-----
-[Tag Skill 1](Values/Actor Values.md) | int32 |
-[Tag Skill 2](Values/Actor Values.md) | int32 |
-[Tag Skill 3](Values/Actor Values.md) | int32 |
-[Tag Skill 4](Values/Actor Values.md) | int32 |
+[Tag Skill 1](Values/Actor Values.html) | int32 |
+[Tag Skill 2](Values/Actor Values.html) | int32 |
+[Tag Skill 3](Values/Actor Values.html) | int32 |
+[Tag Skill 4](Values/Actor Values.html) | int32 |
 Flags | uint32 | See below for values.
-[Buys/Sells and Services](Values/Services.md) | uint32 | Flags. See the link for values.
-[Teaches](Values/Skills.md) | int8 | See the link for enum values.
+[Buys/Sells and Services](Values/Services.html) | uint32 | Flags. See the link for values.
+[Teaches](Values/Skills.html) | int8 | See the link for enum values.
 Maximum Training Level | uint8 |
 Unused | byte[2] |
 

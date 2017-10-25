@@ -1,13 +1,17 @@
+---
+layout: fallout4rec
+title: fopdoc
+---
 XESP Subrecord
 ==========
 
-As used in the [ACHR](../ACHR.md) and [ACRE](../ACRE.md) record types.
+As used in the [ACHR](../ACHR.html) and [ACRE](../ACRE.html) record types.
 
 ## Format
 
 Name | Type | Info
 -----|------|-----
-Reference | formid | FormID of a [PLYR](../PLYR.md), [REFR](../REFR.md), [ACRE](../ACRE.md), [ACHR](../ACHR.md), [PGRE](../PGRE.md) or [PMIS](../PMIS.md) record.
+Reference | formid | FormID of a [PLYR](../PLYR.html), [REFR](../REFR.html), [ACRE](../ACRE.html), [ACHR](../ACHR.html), [PGRE](../PGRE.html) or [PMIS](../PMIS.html) record.
 Flags | uint8 | See below for details.
 Unknown | byte[3] |
 

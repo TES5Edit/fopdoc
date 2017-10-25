@@ -1,7 +1,11 @@
+---
+layout: fallout4rec
+title: fopdoc
+---
 SCHR Subrecord
 ==========
 
-As used in the [SCPT](../SCPT.md) record type and the [embedded script](Embedded Script.md) subrecord collection.
+As used in the [SCPT](../SCPT.html) record type and the [embedded script](Embedded Script.html) subrecord collection.
 
 ## Format
 

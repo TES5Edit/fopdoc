@@ -1,7 +1,11 @@
+---
+layout: fallout4rec
+title: fopdoc
+---
 BMDT Subrecord
 ==========
 
-As used in the [ARMO](../ARMO.md) and [ARMA](../ARMA.md) record types.
+As used in the [ARMO](../ARMO.html) and [ARMA](../ARMA.html) record types.
 
 ## Format
 

@@ -1,3 +1,7 @@
+---
+layout: fallout4rec
+title: fopdoc
+---
 XPWR Subrecord
 ==========
 
@@ -5,7 +9,7 @@ XPWR Subrecord
 
 Name | Type | Info
 -----|------|-----
-Reference | formid | FormID of a [REFR](../REFR.md) record.
+Reference | formid | FormID of a [REFR](../REFR.html) record.
 Type | uint32 | Flags - see below for values.
  
 ### Type Flag Values

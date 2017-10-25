@@ -1,7 +1,11 @@
+---
+layout: fallout4rec
+title: fopdoc
+---
 Services Flag Values
 ====================
 
-As used in the [CLAS](../CLAS.md) and [CREA](CREA.md) record types.
+As used in the [CLAS](../CLAS.html) and [CREA](CREA.html) record types.
 
 Value | Meaning
 ------|--------
