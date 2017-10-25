@@ -1,3 +1,7 @@
+---
+layout: fallout4rec
+title: fopdoc
+---
 SNAM Subrecord
 ==========
 
