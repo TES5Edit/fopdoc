@@ -1,1 +1,9 @@
+title: fopdoc
+description: Documentation for the Fallout 3 and Fallout New Vegas plugin file formats.
+# google_analytics: true
+# show_downloads: true
 theme: jekyll-theme-cayman
+baseurl: /fopdoc
+exclude: ['README.md']
+gems:
+  - jekyll-mentions
