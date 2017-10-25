@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 PERK
 ====
 
@@ -12,7 +16,7 @@ Count | Subrecord | Name | Type | Info
 + | DESC | Description | cstring |
  | ICON | Large icon filename | cstring |
  | MICO | Small icon filename | cstring |
--* | [CTDA](Subrecords/CTDA.md) | Condition | struct |
+-* | [CTDA](Subrecords/CTDA.html) | Condition | struct |
 + | DATA | Data | struct |
 -* | | Effect | collection | See below for details.
 
@@ -44,7 +48,7 @@ Count | Subrecord | Name | Type | Info
  | EPFD | Entry Point Function Data | uint8[] *or* float32 *or* formid *or* null |
  | EPF2 | Button Label | cstring |
  | EPF3 | Script Flags | uint16 | See below for values.
- | | [Embedded Script](Subrecords/Script.md) | collection |
+ | | [Embedded Script](Subrecords/Script.html) | collection |
 + | PRKF | End Marker | null | Flag
 
 
@@ -72,7 +76,7 @@ There are three possible DATA formats, based on the value of the Type field in t
 
 Name | Type | Info
 -----|------|-----
-Quest | formid | FormID of a [QUST](QUST.md) record.
+Quest | formid | FormID of a [QUST](QUST.html) record.
 Quest Stage | uint8 |
 Unused | byte[3] |
 
@@ -80,7 +84,7 @@ Unused | byte[3] |
 
 Name | Type | Info
 -----|------|-----
-Ability | formid | FormID of a [SPEL](SPEL.md) record.
+Ability | formid | FormID of a [SPEL](SPEL.html) record.
 
 ##### Entry Point
 
@@ -174,7 +178,7 @@ Value | Meaning
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | PRKC | Run On | int8 |
-+* | [CTDA](Subrecords/CTDA.md) | Condition | struct |
++* | [CTDA](Subrecords/CTDA.html) | Condition | struct |
 
 #### EPFD
 
@@ -185,9 +189,9 @@ EPFT Value | EPFD Type | Info
 0 | uint8[] |
 1 | float32 |
 2 | struct | A struct consisting of two `float32` values.
-3 | formid | FormID of a [LVLI](LVLI.md) record.
+3 | formid | FormID of a [LVLI](LVLI.html) record.
 4 | null |
-5 | struct | A struct consisting of a `uint32` [actor value](Values/Actor Values.md) enum followed by a `float32` value.
+5 | struct | A struct consisting of a `uint32` [actor value](Values/Actor Values.html) enum followed by a `float32` value.
 
 If the EPFT value is `2` and DATA's Function field (when DATA is an entry point) is `5`, the EPFD type is chosen as if the EPFT value were `5`.
 

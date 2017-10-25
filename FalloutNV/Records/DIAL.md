@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 DIAL
 ====
 
@@ -9,7 +13,7 @@ Count | Subrecord | Name | Type | Info
 ------|-----------|------|------|-----
 + | EDID | Editor ID | cstring |
 -* | | Added Quest | collection |
--* | QSTR | Removed Quest | formid | FormID of a [QUST](QUST.md) record.
+-* | QSTR | Removed Quest | formid | FormID of a [QUST](QUST.html) record.
 -* | | Unused | collection | Probably exists due to an error in the GECK.
 + | FULL | Name | cstring |
 + | PNAM | Priority | float32 |
@@ -20,14 +24,14 @@ Count | Subrecord | Name | Type | Info
 
 Count | Subrecord | Name | Type | Info
 ------|-----------|------|------|-----
- | QSTI | Quest | formid | FormID of a [QUST](QUST.md) record.
+ | QSTI | Quest | formid | FormID of a [QUST](QUST.html) record.
 -* | | Shared Info | collection |
 
 #### Shared Info Subrecord Collection
 
 Count | Subrecord | Name | Type | Info
 ------|-----------|------|------|-----
- | INFC | Info Connection | formid | FormID of an [INFO](INFO.md) record.
+ | INFC | Info Connection | formid | FormID of an [INFO](INFO.html) record.
  | INFX | Info Index | int32 |
 
 ### Unused Subrecord Collection

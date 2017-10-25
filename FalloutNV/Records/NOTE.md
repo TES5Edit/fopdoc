@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 NOTE
 ====
 
@@ -8,18 +12,18 @@ Note
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
 + | FULL | Name | cstring |
- | | [Model Data](Subrecords/Model.md) | collection |
+ | | [Model Data](Subrecords/Model.html) | collection |
  | ICON | Large Icon Filename | cstring |
  | MICO | Small Icon FIlename | cstring |
- | YNAM | Sound - Pick Up | formid | FormID of a [SOUN](SOUN.md) record.
- | ZNAM | Sound - Drop | formid | FormID of a [SOUN](SOUN.md) record.
+ | YNAM | Sound - Pick Up | formid | FormID of a [SOUN](SOUN.html) record.
+ | ZNAM | Sound - Drop | formid | FormID of a [SOUN](SOUN.html) record.
  | DATA | Type | uint8 | Enum - see values below.
--* | ONAM | Quest | formid | FormID of a [QUST](QUST.md) record.
+-* | ONAM | Quest | formid | FormID of a [QUST](QUST.html) record.
  | XNAM | Texture | cstring |
- | TNAM | Text / Topic | cstring *or* formid | A text string, or the FormID of a [DIAL](DIAL.md) record.
- | SNAM | Sound / Actor | formid | FormID of a [SOUN](SOUN.md), [NPC_](NPC_.md) or [CREA](CREA.md) record.
+ | TNAM | Text / Topic | cstring *or* formid | A text string, or the FormID of a [DIAL](DIAL.html) record.
+ | SNAM | Sound / Actor | formid | FormID of a [SOUN](SOUN.html), [NPC_](NPC_.html) or [CREA](CREA.html) record.
 
 ### DATA Enum Values
 

@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 Destruction Subrecord Collection
 ============================
 
@@ -44,8 +48,8 @@ Index | uint8 |
 Damage Stage | uint8 |
 Flags | uint8 | See below for values.
 Self Damage per Second | int32 |
-Explosion | formid | FormID of a [EXPL](../EXPL.md) record or null.
-Debris | formid | FormID of a [DEBR](../DEBR.md) record or null.
+Explosion | formid | FormID of a [EXPL](../EXPL.html) record or null.
+Debris | formid | FormID of a [DEBR](../DEBR.html) record or null.
 Debris Count | int32 |
 
 ##### DSTD Flag Values

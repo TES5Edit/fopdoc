@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 NPC_
 ====
 
@@ -8,33 +12,33 @@ Non-Player Character
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
  | FULL | Name | cstring |
- | | [Model Data](Subrecords/Model.md) | collection |
-+ | [ACBS](Subrecords/ACBS.md) | Configuration | struct |
--* | [SNAM](Subrecords/SNAM (CREA, NPC_).md) | Faction | struct |
- | INAM | Death Item | formid | FormID of a [LVLI](LVLI.md) record.
-+ | VTCK | Voice | formid | FormID of a [VTYP](VTYP.md) record.
- | TPLT | Template | formid | FormID of a [NPC_](NPC_.md) or [LVLN](LVLN.md) record.
-+ | RNAM | Race | formid | FormID of a [RACE](RACE.md) record.
--* | SPLO | Actor Effect | formid | FormID of a [SPEL](SPEL.md) record.
- | EITM | Unarmed Attack Effect | formid | FormID of an [ENCH](ENCH.md) or [SPEL](SPEL.md) record.
-+ | [EAMT](Values/Attack Animations.md) | Unarmed Attack Animation | uint16 |
- | | [Destruction Data](Subrecords/Destruction.md) | collection |
- | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
--* | | [Item](Subrecords/Item.md) | collection |
- | [AIDT](Subrecords/AIDT.md) | AI Data | struct |
--* | PKID | Package | formid | FormID of a [PACK](PACK.md) record.
-+ | CNAM | Class | formid | FormID of a [CLAS](CLAS.md) record.
+ | | [Model Data](Subrecords/Model.html) | collection |
++ | [ACBS](Subrecords/ACBS.html) | Configuration | struct |
+-* | [SNAM](Subrecords/SNAM (CREA, NPC_).html) | Faction | struct |
+ | INAM | Death Item | formid | FormID of a [LVLI](LVLI.html) record.
++ | VTCK | Voice | formid | FormID of a [VTYP](VTYP.html) record.
+ | TPLT | Template | formid | FormID of a [NPC_](NPC_.html) or [LVLN](LVLN.html) record.
++ | RNAM | Race | formid | FormID of a [RACE](RACE.html) record.
+-* | SPLO | Actor Effect | formid | FormID of a [SPEL](SPEL.html) record.
+ | EITM | Unarmed Attack Effect | formid | FormID of an [ENCH](ENCH.html) or [SPEL](SPEL.html) record.
++ | [EAMT](Values/Attack Animations.html) | Unarmed Attack Animation | uint16 |
+ | | [Destruction Data](Subrecords/Destruction.html) | collection |
+ | SCRI | Script | formid | FormID of a [SCPT](SCPT.html) record.
+-* | | [Item](Subrecords/Item.html) | collection |
+ | [AIDT](Subrecords/AIDT.html) | AI Data | struct |
+-* | PKID | Package | formid | FormID of a [PACK](PACK.html) record.
++ | CNAM | Class | formid | FormID of a [CLAS](CLAS.html) record.
 + | DATA | | struct |
  | DNAM | Skills | struct |
--* | PNAM | Head Part | formid | FormID of a [HDPT](HDPT.md) record.
- | HNAM | Hair | formid | FormID of a [HAIR](HAIR.md) record.
+-* | PNAM | Head Part | formid | FormID of a [HDPT](HDPT.html) record.
+ | HNAM | Hair | formid | FormID of a [HAIR](HAIR.html) record.
  | LNAM | Hair Length | float32 |
- | ENAM | Eyes | formid | FormID of an [EYES](EYES.md) record.
+ | ENAM | Eyes | formid | FormID of an [EYES](EYES.html) record.
 + | HCLR | Hair Color | rgba |
- | ZNAM | Combat Style | formid | FormID of a [CSTY](CSTY.md) record.
-+ | [NAM4](Values/Impact Material Types.md) | Impact Material Type | uint32 |
+ | ZNAM | Combat Style | formid | FormID of a [CSTY](CSTY.html) record.
++ | [NAM4](Values/Impact Material Types.html) | Impact Material Type | uint32 |
 + | FGGS | FaceGen Geometry-Symmetric | uint8[] |
 + | FGGA | FaceGen Geometry-Asymmetric | uint8[] |
 + | FGTS | FaceGen Texture-Symmetric | uint8[] |

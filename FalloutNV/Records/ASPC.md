@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 ASPC
 ====
 
@@ -8,14 +12,14 @@ Acoustic Space
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
-+ | SNAM | Dawn / Default Loop | formid | FormID of a [SOUN](SOUN.md) record, or null.
-+ | SNAM | Afternoon | formid | FormID of a [SOUN](SOUN.md) record, or null.
-+ | SNAM | Dusk | formid | FormID of a [SOUN](SOUN.md) record, or null.
-+ | SNAM | Night | formid | FormID of a [SOUN](SOUN.md) record, or null.
-+ | SNAM | Walla | formid | FormID of a [SOUN](SOUN.md) record, or null.
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
++ | SNAM | Dawn / Default Loop | formid | FormID of a [SOUN](SOUN.html) record, or null.
++ | SNAM | Afternoon | formid | FormID of a [SOUN](SOUN.html) record, or null.
++ | SNAM | Dusk | formid | FormID of a [SOUN](SOUN.html) record, or null.
++ | SNAM | Night | formid | FormID of a [SOUN](SOUN.html) record, or null.
++ | SNAM | Walla | formid | FormID of a [SOUN](SOUN.html) record, or null.
 + | WNAM | Walla Trigger Count | uint32 |
- | RDAT | Use Sound from Region (Interiors Only) | formid | FormID of a [REGN](REGN.md) record.
+ | RDAT | Use Sound from Region (Interiors Only) | formid | FormID of a [REGN](REGN.html) record.
 + | ANAM | Environment Type | uint32 | Enum - see below for values.
 + | INAM | Is Interior | uint32 | Enum - see values below.
 

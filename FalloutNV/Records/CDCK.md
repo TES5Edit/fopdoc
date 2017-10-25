@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 CDCK
 ====
 
@@ -9,5 +13,5 @@ Count | Subrecord | Name | Type | Info
 ------|-----------|------|------|-----
 + | EDID | Editor ID | cstring |
  | FULL | Name | cstring |
--* | CARD | Card | formid | FormID of a [CCRD](CCRD.md) record.
+-* | CARD | Card | formid | FormID of a [CCRD](CCRD.html) record.
  | DATA | Data | uint32 | Broken

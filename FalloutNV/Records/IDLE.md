@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 IDLE
 ====
 
@@ -8,8 +12,8 @@ Idle Animation
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | EDID | Editor ID | cstring |
-+ | | [Model Data](Subrecords/Model.md) | collection |
--* | [CTDA](Subrecords/CTDA.md) | Condition | struct |
++ | | [Model Data](Subrecords/Model.html) | collection |
+-* | [CTDA](Subrecords/CTDA.html) | Condition | struct |
  | ANAM | Related Idle Animations | struct |
 + | DATA | | struct |
 
@@ -17,8 +21,8 @@ Count | Subrecord | Name | Type | Info
 
 Name | Type | Info
 -----|------|-----
-Parent Idle Animation | formid | FormID of a [IDLE](IDLE.md) record, or null.
-Previous Sibling Idle Animation | formid | FormID of a [IDLE](IDLE.md) record, or null.
+Parent Idle Animation | formid | FormID of a [IDLE](IDLE.html) record, or null.
+Previous Sibling Idle Animation | formid | FormID of a [IDLE](IDLE.html) record, or null.
 
 ### DATA
 

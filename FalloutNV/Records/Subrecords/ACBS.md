@@ -1,7 +1,11 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 ACBS Subrecord
 ==========
 
-As used by the [CREA](../CREA.md) and [NPC_](../NPC_.md) record types.
+As used by the [CREA](../CREA.html) and [NPC_](../NPC_.html) record types.
 
 ## Format
 
@@ -20,7 +24,7 @@ Template Flags | uint16 | See below for values.
 
 ### Flag Values
 
-Flag values for [CREA](../CREA.md) and [NPC_](../NPC_.md) records differ.
+Flag values for [CREA](../CREA.html) and [NPC_](../NPC_.html) records differ.
 
 Value | Meaning (CREA) | Meaning (NPC_)
 ------|----------------|---------------

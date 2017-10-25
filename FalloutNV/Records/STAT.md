@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 STAT
 ====
 
@@ -8,10 +12,10 @@ Static
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring | Editor ID
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
- | | [Model](Subrecords/Model.md) | collection |
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
+ | | [Model](Subrecords/Model.html) | collection |
  | BRUS | Passthrough Sound | int8 | Enum - see values below.
- | RNAM | Sound - Looping / Random | formid | FormID of a [SOUN](SOUN.md) record.
+ | RNAM | Sound - Looping / Random | formid | FormID of a [SOUN](SOUN.html) record.
 
 ### BRUS Values
 

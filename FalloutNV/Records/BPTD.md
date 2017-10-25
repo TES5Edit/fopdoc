@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 BPTD
 ====
 
@@ -8,10 +12,10 @@ Body Part Data
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring | Editor ID
-+ | | [Model Data](Subrecords/Model.md) | collection |
++ | | [Model Data](Subrecords/Model.html) | collection |
 +* | | Body Part | collection | See below for details.
 +* | | Unnamed Body Part | collection | See below for details.
- | RAGA | Ragdoll | formid | FormID of a [RGDL](RGDL.md) record.
+ | RAGA | Ragdoll | formid | FormID of a [RGDL](RGDL.html) record.
 
 ### Body Part Subrecord Collection
 
@@ -46,17 +50,17 @@ Damage Multiplier | float32 |
 Flags | uint8 | See below for values.
 Part Type | uint8 | Enum - see below for values.
 Health Percent | uint8 |
-[Actor Value](Values/Actor Values.md) | int8 |
+[Actor Value](Values/Actor Values.html) | int8 |
 To Hit Chance | uint8 |
 Explodable - Explosion Chance % | uint8 |
 Explodable - Debris Count | uint16 |
-Explodable - Debris | formid | FormID of a [DEBR](DEBR.md) record, or null.
-Explodable - Explosion | FormID of a [EXPL](EXPL.md) record, or null.
+Explodable - Debris | formid | FormID of a [DEBR](DEBR.html) record, or null.
+Explodable - Explosion | FormID of a [EXPL](EXPL.html) record, or null.
 Tracking Max Angle | float32 |
 Explodable - Debris Scale | float32 |
 Severable - Debris Count | int32 |
-Severable - Debris | formid | FormID of a [DEBR](DEBR.md) record, or null.
-Severable - Explosion | FormID of a [EXPL](EXPL.md) record, or null.
+Severable - Debris | formid | FormID of a [DEBR](DEBR.html) record, or null.
+Severable - Explosion | FormID of a [EXPL](EXPL.html) record, or null.
 Severable - Debris Scale | float32 |
 Gore Effects - Translate X | float32 |
 Gore Effects - Translate Y | float32 |
@@ -64,8 +68,8 @@ Gore Effects - Translate Z | float32 |
 Gore Effects - X Rotation | float32 |
 Gore Effects - Y Rotation | float32 |
 Gore Effects - Z Rotation | float32 |
-Severable - Impact Dataset | formid | FormID of a [IPDS](IPDS.md) record, or null.
-Explodable - Impact Dataset | formid | FormID of a [IPDS](IPDS.md) record, or null.
+Severable - Impact Dataset | formid | FormID of a [IPDS](IPDS.html) record, or null.
+Explodable - Impact Dataset | formid | FormID of a [IPDS](IPDS.html) record, or null.
 Severable - Decal Count | uint8 |
 Explodable - Decal Count | uint8 |
 Unused | byte[2] |

@@ -1,7 +1,11 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 OBND Subrecord
 ==========
 
-As used in the [ACTI](../ACTI.md) and [ADDN](../ADDN.md) record types.
+As used in the [ACTI](../ACTI.html) and [ADDN](../ADDN.html) record types.
 
 ## Format
 

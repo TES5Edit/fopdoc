@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 LTEX
 ====
 
@@ -10,10 +14,10 @@ Count | Subrecord | Name | Type | Info
 + | EDID | Editor ID | cstring |
 + | ICON | Large icon filename | cstring |
 + | MICO | Small icon filename | cstring |
-+ | TNAM | Texture | formid | FormID of a [TXST](TXST.md) record.
++ | TNAM | Texture | formid | FormID of a [TXST](TXST.html) record.
 + | HNAM | Havok Data | struct |
 + | SNAM | Texture Specular Exponent | uint8 |
--* | GNAM | Grass | formid | FormID of a [GRAS](GRAS.md) record.
+-* | GNAM | Grass | formid | FormID of a [GRAS](GRAS.html) record.
 
 ### HNAM
 

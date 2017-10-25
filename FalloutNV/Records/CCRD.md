@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 CCRD
 ====
 
@@ -8,14 +12,14 @@ Caravan Card
 Count | Subrecord | Name | Type | Info
 ------|-----------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
  | FULL | Name | cstring |
- | | [Model Data](Subrecords/Model.md) | collection |
+ | | [Model Data](Subrecords/Model.html) | collection |
  | ICON | Large Icon Filename | cstring |
  | MICO | Small Icon FIlename | cstring |
- | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
- | YNAM | Sound - Pick Up | formid | FormID of a [SOUN](SOUN.md) record.
- | ZNAM | Sound - Drop | formid | FormID of a [SOUN](SOUN.md) record.
+ | SCRI | Script | formid | FormID of a [SCPT](SCPT.html) record.
+ | YNAM | Sound - Pick Up | formid | FormID of a [SOUN](SOUN.html) record.
+ | ZNAM | Sound - Drop | formid | FormID of a [SOUN](SOUN.html) record.
  | TX00 | High Res Image - Face | cstring |
  | TX01 | High Res Image - Back | cstring |
  | INTV | Card Suit | uint32 | Enum - see values below.

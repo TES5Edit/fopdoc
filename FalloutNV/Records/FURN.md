@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 FURN
 ====
 
@@ -8,9 +12,9 @@ Furniture
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
  | FULL | Name | cstring |
-+ | | [Model Data](Subrecords/Model.md) | collection |
- | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
- | | [Destruction Data](Subrecords/Destruction.md) | collection |
++ | | [Model Data](Subrecords/Model.html) | collection |
+ | SCRI | Script | formid | FormID of a [SCPT](SCPT.html) record.
+ | | [Destruction Data](Subrecords/Destruction.html) | collection |
 + | MNAM | Marker Flags | uint8[] |

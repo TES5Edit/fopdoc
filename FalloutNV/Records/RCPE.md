@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 RCPE
 ====
 
@@ -9,7 +13,7 @@ Count | Subrecord | Name | Type | Info
 ------|-----------|------|------|-----
 + | EDID | Editor ID | cstring |
  | FULL | Name | cstring |
--* | [CTDA](Subrecords/CTDA.md) | Condition | struct |
+-* | [CTDA](Subrecords/CTDA.html) | Condition | struct |
  | DATA | Data | struct |
 -* | | Ingredient | collection | See below for details.
 -* | | Output | collection | See below for details.
@@ -18,14 +22,14 @@ Count | Subrecord | Name | Type | Info
 
 Name | Type | Info
 -----|------|-----
-[Skill](Values/Actor Values.md) | int32 |
+[Skill](Values/Actor Values.html) | int32 |
 Level | uint32 |
-Category | formid | FormID of a [RCCT](RCCT.md) record.
-Sub-Category | formid | FormID of a [RCCT](RCCT.md) record.
+Category | formid | FormID of a [RCCT](RCCT.html) record.
+Sub-Category | formid | FormID of a [RCCT](RCCT.html) record.
 
 ### Ingredient / Output Field Collection
 
 Count | Subrecord | Name | Type | Info
 ------|-----------|------|------|-----
-+ | RCIL | Item | formid | FormID of a [ARMO](ARMO.md), [AMMO](AMMO.md), [MISC](MISC.md), [WEAP](WEAP.md), [BOOK](BOOK.md), [KEYM](KEYM.md), [ALCH](ALCH.md), [NOTE](NOTE.md), [IMOD](IMOD.md), [CMNY](CMNY.md), [CCRD](CCRD.md), [CHIP](CHIP.md) or [LIGH](LIGH.md) record.
++ | RCIL | Item | formid | FormID of a [ARMO](ARMO.html), [AMMO](AMMO.html), [MISC](MISC.html), [WEAP](WEAP.html), [BOOK](BOOK.html), [KEYM](KEYM.html), [ALCH](ALCH.html), [NOTE](NOTE.html), [IMOD](IMOD.html), [CMNY](CMNY.html), [CCRD](CCRD.html), [CHIP](CHIP.html) or [LIGH](LIGH.html) record.
 + | RCQY | Quantity | uint32 |

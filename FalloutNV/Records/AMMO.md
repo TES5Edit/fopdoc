@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 AMMO
 ====
 
@@ -8,20 +12,20 @@ Ammunition
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
 + | FULL | Name | cstring |
- | | [Model Data](Subrecords/Model.md) | collection |
+ | | [Model Data](Subrecords/Model.html) | collection |
  | ICON | Large Icon Filename | cstring |
  | MICO | Small Icon FIlename | cstring |
- | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
- | | [Destruction Data](Subrecords/Destruction.md) | collection |
- | YNAM | Sound - Pick Up | formid | FormID of a [SOUN](SOUN.md) record.
- | ZNAM | Sound - Drop | formid | FormID of a [SOUN](SOUN.md) record.
+ | SCRI | Script | formid | FormID of a [SCPT](SCPT.html) record.
+ | | [Destruction Data](Subrecords/Destruction.html) | collection |
+ | YNAM | Sound - Pick Up | formid | FormID of a [SOUN](SOUN.html) record.
+ | ZNAM | Sound - Drop | formid | FormID of a [SOUN](SOUN.html) record.
 + | [DATA](#data) | Data | struct |
  | DAT2 | Data 2 | struct |
  | ONAM | Short Name | cstring |
  | QNAM | Abbreviation | cstring |
--* | RCIL | Ammo Effect | formid | FormID of an [AMEF](AMEF.md) record.
+-* | RCIL | Ammo Effect | formid | FormID of an [AMEF](AMEF.html) record.
 
 ### DATA
 
@@ -45,7 +49,7 @@ Flag | Meaning
 Name | Type | Info
 -----|------|-----
 Projectiles Per Shot | uint32 |
-Projectile | formid | FormID of a [PROJ](PROJ.md) record, or null.
+Projectile | formid | FormID of a [PROJ](PROJ.html) record, or null.
 Weight | float32 |
-Consumed Ammo | formid | FormID of an [AMMO](AMMO.md) or [MISC](MISC.md) record, or null.
+Consumed Ammo | formid | FormID of an [AMMO](AMMO.html) or [MISC](MISC.html) record, or null.
 Consumed Percentage | float32 |

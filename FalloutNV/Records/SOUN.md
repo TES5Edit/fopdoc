@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 SOUN
 ====
 
@@ -8,7 +12,7 @@ Sound
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
  | FNAM | Sound Filename | cstring |
  | RNAM | Random Chance % | uint8 |
 + | SNDD *or* SNDX | Sound Data | struct |

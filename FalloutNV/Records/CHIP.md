@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 CHIP
 ====
 
@@ -8,11 +12,11 @@ Casino Chip
 Count | Subrecord | Name | Type | Info
 ------|-----------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
  | FULL | Name | cstring |
- | | [Model Data](Subrecords/Model.md) | collection |
+ | | [Model Data](Subrecords/Model.html) | collection |
  | ICON | Large Icon Filename | cstring |
  | MICO | Small Icon FIlename | cstring |
- | | [Destruction Data](Subrecords/Destruction.md) | collection |
- | YNAM | Sound - Pick Up | formid | FormID of a [SOUN](SOUN.md) record.
- | ZNAM | Sound - Drop | formid | FormID of a [SOUN](SOUN.md) record.
+ | | [Destruction Data](Subrecords/Destruction.html) | collection |
+ | YNAM | Sound - Pick Up | formid | FormID of a [SOUN](SOUN.html) record.
+ | ZNAM | Sound - Drop | formid | FormID of a [SOUN](SOUN.html) record.

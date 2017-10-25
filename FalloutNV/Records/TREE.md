@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 TREE
 ====
 
@@ -8,8 +12,8 @@ Tree
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring | Editor ID
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
-+ | | [Model Data](Subrecords/Model.md) | collection |
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
++ | | [Model Data](Subrecords/Model.html) | collection |
 + | ICON | Large icon filename | cstring |
 + | MICO | Small icon filename | cstring |
 + | SNAM | SpeedTree Seeds | uint32[] |

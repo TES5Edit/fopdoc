@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 LIGH
 ====
 
@@ -8,15 +12,15 @@ Light
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring | Editor ID
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
- | | [Model Data](Subrecords/Model.md) | collection |
- | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
+ | | [Model Data](Subrecords/Model.html) | collection |
+ | SCRI | Script | formid | FormID of a [SCPT](SCPT.html) record.
  | FULL | Name | cstring |
  | ICON | Large Icon Filename | cstring |
  | MICO | Small Icon FIlename | cstring |
 + | DATA | | struct |
 + | FMAM | Fade Value | foat32 |
- | SNAM | Sound | formid | FormID of a SOUN ([FO3](../../Fallout3/Records/SOUN.md), [FNV](../../FalloutNV/Records/SOUN.md)) record.
+ | SNAM | Sound | formid | FormID of a SOUN ([FO3](../../Fallout3/Records/SOUN.html), [FNV](../../FalloutNV/Records/SOUN.html)) record.
 
 ### DATA
 

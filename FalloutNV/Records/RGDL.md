@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 RGDL
 ====
 
@@ -10,8 +14,8 @@ Count | Subrecord | Name | Type | Info
 + | EDID | Editor ID | cstring |
 + | NVER | Version | uint32 |
 + | DATA | General Data | struct |
-+ | XNAM | Actor Base | formid | FormID of a CREA ([FO3](../../Fallout3/Records/CREA.md), [FNV](../../FalloutNV/Records/CREA.md)) or NPC_ ([FO3](../../Fallout3/Records/NPC_.md), [FNV](../../FalloutNV/Records/NPC_.md)) record.
-+ | TNAM | Body Part Data | formid | FormID of a [BPTD](BPTD.md) BPTD ([FO3](../../Fallout3/Records/BPTD.md), [FNV](../../FalloutNV/Records/BPTD.md)) record.
++ | XNAM | Actor Base | formid | FormID of a CREA ([FO3](../../Fallout3/Records/CREA.html), [FNV](../../FalloutNV/Records/CREA.html)) or NPC_ ([FO3](../../Fallout3/Records/NPC_.html), [FNV](../../FalloutNV/Records/NPC_.html)) record.
++ | TNAM | Body Part Data | formid | FormID of a [BPTD](BPTD.html) BPTD ([FO3](../../Fallout3/Records/BPTD.html), [FNV](../../FalloutNV/Records/BPTD.html)) record.
  | RAFD | Feedback Data | struct |
  | RAFB | Feedback Dynamic Bones | uint16[] |
 + | RAPS | Pose Matching Data | struct |

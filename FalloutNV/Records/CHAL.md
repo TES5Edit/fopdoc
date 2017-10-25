@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 CHAL
 ====
 
@@ -11,7 +15,7 @@ Count | Subrecord | Name | Type | Info
  | FULL | Name | cstring |
  | ICON | Path to icon texture, when viewed in PipBoy | cstring | Optional
  | MICO | Path to icon texture, when viewed in upper-left message | cstring | Optional
- | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
+ | SCRI | Script | formid | FormID of a [SCPT](SCPT.html) record.
  | DESC | Description | cstring |
  | DATA | Data | struct |
  | SNAM | Value3 | FormID | Depends on DATA.Type

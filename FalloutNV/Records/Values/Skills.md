@@ -1,7 +1,11 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 Skill Enum Values
 =================
 
-As used in the [BOOK](../BOOK.md) and [CLAS](../CLAS.md) record types.
+As used in the [BOOK](../BOOK.html) and [CLAS](../CLAS.html) record types.
 
 Value | Meaning
 ------|--------

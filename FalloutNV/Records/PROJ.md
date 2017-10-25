@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 PROJ
 ====
 
@@ -8,14 +12,14 @@ Projectile
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
  | FULL | Name | cstring |
-+ | | [Model Data](Subrecords/Model.md) | collection |
- | | [Destruction Data](Subrecords/Destruction.md) | collection |
++ | | [Model Data](Subrecords/Model.html) | collection |
+ | | [Destruction Data](Subrecords/Destruction.html) | collection |
 + | [DATA](#data) | Data | struct
 + | NAM1 | Muzzle Flash Model Filename | cstring |
 + | NAM2 | Muzzle Flash Model Texture File Hashes | uint8[] |
-+ | [VNAM](Values/Sound Levels.md) | Sound Level | uint32 | Enum - see link for values.
++ | [VNAM](Values/Sound Levels.html) | Sound Level | uint32 | Enum - see link for values.
 
 ### DATA
 
@@ -26,19 +30,19 @@ Type | uint16 | Enum - see below for values.
 Gravity | float32 |
 Speed | float32 |
 Range | float32 |
-Light | formid | FormID of a [LIGH](LIGH.md) record, or null.
-Muzzle Flash - Light | formid | FormID of a [LIGH](LIGH.md) record, or null.
+Light | formid | FormID of a [LIGH](LIGH.html) record, or null.
+Muzzle Flash - Light | formid | FormID of a [LIGH](LIGH.html) record, or null.
 Tracer Chance | float32 |
 Explosion - Alt. Trigger - Proximity | float32 |
 Explosion - Alt. Trigger - Timer | float32 |
-Explosion | formid | FormID of an [EXPL](EXPL.md) record, or null.
-Sound | formid | FormID of a [SOUN](SOUN.md) record, or null.
+Explosion | formid | FormID of an [EXPL](EXPL.html) record, or null.
+Sound | formid | FormID of a [SOUN](SOUN.html) record, or null.
 Muzzle Flash - Duration | float32 |
 Fade Duration | float32 |
 Impact Force | float32 |
-Sound - Countdown | formid | FormID of a [SOUN](SOUN.md) record, or null.
-Sound - Disable | formid | FormID of a [SOUN](SOUN.md) record, or null.
-Default Weapon Source | formid | FormID of a [WEAP](WEAP.md) record, or null.
+Sound - Countdown | formid | FormID of a [SOUN](SOUN.html) record, or null.
+Sound - Disable | formid | FormID of a [SOUN](SOUN.html) record, or null.
+Default Weapon Source | formid | FormID of a [WEAP](WEAP.html) record, or null.
 X Rotation | float32 |
 Y Rotation | float32 |
 Z Rotation | float32 |

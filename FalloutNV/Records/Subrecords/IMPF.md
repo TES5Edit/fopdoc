@@ -1,9 +1,13 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 IMPF Subrecord
 ==============
 
 Footstep Material
 
-As used in the [WRLD](../WRLD.md) and [CELL](../CELL.md) record types.
+As used in the [WRLD](../WRLD.html) and [CELL](../CELL.html) record types.
 
 ### Format
 

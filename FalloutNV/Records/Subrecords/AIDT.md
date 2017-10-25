@@ -1,7 +1,11 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 AIDT Subrecord
 ==========
 
-As used in the [CREA](../CREA.md) and [NPC_](../NPC_.md) record types.
+As used in the [CREA](../CREA.html) and [NPC_](../NPC_.html) record types.
 
 ## Fomat
 
@@ -13,8 +17,8 @@ Energy Level | uint8 |
 Responsibility | uint8 |
 Mood | uint8 | Enum - see below for values.
 Unused | byte[3] |
-[Buys/Sells and Services](../Values/Services.md) | uint32 | Flags - see link for values.
-[Teaches](../Values/Skills.md) | int8 | Enum - see link for values.
+[Buys/Sells and Services](../Values/Services.html) | uint32 | Flags - see link for values.
+[Teaches](../Values/Skills.html) | int8 | Enum - see link for values.
 Maximum Training Level | uint8 | 
 Assistance | int8 | Enum - see below for values.
 Aggro Radius Behaviour | uint8 | Flags - see below for values.

@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 SCOL
 ====
 
@@ -8,15 +12,15 @@ Static Collection
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
-+ | | [Model Data](Subrecords/Model.md) | collection |
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
++ | | [Model Data](Subrecords/Model.html) | collection |
 +* | | Part | collection | See below for details.
 
 ### Part Subrecord Collection
 
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
- | ONAM | Static | formid | FormID of a [STAT](STAT.md) record.
+ | ONAM | Static | formid | FormID of a [STAT](STAT.html) record.
 + | DATA | Placements | struct |
 
 #### DATA

@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 ANIO
 ====
 
@@ -8,5 +12,5 @@ Animated Object
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | | [Model Data](Subrecords/Model.md) | collection |
-+ | DATA | Animation | formid | FormID of an [IDLE](IDLE.md) record.
++ | | [Model Data](Subrecords/Model.html) | collection |
++ | DATA | Animation | formid | FormID of an [IDLE](IDLE.html) record.

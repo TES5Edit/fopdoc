@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 GRAS
 ====
 
@@ -8,8 +12,8 @@ Grass
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring | Editor ID
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
-+ | | [Model Data](Subrecords/Model.md) | collection |
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
++ | | [Model Data](Subrecords/Model.html) | collection |
 + | DATA | | struct |
 
 ### DATA

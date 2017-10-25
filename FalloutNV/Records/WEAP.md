@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 WEAP
 ====
 
@@ -8,25 +12,25 @@ Weapon
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
  | FULL | Name | cstring |
-+ | | [Model Data](Subrecords/Model.md) | collection |
++ | | [Model Data](Subrecords/Model.html) | collection |
  | ICON | Large icon filename | cstring |
  | MICO | Small icon filename | cstring |
- | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
- | EITM | Object Effect | formid | FormID of an [ENCH](ENCH.md) or [SPEL](SPEL.md) record.
+ | SCRI | Script | formid | FormID of a [SCPT](SCPT.html) record.
+ | EITM | Object Effect | formid | FormID of an [ENCH](ENCH.html) or [SPEL](SPEL.html) record.
  | EAMT | Enchantment Charge Amount | int16 |
- | NAM0 | Ammo | formid | FormID of an [AMMO](AMMO.md) or [FLST](FLST.md) record.
- | | [Destruction Data](Subrecords/Destruction.md) | collection |
- | REPL | Repair List | formid | FormID of a [FLST](FLST.md) record.
-+ | [ETYP](Subrecords/ETYP.md) | Equipment Type | int32 |
- | BIPL | Biped Model List | formid | FormID of a [FLST](FLST.md) record.
- | YNAM | Sound - Pick Up | formid | FormID of a [SOUN](SOUN.md) record.
- | ZNAM | Sound - Drop | formid | FormID of a [SOUN](SOUN.md) record.
- | | [Shell Casing Model Data](Subrecords/Model.md) | collection | #2
- | | [Scope Model Data](Subrecords/Model.md) | collection | #3
- | EFSD | Scope Effect | formid | FormID of an [EFSH](EFSH.md) record.
- | | [Scope Effect Model Data](Subrecords/Model.md) | collection | #4
+ | NAM0 | Ammo | formid | FormID of an [AMMO](AMMO.html) or [FLST](FLST.html) record.
+ | | [Destruction Data](Subrecords/Destruction.html) | collection |
+ | REPL | Repair List | formid | FormID of a [FLST](FLST.html) record.
++ | [ETYP](Subrecords/ETYP.html) | Equipment Type | int32 |
+ | BIPL | Biped Model List | formid | FormID of a [FLST](FLST.html) record.
+ | YNAM | Sound - Pick Up | formid | FormID of a [SOUN](SOUN.html) record.
+ | ZNAM | Sound - Drop | formid | FormID of a [SOUN](SOUN.html) record.
+ | | [Shell Casing Model Data](Subrecords/Model.html) | collection | #2
+ | | [Scope Model Data](Subrecords/Model.html) | collection | #3
+ | EFSD | Scope Effect | formid | FormID of an [EFSH](EFSH.html) record.
+ | | [Scope Effect Model Data](Subrecords/Model.html) | collection | #4
  | MWD1 | Model With Mod 1 | cstring |
  | MWD2 | Model With Mod 2 | cstring |
  | MWD3 | Model With Mods 1 and 2 | cstring |
@@ -36,35 +40,35 @@ Count | Subrecord | Name | Type | Info
  | MWD7 | Model With Mods 1, 2 and 3 | cstring |
  | VANM | VATS Attack Name | cstring |
  | NNAM | Embedded Weapon Node | cstring |
- | INAM | Impact Dataset | formid | FormID of a [IPDS](IPDS.md) record.
- | WNAM | First Person Model | formid | FormID of a [STAT](STAT.md) record.
- | WNM1 | 1st Person Model With Mod 1 | formid | FormID of a [STAT](STAT.md) record.
- | WNM2 | 1st Person Model With Mod 2 | formid | FormID of a [STAT](STAT.md) record.
- | WNM3 | 1st Person Model With Mods 1 and 2 | formid | FormID of a [STAT](STAT.md) record.
- | WNM4 | 1st Person Model With Mod 3 | formid | FormID of a [STAT](STAT.md) record.
- | WNM5 | 1st Person Model With Mods 1 and 3 | formid | FormID of a [STAT](STAT.md) record.
- | WNM6 | 1st Person Model With Mods 2 and 3 | formid | FormID of a [STAT](STAT.md) record.
- | WNM7 | 1st Person Model With Mods 1, 2 and 3 | formid | FormID of a [STAT](STAT.md) record.
- | WMI1 | Weapon Mod 1 | formid | FormID of an [IMOD](IMOD.md) record.
- | WMI1 | Weapon Mod 2 | formid | FormID of an [IMOD](IMOD.md) record.
- | WMI1 | Weapon Mod 3 | formid | FormID of an [IMOD](IMOD.md) record.
- | SNAM | Sound - Gun - Shoot 3D | formid | FormID of a [SOUN](SOUN.md) record.
- | SNAM | Sound - Gun - Shoot Dist | formid | FormID of a [SOUN](SOUN.md) record.
- | XNAM | Sound - Gun - Shoot 2D | formid | FormID of a [SOUN](SOUN.md) record.
- | NAM7 | Sound - Gun - Shoot 3D Looping | formid | FormID of a [SOUN](SOUN.md) record.
- | TNAM | Sound - Melee - Swing / Gun - No Ammo | formid | FormID of a [SOUN](SOUN.md) record.
- | NAM6 | Sound - Block | formid | FormID of a [SOUN](SOUN.md) record.
- | UNAM | Sound - Idle | formid | FormID of a [SOUN](SOUN.md) record.
- | NAM9 | Sound - Equip | formid | FormID of a [SOUN](SOUN.md) record.
- | NAM8 | Sound - Unequip | formid | FormID of a [SOUN](SOUN.md) record.
- | WMS1 | Sound - Mod 1 - Shoot 3D | formid | FormID of a [SOUN](SOUN.md) record.
- | WMS1 | Sound - Mod 1 - Shoot Dist | formid | FormID of a [SOUN](SOUN.md) record.
- | WMS2 | Sound - Mod 1 - Shoot 2D | formid | FormID of a [SOUN](SOUN.md) record.
+ | INAM | Impact Dataset | formid | FormID of a [IPDS](IPDS.html) record.
+ | WNAM | First Person Model | formid | FormID of a [STAT](STAT.html) record.
+ | WNM1 | 1st Person Model With Mod 1 | formid | FormID of a [STAT](STAT.html) record.
+ | WNM2 | 1st Person Model With Mod 2 | formid | FormID of a [STAT](STAT.html) record.
+ | WNM3 | 1st Person Model With Mods 1 and 2 | formid | FormID of a [STAT](STAT.html) record.
+ | WNM4 | 1st Person Model With Mod 3 | formid | FormID of a [STAT](STAT.html) record.
+ | WNM5 | 1st Person Model With Mods 1 and 3 | formid | FormID of a [STAT](STAT.html) record.
+ | WNM6 | 1st Person Model With Mods 2 and 3 | formid | FormID of a [STAT](STAT.html) record.
+ | WNM7 | 1st Person Model With Mods 1, 2 and 3 | formid | FormID of a [STAT](STAT.html) record.
+ | WMI1 | Weapon Mod 1 | formid | FormID of an [IMOD](IMOD.html) record.
+ | WMI1 | Weapon Mod 2 | formid | FormID of an [IMOD](IMOD.html) record.
+ | WMI1 | Weapon Mod 3 | formid | FormID of an [IMOD](IMOD.html) record.
+ | SNAM | Sound - Gun - Shoot 3D | formid | FormID of a [SOUN](SOUN.html) record.
+ | SNAM | Sound - Gun - Shoot Dist | formid | FormID of a [SOUN](SOUN.html) record.
+ | XNAM | Sound - Gun - Shoot 2D | formid | FormID of a [SOUN](SOUN.html) record.
+ | NAM7 | Sound - Gun - Shoot 3D Looping | formid | FormID of a [SOUN](SOUN.html) record.
+ | TNAM | Sound - Melee - Swing / Gun - No Ammo | formid | FormID of a [SOUN](SOUN.html) record.
+ | NAM6 | Sound - Block | formid | FormID of a [SOUN](SOUN.html) record.
+ | UNAM | Sound - Idle | formid | FormID of a [SOUN](SOUN.html) record.
+ | NAM9 | Sound - Equip | formid | FormID of a [SOUN](SOUN.html) record.
+ | NAM8 | Sound - Unequip | formid | FormID of a [SOUN](SOUN.html) record.
+ | WMS1 | Sound - Mod 1 - Shoot 3D | formid | FormID of a [SOUN](SOUN.html) record.
+ | WMS1 | Sound - Mod 1 - Shoot Dist | formid | FormID of a [SOUN](SOUN.html) record.
+ | WMS2 | Sound - Mod 1 - Shoot 2D | formid | FormID of a [SOUN](SOUN.html) record.
 + | DATA | | struct |
 + | DNAM | | struct |
 + | CRDT | Critical Data | struct |
  | VATS | VATS | struct |
-+ | [VNAM](Values/Sound Levels.md) | Sound Level | uint32 |
++ | [VNAM](Values/Sound Levels.html) | Sound Level | uint32 |
 
 ### DATA
 
@@ -80,7 +84,7 @@ Clip Size | uint8 |
 
 Name | Type | Info
 -----|------|-----
-[Animation Type](Values/Weapon Animation Types.md) | uint32 | Enum
+[Animation Type](Values/Weapon Animation Types.html) | uint32 | Enum
 Animation Multiplier | float32 |
 Reach | float32 |
 Flags 1 | uint8 | See values below.
@@ -92,7 +96,7 @@ Spread | float32 |
 Unknown | byte[4] |
 Sight FOV | float32 |
 ?? | float32 |
-Projectile | formid | FormID of a [PROJ](PROJ.md) record, or null.
+Projectile | formid | FormID of a [PROJ](PROJ.html) record, or null.
 Base VATS To-Hit Chance | uint8 |
 Attack Animation | uint8 | Enum - see values below.
 Projectile Cound | uint8 |
@@ -112,11 +116,11 @@ Attack Shots/Sec | float32 |
 Reload Time | float32 |
 Jam Time | float32 |
 Aim Arc | float32 |
-[Skill](Values/Actor Values.md) | int32 | Enum
+[Skill](Values/Actor Values.html) | int32 | Enum
 Rumble - Pattern | uint32 | Enum - see below for values.
 Rumble - Wavelength | float32 |
 Limb Damage Multiplier | float32 |
-[Resistance Type](Values/Actor Values.md) | int32 | Enum
+[Resistance Type](Values/Actor Values.html) | int32 | Enum
 Sight Usage | float32 |
 Semi-Automatic Fire Delay Min | float32 |
 Semi-Automatic Fire Delay Max | float32 |
@@ -313,7 +317,7 @@ Unused | byte[2] |
 Critical % Multiplier | float32 |
 Flags | uint8 | See below for values.
 Unused | byte[3] |
-Effect | formid | FormID of a [SPEL](SPEL.md) record, or null.
+Effect | formid | FormID of a [SPEL](SPEL.html) record, or null.
 
 #### Flag Values
 
@@ -325,7 +329,7 @@ Value | Meaning
 
 Name | Type | Info
 -----|------|-----
-Effect | formid | FormID of a [SPEL](SPEL.md), or null.
+Effect | formid | FormID of a [SPEL](SPEL.html), or null.
 Skill | float32 |
 Damage Multiplier | float32 |
 AP | float32 |

@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 QUST
 ====
 
@@ -8,12 +12,12 @@ Quest
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
- | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
+ | SCRI | Script | formid | FormID of a [SCPT](SCPT.html) record.
  | FULL | Name | cstring |
  | ICON | Large Icon Filename | cstring |
  | MICO | Small Icon FIlename | cstring |
 + | DATA | General | struct |
--* | CTDA | Condition | struct | [FO3](../../Fallout3/Records/Subrecords/CTDA.md) and [FNV](../../FalloutNV/Records/Subrecords/CTDA.md) definitions differ.
+-* | CTDA | Condition | struct | [FO3](../../Fallout3/Records/Subrecords/CTDA.html) and [FNV](../../FalloutNV/Records/Subrecords/CTDA.html) definitions differ.
 -* | | Stage | collection | See below for details.
 -* | | Objective | collection | See below for details.
 
@@ -48,10 +52,10 @@ Count | Subrecord | Name | Type | Info
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | Stage Flags | uint8 | See below for values.
--* | CTDA | Condition | struct | [FO3](../../Fallout3/Records/Subrecords/CTDA.md) and [FNV](../../FalloutNV/Records/Subrecords/CTDA.md) definitions differ.
+-* | CTDA | Condition | struct | [FO3](../../Fallout3/Records/Subrecords/CTDA.html) and [FNV](../../FalloutNV/Records/Subrecords/CTDA.html) definitions differ.
  | CNAM | Log Entry | cstring |
-+ | | Embedded Script | collection | [FO3](../../Fallout3/Records/Subrecords/Script.md) and [FNV](../../FalloutNV/Records/Subrecords/Script.md) definitions differ.
- | NAM0 | Next Quest | formid | FormID of a [QUST](QUST.md) record.
++ | | Embedded Script | collection | [FO3](../../Fallout3/Records/Subrecords/Script.html) and [FNV](../../FalloutNV/Records/Subrecords/Script.html) definitions differ.
+ | NAM0 | Next Quest | formid | FormID of a [QUST](QUST.html) record.
 
 ##### Stage Flag Values
 
@@ -73,13 +77,13 @@ Count | Subrecord | Name | Type | Info
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | QSTA | Target | struct |
--* | CTDA | Condition | struct | [FO3](../../Fallout3/Records/Subrecords/CTDA.md) and [FNV](../../FalloutNV/Records/Subrecords/CTDA.md) definitions differ.
+-* | CTDA | Condition | struct | [FO3](../../Fallout3/Records/Subrecords/CTDA.html) and [FNV](../../FalloutNV/Records/Subrecords/CTDA.html) definitions differ.
 
 ##### QSTA
 
 Name | Type | Info
 -----|------|-----
-Target | formid | FormID of a REFR ([FO3](../../Fallout3/Records/REFR.md), [FNV](../../FalloutNV/Records/REFR.md)), PGRE ([FO3](../../Fallout3/Records/PGRE.md), [FNV](../../FalloutNV/Records/PGRE.md)), PMIS ([FO3](../../Fallout3/Records/PMIS.md), [FNV](../../FalloutNV/Records/PMIS.md)), ACRE ([FO3](../../Fallout3/Records/ACRE.md), [FNV](../../FalloutNV/Records/ACRE.md)) or ACHR ([FO3](../../Fallout3/Records/ACHR.md), [FNV](../../FalloutNV/Records/ACHR.md)) record.
+Target | formid | FormID of a REFR ([FO3](../../Fallout3/Records/REFR.html), [FNV](../../FalloutNV/Records/REFR.html)), PGRE ([FO3](../../Fallout3/Records/PGRE.html), [FNV](../../FalloutNV/Records/PGRE.html)), PMIS ([FO3](../../Fallout3/Records/PMIS.html), [FNV](../../FalloutNV/Records/PMIS.html)), ACRE ([FO3](../../Fallout3/Records/ACRE.html), [FNV](../../FalloutNV/Records/ACRE.html)) or ACHR ([FO3](../../Fallout3/Records/ACHR.html), [FNV](../../FalloutNV/Records/ACHR.html)) record.
 Flags | uint8 | See below for values.
 Unused | byte[3] |
 

@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 MSET
 ====
 
@@ -33,8 +37,8 @@ Count | Subrecord | Name | Type | Info
  | ENAM | Loop Fade Out (Battle) / Looping/Random Crossfade Overlap (Dungeon, Location) / Nighttime Min (Incidental) | float32 |
  | FNAM | Recovery Time (Battle) / Layer Crossfade Time (Dungeon, Location) / Daytime Max (Incidental) | float32 |
  | GNAM | Nighttime Max (Incidental) | float32 |
- | HNAM | Intro (Battle, Dungeon) / Daytime (Incidental) | formid | FormID of a [SOUN](SOUN.md) record.
- | INAM | Outro (Battle, Dungeon) / Nighttime (Incidental) | formid | FormID of a [SOUN](SOUN.md) record.
+ | HNAM | Intro (Battle, Dungeon) / Daytime (Incidental) | formid | FormID of a [SOUN](SOUN.html) record.
+ | INAM | Outro (Battle, Dungeon) / Nighttime (Incidental) | formid | FormID of a [SOUN](SOUN.html) record.
  | DATA | ?? | ?? |
 
 ### NAM1

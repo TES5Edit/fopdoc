@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 INFO
 ====
 
@@ -8,22 +12,22 @@ Dialog Response
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | DATA | | struct |
-+ | QSTI | Quest | formid | FormID of a [QUST](QUST.md) record.
- | TPIC | Topic | formid | FormID of a [DIAL](DIAL.md) record.
- | PNAM | Previous INFO | formid | FormID of an [INFO](INFO.md) record, or null.
--* | NAME | Topic | formid | FormID of a [DIAL](DIAL.md) record.
++ | QSTI | Quest | formid | FormID of a [QUST](QUST.html) record.
+ | TPIC | Topic | formid | FormID of a [DIAL](DIAL.html) record.
+ | PNAM | Previous INFO | formid | FormID of an [INFO](INFO.html) record, or null.
+-* | NAME | Topic | formid | FormID of a [DIAL](DIAL.html) record.
 -* | | Response | collection | See below for details.
--* | [CTDA](Subrecords/CTDA.md) | Condition | struct |
--* | TCLT | Choice | formid | FormID of a [DIAL](DIAL.md) record.
--* | TCLF | Link From Topic | formid | FormID of a [DIAL](DIAL.md) record.
--* | TCFU | ?? | formid | FormID of an [INFO](INFO.md) record.
-+ | | [Embedded Script (Begin)](Subrecords/Script.md) | collection |
+-* | [CTDA](Subrecords/CTDA.html) | Condition | struct |
+-* | TCLT | Choice | formid | FormID of a [DIAL](DIAL.html) record.
+-* | TCLF | Link From Topic | formid | FormID of a [DIAL](DIAL.html) record.
+-* | TCFU | ?? | formid | FormID of an [INFO](INFO.html) record.
++ | | [Embedded Script (Begin)](Subrecords/Script.html) | collection |
 + | NEXT | Marker | null |
-+ | | [Embedded Script (End)](Subrecords/Script.md) | collection |
- | SNDD | Unused | formid | FormID of a [SOUN](SOUN.md) record.
++ | | [Embedded Script (End)](Subrecords/Script.html) | collection |
+ | SNDD | Unused | formid | FormID of a [SOUN](SOUN.html) record.
  | RNAM | Prompt | cstring |
- | ANAM | Speaker | formid | FormID of a [CREA](CREA.md) or [NPC_](NPC_.md) record.
- | KNAM | Actor Value / Perk | formid | FormID of a [AVIF](AVIF.md) or [PERK](PERK.md) record.
+ | ANAM | Speaker | formid | FormID of a [CREA](CREA.html) or [NPC_](NPC_.html) record.
+ | KNAM | Actor Value / Perk | formid | FormID of a [AVIF](AVIF.html) or [PERK](PERK.html) record.
  | DNAM | Speech Challenge | uint32 | Enum - see below for values
 
 ### DATA
@@ -82,8 +86,8 @@ Count | Subrecord | Name | Type | Info
 + | NAM1 | Response Text | cstring |
 + | NAM2 | Script Notes | cstring |
  | NAM3 | Edits | cstring |
- | SNAM | Speaker Animation | formid | FormID of an [IDLE](IDLE.md) record.
- | LNAM | Listener Animation | formid | FormID of an [IDLE](IDLE.md) record.
+ | SNAM | Speaker Animation | formid | FormID of an [IDLE](IDLE.html) record.
+ | LNAM | Listener Animation | formid | FormID of an [IDLE](IDLE.html) record.
 
 #### TRDT
 
@@ -94,7 +98,7 @@ Emotion Value | int32 |
 Unused | byte[4] |
 Response Number | uint8 |
 Unused | byte[3] |
-Sound | formid | FormID of a [SOUN](SOUN.md) record, or null.
+Sound | formid | FormID of a [SOUN](SOUN.html) record, or null.
 Flags | uint8 | See below for values.
 Unused | byte[3] |
 

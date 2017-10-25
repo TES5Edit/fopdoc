@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 CSNO
 ====
 
@@ -48,8 +52,8 @@ Slot Reel Stop - Symbol 6 | uint32 |
 Slot Reel Stop - Symbol W | uint32 |
 Number of Decks | uint32 |
 Max Winnings | uint32 |
-Currency | formid | FormID of a [CHIP](CHIP.md) record.
-Casino Winnings Quest | formid | FormID of a [QUST](QUST.md) record.
+Currency | formid | FormID of a [CHIP](CHIP.html) record.
+Casino Winnings Quest | formid | FormID of a [QUST](QUST.html) record.
 Flags | uint32 | See values below.
 
 #### Flag Values

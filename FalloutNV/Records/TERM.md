@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 TERM
 ====
 
@@ -8,14 +12,14 @@ Terminal
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
  | FULL | Name | cstring |
- | | [Model Data](Subrecords/Model.md) | collection |
- | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
- | | [Destruction Data](Subrecords/Destruction.md) | collection |
+ | | [Model Data](Subrecords/Model.html) | collection |
+ | SCRI | Script | formid | FormID of a [SCPT](SCPT.html) record.
+ | | [Destruction Data](Subrecords/Destruction.html) | collection |
 + | DESC | Description | cstring |
- | SNAM | Sound - Looping | formid | FormID of a [SOUN](SOUN.md) record.
- | PNAM | Password Note | formid | FormID of a [NOTE](NOTE.md) record.
+ | SNAM | Sound - Looping | formid | FormID of a [SOUN](SOUN.html) record.
+ | PNAM | Password Note | formid | FormID of a [NOTE](NOTE.html) record.
 + | DNAM | | struct |
 -* | | Menu Item | collection | See below for details.
 
@@ -70,10 +74,10 @@ Count | Subrecord | Name | Type | Info
  | ITXT | Item Text | cstring |
 + | RNAM | Result Text | cstring |
 + | ANAM | Flags | uint8 | See below for values.
- | INAM | Display Note | formid | FormID of a [NOTE](NOTE.md) record.
- | TNAM | Sub Menu | formid | FormID of a [TERM](TERM.md) record.
-+ | | [Embedded Script](Subrecords/Script.md) | collection |
--* | [CTDA](Subrecords/CTDA.md) | Condition | struct |
+ | INAM | Display Note | formid | FormID of a [NOTE](NOTE.html) record.
+ | TNAM | Sub Menu | formid | FormID of a [TERM](TERM.html) record.
++ | | [Embedded Script](Subrecords/Script.html) | collection |
+-* | [CTDA](Subrecords/CTDA.html) | Condition | struct |
 
 #### AMAN Flag Values
 

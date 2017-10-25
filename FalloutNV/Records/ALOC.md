@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 ALOC
 ====
 
@@ -16,11 +20,11 @@ Count | Subrecord | Name | Type | Info
  | NAM5 | Day Start | uint32 |
  | NAM6 | Night Start | uint32 |
  | NAM7 | Retrigger Delay | float32 |
--* | HNAM | Neutral Media Set | formid | FormID of a [MSET](MSET.md) record.
--* | ZNAM | Ally Media Set | formid | FormID of a [MSET](MSET.md) record.
--* | XNAM | Friend Media Set | formid | FormID of a [MSET](MSET.md) record.
--* | YNAM | Enemy Media Set | formid | FormID of a [MSET](MSET.md) record.
--* | LNAM | Location Media Set | formid | FormID of a [MSET](MSET.md) record.
--* | GNAM | Battle Media Set | formid | FormID of a [MSET](MSET.md) record.
- | RNAM | Conditional Faction | formid | FormID of a [FACT](FACT.md) record.
+-* | HNAM | Neutral Media Set | formid | FormID of a [MSET](MSET.html) record.
+-* | ZNAM | Ally Media Set | formid | FormID of a [MSET](MSET.html) record.
+-* | XNAM | Friend Media Set | formid | FormID of a [MSET](MSET.html) record.
+-* | YNAM | Enemy Media Set | formid | FormID of a [MSET](MSET.html) record.
+-* | LNAM | Location Media Set | formid | FormID of a [MSET](MSET.html) record.
+-* | GNAM | Battle Media Set | formid | FormID of a [MSET](MSET.html) record.
+ | RNAM | Conditional Faction | formid | FormID of a [FACT](FACT.html) record.
  | FNAM | ?? | ?? |

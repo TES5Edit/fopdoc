@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 IMAD
 ====
 
@@ -66,8 +70,8 @@ Count | Subrecord | Name | Type | Info
  | SIAD | Cinematic Contrast Add | struct[] | An array of Time structures.
  | 0x14 IAD | Unknown | ?? |
  | TIAD | Unknown | ?? |
- | RDSD | Sound - Intro | formid | FormID of a [SOUN](SOUN.md) record.
- | RDSI | Sound - Outro | formid | FormID of a [SOUN](SOUN.md) record.
+ | RDSD | Sound - Intro | formid | FormID of a [SOUN](SOUN.html) record.
+ | RDSI | Sound - Outro | formid | FormID of a [SOUN](SOUN.html) record.
 
 
 ### DNAM

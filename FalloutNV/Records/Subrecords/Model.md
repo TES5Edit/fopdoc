@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 Model Subrecord Collection
 ======================
 
@@ -36,7 +40,7 @@ Name | Type | Info
 -----|------|-----
 Name Length | uint32 | Alternate texture data. Length of the following 3D name.
 3D Name | char[Name Length] | Alternate texture data.
-New Texture | formid | Alternate texture data. FormID of a [TXST](../TXST.md) record.
+New Texture | formid | Alternate texture data. FormID of a [TXST](../TXST.html) record.
 3D Index | int32 | Alternate texture data.
 
 ### MODD Flag Values

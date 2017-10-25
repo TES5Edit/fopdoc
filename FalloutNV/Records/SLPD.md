@@ -1,3 +1,7 @@
+---
+layout: falloutnvrec
+title: fopdoc
+---
 SLPD
 ====
 
@@ -15,4 +19,4 @@ Count | Subrecord | Name | Type | Info
 Name | Type | Info
 -----|------|-----
 Trigger Threshold | uint32 |
-Actor Effect | formid | FormID of a [SPEL](SPEL.md) record.
+Actor Effect | formid | FormID of a [SPEL](SPEL.html) record.
