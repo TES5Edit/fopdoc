@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 Model Subrecord Collection
 ======================
 

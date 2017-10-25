@@ -1,3 +1,7 @@
+---
+layout: fallout3grp
+title: fopdoc
+---
 Groups
 ======
 
