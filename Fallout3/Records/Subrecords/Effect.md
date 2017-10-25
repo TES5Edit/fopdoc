@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 Effect Subrecord Collection
 =======================
 
@@ -5,9 +9,9 @@ Effect Subrecord Collection
 
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
- | EFID | Base Effect | formid | FormID of a [MGEF](../MGEF.md) record.
+ | EFID | Base Effect | formid | FormID of a [MGEF](../MGEF.html) record.
 + | [EFIT](#efit) | Effect Data | struct |
- | [CTDA](CTDA.md) | Condition | struct |
+ | [CTDA](CTDA.html) | Condition | struct |
 
 ### EFIT
 

@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 MGEF
 ====
 
@@ -12,7 +16,7 @@ Count | Subrecord | Name | Type | Info
 + | DESC | Description | cstring |
  | ICON | Large icon filename | cstring |
  | MICO | Small icon filename | cstring |
- | | [Model Data](Subrecords/Model.md) | collection |
+ | | [Model Data](Subrecords/Model.html) | collection |
 + | DATA | Data | struct |
 
 ### DATA
@@ -23,21 +27,21 @@ Flags | uint32 | See below for values.
 Base Cost | float32 | Unused.
 Associated Item | formid |
 Magic School | int32 | Unused. A value of `-1` means `None`.
-[Resistance Type](Values/Actor Values.md) | int32 |
+[Resistance Type](Values/Actor Values.html) | int32 |
 Unknown | uint16 |
 Unused | byte[2] |
-Light | formid | FormID of a [LIGH](LIGH.md) record, or null.
+Light | formid | FormID of a [LIGH](LIGH.html) record, or null.
 Projectile Speed | float32 |
-Effect Shader | formid | FormID of an [EFSH](EFSH.md) record, or null.
-Object Display Shader | formid | FormID of an [EFSH](EFSH.md) record, or null.
-Effect Sound | formid | FormID of an [SOUN](SOUN.md) record, or null.
-Bold Sound | formid | FormID of an [SOUN](SOUN.md) record, or null.
-Hit Sound | formid | FormID of an [SOUN](SOUN.md) record, or null.
-Area Sound | formid | FormID of an [SOUN](SOUN.md) record, or null.
+Effect Shader | formid | FormID of an [EFSH](EFSH.html) record, or null.
+Object Display Shader | formid | FormID of an [EFSH](EFSH.html) record, or null.
+Effect Sound | formid | FormID of an [SOUN](SOUN.html) record, or null.
+Bold Sound | formid | FormID of an [SOUN](SOUN.html) record, or null.
+Hit Sound | formid | FormID of an [SOUN](SOUN.html) record, or null.
+Area Sound | formid | FormID of an [SOUN](SOUN.html) record, or null.
 Constant Effect Enchantment Factor | float32 | Unused.
 Constant Effect Barter Factor | float32 | Unused.
 Archtype | uint32 | Enum - see below for values.
-[Actor Value](Values/Actor Values.md) | int32 |
+[Actor Value](Values/Actor Values.html) | int32 |
 
 #### Flag Values
 

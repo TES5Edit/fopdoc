@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 REGN
 ====
 
@@ -11,7 +15,7 @@ Count | Subrecord | Name | Type | Info
  | ICON | Large icon filename | cstring |
  | MICO | Small icon filename | cstring |
 + | RCLR | Map Color | rgba |
- | WNAM | Worldspace | formid | FormID of a [WRLD](WRLD.md) record.
+ | WNAM | Worldspace | formid | FormID of a [WRLD](WRLD.html) record.
 -* | | Region Area | collection | See below for details.
 -* | Region Data Entry | collection | See below for details.
 
@@ -40,7 +44,7 @@ Count | Subrecord | Name | Type | Info
  | RDMP | Map Name | cstring |
 - | RDGS | Grasses | struct |
  | RDMD | Music Type | uint32 | Enum - see below for values.
- | RDMO | Music | formid | FormID of a [MUSC](MUSC.md) record.
+ | RDMO | Music | formid | FormID of a [MUSC](MUSC.html) record.
 - | RDSD | Sound | struct |
 - | RDWT | Weather Type | struct |
 
@@ -79,7 +83,7 @@ The RDOT subrecord consists of an array of objects with the following structure.
 
 Name | Type | Info
 -----|------|-----
-Object | formid | FormID of a [TREE](TREE.md), [STAT](STAT.md) or [LTEX](LTEX.md) record.
+Object | formid | FormID of a [TREE](TREE.html), [STAT](STAT.html) or [LTEX](LTEX.html) record.
 Parent Index | uint16 |
 Unused | byte[2] |
 Density | float32 |
@@ -118,7 +122,7 @@ The RDGS subrecord consists of an array of objects with the following structure.
 
 Name | Type | Info
 -----|------|-----
-Grass | formid | FormID of a [GRAS](GRAS.md) record.
+Grass | formid | FormID of a [GRAS](GRAS.html) record.
 Unknown | byte[4] |
 
 #### RDMD Values
@@ -135,7 +139,7 @@ The RDSD subrecord consists of an array of objects with the following structure.
 
 Name | Type | Info
 -----|------|-----
-Sound | formid | FormID of a [SOUN](SOUN.md) record.
+Sound | formid | FormID of a [SOUN](SOUN.html) record.
 Flags | uint32 | See below for values.
 Chance | uint32 |
 
@@ -154,6 +158,6 @@ The RDWT subrecord consists of an array of objects with the following structure.
 
 Name | Type | Info
 -----|------|-----
-Weather | formid | FormID of a [WTHR](WTHR.md) record.
+Weather | formid | FormID of a [WTHR](WTHR.html) record.
 Chance | uint32 |
-Global | formid | FormID of a [GLOB](GLOB.md) record, or null.
+Global | formid | FormID of a [GLOB](GLOB.html) record, or null.

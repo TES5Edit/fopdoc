@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 WTHR
 ====
 
@@ -10,15 +14,15 @@ Some of the subrecord codes begin with unprintable or whitespace characters. Suc
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
- | 0x00 IAD | Sunrise Image Space Modifier | formid | FormID of an [IMAD](IMAD.md) record.
- | 0x01 IAD | Day Image Space Modifier | formid | FormID of an [IMAD](IMAD.md) record.
- | 0x02 IAD | Sunset Image Space Modifier | formid | FormID of an [IMAD](IMAD.md) record.
- | 0x03 IAD | Night Image Space Modifier | formid | FormID of an [IMAD](IMAD.md) record.
+ | 0x00 IAD | Sunrise Image Space Modifier | formid | FormID of an [IMAD](IMAD.html) record.
+ | 0x01 IAD | Day Image Space Modifier | formid | FormID of an [IMAD](IMAD.html) record.
+ | 0x02 IAD | Sunset Image Space Modifier | formid | FormID of an [IMAD](IMAD.html) record.
+ | 0x03 IAD | Night Image Space Modifier | formid | FormID of an [IMAD](IMAD.html) record.
 + | DNAM | Cloud Textures - Layer 0 | cstring |
 + | CNAM | Cloud Textures - Layer 1 | cstring |
 + | ANAM | Cloud Textures - Layer 2 | cstring |
 + | BNAM | Cloud Textures - Layer 3 | cstring |
- | | [Model Data](Subrecords/Model.md) | collection |
+ | | [Model Data](Subrecords/Model.html) | collection |
 + | LNAM | Unknown | byte[4] |
 + | ONAM | Cloud Layer Speed | uint8[4] | Value is divided by 2550. Each uint8 is for a different cloud layer.
 - | PNAM | Cloud Layer Color | struct[4] | Array of Time of Day Colors structures. Each structure is for a different cloud layer.
@@ -95,7 +99,7 @@ Value | Meaning
 
 Name | Type | Info
 -----|------|-----
-Sound | formid | FormID of a [SOUN](SOUN.md) record.
+Sound | formid | FormID of a [SOUN](SOUN.html) record.
 Type | uint32 | Enum - see values below.
 
 #### Type Values

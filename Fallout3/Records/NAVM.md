@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 NAVM
 ====
 
@@ -21,7 +25,7 @@ Count | Subrecord | Name | Type | Info
 
 Name | Type | Info
 -----|------|-----
-Cell | formid | FormID of a [CELL](CELL.md) record.
+Cell | formid | FormID of a [CELL](CELL.html) record.
 Vertex Count | uint32 |
 Triangle Count | uint32 |
 External Connections Count | uint32 |
@@ -95,7 +99,7 @@ The NVDP subrecord consists of an array of objects with the following structure.
 
 Name | Type | Info
 -----|------|-----
-Reference | formid | FormID of a [REFR](REFR.md) record.
+Reference | formid | FormID of a [REFR](REFR.html) record.
 Unknown | uint16 |
 Unused | byte[2] |
 
@@ -106,5 +110,5 @@ The NVEX subrecord consists of an array of objects with the following structure.
 Name | Type | Info
 -----|------|-----
 Unknown | byte[4] |
-Navigation Mesh | formid | FormID of a [NAVM](NAVM.md) record.
+Navigation Mesh | formid | FormID of a [NAVM](NAVM.html) record.
 Triangle | uint16 |

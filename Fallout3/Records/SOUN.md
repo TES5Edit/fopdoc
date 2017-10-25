@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 SOUN
 ====
 
@@ -8,7 +12,7 @@ Sound
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
  | FNAM | Sound Filename | cstring |
 + | SNDD *or* SNDX | Sound Data | struct |
 - | ANAM | Attenuation Points | int16[5] | Each int16 represents a separate point on an attenuation curve.

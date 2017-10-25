@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 ASPC
 ====
 
@@ -8,9 +12,9 @@ Acoustic Space
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
- | SNAM | Sound - Looping | formid | FormID of a [SOUN](SOUN.md) record.
- | RDAT | Use Sound from Region (Interiors Only) | formid | FormID of a [REGN](REGN.md) record.
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
+ | SNAM | Sound - Looping | formid | FormID of a [SOUN](SOUN.html) record.
+ | RDAT | Use Sound from Region (Interiors Only) | formid | FormID of a [REGN](REGN.html) record.
 + | ANAM | Environment Type | uint32 | Enum - see below for values.
 
 ### ANAM Enum Values

@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 LSCR
 ====
 
@@ -17,6 +21,6 @@ Count | Subrecord | Name | Type | Info
 
 Name | Type | Info
 -----|------|-----
-Cell | formid | FormID of a [CELL](CELL.md) or [WRLD](WRLD.md) record.
+Cell | formid | FormID of a [CELL](CELL.html) or [WRLD](WRLD.html) record.
 Unused | byte[8] |
 

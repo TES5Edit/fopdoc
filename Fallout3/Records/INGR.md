@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 INGR
 ====
 
@@ -8,16 +12,16 @@ Ingredient
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
  | FULL | Name | cstring |
- | | [Model Data](Subrecords/Model.md) | collection |
+ | | [Model Data](Subrecords/Model.html) | collection |
  | ICON | Large icon filename | cstring |
  | MICO | Small icon filename | cstring |
- | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
-+ | [ETYP](Subrecords/ETYP.md) | Equipment Type | int32 |
+ | SCRI | Script | formid | FormID of a [SCPT](SCPT.html) record.
++ | [ETYP](Subrecords/ETYP.html) | Equipment Type | int32 |
 + | DATA | Weight | float32 |
 + | ENIT | Effect Data | struct |
-+* | | [Effect](Subrecords/Effect.md) | collection |
++* | | [Effect](Subrecords/Effect.html) | collection |
 
 ### ENIT
 

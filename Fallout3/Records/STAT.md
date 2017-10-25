@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 STAT
 ====
 
@@ -8,5 +12,5 @@ Static
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring | Editor ID
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
- | | [Model](Subrecords/Model.md) | collection | 
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
+ | | [Model](Subrecords/Model.html) | collection | 

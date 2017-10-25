@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 TACT
 ====
 
@@ -8,11 +12,11 @@ Talking Activator
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
  | FULL | Name | cstring |
-+ | | [Model Data](Subrecords/Model.md) | collection |
- | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
- | | [Destruction Data](Subrecords/Destruction.md) | collection |
- | SNAM | Sound | formid | FormID of a [SOUN](SOUN.md) record.
- | VNAM | Voice Type | formid | FormID of a [VTYP](VTYP.md) record.
++ | | [Model Data](Subrecords/Model.html) | collection |
+ | SCRI | Script | formid | FormID of a [SCPT](SCPT.html) record.
+ | | [Destruction Data](Subrecords/Destruction.html) | collection |
+ | SNAM | Sound | formid | FormID of a [SOUN](SOUN.html) record.
+ | VNAM | Voice Type | formid | FormID of a [VTYP](VTYP.html) record.
  

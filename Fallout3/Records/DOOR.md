@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 DOOR
 ====
 
@@ -8,14 +12,14 @@ Door
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
  | FULL | Name | cstring |
-+ | | [Model Data](Subrecords/Model.md) | collection |
- | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
- | | [Destruction Data](Subrecords/Destruction.md) | collection |
- | SNAM | Sound - Open | formid | FormID of a [SOUN](SOUN.md) record.
- | ANAM | Sound - Close | formid | FormID of a [SOUN](SOUN.md) record.
- | BNAM | Sound - Looping | formid | FormID of a [SOUN](SOUN.md) record.
++ | | [Model Data](Subrecords/Model.html) | collection |
+ | SCRI | Script | formid | FormID of a [SCPT](SCPT.html) record.
+ | | [Destruction Data](Subrecords/Destruction.html) | collection |
+ | SNAM | Sound - Open | formid | FormID of a [SOUN](SOUN.html) record.
+ | ANAM | Sound - Close | formid | FormID of a [SOUN](SOUN.html) record.
+ | BNAM | Sound - Looping | formid | FormID of a [SOUN](SOUN.html) record.
 + | FNAM | Flags | uint8 | See below for values.
 
 ### Flag Values

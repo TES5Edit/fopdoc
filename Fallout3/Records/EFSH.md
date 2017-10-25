@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 EFSH
 ====
 
@@ -79,7 +83,7 @@ Particle Shader - Initial Rotation (deg) | float32 |
 Particle Shader - Initial Rotation (deg) +/- | float32 |
 Particle Shader - Rotation Speed (deg/sec) | float32 |
 Particle Shader - Rotation Speed (deg/sec) +/- | float32 |
-Addon Models | formid | FormID of a [DEBR](DEBR.md) record, or null.
+Addon Models | formid | FormID of a [DEBR](DEBR.html) record, or null.
 Holes - Start Time | float32 |
 Holes - End Time | float32 |
 Holes - Start Value | float32 |

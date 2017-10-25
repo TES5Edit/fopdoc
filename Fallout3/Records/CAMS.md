@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 CAMS
 ====
 
@@ -8,9 +12,9 @@ Camera Shot
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
- | | [Model Data](Subrecords/Model.md) | collection |
+ | | [Model Data](Subrecords/Model.html) | collection |
 + | DATA | Data | struct |
- | MNAM | Image Space Modifier | formid | FormID of an [IMAD](IMAD.md) record.
+ | MNAM | Image Space Modifier | formid | FormID of an [IMAD](IMAD.html) record.
 
 ### DATA
 

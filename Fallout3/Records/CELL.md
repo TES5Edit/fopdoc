@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 CELL
 ====
 
@@ -12,21 +16,21 @@ Count | Subrecord | Name | Type | Info
 + | DATA | Flags | uint8 | See below for values.
  | XCLC | Grid | struct |
  | XCLL | Lighting | struct |
- | [IMPF](Subrecords/IMPF.md) | Footstep Material | struct |
+ | [IMPF](Subrecords/IMPF.html) | Footstep Material | struct |
 + | | Light Template | collection | See below for details.
  | XCLW | Water Height | float32
  | XNAM | Water Noise Texture | cstring |
- | XCLR | Regions | formid[] | Array of [REGN](REGN.md) record FormIDs.
- | XCIM | Image Space | formid | FormID of an [IMGS](IMGS.md) record.
+ | XCLR | Regions | formid[] | Array of [REGN](REGN.html) record FormIDs.
+ | XCIM | Image Space | formid | FormID of an [IMGS](IMGS.html) record.
  | XCET | Unknown | byte |
- | XEZN | Encounter Zone | formid | FormID of an [ECZN](ECZN.md) record.
- | XCCM | Climate | formid | FormID of a [CLMT](CLMT.md) record.
- | XCWT | Water | formid | FormID of a [WATR](WATR.md) record.
- | XOWN | Owner | formid | Ownership data. FormID of a [FACT](FACT.md), [ACHR](ACHR.md) or [NPC_](NPC_.md) record.
+ | XEZN | Encounter Zone | formid | FormID of an [ECZN](ECZN.html) record.
+ | XCCM | Climate | formid | FormID of a [CLMT](CLMT.html) record.
+ | XCWT | Water | formid | FormID of a [WATR](WATR.html) record.
+ | XOWN | Owner | formid | Ownership data. FormID of a [FACT](FACT.html), [ACHR](ACHR.html) or [NPC_](NPC_.html) record.
  | XRNK | Faction rank | int32 | Ownership data
- | XCAS | Acoustic Space | formid | FormID of an [ASPC](ASPC.md) record.
+ | XCAS | Acoustic Space | formid | FormID of an [ASPC](ASPC.html) record.
  | XCMT | Unused | byte |
- | XCMO | Music Type | formid | FormID of a [MUSC](MUSC.md) record.
+ | XCMO | Music Type | formid | FormID of a [MUSC](MUSC.html) record.
 
 
 ### DATA Flag Values
@@ -78,7 +82,7 @@ Fog Power | float32 |
 
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
-+ | LTMP | Template | formid | Light template. FormID of an [LGTM](LGTM.md) record, or null.
++ | LTMP | Template | formid | Light template. FormID of an [LGTM](LGTM.html) record, or null.
 + | LNAM | Inherit | uint32 | Light template flags. See below for values.
 
 #### LNAM Inherit Flag Values

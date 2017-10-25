@@ -1,7 +1,11 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 XAPD Subrecord
 ==========
 
-As used in the [ACHR](../ACHR.md) and [ACRE](../ACRE.md) record types.
+As used in the [ACHR](../ACHR.html) and [ACRE](../ACRE.html) record types.
 
 ## Format
 

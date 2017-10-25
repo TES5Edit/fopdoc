@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 ENCH
 ====
 
@@ -10,4 +14,4 @@ Count | Subrecord | Name | Type | Info
 + | EDID | Editor ID | cstring |
  | FULL | Name | cstring |
 + | ENIT | Effect Data | struct |
-+* | | [Effect](Subrecords/Effect.md) | collection |
++* | | [Effect](Subrecords/Effect.html) | collection |

@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 CONT
 ====
 
@@ -8,15 +12,15 @@ Container
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring | 
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
  | FULL | Name | cstring |
-+ | | [Model Data](Subrecords/Model.md) | collection | 
- | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
--* | | [Item](Subrecords/Item.md) | collection | 
- | | [Destruction Data](Subrecords/Destruction.md) | collection |
++ | | [Model Data](Subrecords/Model.html) | collection | 
+ | SCRI | Script | formid | FormID of a [SCPT](SCPT.html) record.
+-* | | [Item](Subrecords/Item.html) | collection | 
+ | | [Destruction Data](Subrecords/Destruction.html) | collection |
  | [DATA](#data) | Data | struct | 
- | SNAM | Sound - Open | formid | FormID of a [SOUN](SOUN.md) record.
- | QNAM | Sound - Close | formid | FormID of a [SOUN](SOUN.md) record.
+ | SNAM | Sound - Open | formid | FormID of a [SOUN](SOUN.html) record.
+ | QNAM | Sound - Close | formid | FormID of a [SOUN](SOUN.html) record.
  
 
 ### DATA

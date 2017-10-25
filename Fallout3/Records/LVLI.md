@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 LVLI
 ====
 
@@ -8,12 +12,12 @@ Leveled Item
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
 + | LVLD | Chance None | uint8 |
 + | LVLF | Flags | uint8 | See below for values.
-+ | LVLG | Global | formid | FormID of a [GLOB](GLOB.md) record.
++ | LVLG | Global | formid | FormID of a [GLOB](GLOB.html) record.
 +* | | Leveled List Entry | collection | See below for details.
- | | [Model Data](Subrecords/Model.md) | collection |
+ | | [Model Data](Subrecords/Model.html) | collection |
 
 ### LVLF Flag Values
 
@@ -28,7 +32,7 @@ Value | Meaning
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | LVLO | Base Data | struct |
- | [COED](Subrecords/COED.md) | Extra Data | struct |
+ | [COED](Subrecords/COED.html) | Extra Data | struct |
  
 #### LVLO
 
@@ -36,6 +40,6 @@ Name | Type | Info
 -----|------|-----
 Level | int16 |
 Unused | byte[2] |
-Reference | formid | FormID of a [ARMO](ARMO.md), [AMMO](AMMO.md), [MISC](MISC.md), [WEAP](WEAP.md), [BOOK](BOOK.md), [LVLI](LVLI.md), [KEYM](KEYM.md), [ALCH](ALCH.md) or [NOTE](NOTE.md) record.
+Reference | formid | FormID of a [ARMO](ARMO.html), [AMMO](AMMO.html), [MISC](MISC.html), [WEAP](WEAP.html), [BOOK](BOOK.html), [LVLI](LVLI.html), [KEYM](KEYM.html), [ALCH](ALCH.html) or [NOTE](NOTE.html) record.
 Count | int16 |
 Unused | byte[2] |

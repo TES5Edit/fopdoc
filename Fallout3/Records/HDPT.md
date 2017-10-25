@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 HDPT
 ====
 
@@ -9,9 +13,9 @@ Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
 + | FULL | Name | cstring |
- | | [Model Data](Subrecords/Model.md) | collection |
+ | | [Model Data](Subrecords/Model.html) | collection |
 + | DATA | Flags | uint8 | See below for values.
--* | HNAM | Extra Parts | formid | FormID of a [HDPT](HDPT.md) record.
+-* | HNAM | Extra Parts | formid | FormID of a [HDPT](HDPT.html) record.
 
 
 ### DATA Flag Values

@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 SPEL
 ====
 
@@ -10,7 +14,7 @@ Count | Subrecord | Name | Type | Info
 + | EDID | Editor ID | cstring |
  | FULL | Name | cstring |
 + | SPIT | | struct |
-+* | | [Effect](Subrecords/Effect.md) | collection |
++* | | [Effect](Subrecords/Effect.html) | collection |
 
 ### SPIT
 

@@ -1,7 +1,11 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 Sound Level Enum Values
 =======================
 
-As used in the [CREA](../CREA.md) and [PROJ](../PROJ.md) record types.
+As used in the [CREA](../CREA.html) and [PROJ](../PROJ.html) record types.
 
 Value | Meaning
 ------|--------

@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 PWAT
 ====
 
@@ -8,8 +12,8 @@ Placeable Water
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
-+ | | [Model Data](Subrecords/Model.md) | collection |
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
++ | | [Model Data](Subrecords/Model.html) | collection |
 + | DNAM | | struct
  
 ### DNAM
@@ -17,7 +21,7 @@ Count | Subrecord | Name | Type | Info
 Name | Type | Info
 -----|------|-----
 Flags | uint32 | See below for values.
-Water | formid | FormID of a [WATR](WATR.md) record.
+Water | formid | FormID of a [WATR](WATR.html) record.
 
 #### Flag Values
 

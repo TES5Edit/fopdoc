@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 LAND
 ====
 
@@ -12,7 +16,7 @@ Count | Subrecord | Name | Type | Info
  | VHGT | Vertex Height Map | struct |
  | VCLR | Vertex Color | struct |
 -* | | Layer Subrecord Collection | collection | See below for details.
- | VTEX | Textures | formid[] | An array of [LTEX](LTEX.md) record FormIDs, or null.
+ | VTEX | Textures | formid[] | An array of [LTEX](LTEX.html) record FormIDs, or null.
 
 ### VNML / VCLR
 
@@ -46,7 +50,7 @@ Count | Subrecord | Name | Type | Info
 
 Name | Type | Info
 -----|------|-----
-Texture | formid | FormID of a [LTEX](LTEX.md) record, or null.
+Texture | formid | FormID of a [LTEX](LTEX.html) record, or null.
 Quadrant | uint8 | Enum - see below for values.
 Unused | byte |
 Layer | int16 |

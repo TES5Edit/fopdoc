@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 RACE
 ====
 
@@ -10,10 +14,10 @@ Count | Subrecord | Name | Type | Info
 + | EDID | Editor ID | cstring |
  | FULL | Name | cstring |
 + | DESC | Description | cstring |
--* | [XNAM](Subrecords/XNAM (FACT, RACE).md) | Relation | struct |
+-* | [XNAM](Subrecords/XNAM (FACT, RACE).html) | Relation | struct |
 + | DATA | | struct |
- | ONAM | Older | formid | FormID of a [RACE](RACE.md) record.
- | YNAM | Younger | formid | FormID of a [RACE](RACE.md) record.
+ | ONAM | Older | formid | FormID of a [RACE](RACE.html) record.
+ | YNAM | Younger | formid | FormID of a [RACE](RACE.html) record.
 + | NAM2 | Unkonwin Marker | null |
 + | VTCK | Voices | struct |
 + | DNAM | Default Hair Styles | struct |
@@ -31,8 +35,8 @@ Count | Subrecord | Name | Type | Info
 +* | | Male Body Part | collection | See below for details.
 + | FNAM | Female Body Data Marker | null |
 +* | | Female Body Part | collection | See below for details.
-+ | HNAM | Hairs | formid[] | Array of [HAIR](HAIR.md) record FormIDs.
-+ | ENAM | Eyes | formid[] | Array of [EYES](EYES.md) record FormIDs.
++ | HNAM | Hairs | formid[] | Array of [HAIR](HAIR.html) record FormIDs.
++ | ENAM | Eyes | formid[] | Array of [EYES](EYES.html) record FormIDs.
 + | MNAM | Male FaceGen Data Marker | null |
 + | FGGS | Male FaceGen Geometry-Symmetric | uint8[] |
 + | FGGA | Male FaceGen Geometry-Asymmetric | uint8[] |
@@ -68,7 +72,7 @@ Flags | uint32 | See below for values.
 
 Name | Type | Info
 -----|------|-----
-[Skill](Values/Actor Values.md) | int8 |
+[Skill](Values/Actor Values.html) | int8 |
 Boost | int8 |
 
 #### Flag Values
@@ -83,15 +87,15 @@ Value | Meaning
 
 Name | Type | Info
 -----|------|-----
-Male Voice | FormID of a [VTYP](VTYP.md) record.
-Female Voice | FormID of a [VTYP](VTYP.md) record.
+Male Voice | FormID of a [VTYP](VTYP.html) record.
+Female Voice | FormID of a [VTYP](VTYP.html) record.
 
 ### DNAM
 
 Name | Type | Info
 -----|------|-----
-Male Default Hair Style | FormID of a [HAIR](HAIR.md) record, or null.
-Female Default Hair Style | FormID of a [HAIR](HAIR.md) record, or null.
+Male Default Hair Style | FormID of a [HAIR](HAIR.html) record, or null.
+Female Default Hair Style | FormID of a [HAIR](HAIR.html) record, or null.
 
 ### CNAM
 
@@ -126,7 +130,7 @@ Value | Meaning
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | INDX | Index | uint32 | See below for values.
-+ | | [Model Data](Subrecords/Model.md) | collection |
++ | | [Model Data](Subrecords/Model.html) | collection |
  | ICON | Large icon filename | cstring |
  | MICO | Small icon filename | cstring |
 
@@ -150,7 +154,7 @@ Count | Subrecord | Name | Type | Info
  | INDX | Index | uint32 | See below for values.
  | ICON | Large icon filename | cstring |
  | MICO | Small icon filename | cstring |
-+ | | [Model Data](Subrecords/Model.md) | collection |
++ | | [Model Data](Subrecords/Model.html) | collection |
 
 #### Body Part Index Values
 

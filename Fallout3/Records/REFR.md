@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 REFR
 ====
 
@@ -10,8 +14,8 @@ Count | Subrecord | Name | Type | Info
  | EDID | Editor ID | cstring |
  | RCLR | Linked Reference Color | struct |
  | RCLR | ?? | ?? |
-+ | NAME | Base | formid | FormID of a [TREE](TREE.md), [SOUN](SOUN.md), [ACTI](ACTI.md), [DOOR](DOOR.md), [STAT](STAT.md), [FURN](FURN.md), [CONT](CONT.md), [ARMO](ARMO.md), [AMMO](AMMO.md), [LVLN](LVLN.md), [LVLC](LVLC.md), [MISC](MISC.md), [WEAP](WEAP.md), [BOOK](BOOK.md), [KEYM](KEYM.md), [ALCH](ALCH.md), [LIGH](LIGH.md), [GRAS](GRAS.md), [ASPC](ASPC.md), [IDLM](IDLM.md), [ARMA](ARMA.md), [MSTT](MSTT.md), [NOTE](NOTE.md), [PWAT](PWAT.md), [SCOL](SCOL.md), [TACT](TACT.md), [TERM](TERM.md) or [TXST](TXST.md) record.
- | XEZN | Encounter Zone | formid | FormID of a [ECZN](ECZN.md) record.
++ | NAME | Base | formid | FormID of a [TREE](TREE.html), [SOUN](SOUN.html), [ACTI](ACTI.html), [DOOR](DOOR.html), [STAT](STAT.html), [FURN](FURN.html), [CONT](CONT.html), [ARMO](ARMO.html), [AMMO](AMMO.html), [LVLN](LVLN.html), [LVLC](LVLC.html), [MISC](MISC.html), [WEAP](WEAP.html), [BOOK](BOOK.html), [KEYM](KEYM.html), [ALCH](ALCH.html), [LIGH](LIGH.html), [GRAS](GRAS.html), [ASPC](ASPC.html), [IDLM](IDLM.html), [ARMA](ARMA.html), [MSTT](MSTT.html), [NOTE](NOTE.html), [PWAT](PWAT.html), [SCOL](SCOL.html), [TACT](TACT.html), [TERM](TERM.html) or [TXST](TXST.html) record.
+ | XEZN | Encounter Zone | formid | FormID of a [ECZN](ECZN.html) record.
  | XRGD | Ragdoll Data | ?? |
  | XRGB | Ragdoll Biped Data | ?? |
  | XPRM | Primitive | struct |
@@ -23,15 +27,15 @@ Count | Subrecord | Name | Type | Info
  | FNAM | Map Marker Flags | uint8 | See below for values.
 + | FULL | Map Marker Name | cstring |
 + | TNAM | Map Marker Data | struct |
- | XTRG | Target | formid | FormID of a [REFR](REFR.md), [ACRE](ACRE.md), [ACHR](ACHR.md), [PGRE](PGRE.md) or [PMIS](PMIS.md) record.
+ | XTRG | Target | formid | FormID of a [REFR](REFR.html), [ACRE](ACRE.html), [ACHR](ACHR.html), [PGRE](PGRE.html) or [PMIS](PMIS.html) record.
  | XLCM | Level Modifier | int32 |
 + | XPRD | Idle Time | float32 | Patrol data
 + | XPPA | Patrol Script Marker | null | Patrol data
-+ | INAM | Idle | formid | Patrol data. FormID of an [IDLE](IDLE.md) record, or null.
-+ | | [Embedded Script](Subrecords/Script.md) | collection | Patrol data.
-+ | TNAM | Topic | formid | Patrol data. FormID of a [DIAL](DIAL.md) record, or null.
++ | INAM | Idle | formid | Patrol data. FormID of an [IDLE](IDLE.html) record, or null.
++ | | [Embedded Script](Subrecords/Script.html) | collection | Patrol data.
++ | TNAM | Topic | formid | Patrol data. FormID of a [DIAL](DIAL.html) record, or null.
  | XRDO | Radio Data | struct |
- | XOWN | Owner | formid | Ownership data. FormID of a [FACT](FACT.md), [ACHR](ACHR.md) or [NPC_](NPC_.md) record.
+ | XOWN | Owner | formid | Ownership data. FormID of a [FACT](FACT.html), [ACHR](ACHR.html) or [NPC_](NPC_.html) record.
  | XRNK | Faction Rank | int32 | Ownership data
  | XLOC | Lock Data | struct |
  | XCNT | Count | int32 |
@@ -39,32 +43,32 @@ Count | Subrecord | Name | Type | Info
  | XHLP | Health | float32 |
  | XRAD | Radiation | float32 |
  | XCHG | Charge | float32 |
-+ | XAMT | Ammo Type | formid | FormID of an [AMMO](AMMO.md) record, or null.
++ | XAMT | Ammo Type | formid | FormID of an [AMMO](AMMO.html) record, or null.
 + | XAMC | Ammo Count | int32 |
--* | [XPWR](Subrecords/XPWR.md) | Water Reflection / Refraction | struct |
--* | XLTW | Lit Water | formid | FormID of a [REFR](REFR.md) record.
--* | [XDCR](Subrecords/XDCR.md) | Decal | struct | Linked decals
- | XLKR | Linked Reference | formid | FormID of a [REFR](REFR.md), [ACRE](ACRE.md), [ACHR](ACHR.md), [PGRE](PGRE.md) or [PMIS](PMIS.md) record.
- | [XCLP](Subrecords/XCLP.md) | Linked Reference Color | struct |
- | [XAPD](Subrecords/XAPD.md) | Flags | uint8 | Activate parents.
--*| [XAPR](Subrecords/XAPR.md) | Activate Parent Ref | struct | Activate parents
- | [XESP](Subrecords/XESP.md) | Enable Parent | struct |
- | XEMI | Emittance | formid | FormID of a [LIGH](LIGH.md) or [REGN](REGN.md) record.
- | XMBR | MultiBound Reference | formid | FormID of a [REFR](REFR.md) record.
+-* | [XPWR](Subrecords/XPWR.html) | Water Reflection / Refraction | struct |
+-* | XLTW | Lit Water | formid | FormID of a [REFR](REFR.html) record.
+-* | [XDCR](Subrecords/XDCR.html) | Decal | struct | Linked decals
+ | XLKR | Linked Reference | formid | FormID of a [REFR](REFR.html), [ACRE](ACRE.html), [ACHR](ACHR.html), [PGRE](PGRE.html) or [PMIS](PMIS.html) record.
+ | [XCLP](Subrecords/XCLP.html) | Linked Reference Color | struct |
+ | [XAPD](Subrecords/XAPD.html) | Flags | uint8 | Activate parents.
+-*| [XAPR](Subrecords/XAPR.html) | Activate Parent Ref | struct | Activate parents
+ | [XESP](Subrecords/XESP.html) | Enable Parent | struct |
+ | XEMI | Emittance | formid | FormID of a [LIGH](LIGH.html) or [REGN](REGN.html) record.
+ | XMBR | MultiBound Reference | formid | FormID of a [REFR](REFR.html) record.
  | XACT | Action Flag | uint32 | See below for values.
  | ONAM | Open By Default | null |
  | XIBS | Ignored By Sandbox | null |
  | XNDP | Navigation Door Link | struct |
- | XPOD | Portal Rooms | formid[] | Array of [REFR](REFR.md) record FormIDs, or null.
+ | XPOD | Portal Rooms | formid[] | Array of [REFR](REFR.html) record FormIDs, or null.
  | XPLT | Portal Data | struct |
  | XSED | SpeedTree Seed | uint8 |
  | XRMR | Room Data Header | struct |
- | XLRM | Linked Room | formid | FormID of a [REFR](REFR.md) record.
+ | XLRM | Linked Room | formid | FormID of a [REFR](REFR.html) record.
  | XOCP | Occlusion Plane Data | struct |
  | XORD | Linked Occlusion Planes | struct |
  | XLOD | Distant LOD Data | byte[12] | Unknown
  | XSCL | Scale | float32 |
- | [DATA](Subrecords/DATA (ACHR, ACRE).md) | Position / Rotation | struct |
+ | [DATA](Subrecords/DATA (ACHR, ACRE).html) | Position / Rotation | struct |
 
 
 
@@ -157,7 +161,7 @@ Z | float32 |
 
 Name | Type | Info
 -----|------|-----
-Door | formid | FormID of a [REFR](REFR.md) record.
+Door | formid | FormID of a [REFR](REFR.html) record.
 X Position | float32 |
 Y Position | float32 |
 Z Position | float32 |
@@ -214,7 +218,7 @@ Name | Type | Info
 Range Radius | float32 |
 Broadcast Range Type | uint32 | Enum - see below for values.
 Static Percentage | float32 |
-Position Reference | FormID of a [REFR](REFR.md), [ACRE](ACRE.md), [ACHR](ACHR.md), [PGRE](PGRE.md) or [PMIS](PMIS.md) record, or null.
+Position Reference | FormID of a [REFR](REFR.html), [ACRE](ACRE.html), [ACHR](ACHR.html), [PGRE](PGRE.html) or [PMIS](PMIS.html) record, or null.
 
 #### Broadcast Range Type Values
 
@@ -232,7 +236,7 @@ Name | Type | Info
 -----|------|-----
 Level | uint8 |
 Unused | byte[3] |
-Key | formid | FormID of a [KEYM](KEYM.md) record, or null.
+Key | formid | FormID of a [KEYM](KEYM.html) record, or null.
 Flags | uint8 | See below for values.
 Unknown | byte[11] |
 
@@ -249,7 +253,7 @@ Value | Meaning
 
 Name | Type | Info
 -----|------|-----
-Navigation Mesh | formid | FormID of a [NAVM](NAVM.md) record.
+Navigation Mesh | formid | FormID of a [NAVM](NAVM.html) record.
 Unknown | byte[4] |
 
 ### XPTL / XOCP
@@ -277,7 +281,7 @@ Unknown | byte[2] |
 
 Name | Type | Info
 -----|------|-----
-Right | formid | FormID of a [REFR](REFR.md) record, or null.
-Left | formid | FormID of a [REFR](REFR.md) record, or null.
-Bottom | formid | FormID of a [REFR](REFR.md) record, or null.
-Top | formid | FormID of a [REFR](REFR.md) record, or null.
+Right | formid | FormID of a [REFR](REFR.html) record, or null.
+Left | formid | FormID of a [REFR](REFR.html) record, or null.
+Bottom | formid | FormID of a [REFR](REFR.html) record, or null.
+Top | formid | FormID of a [REFR](REFR.html) record, or null.

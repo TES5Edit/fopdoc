@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 HAIR
 ====
 
@@ -9,7 +13,7 @@ Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
 + | FULL | Name | cstring |
-+ | | [Model Data](Subrecords/Model.md) | collection |
++ | | [Model Data](Subrecords/Model.html) | collection |
 + | ICON | Texture | cstring |
 + | DATA | Flags | uint8 | See below for values.
 

@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 WRLD
 ====
 
@@ -9,27 +13,27 @@ Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
  | FULL | Name | cstring |
- | XEZN | Encounter Zone | formid | FormID of an [ECZN](ECZN.md) record.
- | WNAM | Parent Worldspace | formid | FormID of a [WRLD](WRLD.md) record.
+ | XEZN | Encounter Zone | formid | FormID of an [ECZN](ECZN.html) record.
+ | WNAM | Parent Worldspace | formid | FormID of a [WRLD](WRLD.html) record.
 + | PNAM | Parent Worldspace Flags | struct |
- | CNAM | Climate | formid | FormID of a [CLMT](CLMT.md) record.
- | NAM2 | Water | formid | FormID of a [WATR](WATR.md) record.
- | NAM3 | LOD Water Type | formid | FormID of a [WATR](WATR.md) record.
+ | CNAM | Climate | formid | FormID of a [CLMT](CLMT.html) record.
+ | NAM2 | Water | formid | FormID of a [WATR](WATR.html) record.
+ | NAM3 | LOD Water Type | formid | FormID of a [WATR](WATR.html) record.
  | NAM4 | LOD Water Height | float32 |
  | DNAM | Land Data | struct |
  | ICON | Large icon filename | cstring |
  | MICO | Small icon filename | cstring |
  | MNAM | Map Data | struct |
 + | ONAM | World Map Offset Data | struct |
- | INAM | Image Space | formid | FormID of an [IMGS](IMGS.md) record.
+ | INAM | Image Space | formid | FormID of an [IMGS](IMGS.html) record.
 + | DATA | Flags | uint8 | See values below.
 + | NAM0 | Min Object Bounds | struct |
 + | NAM9 | Max Object Bounds | struct |
- | ZNAM | Music | formid | FormID of a [MUSC](MUSC.md) record.
+ | ZNAM | Music | formid | FormID of a [MUSC](MUSC.html) record.
 + | NNAM | Canopy Shadow | cstring |
 + | XNAM | Water Noise Texture | cstring |
 -* | IMPS | Swapped Impact | struct |
- | [IMPF](Subrecords/IMPF.md) | Footstep Material | struct |
+ | [IMPF](Subrecords/IMPF.html) | Footstep Material | struct |
 - | OFST | Offset | uint32[] |
 
 ### PNAM
@@ -102,6 +106,6 @@ Y | float32 | Value is divided by 4096.
 
 Name | Type | Info
 -----|------|-----
-[Material Type](Values/Impact Material Types.md) | uint32 |
-Old | formid | FormID of an [IPCT](IPCT.md) record.
-New | formid | FormID of an [IPCT](IPCT.md) record, or null.
+[Material Type](Values/Impact Material Types.html) | uint32 |
+Old | formid | FormID of an [IPCT](IPCT.html) record.
+New | formid | FormID of an [IPCT](IPCT.html) record, or null.

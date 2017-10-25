@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 WATR
 ====
 
@@ -13,8 +17,8 @@ Count | Subrecord | Name | Type | Info
 + | ANAM | Opacity | uint8 | 
 + | FNAM | Flags | uint8 | See below for values.
 + | MNAM | Material ID | cstring |
- | SNAM | Sound | formid | FormID of a [SOUN](SOUN.md) record.
- | XNAM | Actor Effect | formid | FormID of a [SPEL](SPEL.md) record.
+ | SNAM | Sound | formid | FormID of a [SOUN](SOUN.html) record.
+ | XNAM | Actor Effect | formid | FormID of a [SPEL](SPEL.html) record.
 + | DATA | Damage | uint16 |
 + | DNAM *or* DATA | Visual Data | struct |
 + | GNAM | Related Waters | struct | Unused
@@ -133,7 +137,7 @@ Damage | uint16 |
 
 Name | Type | Info
 -----|------|-----
-Daytime | formid | FormID of a [WATR](WATR.md) record, or null.
-Nighttime | formid | FormID of a [WATR](WATR.md) record, or null.
-Underwater | formid | FormID of a [WATR](WATR.md) record, or null.
+Daytime | formid | FormID of a [WATR](WATR.html) record, or null.
+Nighttime | formid | FormID of a [WATR](WATR.html) record, or null.
+Underwater | formid | FormID of a [WATR](WATR.html) record, or null.
 

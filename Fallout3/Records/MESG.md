@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 MESG
 ====
 
@@ -10,7 +14,7 @@ Count | Subrecord | Name | Type | Info
 + | EDID | Editor ID | cstring |
 + | DESC | Description | cstring |
  | FULL | Name | cstring |
-+ | INAM | Icon | formid | FormID of a [MICN](MICN.md) record, or null.
++ | INAM | Icon | formid | FormID of a [MICN](MICN.html) record, or null.
  | NAM1 | Unused | ?? |
  | NAM2 | Unused | ?? |
  | NAM3 | Unused | ?? |
@@ -36,4 +40,4 @@ Value | Meaning
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | ITXT | Button Text | cstring |
--* | CTDA | Condition | struct | [FO3](../../Fallout3/Records/Subrecords/CTDA.md) and [FNV](../../FalloutNV/Records/Subrecords/CTDA.md) definitions differ.
+-* | CTDA | Condition | struct | [FO3](../../Fallout3/Records/Subrecords/CTDA.html) and [FNV](../../FalloutNV/Records/Subrecords/CTDA.html) definitions differ.

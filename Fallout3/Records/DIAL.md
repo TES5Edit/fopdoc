@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 DIAL
 ====
 
@@ -8,8 +12,8 @@ Dialog Topic
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring |
--* | QSTI | Quest | formid | FormID of a [QUST](QUST.md) record.
--* | QSTR | Quest | formid | FormID of a [QUST](QUST.md) record.
+-* | QSTI | Quest | formid | FormID of a [QUST](QUST.html) record.
+-* | QSTR | Quest | formid | FormID of a [QUST](QUST.html) record.
 + | FULL | Name | cstring |
 + | PNAM | Priority | float32 |
 + | DATA | Data | struct |

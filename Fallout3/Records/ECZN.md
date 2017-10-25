@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 ECZN
 ====
 
@@ -14,7 +18,7 @@ Count | Subrecord | Name | Type | Info
 
 Name | Type | Info
 -----|------|-----
-Owner | formid | FormID of an [NPC_](NPC_.md) or [FACT](FACT.md) record, or null.
+Owner | formid | FormID of an [NPC_](NPC_.html) or [FACT](FACT.html) record, or null.
 Rank | int8 |
 Minnimum Level | int8 |
 Flags | uint8 | See below for values.

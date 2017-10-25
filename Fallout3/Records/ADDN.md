@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 ADDN Record
 ===========
 
@@ -8,8 +12,8 @@ Addon Node
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
 + | EDID | Editor ID | cstring | Editor ID
-+ | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
-+ | | [Model Data](Subrecords/Model.md) | collection |
++ | [OBND](Subrecords/OBND.html) | Object Bounds | struct |
++ | | [Model Data](Subrecords/Model.html) | collection |
 + | DATA | Node Index | int32 |
 + | DNAM | Data | struct |
 

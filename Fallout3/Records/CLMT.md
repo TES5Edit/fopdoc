@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 CLMT
 ====
 
@@ -11,7 +15,7 @@ Count | Subrecord | Name | Type | Info
  | WLST | Weather Types | struct |
  | FNAM | Sun Texture | cstring |
  | GNAM | Sun Glare Texture | cstring |
-- | | [Model Data](Subrecords/Model.md) | collection |
+- | | [Model Data](Subrecords/Model.html) | collection |
 + | TNAM | Timing | struct |
 
 
@@ -21,9 +25,9 @@ The WLST subrecord consists of an array of objects with the following structure.
 
 Name | Type | Info
 -----|------|-----
-Weather | formid | FormID of a [WTHR](WTHR.md) record, or null.
+Weather | formid | FormID of a [WTHR](WTHR.html) record, or null.
 Chance | int32 |
-Global | formid | FormID of a [GLOB](GLOB.md) record, or null.
+Global | formid | FormID of a [GLOB](GLOB.html) record, or null.
 
 ### TNAM
 

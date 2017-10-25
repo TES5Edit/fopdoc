@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 PACK
 ====
 
@@ -12,13 +16,13 @@ Count | Subrecord | Name | Type | Info
 -* | | Location | collection | See below for details.
 + | PSDT | Schedule | struct |
  | PTDT | Target 1 | struct |
--* | [CTDA](Subrecords/CTDA.md) | Condition | struct |
+-* | [CTDA](Subrecords/CTDA.html) | Condition | struct |
 + | IDLF | Idle Animation Flags | uint8 | See below for values.
 + | IDLC | Idle Animation Count | struct |
 + | IDLT | Idle Timer Setting | float32 |
- | [IDLA](Subrecords/IDLA.md) | Animations | struct |
+ | [IDLA](Subrecords/IDLA.html) | Animations | struct |
  | IDLB | Unused | byte[4] |
- | CNAM | Combat Style | formid | FormID of a [CSTY](CSTY.md) record.
+ | CNAM | Combat Style | formid | FormID of a [CSTY](CSTY.html) record.
  | PKED | Eat Marker | null |
  | PKE2 | Escort Distance | uint32 |
  | PKFD | Follow - Start Location - Trigger Radius | float32 |
@@ -30,17 +34,17 @@ Count | Subrecord | Name | Type | Info
  | PKDD | Dialog Data | struct |
  | PLD2 | Location 2 (repeated??) | struct |
 + | POBA | OnBegin Marker | null |
-+ | INAM | OnBegin Idle | formid | FormID of an [IDLE](IDLE.md) record, or null.
-+ | | [OnBegin Embedded Script](Subrecords/Script.md) | collection |
-+ | TNAM | OnBegin Topic | formid | FormID of a [DIAL](DIAL.md) record, or null.
++ | INAM | OnBegin Idle | formid | FormID of an [IDLE](IDLE.html) record, or null.
++ | | [OnBegin Embedded Script](Subrecords/Script.html) | collection |
++ | TNAM | OnBegin Topic | formid | FormID of a [DIAL](DIAL.html) record, or null.
 + | POBA | OnEnd Marker | null |
-+ | INAM | OnEnd Idle | formid | FormID of an [IDLE](IDLE.md) record, or null.
-+ | | [OnEnd Embedded Script](Subrecords/Script.md) | collection |
-+ | TNAM | OnEnd Topic | formid | FormID of a [DIAL](DIAL.md) record, or null.
++ | INAM | OnEnd Idle | formid | FormID of an [IDLE](IDLE.html) record, or null.
++ | | [OnEnd Embedded Script](Subrecords/Script.html) | collection |
++ | TNAM | OnEnd Topic | formid | FormID of a [DIAL](DIAL.html) record, or null.
 + | POBA | OnChange Marker | null |
-+ | INAM | OnChange Idle | formid | FormID of an [IDLE](IDLE.md) record, or null.
-+ | | [OnChange Embedded Script](Subrecords/Script.md) | collection |
-+ | TNAM | OnChange Topic | formid | FormID of a [DIAL](DIAL.md) record, or null.
++ | INAM | OnChange Idle | formid | FormID of an [IDLE](IDLE.html) record, or null.
++ | | [OnChange Embedded Script](Subrecords/Script.html) | collection |
++ | TNAM | OnChange Topic | formid | FormID of a [DIAL](DIAL.html) record, or null.
 
 
 ### PKDT
@@ -164,11 +168,11 @@ Radius | int32 |
 
 Type Value | Meaning | Location Data Type Info
 -----------|---------|------------------------
-0 | Near Reference | FormID of a [REFR](REFR.md), [PGRE](PGRE.md), [PMIS](PMIS.md), [ACHR](ACHR.md), [ACRE](ACRE.md) or [PLYR](PLYR.md) record.
-1 | In Cell | FormID of a [CELL](CELL.md) record.
+0 | Near Reference | FormID of a [REFR](REFR.html), [PGRE](PGRE.html), [PMIS](PMIS.html), [ACHR](ACHR.html), [ACRE](ACRE.html) or [PLYR](PLYR.html) record.
+1 | In Cell | FormID of a [CELL](CELL.html) record.
 2 | Near Current Location | ??
 3 | Near Editor Location | ??
-4 | Object ID | FormID of a [ACTI](ACTI.md), [DOOR](DOOR.md), [STAT](STAT.md), [FURN](FURN.md), [CREA](CREA.md), [SPEL](SPEL.md), [NPC_](NPC_.md), [CONT](CONT.md), [ARMO](ARMO.md), [AMMO](AMMO.md), [MISC](MISC.md), [WEAP](WEAP.md), [BOOK](BOOK.md), [KEYM](KEYM.md), [ALCH](ALCH.md) or [LIGH](LIGH.md) record.
+4 | Object ID | FormID of a [ACTI](ACTI.html), [DOOR](DOOR.html), [STAT](STAT.html), [FURN](FURN.html), [CREA](CREA.html), [SPEL](SPEL.html), [NPC_](NPC_.html), [CONT](CONT.html), [ARMO](ARMO.html), [AMMO](AMMO.html), [MISC](MISC.html), [WEAP](WEAP.html), [BOOK](BOOK.html), [KEYM](KEYM.html), [ALCH](ALCH.html) or [LIGH](LIGH.html) record.
 5 | Object Type | Enum - see below for values.
 6 | Near Linked Reference | ??
 7 | At Package Location | ??
@@ -213,8 +217,8 @@ Unknown | float32 |
 
 Type Value | Meaning | Target Data Type Info
 -----------|---------|----------------------
-0 | Specific Reference | FormID of a [REFR](REFR.md), [PGRE](PGRE.md), [PMIS](PMIS.md), [ACHR](ACHR.md), [ACRE](ACRE.md) or [PLYR](PLYR.md) record.
-1 | Object ID | FormID of a [ACTI](ACTI.md), [DOOR](DOOR.md), [STAT](STAT.md), [FURN](FURN.md), [CREA](CREA.md), [SPEL](SPEL.md), [NPC_](NPC_.md), [LVLN](LVLN.md), [LVLC](LVLC.md), [CONT](CONT.md), [ARMO](ARMO.md), [AMMO](AMMO.md), [MISC](MISC.md), [WEAP](WEAP.md), [BOOK](BOOK.md), [KEYM](KEYM.md), [ALCH](ALCH.md), [LIGH](LIGH.md), [FACT](FACT.md) or [FLST](FLST.md) record.
+0 | Specific Reference | FormID of a [REFR](REFR.html), [PGRE](PGRE.html), [PMIS](PMIS.html), [ACHR](ACHR.html), [ACRE](ACRE.html) or [PLYR](PLYR.html) record.
+1 | Object ID | FormID of a [ACTI](ACTI.html), [DOOR](DOOR.html), [STAT](STAT.html), [FURN](FURN.html), [CREA](CREA.html), [SPEL](SPEL.html), [NPC_](NPC_.html), [LVLN](LVLN.html), [LVLC](LVLC.html), [CONT](CONT.html), [ARMO](ARMO.html), [AMMO](AMMO.html), [MISC](MISC.html), [WEAP](WEAP.html), [BOOK](BOOK.html), [KEYM](KEYM.html), [ALCH](ALCH.html), [LIGH](LIGH.html), [FACT](FACT.html) or [FLST](FLST.html) record.
 2 | Object Type | Enum - see below for values.
 3 | Linked Reference | ??
 
@@ -338,7 +342,7 @@ Value | Meaning
 Name | Type | Info
 -----|------|-----
 FOV | float32 |
-Topic | formid | FormID of a [DIAL](DIAL.md) record, or null.
+Topic | formid | FormID of a [DIAL](DIAL.html) record, or null.
 Flags | uint32 | See below for values.
 Unused | byte[4] |
 Dialog Type | uint32 | Enum - see below for values.

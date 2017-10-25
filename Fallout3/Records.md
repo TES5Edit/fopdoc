@@ -1,3 +1,7 @@
+---
+layout: fallout3rec
+title: fopdoc
+---
 Records
 =======
 
@@ -7,99 +11,99 @@ Each record type's page documents its subrecords. The common record header struc
 
 Type | Name
 -----|------------
-[ACHR](Records/ACHR.md) | Placed NPC
-[ACRE](Records/ACRE.md) | Placed Creature
-[ACTI](Records/ACTI.md) | Activator
-[ADDN](Records/ADDN.md) | Addon Node
-[ALCH](Records/ALCH.md) | Ingestible
-[AMMO](Records/AMMO.md) | Ammunition
-[ANIO](Records/ANIO.md) | Animated Object
-[ARMO](Records/ARMO.md) | Armor
-[ARMA](Records/ARMA.md) | Armor Addon
-[ASPC](Records/ASPC.md) | Acoustic Space
-[AVIF](Records/AVIF.md) | Actor Value Information
-[BOOK](Records/BOOK.md) | Book
-[BPTD](Records/BPTD.md) | Body Part Data
-[CAMS](Records/CAMS.md) | Camera Shot
-[CELL](Records/CELL.md) | Cell
-[CLAS](Records/CLAS.md) | Class
-[CLMT](Records/CLMT.md) | Climate
-[COBJ](Records/COBJ.md) | Constructable Object
-[CONT](Records/CONT.md) | Container
-[CPTH](Records/CPTH.md) | Camera Path
-[CREA](Records/CREA.md) | Creature
-[CSTY](Records/CSTY.md) | Combat Style
-[DEBR](Records/DEBR.md) | Debris
-[DIAL](Records/DIAL.md) | Dialog Topic
-[DOBJ](Records/DOBJ.md) | Default Object Manager
-[DOOR](Records/DOOR.md) | Door
-[ECZN](Records/ECZN.md) | Encounter Zone
-[EFSH](Records/EFSH.md) | Effect Shader
-[ENCH](Records/ENCH.md) | Object Effect
-[EXPL](Records/EXPL.md) | Explosion
-[EYES](Records/EYES.md) | Eyes
-[FACT](Records/FACT.md) | Faction
-[FLST](Records/FLST.md) | FormID List
-[FURN](Records/FURN.md) | Furniture
-[GLOB](Records/GLOB.md) | Global
-[GMST](Records/GMST.md) | Game Setting
-[GRAS](Records/GRAS.md) | Grass
-[HAIR](Records/HAIR.md) | Hair
-[HDPT](Records/HDPT.md) | Head Part
-[IDLE](Records/IDLE.md) | Idle Animation
-[IDLM](Records/IDLM.md) | Idle Marker
-[IMGS](Records/IMGS.md) | Image Space
-[IMAD](Records/IMAD.md) | Image Space Modifier
-[INFO](Records/INFO.md) | Dialog Response
-[INGR](Records/INGR.md) | Ingredient
-[IPCT](Records/IPCT.md) | Impact
-[IPDS](Records/IPDS.md) | Impact Data Set
-[KEYM](Records/KEYM.md) | Key
-[LAND](Records/LAND.md) | Landscape
-[LGMT](Records/LGMT.md) | Lighting Template
-[LIGH](Records/LIGH.md) | Light
-[LSCR](Records/LSCR.md) | Load Screen
-[LTEX](Records/LTEX.md) | Landscape Texture
-[LVLC](Records/LVLC.md) | Leveled Creature
-[LVLI](Records/LVLI.md) | Leveled Item
-[LVLN](Records/LVLN.md) | Leveled NPC
-[MESG](Records/MESG.md) | Message
-[MGEF](Records/MGEF.md) | Base Effect
-[MICN](Records/MICN.md) | Menu Icon
-[MISC](Records/MISC.md) | Misc. Item
-[MSTT](Records/MSTT.md) | Moveable Static
-[MUSC](Records/MUSC.md) | Music Type
-[NAVI](Records/NAVI.md) | Navigation Mesh Info Map
-[NAVM](Records/NAVM.md) | Navigation Mesh
-[NOTE](Records/NOTE.md) | Note
-[NPC_](Records/NPC_.md) | Non-Player Character
-[PACK](Records/PACK.md) | Package
-[PERK](Records/PERK.md) | Perk
-[PGRE](Records/PGRE.md) | Placed Grenade
-[PMIS](Records/PMIS.md) | Placed Missile
-[PROJ](Records/PROJ.md) | Projectile
-[PWAT](Records/PWAT.md) | Placeable Water
-[QUST](Records/QUST.md) | Quest
-[RACE](Records/RACE.md) | Race
-[RADS](Records/RADS.md) | Radiation Stage
-[REFR](Records/REFR.md) | Placed Object
-[REGN](Records/REGN.md) | Region
-[RGDL](Records/RGDL.md) | Ragdoll
-[SCOL](Records/SCOL.md) | Static Collection
-[SCPT](Records/SCPT.md) | Script
-[SOUN](Records/SOUN.md) | Sound
-[SPEL](Records/SPEL.md) | Actor Effect
-[STAT](Records/STAT.md) | Static
-[TACT](Records/TACT.md) | Talking Activator
-[TERM](Records/TERM.md) | Terminal
-[TES4](Records/TES4.md) | Plugin info
-[TREE](Records/TREE.md) | Tree
-[TXST](Records/TXST.md) | Texture Set
-[VTYP](Records/VTYP.md) | Voice Type
-[WATR](Records/WATR.md) | Water
-[WEAP](Records/WEAP.md) | Weapon
-[WRLD](Records/WRLD.md) | Worldspace
-[WTHR](Records/WTHR.md) | Weather
+[ACHR](Records/ACHR.html) | Placed NPC
+[ACRE](Records/ACRE.html) | Placed Creature
+[ACTI](Records/ACTI.html) | Activator
+[ADDN](Records/ADDN.html) | Addon Node
+[ALCH](Records/ALCH.html) | Ingestible
+[AMMO](Records/AMMO.html) | Ammunition
+[ANIO](Records/ANIO.html) | Animated Object
+[ARMO](Records/ARMO.html) | Armor
+[ARMA](Records/ARMA.html) | Armor Addon
+[ASPC](Records/ASPC.html) | Acoustic Space
+[AVIF](Records/AVIF.html) | Actor Value Information
+[BOOK](Records/BOOK.html) | Book
+[BPTD](Records/BPTD.html) | Body Part Data
+[CAMS](Records/CAMS.html) | Camera Shot
+[CELL](Records/CELL.html) | Cell
+[CLAS](Records/CLAS.html) | Class
+[CLMT](Records/CLMT.html) | Climate
+[COBJ](Records/COBJ.html) | Constructable Object
+[CONT](Records/CONT.html) | Container
+[CPTH](Records/CPTH.html) | Camera Path
+[CREA](Records/CREA.html) | Creature
+[CSTY](Records/CSTY.html) | Combat Style
+[DEBR](Records/DEBR.html) | Debris
+[DIAL](Records/DIAL.html) | Dialog Topic
+[DOBJ](Records/DOBJ.html) | Default Object Manager
+[DOOR](Records/DOOR.html) | Door
+[ECZN](Records/ECZN.html) | Encounter Zone
+[EFSH](Records/EFSH.html) | Effect Shader
+[ENCH](Records/ENCH.html) | Object Effect
+[EXPL](Records/EXPL.html) | Explosion
+[EYES](Records/EYES.html) | Eyes
+[FACT](Records/FACT.html) | Faction
+[FLST](Records/FLST.html) | FormID List
+[FURN](Records/FURN.html) | Furniture
+[GLOB](Records/GLOB.html) | Global
+[GMST](Records/GMST.html) | Game Setting
+[GRAS](Records/GRAS.html) | Grass
+[HAIR](Records/HAIR.html) | Hair
+[HDPT](Records/HDPT.html) | Head Part
+[IDLE](Records/IDLE.html) | Idle Animation
+[IDLM](Records/IDLM.html) | Idle Marker
+[IMGS](Records/IMGS.html) | Image Space
+[IMAD](Records/IMAD.html) | Image Space Modifier
+[INFO](Records/INFO.html) | Dialog Response
+[INGR](Records/INGR.html) | Ingredient
+[IPCT](Records/IPCT.html) | Impact
+[IPDS](Records/IPDS.html) | Impact Data Set
+[KEYM](Records/KEYM.html) | Key
+[LAND](Records/LAND.html) | Landscape
+[LGMT](Records/LGMT.html) | Lighting Template
+[LIGH](Records/LIGH.html) | Light
+[LSCR](Records/LSCR.html) | Load Screen
+[LTEX](Records/LTEX.html) | Landscape Texture
+[LVLC](Records/LVLC.html) | Leveled Creature
+[LVLI](Records/LVLI.html) | Leveled Item
+[LVLN](Records/LVLN.html) | Leveled NPC
+[MESG](Records/MESG.html) | Message
+[MGEF](Records/MGEF.html) | Base Effect
+[MICN](Records/MICN.html) | Menu Icon
+[MISC](Records/MISC.html) | Misc. Item
+[MSTT](Records/MSTT.html) | Moveable Static
+[MUSC](Records/MUSC.html) | Music Type
+[NAVI](Records/NAVI.html) | Navigation Mesh Info Map
+[NAVM](Records/NAVM.html) | Navigation Mesh
+[NOTE](Records/NOTE.html) | Note
+[NPC_](Records/NPC_.html) | Non-Player Character
+[PACK](Records/PACK.html) | Package
+[PERK](Records/PERK.html) | Perk
+[PGRE](Records/PGRE.html) | Placed Grenade
+[PMIS](Records/PMIS.html) | Placed Missile
+[PROJ](Records/PROJ.html) | Projectile
+[PWAT](Records/PWAT.html) | Placeable Water
+[QUST](Records/QUST.html) | Quest
+[RACE](Records/RACE.html) | Race
+[RADS](Records/RADS.html) | Radiation Stage
+[REFR](Records/REFR.html) | Placed Object
+[REGN](Records/REGN.html) | Region
+[RGDL](Records/RGDL.html) | Ragdoll
+[SCOL](Records/SCOL.html) | Static Collection
+[SCPT](Records/SCPT.html) | Script
+[SOUN](Records/SOUN.html) | Sound
+[SPEL](Records/SPEL.html) | Actor Effect
+[STAT](Records/STAT.html) | Static
+[TACT](Records/TACT.html) | Talking Activator
+[TERM](Records/TERM.html) | Terminal
+[TES4](Records/TES4.html) | Plugin info
+[TREE](Records/TREE.html) | Tree
+[TXST](Records/TXST.html) | Texture Set
+[VTYP](Records/VTYP.html) | Voice Type
+[WATR](Records/WATR.html) | Water
+[WEAP](Records/WEAP.html) | Weapon
+[WRLD](Records/WRLD.html) | Worldspace
+[WTHR](Records/WTHR.html) | Weather
 
 ## Record Format
 
