@@ -7,3 +7,4 @@ baseurl: /fopdoc
 exclude: ['README.md']
 gems:
   - jekyll-mentions
+  - jekyll-relative-links
