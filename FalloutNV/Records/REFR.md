@@ -228,7 +228,7 @@ Name | Type | Info
 Range Radius | float32 |
 Broadcast Range Type | uint32 | Enum - see below for values.
 Static Percentage | float32 |
-Position Reference | FormID of a [REFR](REFR.md), [ACRE](ACRE.md), [ACHR](ACHR.md), [PGRE](PGRE.md) or [PMIS](PMIS.md) record, or null.
+Position Reference | formid | FormID of a [REFR](REFR.md), [ACRE](ACRE.md), [ACHR](ACHR.md), [PGRE](PGRE.md) or [PMIS](PMIS.md) record, or null.
 
 #### Broadcast Range Type Values
 
