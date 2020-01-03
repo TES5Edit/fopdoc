@@ -15,7 +15,7 @@ Count | Subrecord | Name | Type | Info
  | ICON | Fill Texture | cstring |
  | ICO2 | Particle Shader Texture | cstring |
  | NAM7 | Holes Texture | cstring |
-+ | DATA | Data | struct
++ | DATA | Data | struct |
  
 ### DATA
 
