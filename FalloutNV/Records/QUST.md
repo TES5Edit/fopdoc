@@ -51,7 +51,7 @@ Count | Subrecord | Name | Type | Info
 
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
- | Stage Flags | uint8 | See below for values.
+ | QSDT | Stage Flags | uint8 | See below for values.
 -* | CTDA | Condition | struct | [FO3](../../Fallout3/Records/Subrecords/CTDA.md) and [FNV](../../FalloutNV/Records/Subrecords/CTDA.md) definitions differ.
  | CNAM | Log Entry | cstring |
 + | | Embedded Script | collection | [FO3](../../Fallout3/Records/Subrecords/Script.md) and [FNV](../../FalloutNV/Records/Subrecords/Script.md) definitions differ.
