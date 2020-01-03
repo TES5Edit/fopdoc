@@ -17,7 +17,7 @@ Count | Subrecord | Name | Type | Info
 + | RCLR | Map Color | rgba |
  | WNAM | Worldspace | formid | FormID of a [WRLD](WRLD.md) record.
 -* | | Region Area | collection | See below for details.
--* | Region Data Entry | collection | See below for details.
+-* | | Region Data Entry | collection | See below for details.
 
 ### Region Area Subrecord Collection
 
