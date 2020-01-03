@@ -14,7 +14,7 @@ Count | Subrecord | Name | Type | Info
 + | EDID | Editor ID | cstring |
 + | [OBND](Subrecords/OBND.md) | Object Bounds | struct |
 + | | [Model Data](Subrecords/Model.md) | collection |
-+ | DNAM | | struct
++ | DNAM | | struct |
  
 ### DNAM
 
