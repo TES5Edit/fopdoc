@@ -66,8 +66,8 @@ Luck | uint8 |
 
 #### Type Enum Values
 
-Values | Meaning
--------|--------
+Value | Meaning
+------|--------
 0 | Animal
 1 | Mutated Animal
 2 | Mutated Insect
@@ -79,13 +79,13 @@ Values | Meaning
 
 ### Sound Type Subrecord Collection
 
+CSDI and CSDC are in a repeated block.
+
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | CSDT | Type | uint32 | Enum - see below for values.
 +* | CSDI | Sound | formid | FormID of a [SOUN](SOUN.md) record, or null.
 +* | CSDC | Sound Chance | uint8 |
-
-CSDI and CSDC are in a repeated block.
 
 #### CSDT Enum Values
 
