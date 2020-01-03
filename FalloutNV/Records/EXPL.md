@@ -36,5 +36,5 @@ Sound 2 | formid | FormID of a [SOUN](SOUN.md) record, or null.
 Radiation Level | float32 |
 Radiation Dissipation Time | float32 |
 Radiation Radius | float32 |
-+ | [Sound Level](Values/Sound Levels.md) | uint32 | Enum - see link for values.
+[Sound Level](Values/Sound Levels.md) | uint32 | Enum - see link for values.
 
