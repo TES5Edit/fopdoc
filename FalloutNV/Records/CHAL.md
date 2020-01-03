@@ -35,8 +35,8 @@ Value3 | byte[4] | Depends on Type
 
 #### Type Values
 
-Value | Meaning |
-------|---------|
+Value | Meaning
+------|--------
 0 | Kill From A Form List
 1 | Kill A Specific FormID
 2 | Kill Any In A Category
