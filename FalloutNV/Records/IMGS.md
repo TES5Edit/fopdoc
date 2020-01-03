@@ -16,6 +16,8 @@ Count | Subrecord | Name | Type | Info
 
 ### DNAM
 
+The `rgb` data types above are apparently float32 triplets, with the first being for red, the second for green and the third for blue.
+
 Name | Type | Info
 -----|------|-----
 HDR Eye Adapt Speed | float32 |
@@ -49,8 +51,6 @@ Cinmatic Brightness Tint Value | float32 |
 Unused | byte[16] |
 Flags | uint8 | See below for values.
 Unused | byte[3] |
- 
-The `rgb` data types above are apparently float32 triplets, with the first being for red, the second for green and the third for blue.
  
 #### Flag Values
 
