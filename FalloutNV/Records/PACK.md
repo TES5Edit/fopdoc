@@ -145,9 +145,9 @@ Value | Meaning (Find / Escort / Eat) | Meaning (Wander / Sandbox) | Meaning (Us
 0x0020 | ?? | No Wandering | | |
 0x0040 | ?? | | | |
 0x0080 | ?? | | | |
-0x0100 | Allow Buying | | Allow Buying |
-0x0200 | Allow Killing | | Allow Killing |
-0x0400 | Allow Stealing | | Allow Stealing |
+0x0100 | Allow Buying | | Allow Buying | |
+0x0200 | Allow Killing | | Allow Killing | |
+0x0400 | Allow Stealing | | Allow Stealing | |
 
 ### Location Subrecord Collection
 
