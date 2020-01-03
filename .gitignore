@@ -9,4 +9,6 @@ _site/*
 .sass-cache
 .sass-cache/
 .sass-cache/*
+.jekyll-cache
 
+/favicon.ico
