@@ -184,6 +184,8 @@ Count | Subrecord | Name | Type | Info
 
 The subrecord type is decided as described in the table below.
 
+If the EPFT value is `2` and DATA's Function field (when DATA is an entry point) is `5`, the EPFD type is chosen as if the EPFT value were `5`.
+
 EPFT Value | EPFD Type | Info
 -----------|-----------|-----
 0 | uint8[] |
@@ -192,8 +194,6 @@ EPFT Value | EPFD Type | Info
 3 | formid | FormID of a [LVLI](LVLI.md) record.
 4 | null |
 5 | struct | A struct consisting of a `uint32` [actor value](Values/Actor Values.md) enum followed by a `float32` value.
-
-If the EPFT value is `2` and DATA's Function field (when DATA is an entry point) is `5`, the EPFD type is chosen as if the EPFT value were `5`.
 
 #### EPF3 Flag Values
 
