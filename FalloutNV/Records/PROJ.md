@@ -16,7 +16,7 @@ Count | Subrecord | Name | Type | Info
  | FULL | Name | cstring |
 + | | [Model Data](Subrecords/Model.md) | collection |
  | | [Destruction Data](Subrecords/Destruction.md) | collection |
-+ | [DATA](#data) | Data | struct
++ | [DATA](#data) | Data | struct |
 + | NAM1 | Muzzle Flash Model Filename | cstring |
 + | NAM2 | Muzzle Flash Model Texture File Hashes | uint8[] |
 + | [VNAM](Values/Sound Levels.md) | Sound Level | uint32 | Enum - see link for values.
