@@ -55,12 +55,12 @@ To Hit Chance | uint8 |
 Explodable - Explosion Chance % | uint8 |
 Explodable - Debris Count | uint16 |
 Explodable - Debris | formid | FormID of a [DEBR](DEBR.md) record, or null.
-Explodable - Explosion | FormID of a [EXPL](EXPL.md) record, or null.
+Explodable - Explosion | formid | FormID of a [EXPL](EXPL.md) record, or null.
 Tracking Max Angle | float32 |
 Explodable - Debris Scale | float32 |
 Severable - Debris Count | int32 |
 Severable - Debris | formid | FormID of a [DEBR](DEBR.md) record, or null.
-Severable - Explosion | FormID of a [EXPL](EXPL.md) record, or null.
+Severable - Explosion | formid | FormID of a [EXPL](EXPL.md) record, or null.
 Severable - Debris Scale | float32 |
 Gore Effects - Translate X | float32 |
 Gore Effects - Translate Y | float32 |
