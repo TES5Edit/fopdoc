@@ -18,8 +18,8 @@ Count | Subrecord | Name | Type | Info
  | SCRI | Script | formid | FormID of a [SCPT](SCPT.md) record.
  | DESC | Description | cstring |
  | DATA | Data | struct |
- | SNAM | Value3 | FormID | Depends on DATA.Type
- | XNAM | Value4 | FormID | Depends on Data.Type
+ | SNAM | Value3 | formid | Depends on Data.Type
+ | XNAM | Value4 | formid | Depends on Data.Type
 
 ### DATA
 
