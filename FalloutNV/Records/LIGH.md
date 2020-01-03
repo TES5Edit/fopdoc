@@ -25,7 +25,7 @@ Count | Subrecord | Name | Type | Info
 ### DATA
 
 Name | Type | Info
-------|------|------|-----
+-----|------|-----
 Time | int32 |
 Radius | uint32 |
 Color | rbga |
