@@ -87,15 +87,15 @@ Value | Meaning
 
 Name | Type | Info
 -----|------|-----
-Male Voice | FormID of a [VTYP](VTYP.md) record.
-Female Voice | FormID of a [VTYP](VTYP.md) record.
+Male Voice | formid | FormID of a [VTYP](VTYP.md) record.
+Female Voice | formid | FormID of a [VTYP](VTYP.md) record.
 
 ### DNAM
 
 Name | Type | Info
 -----|------|-----
-Male Default Hair Style | FormID of a [HAIR](HAIR.md) record, or null.
-Female Default Hair Style | FormID of a [HAIR](HAIR.md) record, or null.
+Male Default Hair Style | formid | FormID of a [HAIR](HAIR.md) record, or null.
+Female Default Hair Style | formid | FormID of a [HAIR](HAIR.md) record, or null.
 
 ### CNAM
 
