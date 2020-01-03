@@ -71,7 +71,7 @@ Type | Name
 [IPDS](Records/IPDS.md) | Impact Data Set
 [KEYM](Records/KEYM.md) | Key
 [LAND](Records/LAND.md) | Landscape
-[LGMT](Records/LGMT.md) | Lighting Template
+[LGTM](Records/LGTM.md) | Lighting Template
 [LIGH](Records/LIGH.md) | Light
 [LSCR](Records/LSCR.md) | Load Screen
 [LSCT](Records/LSCT.md) | Load Screen Type
