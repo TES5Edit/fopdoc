@@ -18,7 +18,7 @@ Count | Subrecord | Name | Type | Info
  | XCLL | Lighting | struct |
  | [IMPF](Subrecords/IMPF.md) | Footstep Material | struct |
 + | | Light Template | collection | See below for details.
- | XCLW | Water Height | float32
+ | XCLW | Water Height | float32 |
  | XNAM | Water Noise Texture | cstring |
  | XCLR | Regions | formid[] | Array of [REGN](REGN.md) record FormIDs.
  | XCIM | Image Space | formid | FormID of an [IMGS](IMGS.md) record.
