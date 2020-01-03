@@ -22,7 +22,7 @@ Count | Subrecord | Name | Type | Info
 ### DATA
 
 Name | Type | Info
-------|------|------|-----
+-----|------|-----
 Flags | uint32 | See below for values.
 Base Cost | float32 | Unused.
 Associated Item | formid |
