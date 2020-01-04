@@ -28,7 +28,7 @@ Name | Type | Info
 ------|------|------|-----
 Time | int32 |
 Radius | uint32 |
-Color | rbga |
+Color | rgba |
 Flags | uint32 | See below for values.
 Falloff Exponent | float32 |
 FOV | float32 |
