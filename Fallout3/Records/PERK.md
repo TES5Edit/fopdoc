@@ -42,7 +42,7 @@ Value | Meaning
 Count | Subrecord | Name | Type | Info
 ------|-------|------|------|-----
  | PRKE | Header | struct |
-+ | DATA | Effect Data | struct *or * formid |
++ | DATA | Effect Data | struct *or* formid |
 -* | | Perk Conditions | collection | See below for details.
  | EPFT | Entry Point Function Type | uint8 | Decides the data type of the EPFD record.
  | EPFD | Entry Point Function Data | uint8[] *or* float32 *or* formid *or* null |
