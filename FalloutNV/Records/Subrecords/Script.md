@@ -2,7 +2,8 @@
 layout: falloutnvrec
 title: fopdoc
 ---
-# Script Subrecord Collection
+Script Subrecord Collection
+===========================
 
 ## Format
 
