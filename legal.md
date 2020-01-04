@@ -1,6 +1,6 @@
 ---
 layout: extra
-title: xEdit-Wiki
+title: fopdoc Legal
 ---
 ## Legal Information
 
