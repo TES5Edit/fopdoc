@@ -15,3 +15,13 @@ Count | Subrecord | Name | Type | Info
  | FULL | Name | cstring |
 + | ENIT | Effect Data | struct |
 +* | | [Effect](Subrecords/Effect.md) | collection |
+
+### ENIT
+
+Name | Type | Info
+-----|------|-----
+Type | uint32 |
+Unused | byte[4] |
+Unused | byte[4] |
+Flags | uint8 |
+Unused | byte[3] |
