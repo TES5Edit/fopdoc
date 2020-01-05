@@ -7,6 +7,8 @@ XNAM Subrecord
 
 As used in the [FACT](../FACT.md) and [RACE](../RACE.md) record types.
 
+## Format
+
 Name | Type | Info
 -----|------|-----
 Faction | formid | FormID of a [FACT](../FACT.md) or [RACE](../RACE.md) record.
