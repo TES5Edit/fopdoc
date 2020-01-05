@@ -70,7 +70,7 @@ Count | Subrecord | Name | Type | Info
  | XIBS | Ignored By Sandbox | null |
  | XNDP | Navigation Door Link | struct |
  | XPOD | Portal Rooms | formid[] | Array of [REFR](REFR.md) record FormIDs, or null.
- | XPLT | Portal Data | struct |
+ | XPTL | Portal Data | struct |
  | XSED | SpeedTree Seed | uint8 |
  | XRMR | Room Data Header | struct |
  | XLRM | Linked Room | formid | FormID of a [REFR](REFR.md) record.
