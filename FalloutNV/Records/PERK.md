@@ -20,7 +20,7 @@ Count | Subrecord | Name | Type | Info
 + | DATA | Data | struct |
 -* | | Effect | collection | See below for details.
 
-### DATA (Data)
+### DATA
 
 Name | Type | Info
 -----|------|-----
