@@ -34,7 +34,7 @@ Count | Name | Type | Info
 + | Count | uint32 | Number of alternate textures.
 -* | Alternate Texture | struct | A sub-subrecord structure detailed below.
 
-#### Aternate Texture
+#### Alternate Texture
 
 Name | Type | Info
 -----|------|-----
