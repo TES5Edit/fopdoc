@@ -4,7 +4,11 @@ description: Documentation for the Fallout 3 and Fallout New Vegas plugin file f
 # show_downloads: true
 theme: jekyll-theme-cayman
 baseurl: /fopdoc
-exclude: ['README.md']
+exclude: [
+  'README.md',
+  'pagebuilder/',
+  'idea/',
+]
 gems:
   - jekyll-mentions
 plugins:
