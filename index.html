@@ -36,4 +36,17 @@ title: fopdoc
 </p>
 <p>This documentation was written to reflect the TES5Edit source code on 2 June 2014.</p>
 <h2>Legal:</h2>
-<a href="{{site.baseurl}}/legal.html">Legal</a>
+<p><a href="{{site.baseurl}}/legal.html">Legal</a></p>
+<h2 id="AuthorsandContributors">Authors and Contributors</h2>
+<p class="empty">&nbsp;</p>
+<p>The original author is <a  href="https://github.com/Ortham">Ortham a.k.a. WrinklyNinja</a>.  Below is a list of contributors to the fopdoc project.</p>
+<p class="empty">&nbsp;</p>
+<ul>
+    {% for member in site.data.members %}
+    <li>
+        <a href="https://github.com/{{ member.github }}">
+        {{ member.name }}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
