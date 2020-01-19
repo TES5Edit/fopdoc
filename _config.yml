@@ -3,7 +3,6 @@ description: Documentation for the Fallout 3 and Fallout New Vegas plugin file f
 # google_analytics: true
 # show_downloads: true
 theme: jekyll-theme-cayman
-baseurl: /fopdoc
 exclude: [
   'README.md',
   'pagebuilder/',
