@@ -2,26 +2,26 @@
 layout: fallout3rec
 title: fopdoc
 ---
-DEBR
-====
+DEBR Record
+===========
 
 Debris
 
 ## Format
 
 Count | Subrecord | Name | Type | Info
-------|-------|------|------|-----
+------|-----------|------|------|-----
 + | EDID | Editor ID | cstring |
 +* | | Debris Model | collection | See below for details.
 
 ### Debris Model Subrecord Collection
 
 Count | Subrecord | Name | Type | Info
-------|-------|------|------|-----
-+ | DATA | Data | struct |
-+ | MODT | Texture File Hashes | ?? |
+------|-----------|------|------|-----
++ | DATA | Data | struct | See below for details.
+- | [MODT](Subrecords/MODT.md) | Texture Filename Hashes | struct[] |
 
-#### DATA
+#### DATA Subrecord
 
 Name | Type | Info
 -----|------|-----
