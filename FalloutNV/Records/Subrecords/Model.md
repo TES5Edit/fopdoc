@@ -3,7 +3,7 @@ layout: falloutnvrec
 title: fopdoc
 ---
 Model Subrecord Collection
-======================
+==========================
 
 The MODL, MODB, MODT, MODS and MODD subrecords hold model data, and always appear together. In cases where multiple collections are present in the same record, the subrecord codes are numbered:
 
@@ -15,33 +15,33 @@ MODT | MO2T | MO3T | MO4T
 MODS | MO2S | MO3S | MO4S
 MODD | (always missing) | MOSD | (always missing)
 
-Whenever a model subrecord collection is referenced in these docs, assume it is the first instance unless a number is given. If so, substitute the appropriate subrecord codes below.
+Whenever a model subrecord collection is referenced in these docs, assume it is the first instance unless a number is given. If so, substitute the appropriate subrecord codes as shown above.
 
 ## Format
 
 Count | Subrecord | Name | Type | Info
-------|-------|------|------|-----
+------|-----------|------|------|-----
 + | MODL | Model Filename | cstring |
 - | MODB | Unknown | byte[4] |
-- | MODT | Texture File Hashes | ?? |
+- | [MODT](Subrecords/MODT.md) | Texture Filename Hashes | struct[] |
 - | MODS | Alternate Textures | struct | See below for details.
 - | MODD | FaceGen Model Flags | uint8 | See below for flag values.
 
-### MODS
+### MODS Subrecord
 
 Count | Name | Type | Info
 ------|------|------|-----
 + | Count | uint32 | Number of alternate textures.
--* | Alternate Texture | struct | A sub-subrecord structure detailed below.
+-* | Alternate Texture Data | struct | See below for details.
 
-#### Alternate Texture
+#### Alternate Texture Data
 
 Name | Type | Info
 -----|------|-----
-Name Length | uint32 | Alternate texture data. Length of the following 3D name.
-3D Name | char[Name Length] | Alternate texture data.
-New Texture | formid | Alternate texture data. FormID of a [TXST](../TXST.md) record.
-3D Index | int32 | Alternate texture data.
+Name Length | uint32 | Length of the following 3D name.
+3D Name | char[Name Length] |
+New Texture | formid | FormID of a [TXST](../TXST.md) record.
+3D Index | int32 |
 
 ### MODD Flag Values
 
