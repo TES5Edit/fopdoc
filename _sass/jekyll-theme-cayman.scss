@@ -129,7 +129,11 @@ body {
 
 .drkbtn {
   display: inline-block;
-  margin: 0.25rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.90rem;
+  @include small {
+    margin-left: 0;
+  }
   /* Preserve these colors the look goof on the header background */
   color: rgba(255, 255, 255, 1.0);
   background-color: rgba(23, 130, 130, 0.9);
@@ -143,6 +147,9 @@ body {
     color: rgba(255, 255, 255, 0.8);
     background-color: rgba(34, 195, 195, 0.7);
     border-color: rgba(255, 255, 255, 0.3)
+  }
+  +.drkbtn {
+    margin-left: 0.50rem;
   }
   @include full {
     padding: 0.9rem;
@@ -163,8 +170,12 @@ body {
   @include small {
     display: block;
     width: 100%;
-    padding: 0.70rem;
+    padding: 0.60rem;
     font-size: 0.9rem;
+    +.drkbtn {
+      margin-top: 0.5rem;
+      margin-left: 0;
+    }
   }
 }
 
@@ -224,7 +235,7 @@ body {
   display: grid;
   color: var(--cayman-header-heading);
   background-color: var(--cayman-header-background);
-  background-image: linear-gradient(120deg, rgb(15, 64, 112), rgb(22, 89, 157), rgb(15, 112, 64), rgb(22, 157, 89));
+  background-image: linear-gradient(180deg, rgb(1, 12, 20), rgb(3, 37, 61), rgb(5, 62, 101), rgb(7, 86, 142), rgb(9, 111, 182));
   div.gridhead2 {
     text-align: right;
   }
@@ -270,6 +281,26 @@ body {
     }
     div.gridhead6 {
       text-align: center;
+    }
+  }
+  figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    @include full {
+      max-width: 50%;
+    }
+    @include huge {
+      max-width: 50%;
+    }
+    @include large {
+      max-width: 50%;
+    }
+    @include medium {
+      max-width: 75%;
+    }
+    @include small {
+      max-width: 90%;
     }
   }
 }
@@ -786,7 +817,20 @@ a.yellow {
 
 /* Main content for Wrte Text Paragraphs */
 .main-content {
-  p.empty {
+  p.empty {}
+  p.note {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    background-color: var(--code-background);
+    background-image: url(../../img/note.png);
+    background-position: 9px 0px;
+    background-repeat: no-repeat;
+    border: solid 0.13rem var(--header-border);
+    border-radius: 6px;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 15px 60px;
+    margin: 0 1rem;
   }
   p.list-1 {
     margin-left: 0.9rem;
@@ -805,6 +849,31 @@ a.yellow {
   }
   p.list-6 {
     margin-left: 4rem;
+  }
+}
+
+.main-content {
+  img.inline {
+    @include full {
+      max-width: 100%;
+      vertical-align: bottom;
+    }
+    @include huge {
+      max-width: 100%;
+      vertical-align: bottom;
+    }
+    @include large {
+      max-width: 100%;
+      vertical-align: bottom;
+    }
+    @include medium {
+      max-width: 100%;
+      vertical-align: bottom;
+    }
+    @include small {
+      max-width: 100%;
+      vertical-align: bottom;
+    }
   }
 }
 
@@ -885,6 +954,55 @@ figure.image-caption {
   }
 }
 
+.main-content {
+  img.thumbnail {
+    @include full {
+      max-width: 40%;
+    }
+    @include huge {
+      max-width: 40%;
+    }
+    @include large {
+      max-width: 40%;
+    }
+    @include medium {
+      max-width: 65%;
+    }
+    @include small {
+      max-width: 80%;
+    }
+  }
+}
+
+.tooltip {
+  position: relative;
+  display: block;
+}
+
+.tooltip .tooltiptext {
+  display: block;
+  visibility: hidden;
+  width: auto;
+  color: var(--header4-text);
+  background-color: var(--code-background);
+  border-color: var(--header-border);
+  border-style: solid;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  left: 0.9rem;
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
 .short-column {
   width: 5%;
 }
@@ -925,4 +1043,26 @@ figure.image-caption {
 
 .site-footer-credits {
   color: var(--cayman-blockquote-text);
+}
+
+.cmp-no,
+.cmp-unknown,
+.cmp-yes {
+  background-repeat: no-repeat;
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cmp-yes {
+  background-image: url(../../img/tick.png);
+}
+
+.cmp-no {
+  background-image: url(../../img/cross.png);
+}
+
+.cmp-unknown {
+  background-image: url(../../img/question.png);
 }
