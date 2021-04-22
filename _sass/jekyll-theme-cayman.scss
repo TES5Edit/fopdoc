@@ -249,22 +249,26 @@ body {
     text-align: center;
   }
   @include full {
-    grid-template-areas: 'padding1 image header padding2'
+    grid-template-areas:
+    'padding1 image header padding2'
     'nav-buttons nav-buttons nav-buttons nav-buttons'
     'page-buttons page-buttons page-buttons page-buttons';
   }
   @include huge {
-    grid-template-areas: 'padding1 image header padding2'
+    grid-template-areas:
+    'padding1 image header padding2'
     'nav-buttons nav-buttons nav-buttons nav-buttons'
     'page-buttons page-buttons page-buttons page-buttons';
   }
   @include large {
-    grid-template-areas: 'padding1 image header padding2'
+    grid-template-areas:
+    'padding1 image header padding2'
     'nav-buttons nav-buttons nav-buttons nav-buttons'
     'page-buttons page-buttons page-buttons page-buttons';
   }
   @include medium {
-    grid-template-areas: 'padding1 image header padding2'
+    grid-template-areas:
+    'padding1 image header padding2'
     'nav-buttons nav-buttons nav-buttons nav-buttons'
     'page-buttons page-buttons page-buttons page-buttons';
   }
@@ -328,6 +332,7 @@ body {
     'lefttoc' 'righttoc';
   }
 }
+
 .grid-toc div {
   background: var(--body-background);
 }
@@ -429,11 +434,11 @@ body {
   }
   figure.image-caption {
     @include full {
-      max-width: 40%;
+      max-width: 50%;
       padding: 10px;
     }
     @include huge {
-      max-width: 40%;
+      max-width: 50%;
       padding: 10px;
     }
     @include large {
@@ -460,8 +465,11 @@ body {
     font-weight: normal;
     color: var(--toc-header-text);
   }
+  iframe {
+    margin: 0.38rem 0 0.38rem 0.95rem;
+  }
   p {
-	margin: 0 0 0 0.95rem;
+    margin: 0 0 0 0.95rem;
     color: var(--body-text);
   }
   code {
@@ -481,13 +489,13 @@ body {
     background-color: var( --code-background);
     border: solid 1px var(--cayman-border);
     border-radius: 0.3rem;
+    white-space: pre-wrap;
     >code {
       padding: 0;
       margin: 0;
       font-size: 0.9rem;
       color: var(--purple-text);
       word-break: normal;
-      white-space: pre;
       background: transparent;
       border: 0;
     }
@@ -528,6 +536,9 @@ body {
   ol {
     margin-top: 0;
   }
+  .list-no-bullet {
+    list-style-type: none
+  }
   blockquote {
     padding: 0 0.75rem;
     margin-left: 0;
@@ -543,11 +554,13 @@ body {
   }
   table {
     display: block;
-    width: 100%;
+    width: calc(100% - (0.9rem * 2));
     overflow: auto;
     word-break: normal;
     word-break: keep-all; /* For Firefox to horizontally scroll wider tables. */
     -webkit-overflow-scrolling: touch;
+    margin-left: 0.9rem;
+    margin-right: 0.9rem;
     th {
       font-weight: bold;
       background-color: var(--header3-background);
@@ -580,12 +593,16 @@ body {
   }
 }
 
+
 /* adding none to this hides the checkbox */
+
 input[id^="spoiler"] {
   display: none;
 }
 
+
 /* closed button */
+
 input[id^="spoiler"]+label {
   display: inline;
   margin: 0.85rem;
@@ -600,67 +617,67 @@ input[id^="spoiler"]+label {
   transition: all .6s;
 }
 
+
 /* button after opened */
+
 input[id^="spoiler"]:checked+label {
   color: var(--purple-text);
   background-color: var(--code-background);
-  outline-style: hidden ;
+  outline-style: hidden;
 }
 
+
 /* the spoiler tag text box */
-input[id^="spoiler"]~.spoiler {
-  width: auto;
+
+input[id^="spoiler"]~.main-content {
   height: 0;
-  overflow: hidden;
+  overflow: auto;
   opacity: 0;
-  margin: 0.25rem;
-  padding: 0.25rem;
-  color: var(--purple-text);
+  margin: 0 0 0 0.95rem;
   background-color: var(--code-background);
   border: 2px;
   border-style: solid;
   border-color: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
+  font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
   transition: all .6s;
-  p {
-    color: inherit;
-  }
 }
 
+
 /* formatting for the text in the box such as padding */
-input[id^="spoiler"]:checked+label+.spoiler {
+
+input[id^="spoiler"]:checked+label+.main-content {
   height: auto;
   opacity: 1;
-  padding: 10px;
 }
 
 .main-content {
   h1.grhead1 {
-	font-size: 1.40rem;
+    font-size: 1.40rem;
     margin: 0.13rem 0 0.13rem 0.9rem;
     color: var(--toc-header-text);
-	padding: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     line-height: 24px;
   }
   h2.grhead2 {
-	font-size: 1.30rem;
+    font-size: 1.30rem;
     margin: 0.13rem 0 0.13rem 1.50rem;
     color: var(--toc-header-text);
-	padding: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     line-height: 24px;
   }
   h3.grhead3 {
-	font-size: 1.20rem;
+    font-size: 1.20rem;
     margin: 0.13rem 0 0.13rem 2.10rem;
     color: var(--toc-header-text);
-	padding: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     line-height: 24px;
   }
   h4.grhead4 {
-	font-size: 1.10rem;
+    font-size: 1.10rem;
     margin: 0.13rem 0 0.13rem 2.75rem;
     color: var(--toc-header-text);
-	padding: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     line-height: 24px;
   }
 }
@@ -815,7 +832,9 @@ a.yellow {
   color: var(--yellow-text);
 }
 
+
 /* Main content for Wrte Text Paragraphs */
+
 .main-content {
   p.empty {}
   p.note {
@@ -883,13 +902,31 @@ section.quote {
   align-items: center;
   margin: 0.5rem 1rem 0.5rem 1rem;
   color: rgba(150, 150, 150, 0.8);
-  background-color: rgba(150, 150, 150, 0.08);
+  background: rgba(0, 0, 0, 0.25);
   border-color: rgba(150, 150, 150, 0.2);
   border-style: solid;
-  border-width: 3px;
-  border-radius: 0.3rem;
+  border-width: 0.1rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-  box-shadow: 5px 3px 30px black;
+  border: 0.1rem solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px 10px 2px 2px;
+  -webkit-box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.5),
+    inset 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 10px rgba(255, 255, 255, 0.2),
+    inset 0 10px 20px rgba(255, 255, 255, 0.25),
+    inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.5),
+    inset 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 10px rgba(255, 255, 255, 0.2),
+    inset 0 10px 20px rgba(255, 255, 255, 0.25),
+    inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.5),
+    inset 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 10px rgba(255, 255, 255, 0.2),
+    inset 0 10px 20px rgba(255, 255, 255, 0.25),
+    inset 0 -15px 30px rgba(0, 0, 0, 0.3);
   p {
     margin: 0;
     padding: 0;

@@ -46,11 +46,11 @@ html * {
 
 // Table Row Highlighting
 tr:nth-child(odd) {
-  background: var(--header6-background);
+  background: var(--header3-background);
 }
 
 tr:nth-child(even) {
-  background: var(--header3-background);
+  background: var(--header6-background);
 }
 
 tr:hover {
